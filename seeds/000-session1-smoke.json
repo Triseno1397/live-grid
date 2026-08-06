@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Grammy Awards",
+    "category": "awards",
+    "subcategory": "music",
+    "network": { "name": "CBS", "is_streaming": false, "website": "https://www.cbs.com" },
+    "production_company": { "name": "Fulwell 73", "website": "https://www.fulwell73.com" },
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The Recording Academy's annual awards for achievement in the music industry.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-01",
+        "show_date": "2026-02-01",
+        "city": {
+          "name": "Los Angeles",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 34.0522,
+          "lng": -118.2437
+        },
+        "venue": {
+          "name": "Crypto.com Arena",
+          "address": "1111 S Figueroa St, Los Angeles, CA 90015"
+        }
+      },
+      {
+        "year": 2027,
+        "status": "rumored"
+      }
+    ],
+    "viewership": [
+      { "year": 2024, "average_viewers": 16900000 },
+      { "year": 2025, "average_viewers": 15400000 }
+    ]
+  },
+  {
+    "name": "Family Feud",
+    "category": "game_shows",
+    "production_company": { "name": "Fremantle", "website": "https://fremantle.com" },
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Long-running syndicated game show; tapes in the metro Atlanta cluster.",
+    "year": 2026,
+    "status": "confirmed",
+    "city": {
+      "name": "Atlanta",
+      "state": "GA",
+      "country": "USA",
+      "timezone": "America/New_York",
+      "lat": 33.749,
+      "lng": -84.388
+    }
+  }
+]
