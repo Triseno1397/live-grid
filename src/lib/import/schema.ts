@@ -1,5 +1,12 @@
 import { z } from "zod";
 
+// Next's server bundling does not always carry zod's default English locale into the
+// route-handler bundle, which silently degrades every message to a bare "Invalid input".
+// Registering it explicitly keeps import errors actionable — the difference between
+// "Invalid input" and "Unrecognized key: avg_viewers" is the difference between a
+// five-second fix and a hunt through a 40-record batch.
+z.config(z.locales.en());
+
 /**
  * Validation for the /admin/import paste format.
  *
