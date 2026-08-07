@@ -1,9 +1,8 @@
 import { createHash, timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
-import { ZodError } from "zod";
 
 import { runImport } from "@/lib/import/importer";
-import { ImportPayload } from "@/lib/import/schema";
+import { ImportEnvelope } from "@/lib/import/schema";
 import { createAdminClient } from "@/lib/supabase/admin";
 
 // node:crypto and the service-role client both require the Node runtime.
@@ -61,30 +60,19 @@ export async function POST(request: Request) {
     );
   }
 
-  let records;
-  try {
-    records = ImportPayload.parse(body);
-  } catch (cause) {
-    if (cause instanceof ZodError) {
-      return NextResponse.json(
-        {
-          ok: false,
-          error: "Validation failed. No rows were written.",
-          issues: cause.issues.map((issue) => ({
-            // e.g. "3.editions.0.status" -> record 3, its first edition's status
-            path: issue.path.join("."),
-            message: issue.message,
-          })),
-        },
-        { status: 400 },
-      );
-    }
-    throw cause;
+  // Only the envelope is checked here. Each record is validated individually inside
+  // runImport so that one bad entry in a 40-record batch does not reject the other 39.
+  const envelope = ImportEnvelope.safeParse(body);
+  if (!envelope.success) {
+    return NextResponse.json(
+      { ok: false, error: envelope.error.issues[0]?.message ?? "Invalid payload." },
+      { status: 400 },
+    );
   }
 
   let report;
   try {
-    report = await runImport(createAdminClient(), records);
+    report = await runImport(createAdminClient(), envelope.data);
   } catch (cause) {
     // Reaching here means the failure was not record-scoped — bad credentials, an
     // unreachable database, a missing migration.

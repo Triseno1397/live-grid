@@ -206,8 +206,13 @@ export const ProductionInput = z.preprocess(
     }),
 );
 
-export const ImportPayload = z
-  .array(ProductionInput)
+/**
+ * Only the envelope. Records stay `unknown` here and are validated one at a time in
+ * runImport, so a single bad entry is reported against its own index instead of
+ * rejecting the whole batch.
+ */
+export const ImportEnvelope = z
+  .array(z.unknown())
   .min(1, "Paste a non-empty JSON array of productions.");
 
 export type CityInputT = z.infer<typeof CityInput>;

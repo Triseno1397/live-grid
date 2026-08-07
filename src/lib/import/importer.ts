@@ -2,6 +2,7 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 
 import type { Database } from "@/lib/supabase/database.types";
 import { slugify } from "@/lib/slug";
+import { ProductionInput } from "./schema";
 import type {
   CityInputT,
   CompanyInputT,
@@ -185,11 +186,18 @@ async function resolveVenue(
   db: Db,
   input: VenueInputT,
   report: ImportReport,
+  /**
+   * City to fall back to when the venue itself doesn't name one. Seed records usually put
+   * the city on the edition rather than nested inside the venue, and an edition held at
+   * venue V in city C is good evidence that V sits in C. Without this the venue row keeps
+   * a null city_id and drops out of the Phase 1 city pages.
+   */
+  fallbackCityId: string | null = null,
 ): Promise<{ venueId: string; cityId: string | null }> {
   const slug = input.slug ?? slugify(input.name);
   const ctx = `venue "${input.name}"`;
 
-  const cityId = input.city ? await resolveCity(db, input.city, report) : null;
+  const cityId = input.city ? await resolveCity(db, input.city, report) : fallbackCityId;
 
   const { data: existing, error } = await db
     .from("venues")
@@ -256,9 +264,11 @@ async function upsertEdition(
 ): Promise<void> {
   const ctx = `edition ${input.year}`;
 
-  const venue = input.venue ? await resolveVenue(db, input.venue, report) : null;
-  // A venue implies a city, so an edition that names only a venue still gets a city_id.
+  // Resolve the edition's own city first so it can seed the venue's city_id when the
+  // venue doesn't carry one. The inference runs both ways: a venue also implies a city,
+  // so an edition naming only a venue still ends up with a city_id.
   const explicitCityId = input.city ? await resolveCity(db, input.city, report) : null;
+  const venue = input.venue ? await resolveVenue(db, input.venue, report, explicitCityId) : null;
   const cityId = explicitCityId ?? venue?.cityId ?? null;
 
   const patch = definedOnly({
@@ -391,26 +401,54 @@ async function importRecord(db: Db, input: ProductionInputT, report: ImportRepor
   }
 }
 
+/** Best-effort name for the error report, before the record is known to be valid. */
+function peekName(record: unknown): string | null {
+  if (typeof record === "object" && record !== null && "name" in record) {
+    const name = (record as { name: unknown }).name;
+    if (typeof name === "string") return name;
+  }
+  return null;
+}
+
 /**
- * Imports a validated batch.
+ * Imports a batch.
  *
- * Records are processed one at a time and failures are isolated: a bad record is reported
- * and the rest still import. Note that Supabase's REST client has no multi-statement
- * transaction, so a record that fails midway can leave its lookup rows behind. That is
- * safe here because every write is keyed on a stable slug or (production_id, year) — fix
- * the record and paste the batch again, and the result converges.
+ * Validation is per-record, not per-batch, and deliberately so: in a 40-record research
+ * batch, one bad field should not send the other 39 back for a re-paste. A record that
+ * fails validation is never written and is reported with the exact field path.
+ *
+ * Note that Supabase's REST client has no multi-statement transaction, so a record that
+ * fails partway through writing can leave its lookup rows behind. That is safe here
+ * because every write is keyed on a stable slug or (production_id, year) — fix the record,
+ * paste the batch again, and the result converges.
  */
-export async function runImport(db: Db, records: ProductionInputT[]): Promise<ImportReport> {
+export async function runImport(db: Db, records: unknown[]): Promise<ImportReport> {
   const report = emptyReport(records.length);
 
-  for (const [index, record] of records.entries()) {
+  for (const [index, raw] of records.entries()) {
+    const parsed = ProductionInput.safeParse(raw);
+    if (!parsed.success) {
+      report.ok = false;
+      report.errors.push({
+        index,
+        name: peekName(raw),
+        message: parsed.error.issues
+          .map((issue) => {
+            const path = issue.path.join(".");
+            return path ? `${path}: ${issue.message}` : issue.message;
+          })
+          .join("; "),
+      });
+      continue;
+    }
+
     try {
-      await importRecord(db, record, report);
+      await importRecord(db, parsed.data, report);
     } catch (cause) {
       report.ok = false;
       report.errors.push({
         index,
-        name: record?.name ?? null,
+        name: parsed.data.name,
         message: cause instanceof Error ? cause.message : String(cause),
       });
     }
