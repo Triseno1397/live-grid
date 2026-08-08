@@ -1,0 +1,524 @@
+[
+  {
+    "name": "Academy Awards",
+    "slug": "academy-awards",
+    "category": "awards",
+    "subcategory": "film",
+    "network": { "name": "ABC", "is_streaming": false, "website": "https://abc.com" },
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The Academy of Motion Picture Arts and Sciences' annual film awards. Broadcast on ABC and streamed on Hulu.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-03-15",
+        "show_date": "2026-03-15",
+        "city": { "name": "Los Angeles", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 34.0522, "lng": -118.2437 },
+        "venue": { "name": "Dolby Theatre", "address": "6801 Hollywood Blvd, Los Angeles, CA 90028" }
+      },
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-03-14",
+        "show_date": "2027-03-14",
+        "city": "Los Angeles",
+        "venue": "Dolby Theatre"
+      }
+    ],
+    "viewership": [
+      { "year": 2025, "average_viewers": 19690000 },
+      { "year": 2026, "average_viewers": 17860000 }
+    ]
+  },
+  {
+    "name": "Grammy Awards",
+    "slug": "grammy-awards",
+    "category": "awards",
+    "subcategory": "music",
+    "network": { "name": "CBS", "is_streaming": false, "website": "https://www.cbs.com" },
+    "production_company": { "name": "Fulwell 73", "website": "https://www.fulwell73.com" },
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The Recording Academy's annual awards for achievement in the music industry. Moves from CBS to ABC (streaming on Disney+ and Hulu) beginning with the 2027 ceremony under a ten-year agreement.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-01",
+        "show_date": "2026-02-01",
+        "city": "Los Angeles",
+        "venue": { "name": "Crypto.com Arena", "address": "1111 S Figueroa St, Los Angeles, CA 90015" }
+      },
+      { "year": 2027, "status": "rumored" }
+    ],
+    "viewership": [
+      { "year": 2024, "average_viewers": 16900000 },
+      { "year": 2025, "average_viewers": 15400000 },
+      { "year": 2026, "average_viewers": 14400000 }
+    ]
+  },
+  {
+    "name": "Primetime Emmy Awards",
+    "slug": "primetime-emmy-awards",
+    "category": "awards",
+    "subcategory": "television",
+    "network": { "name": "NBC", "is_streaming": false, "website": "https://www.nbc.com" },
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The Television Academy's annual primetime television awards. The broadcast rotates annually between ABC, CBS, NBC and Fox — the 77th aired on CBS, the 78th on NBC.",
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-09-14",
+        "show_date": "2025-09-14",
+        "city": "Los Angeles",
+        "venue": { "name": "Peacock Theater", "address": "777 Chick Hearn Ct, Los Angeles, CA 90015" }
+      },
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-14",
+        "show_date": "2026-09-14",
+        "city": "Los Angeles",
+        "venue": "Peacock Theater"
+      }
+    ],
+    "viewership": [{ "year": 2025, "average_viewers": 7590000 }]
+  },
+  {
+    "name": "Golden Globe Awards",
+    "slug": "golden-globe-awards",
+    "category": "awards",
+    "subcategory": "film-television",
+    "network": { "name": "CBS", "is_streaming": false },
+    "production_company": { "name": "Dick Clark Productions" },
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Annual film and television awards. Broadcast on CBS and streamed on Paramount+.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-01-11",
+        "show_date": "2026-01-11",
+        "city": { "name": "Beverly Hills", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 34.0736, "lng": -118.4004 },
+        "venue": { "name": "The Beverly Hilton", "address": "9876 Wilshire Blvd, Beverly Hills, CA 90210" }
+      },
+      { "year": 2027, "status": "rumored" }
+    ],
+    "viewership": [{ "year": 2026, "average_viewers": 8660000 }]
+  },
+  {
+    "name": "Tony Awards",
+    "slug": "tony-awards",
+    "category": "awards",
+    "subcategory": "theatre",
+    "network": { "name": "CBS", "is_streaming": false },
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The American Theatre Wing's annual Broadway awards. Broadcast on CBS and streamed on Paramount+.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-06-07",
+        "show_date": "2026-06-07",
+        "city": { "name": "New York", "state": "NY", "country": "USA", "timezone": "America/New_York", "lat": 40.7128, "lng": -74.006 },
+        "venue": { "name": "Radio City Music Hall", "address": "1260 6th Ave, New York, NY 10020" }
+      }
+    ]
+  },
+  {
+    "name": "CMA Awards",
+    "slug": "cma-awards",
+    "category": "awards",
+    "subcategory": "music",
+    "network": { "name": "ABC", "is_streaming": false },
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The Country Music Association's annual awards. Broadcast on ABC with next-day streaming on Hulu.",
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-11-19",
+        "show_date": "2025-11-19",
+        "city": { "name": "Nashville", "state": "TN", "country": "USA", "timezone": "America/Chicago", "lat": 36.1627, "lng": -86.7816 },
+        "venue": { "name": "Bridgestone Arena", "address": "501 Broadway, Nashville, TN 37203" }
+      },
+      { "year": 2026, "status": "rumored", "city": "Nashville" }
+    ],
+    "viewership": [{ "year": 2025, "average_viewers": 6030000 }]
+  },
+  {
+    "name": "Academy of Country Music Awards",
+    "slug": "acm-awards",
+    "category": "awards",
+    "subcategory": "music",
+    "network": { "name": "Prime Video", "is_streaming": true },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The ACM Awards, streamed live on Prime Video. Returned to Las Vegas in 2026 for the first time since 2022.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-05-17",
+        "show_date": "2026-05-17",
+        "city": { "name": "Las Vegas", "state": "NV", "country": "USA", "timezone": "America/Los_Angeles", "lat": 36.1699, "lng": -115.1398 },
+        "venue": { "name": "MGM Grand Garden Arena", "address": "3799 S Las Vegas Blvd, Las Vegas, NV 89109" }
+      }
+    ]
+  },
+  {
+    "name": "MTV Video Music Awards",
+    "slug": "mtv-video-music-awards",
+    "category": "awards",
+    "subcategory": "music",
+    "network": { "name": "MTV", "is_streaming": false },
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The VMAs. Simulcast across MTV and CBS with live streaming on Paramount+. Returns to Los Angeles in 2026 for the first time since 2017.",
+    "editions": [
+      { "year": 2025, "status": "completed", "start_date": "2025-09-07", "show_date": "2025-09-07" },
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-27",
+        "show_date": "2026-09-27",
+        "city": "Los Angeles"
+      }
+    ]
+  },
+  {
+    "name": "American Music Awards",
+    "slug": "american-music-awards",
+    "category": "awards",
+    "subcategory": "music",
+    "network": { "name": "CBS", "is_streaming": false },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The AMAs, returned to CBS and Paramount+ in 2026. Airs on Memorial Day weekend from Las Vegas.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-05-25",
+        "show_date": "2026-05-25",
+        "city": "Las Vegas",
+        "venue": "MGM Grand Garden Arena"
+      }
+    ]
+  },
+  {
+    "name": "BET Awards",
+    "slug": "bet-awards",
+    "category": "awards",
+    "subcategory": "music",
+    "network": { "name": "BET", "is_streaming": false },
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Black Entertainment Television's annual awards, simulcast across BET, MTV, VH1, CMT, Nickelodeon, Logo, Paramount Network and TV Land.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-06-28",
+        "show_date": "2026-06-28",
+        "city": "Los Angeles",
+        "venue": "Peacock Theater"
+      }
+    ]
+  },
+  {
+    "name": "The Actor Awards",
+    "slug": "actor-awards",
+    "category": "awards",
+    "subcategory": "film-television",
+    "network": { "name": "Netflix", "is_streaming": true, "website": "https://www.netflix.com" },
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Presented by SAG-AFTRA. Formerly the Screen Actors Guild Awards (SAG Awards) — renamed for the 2026 ceremony, which also began a multi-year move to Netflix.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-03-01",
+        "show_date": "2026-03-01",
+        "city": "Los Angeles",
+        "venue": { "name": "Shrine Auditorium", "address": "665 W Jefferson Blvd, Los Angeles, CA 90007" }
+      }
+    ]
+  },
+  {
+    "name": "Critics Choice Awards",
+    "slug": "critics-choice-awards",
+    "category": "awards",
+    "subcategory": "film-television",
+    "network": { "name": "E!", "is_streaming": false },
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Presented by the Critics Choice Association, simulcast on E! and USA Network.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-01-04",
+        "show_date": "2026-01-04",
+        "city": { "name": "Santa Monica", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 34.0195, "lng": -118.4912 },
+        "venue": { "name": "Barker Hangar", "address": "3021 Airport Ave, Santa Monica, CA 90405" }
+      }
+    ]
+  },
+  {
+    "name": "ESPY Awards",
+    "slug": "espy-awards",
+    "category": "awards",
+    "subcategory": "sports",
+    "network": { "name": "ABC", "is_streaming": false },
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "ESPN's annual sports awards, broadcast on ABC and streamed on ESPN+. Moved to New York to coincide with Fanatics Fest.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-07-15",
+        "show_date": "2026-07-15",
+        "city": "New York",
+        "venue": { "name": "David H. Koch Theater", "address": "20 Lincoln Center Plaza, New York, NY 10023" }
+      }
+    ]
+  },
+  {
+    "name": "NFL Honors",
+    "slug": "nfl-honors",
+    "category": "awards",
+    "subcategory": "sports",
+    "network": { "name": "NBC", "is_streaming": false },
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The NFL's annual awards show, held the Thursday before the Super Bowl in the host city. Airs on NBC and NFL Network, streaming on Peacock and NFL+.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-05",
+        "show_date": "2026-02-05",
+        "city": { "name": "San Francisco", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 37.7749, "lng": -122.4194 },
+        "venue": { "name": "Palace of Fine Arts", "address": "3601 Lyon St, San Francisco, CA 94123" }
+      }
+    ]
+  },
+  {
+    "name": "Rock & Roll Hall of Fame Induction Ceremony",
+    "slug": "rock-and-roll-hall-of-fame-induction",
+    "category": "awards",
+    "subcategory": "music",
+    "network": { "name": "ABC", "is_streaming": false },
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Annual induction ceremony. The 2026 edition is in Los Angeles with a December broadcast on ABC and Disney+; the ceremony returns to Cleveland in 2027.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-11-14",
+        "show_date": "2026-11-14",
+        "city": "Los Angeles",
+        "venue": "Peacock Theater"
+      },
+      { "year": 2027, "status": "rumored" }
+    ]
+  },
+  {
+    "name": "Latin Grammy Awards",
+    "slug": "latin-grammy-awards",
+    "category": "awards",
+    "subcategory": "music",
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The Latin Recording Academy's annual awards. Returned to Las Vegas for the 27th edition.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-11-12",
+        "show_date": "2026-11-12",
+        "city": "Las Vegas",
+        "venue": "MGM Grand Garden Arena"
+      }
+    ]
+  },
+  {
+    "name": "iHeartRadio Music Awards",
+    "slug": "iheartradio-music-awards",
+    "category": "awards",
+    "subcategory": "music",
+    "network": { "name": "Fox", "is_streaming": false },
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "iHeartMedia's annual music awards, broadcast live on Fox.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-03-26",
+        "show_date": "2026-03-26",
+        "city": "Los Angeles",
+        "venue": "Dolby Theatre"
+      }
+    ]
+  },
+  {
+    "name": "People's Choice Awards",
+    "slug": "peoples-choice-awards",
+    "category": "awards",
+    "subcategory": "film-television",
+    "network": { "name": "E!", "is_streaming": false },
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Fan-voted awards. No ceremony was held in 2026; announced in May 2026 to return in 2027 on E!.",
+    "editions": [{ "year": 2027, "status": "rumored" }]
+  },
+  {
+    "name": "Nickelodeon Kids' Choice Awards",
+    "slug": "kids-choice-awards",
+    "category": "awards",
+    "subcategory": "children",
+    "network": { "name": "Nickelodeon", "is_streaming": false },
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Fan-voted awards for kids. The 39th edition airs live on Nickelodeon and CBS in a domestic simulcast with other Paramount Global networks. Venue not yet announced.",
+    "editions": [
+      { "year": 2026, "status": "confirmed", "start_date": "2026-11-14", "show_date": "2026-11-14" }
+    ]
+  },
+  {
+    "name": "NAACP Image Awards",
+    "slug": "naacp-image-awards",
+    "category": "awards",
+    "subcategory": "film-television",
+    "network": { "name": "BET", "is_streaming": false },
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The NAACP's annual awards celebrating achievements of people of color. Airs on BET and simulcast on CBS.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-28",
+        "show_date": "2026-02-28",
+        "city": { "name": "Pasadena", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 34.1478, "lng": -118.1445 },
+        "venue": { "name": "Pasadena Civic Auditorium", "address": "300 E Green St, Pasadena, CA 91101" }
+      }
+    ]
+  },
+  {
+    "name": "BAFTA Film Awards",
+    "slug": "bafta-film-awards",
+    "category": "awards",
+    "subcategory": "film",
+    "network": { "name": "BBC One", "is_streaming": false },
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The British Academy of Film and Television Arts' annual film awards, broadcast on BBC One and iPlayer.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-22",
+        "show_date": "2026-02-22",
+        "city": { "name": "London", "country": "United Kingdom", "timezone": "Europe/London", "lat": 51.5074, "lng": -0.1278 },
+        "venue": { "name": "Royal Festival Hall", "address": "Southbank Centre, Belvedere Rd, London SE1 8XX" }
+      }
+    ]
+  },
+  {
+    "name": "Film Independent Spirit Awards",
+    "slug": "film-independent-spirit-awards",
+    "category": "awards",
+    "subcategory": "film",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 2,
+    "description": "Independent film awards. Streamed live on the Film Independent and IMDb YouTube channels rather than broadcast.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-15",
+        "show_date": "2026-02-15",
+        "city": "Los Angeles",
+        "venue": { "name": "Hollywood Palladium", "address": "6215 Sunset Blvd, Los Angeles, CA 90028" }
+      }
+    ]
+  },
+  {
+    "name": "Daytime Emmy Awards",
+    "slug": "daytime-emmy-awards",
+    "category": "awards",
+    "subcategory": "television",
+    "typical_month": 10,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The National Academy of Television Arts and Sciences' daytime television awards. Streamed on watch.theemmys.tv and the Emmys app.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-10-30",
+        "show_date": "2026-10-30",
+        "city": "Los Angeles",
+        "venue": "Hollywood Palladium"
+      }
+    ]
+  },
+  {
+    "name": "Billboard Music Awards",
+    "slug": "billboard-music-awards",
+    "category": "awards",
+    "subcategory": "music",
+    "network": { "name": "Fox", "is_streaming": false },
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Chart-based music awards. The 2024 edition aired on Fox and Amazon Fire TV. No 2025 or 2026 ceremony date has been confirmed.",
+    "editions": [
+      { "year": 2024, "status": "completed", "start_date": "2024-12-12", "show_date": "2024-12-12" }
+    ],
+    "viewership": [{ "year": 2024, "average_viewers": 1260000 }]
+  },
+  {
+    "name": "CMT Music Awards",
+    "slug": "cmt-music-awards",
+    "category": "awards",
+    "subcategory": "music",
+    "network": { "name": "CBS", "is_streaming": false },
+    "typical_month": 4,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Fan-voted country music video awards. Last confirmed edition was 2024 at the Moody Center in Austin on CBS and Paramount+. No 2025 or 2026 ceremony confirmed — editions intentionally left unseeded pending verification."
+  }
+]
