@@ -127,7 +127,15 @@ export type Database = {
           capacity?: number | null;
           website?: string | null;
         };
-        Relationships: [];
+        Relationships: [
+          {
+            foreignKeyName: "venues_city_id_fkey";
+            columns: ["city_id"];
+            isOneToOne: false;
+            referencedRelation: "cities";
+            referencedColumns: ["id"];
+          },
+        ];
       };
       productions: {
         Row: {
@@ -181,7 +189,22 @@ export type Database = {
           created_at?: string;
           updated_at?: string;
         };
-        Relationships: [];
+        Relationships: [
+          {
+            foreignKeyName: "productions_network_id_fkey";
+            columns: ["network_id"];
+            isOneToOne: false;
+            referencedRelation: "networks";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "productions_production_company_id_fkey";
+            columns: ["production_company_id"];
+            isOneToOne: false;
+            referencedRelation: "companies";
+            referencedColumns: ["id"];
+          },
+        ];
       };
       editions: {
         Row: {
@@ -229,7 +252,29 @@ export type Database = {
           show_date?: string | null;
           strike?: string | null;
         };
-        Relationships: [];
+        Relationships: [
+          {
+            foreignKeyName: "editions_production_id_fkey";
+            columns: ["production_id"];
+            isOneToOne: false;
+            referencedRelation: "productions";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "editions_venue_id_fkey";
+            columns: ["venue_id"];
+            isOneToOne: false;
+            referencedRelation: "venues";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "editions_city_id_fkey";
+            columns: ["city_id"];
+            isOneToOne: false;
+            referencedRelation: "cities";
+            referencedColumns: ["id"];
+          },
+        ];
       };
       viewership: {
         Row: {
@@ -253,7 +298,15 @@ export type Database = {
           average_viewers?: number | null;
           peak_viewers?: number | null;
         };
-        Relationships: [];
+        Relationships: [
+          {
+            foreignKeyName: "viewership_production_id_fkey";
+            columns: ["production_id"];
+            isOneToOne: false;
+            referencedRelation: "productions";
+            referencedColumns: ["id"];
+          },
+        ];
       };
       profiles: {
         Row: { id: string; display_name: string | null; role: string; created_at: string };
@@ -265,7 +318,22 @@ export type Database = {
         Row: { user_id: string; production_id: string; created_at: string };
         Insert: { user_id: string; production_id: string; created_at?: string };
         Update: { user_id?: string; production_id?: string; created_at?: string };
-        Relationships: [];
+        Relationships: [
+          {
+            foreignKeyName: "favorites_user_id_fkey";
+            columns: ["user_id"];
+            isOneToOne: false;
+            referencedRelation: "profiles";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "favorites_production_id_fkey";
+            columns: ["production_id"];
+            isOneToOne: false;
+            referencedRelation: "productions";
+            referencedColumns: ["id"];
+          },
+        ];
       };
     };
     Views: Record<never, never>;
