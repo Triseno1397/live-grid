@@ -108,6 +108,9 @@ export const EditionInput = z
     status: z.enum(STATUSES).optional(),
     city: z.preprocess(asObject, CityInput.nullish()),
     venue: z.preprocess(asObject, VenueInput.nullish()),
+    // Set only when this edition's broadcaster differs from the production's default
+    // (Emmys rotate networks; the Grammys move to ABC in 2027).
+    network: z.preprocess(asObject, NetworkInput.nullish()),
     load_in: dateString,
     tech_rehearsal: dateString,
     dress_rehearsal: dateString,

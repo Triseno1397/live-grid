@@ -49,10 +49,11 @@
         "status": "completed",
         "start_date": "2026-02-01",
         "show_date": "2026-02-01",
+        "network": "CBS",
         "city": "Los Angeles",
         "venue": { "name": "Crypto.com Arena", "address": "1111 S Figueroa St, Los Angeles, CA 90015" }
       },
-      { "year": 2027, "status": "rumored" }
+      { "year": 2027, "status": "rumored", "network": "ABC" }
     ],
     "viewership": [
       { "year": 2024, "average_viewers": 16900000 },
@@ -76,6 +77,7 @@
         "status": "completed",
         "start_date": "2025-09-14",
         "show_date": "2025-09-14",
+        "network": "CBS",
         "city": "Los Angeles",
         "venue": { "name": "Peacock Theater", "address": "777 Chick Hearn Ct, Los Angeles, CA 90015" }
       },
@@ -84,6 +86,7 @@
         "status": "confirmed",
         "start_date": "2026-09-14",
         "show_date": "2026-09-14",
+        "network": "NBC",
         "city": "Los Angeles",
         "venue": "Peacock Theater"
       }

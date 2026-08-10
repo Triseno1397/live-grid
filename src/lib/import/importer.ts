@@ -252,6 +252,8 @@ function normalizeEditions(input: ProductionInputT): EditionInputT[] {
       venue: input.venue,
       start_date: input.start_date,
       end_date: input.end_date,
+      // Not carried over from the production: a flat record's `network` is the
+      // production's default, not an edition-level override.
     },
   ];
 }
@@ -270,6 +272,8 @@ async function upsertEdition(
   const explicitCityId = input.city ? await resolveCity(db, input.city, report) : null;
   const venue = input.venue ? await resolveVenue(db, input.venue, report, explicitCityId) : null;
   const cityId = explicitCityId ?? venue?.cityId ?? null;
+  // Left null unless the edition names its own broadcaster; null inherits the production's.
+  const networkId = input.network ? await resolveNetwork(db, input.network, report) : null;
 
   const patch = definedOnly({
     start_date: input.start_date,
@@ -277,6 +281,7 @@ async function upsertEdition(
     status: input.status, // NOT NULL with a default of 'rumored'
     venue_id: venue?.venueId ?? undefined,
     city_id: cityId ?? undefined,
+    network_id: networkId ?? undefined,
     load_in: input.load_in,
     tech_rehearsal: input.tech_rehearsal,
     dress_rehearsal: input.dress_rehearsal,

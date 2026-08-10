@@ -215,6 +215,7 @@ export type Database = {
           end_date: string | null;
           venue_id: string | null;
           city_id: string | null;
+          network_id: string | null;
           status: string;
           load_in: string | null;
           tech_rehearsal: string | null;
@@ -230,6 +231,7 @@ export type Database = {
           end_date?: string | null;
           venue_id?: string | null;
           city_id?: string | null;
+          network_id?: string | null;
           status?: string;
           load_in?: string | null;
           tech_rehearsal?: string | null;
@@ -245,6 +247,7 @@ export type Database = {
           end_date?: string | null;
           venue_id?: string | null;
           city_id?: string | null;
+          network_id?: string | null;
           status?: string;
           load_in?: string | null;
           tech_rehearsal?: string | null;
@@ -272,6 +275,13 @@ export type Database = {
             columns: ["city_id"];
             isOneToOne: false;
             referencedRelation: "cities";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "editions_network_id_fkey";
+            columns: ["network_id"];
+            isOneToOne: false;
+            referencedRelation: "networks";
             referencedColumns: ["id"];
           },
         ];

@@ -69,6 +69,7 @@ editions (
   end_date date,
   venue_id fk,
   city_id fk,
+  network_id fk,          -- nullable; null inherits productions.network_id
   status text,            -- confirmed | rumored | announced | completed | cancelled
   load_in date, tech_rehearsal date, dress_rehearsal date, show_date date, strike date  -- event timeline, all nullable
 )
@@ -92,6 +93,8 @@ favorites (user_id fk, production_id fk)
 ```
 
 **RLS from day one:** public read on all content tables, writes restricted to editor/admin. This IS the admin-panel permission system later.
+
+**Amendment (batch 1, award shows):** `editions.network_id` added. `productions.network_id` alone assumed a production keeps one network for life, which the first real seed batch disproved three times — the Grammys move CBS→ABC in 2027, the Primetime Emmys rotate ABC/CBS/NBC/Fox annually, and the Actor Awards moved from broadcast to Netflix. The production-level column stays as the default; the edition-level one is set only where an edition differs. Migration: `20260806010000_edition_network.sql`.
 
 ---
 
