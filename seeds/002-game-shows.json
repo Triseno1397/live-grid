@@ -1,0 +1,141 @@
+[
+  {
+    "name": "Family Feud",
+    "slug": "family-feud",
+    "category": "game_shows",
+    "subcategory": "syndicated",
+    "production_company": { "name": "Fremantle", "website": "https://fremantle.com" },
+    "recurring": true,
+    "production_scale": 4,
+    "description": "First-run syndication, hosted by Steve Harvey. Tapes most weekdays in the metro Atlanta area, with some production in Los Angeles. No single broadcast network — sold station by station.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "city": { "name": "Atlanta", "state": "GA", "country": "USA", "timezone": "America/New_York", "lat": 33.749, "lng": -84.388 }
+      }
+    ]
+  },
+  {
+    "name": "Press Your Luck",
+    "slug": "press-your-luck",
+    "category": "game_shows",
+    "subcategory": "primetime",
+    "network": { "name": "ABC", "is_streaming": false },
+    "production_company": "Fremantle",
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Primetime revival hosted by Elizabeth Banks. Relocated from Los Angeles to Georgia for season 7 after six seasons in LA, drawn by the state's production incentive.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-04-11",
+        "end_date": "2026-04-26",
+        "city": { "name": "Fayetteville", "state": "GA", "country": "USA", "timezone": "America/New_York", "lat": 33.4487, "lng": -84.4549 },
+        "venue": { "name": "Trilith Studios", "address": "461 Sandy Creek Rd, Fayetteville, GA 30214" }
+      }
+    ]
+  },
+  {
+    "name": "Celebrity Weakest Link",
+    "slug": "celebrity-weakest-link",
+    "category": "game_shows",
+    "subcategory": "primetime",
+    "network": { "name": "Fox", "is_streaming": false },
+    "production_company": "Fremantle",
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Hosted by Jane Lynch. Moved to Fox from NBC, and relocated production from Los Angeles to metro Atlanta for season 2.",
+    "editions": [{ "year": 2026, "status": "confirmed", "city": "Atlanta" }]
+  },
+  {
+    "name": "The 1% Club",
+    "slug": "the-1-percent-club",
+    "category": "game_shows",
+    "subcategory": "primetime",
+    "network": { "name": "Fox", "is_streaming": false },
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Fox quiz format. Season 2 production moved to Georgia.",
+    "editions": [{ "year": 2026, "status": "confirmed", "city": "Atlanta" }]
+  },
+  {
+    "name": "Jeopardy!",
+    "slug": "jeopardy",
+    "category": "game_shows",
+    "subcategory": "syndicated",
+    "production_company": { "name": "Sony Pictures Television" },
+    "recurring": true,
+    "production_scale": 4,
+    "description": "First-run syndication, hosted by Ken Jennings. Tapes on Stage 10 — renamed the Alex Trebek Stage — at Sony Pictures Studios in Culver City.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "city": { "name": "Culver City", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 34.0211, "lng": -118.3965 },
+        "venue": { "name": "Sony Pictures Studios", "address": "10202 W Washington Blvd, Culver City, CA 90232" }
+      }
+    ]
+  },
+  {
+    "name": "Wheel of Fortune",
+    "slug": "wheel-of-fortune",
+    "category": "game_shows",
+    "subcategory": "syndicated",
+    "production_company": "Sony Pictures Television",
+    "recurring": true,
+    "production_scale": 4,
+    "description": "First-run syndication, hosted by Ryan Seacrest. Tapes on Stage 11 at Sony Pictures Studios, next door to Jeopardy!.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "city": "Culver City",
+        "venue": "Sony Pictures Studios"
+      }
+    ]
+  },
+  {
+    "name": "The Price Is Right",
+    "slug": "the-price-is-right",
+    "category": "game_shows",
+    "subcategory": "daytime",
+    "network": { "name": "CBS", "is_streaming": false },
+    "production_company": "Fremantle",
+    "recurring": true,
+    "production_scale": 4,
+    "description": "CBS daytime, hosted by Drew Carey. Moved to Haven Studios in Glendale in 2023 after 51 years at Television City.",
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "city": { "name": "Glendale", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 34.1425, "lng": -118.2551 },
+        "venue": { "name": "Haven Studios" }
+      }
+    ]
+  },
+  {
+    "name": "Let's Make a Deal",
+    "slug": "lets-make-a-deal",
+    "category": "game_shows",
+    "subcategory": "daytime",
+    "network": { "name": "CBS", "is_streaming": false },
+    "production_company": "Fremantle",
+    "recurring": true,
+    "production_scale": 3,
+    "description": "CBS daytime, hosted by Wayne Brady. Tapes in Van Nuys, in the San Fernando Valley.",
+    "editions": [{ "year": 2026, "status": "confirmed", "city": "Los Angeles" }]
+  },
+  {
+    "name": "Hollywood Squares",
+    "slug": "hollywood-squares",
+    "category": "game_shows",
+    "subcategory": "primetime",
+    "network": { "name": "CBS", "is_streaming": false },
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Primetime revival hosted by Nate Burleson with Drew Barrymore as center square. Debuted January 2025 and renewed for a second season. Taping venue not verified.",
+    "editions": [{ "year": 2026, "status": "confirmed", "city": "Los Angeles" }]
+  }
+]
