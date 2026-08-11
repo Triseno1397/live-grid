@@ -1,6 +1,6 @@
 # Live Grid — Agent Rules
 
-Read `LIVEGRID_PLAN.md` before any task. It is the roadmap and source of truth for scope, schema, and phase order. These rules apply to every session.
+Read `LIVEGRID_PLAN.md` before any task. It is the roadmap and source of truth for scope, schema, and phase order. Read `DESIGN.md` before any UI task — it is the source of truth for tokens, primitives, and copy. These rules apply to every session.
 
 ## Project
 
@@ -25,8 +25,12 @@ Live Grid — searchable database + calendar of live broadcast productions (awar
 
 ## Design Direction (locked)
 
+**`DESIGN.md` is the source of truth — tokens, the 20 primitives, and copy rules live there. The summary below is orientation, not specification.**
+
 - **Dark mode only** at launch. Bloomberg terminal information density × Apple restraint × Netflix palette.
 - No default shadcn gray-on-gray. Run an intentional design pass: typography hierarchy, spacing rhythm, one accent system.
+- One accent: `#ff303c`, for interaction only. Icons are Lucide at stroke-width 1.75.
+- Tokens live in `src/app/globals.css`. Never hardcode a hex value in a component.
 - Signature element: **countdown timers** (days until show) on production cards.
 - Status badges everywhere: confirmed / announced / rumored / completed — rumored is a feature, style it distinctly.
 - Mobile-first. Every page must work at 390px before desktop polish. Use min-h-[100dvh] for full-height sections (iOS).

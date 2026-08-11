@@ -1,24 +1,344 @@
 @import "tailwindcss";
 
 /*
- * Dark mode only at launch (AGENTS.md, locked). These are baseline tokens so Phase 0
- * pages are legible — the real design pass (Bloomberg density x Apple restraint x
- * Netflix palette, countdown timers, status badges) happens in Phase 1.
+ * Live Grid design tokens. DESIGN.md is the source of truth for these values —
+ * change them there first, then here. Dark only at launch (AGENTS.md, locked):
+ * there is deliberately no light palette and no `prefers-color-scheme` block.
+ *
+ * Layout of this file:
+ *   1. :root        — the raw palette and semantic aliases (plain CSS vars)
+ *   2. @theme       — the scales Tailwind should own (fonts, sizes, radii, shadows, easings)
+ *   3. @theme inline— semantic colors mapped onto Tailwind's --color-* namespace
+ *   4. base + utilities
+ *
+ * Note on (2): Tailwind emits every @theme key into :root, so `var(--text-xl)` and
+ * `var(--radius-lg)` resolve at runtime exactly as if they were declared below. They live
+ * in @theme rather than :root only so they also generate `text-xl` / `rounded-lg`
+ * utilities instead of existing twice with two sources of truth.
  */
+
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  /* ---- Base neutrals (Netflix-dark; matches the neutral-* scale used in src/app/admin) ---- */
+  --n-1000: #000000;
+  --n-950: #0a0a0a;
+  --n-900: #121212;
+  --n-880: #171717;
+  --n-850: #1f1f1f;
+  --n-800: #262626;
+  --n-700: #404040;
+  --n-600: #525252;
+  --n-500: #737373;
+  --n-400: #a3a3a3;
+  --n-300: #d4d4d4;
+  --n-200: #ededed;
+  --n-0: #ffffff;
+
+  /* ---- Accent: tally red. One accent system only (AGENTS.md). ---- */
+  --red-400: #ff5b64;
+  --red-500: #ff303c;
+  --red-600: #d81e2a;
+  --red-tint: rgba(255, 48, 60, 0.12);
+  --red-line: rgba(255, 48, 60, 0.35);
+
+  /* ---- Status hues ---- */
+  --emerald-400: #34d399;
+  --sky-400: #38bdf8;
+  --amber-400: #fbbf24;
+  --rose-400: #f87171;
+
+  /* ================= Semantic aliases ================= */
+  --background: var(--n-950);
+  --foreground: var(--n-200);
+
+  --surface-page: var(--n-950);
+  --surface-card: var(--n-900);
+  --surface-raised: var(--n-880);
+  --surface-sunken: var(--n-1000);
+  --surface-hover: #1a1a1a;
+  --surface-active: var(--n-850);
+
+  --border-subtle: var(--n-850);
+  --border: var(--n-800);
+  --border-strong: var(--n-700);
+  --border-focus: var(--red-500);
+
+  --text-primary: var(--n-200);
+  --text-secondary: var(--n-400);
+  --text-tertiary: var(--n-500);
+  --text-disabled: var(--n-600);
+  --text-inverse: var(--n-950);
+  --text-accent: var(--red-500);
+
+  --accent: var(--red-500);
+  --accent-hover: var(--red-400);
+  --accent-press: var(--red-600);
+
+  /* Edition status — confirmed / announced / rumored / completed / cancelled */
+  --status-confirmed: var(--emerald-400);
+  --status-confirmed-bg: rgba(52, 211, 153, 0.12);
+  --status-announced: var(--sky-400);
+  --status-announced-bg: rgba(56, 189, 248, 0.12);
+  --status-rumored: var(--amber-400);
+  --status-rumored-bg: rgba(251, 191, 36, 0.12);
+  --status-completed: var(--n-500);
+  --status-completed-bg: rgba(115, 115, 115, 0.14);
+  --status-cancelled: var(--rose-400);
+  --status-cancelled-bg: rgba(248, 113, 113, 0.12);
+
+  /* Countdown urgency */
+  --countdown-imminent: var(--red-500);
+  --countdown-near: var(--amber-400);
+  --countdown-far: var(--text-primary);
+
+  /* ---- Type: weights and tracking (sizes live in @theme) ---- */
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --tracking-tighter: -0.03em;
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-caps: 0.09em;
+
+  /* Semantic type roles */
+  --type-display: var(--weight-semibold) var(--text-5xl) / var(--leading-tight) var(--font-sans);
+  --type-title: var(--weight-semibold) var(--text-3xl) / var(--leading-snug) var(--font-sans);
+  --type-heading: var(--weight-semibold) var(--text-xl) / var(--leading-snug) var(--font-sans);
+  --type-body: var(--weight-regular) var(--text-md) / var(--leading-normal) var(--font-sans);
+  --type-cell: var(--weight-regular) var(--text-base) / var(--leading-snug) var(--font-sans);
+  --type-label: var(--weight-medium) var(--text-sm) / var(--leading-snug) var(--font-sans);
+  --type-eyebrow: var(--weight-medium) var(--text-xs) / var(--leading-snug) var(--font-sans);
+  --type-numeric: var(--weight-medium) var(--text-base) / var(--leading-snug) var(--font-mono);
+  --type-countdown: var(--weight-semibold) var(--text-3xl) / 1 var(--font-mono);
+
+  /* ---- Space ramp. Tailwind's own 4px-multiple scale already lands on these values
+       (p-1 = 4px … p-6 = 24px), so utilities are used for layout and these vars only
+       where an exact odd value is needed. ---- */
+  --space-0: 0;
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 6px;
+  --space-4: 8px;
+  --space-5: 12px;
+  --space-6: 16px;
+  --space-7: 20px;
+  --space-8: 24px;
+  --space-9: 32px;
+  --space-10: 40px;
+  --space-11: 56px;
+  --space-12: 72px;
+
+  --control-h-sm: 26px;
+  --control-h-md: 32px;
+  --control-h-lg: 40px;
+
+  --row-h: 40px;
+  --row-h-dense: 32px;
+  --head-h: 34px;
+  --tap-min: 44px;
+
+  --page-max: 1280px;
+  --page-pad: var(--space-6);
+  --page-pad-lg: var(--space-8);
+  --nav-h: 52px;
+
+  /* ---- Elevation. Depth comes from borders and hairlines first, shadow second. ---- */
+  --ring-focus: 0 0 0 2px var(--surface-page), 0 0 0 4px var(--red-line);
+  --inset-hairline: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  --blur-scrim: blur(12px);
+  --scrim: rgba(10, 10, 10, 0.72);
+  --scrim-solid: rgba(10, 10, 10, 0.92);
+
+  /* The only gradients in the system: protection scrims under hero imagery. */
+  --protect-bottom: linear-gradient(
+    to top,
+    var(--surface-page) 0%,
+    rgba(10, 10, 10, 0.85) 35%,
+    rgba(10, 10, 10, 0) 100%
+  );
+  --protect-left: linear-gradient(
+    to right,
+    var(--surface-page) 0%,
+    rgba(10, 10, 10, 0.6) 50%,
+    rgba(10, 10, 10, 0) 100%
+  );
+
+  /* ---- Motion: transform and opacity only. Short, flat, no bounce. ---- */
+  --duration-instant: 90ms;
+  --duration-fast: 120ms;
+  --duration-base: 180ms;
+  --duration-slow: 260ms;
+
+  --transition-control:
+    color var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard),
+    opacity var(--duration-fast) var(--ease-standard),
+    transform var(--duration-fast) var(--ease-standard);
+
+  --press-scale: 0.98;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-instant: 0ms;
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+    --press-scale: 1;
+  }
+}
+
+@theme {
+  /* Loaded via next/font in src/app/layout.tsx. */
+  --font-sans: "Geist", var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", var(--font-geist-mono), ui-monospace, Menlo, monospace;
+
+  /* Size ramp — dense by default. Body is 14px, tables 13px. */
+  --text-2xs: 10px;
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-base: 13px;
+  --text-md: 14px;
+  --text-lg: 16px;
+  --text-xl: 18px;
+  --text-2xl: 20px;
+  --text-3xl: 24px;
+  --text-4xl: 30px;
+  --text-5xl: 40px;
+  --text-6xl: 56px;
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-popover: 0 12px 32px rgba(0, 0, 0, 0.7);
+
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-page: var(--surface-page);
+  --color-card: var(--surface-card);
+  --color-raised: var(--surface-raised);
+  --color-sunken: var(--surface-sunken);
+  --color-hover: var(--surface-hover);
+  --color-active: var(--surface-active);
+
+  --color-line-subtle: var(--border-subtle);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+
+  --color-fg: var(--text-primary);
+  --color-fg-secondary: var(--text-secondary);
+  --color-fg-tertiary: var(--text-tertiary);
+  --color-fg-disabled: var(--text-disabled);
+  --color-fg-inverse: var(--text-inverse);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-press: var(--accent-press);
+  --color-accent-tint: var(--red-tint);
+  --color-accent-line: var(--red-line);
+
+  --color-confirmed: var(--status-confirmed);
+  --color-confirmed-bg: var(--status-confirmed-bg);
+  --color-announced: var(--status-announced);
+  --color-announced-bg: var(--status-announced-bg);
+  --color-rumored: var(--status-rumored);
+  --color-rumored-bg: var(--status-rumored-bg);
+  --color-completed: var(--status-completed);
+  --color-completed-bg: var(--status-completed-bg);
+  --color-cancelled: var(--status-cancelled);
+  --color-cancelled-bg: var(--status-cancelled-bg);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+@layer base {
+  html {
+    background: var(--surface-page);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background: var(--surface-page);
+    color: var(--text-primary);
+    font: var(--type-body);
+    letter-spacing: var(--tracking-normal);
+  }
+
+  /* Every number in the product is typeset: mono, tabular. */
+  code,
+  kbd,
+  samp,
+  pre {
+    font-family: var(--font-mono);
+  }
+
+  /* Focus is a page-coloured gap plus an accent ring — never a browser outline,
+     never a glow. Pointer clicks do not trigger it; keyboard navigation does. */
+  :focus-visible {
+    outline: none;
+    box-shadow: var(--ring-focus);
+    border-radius: var(--radius-sm);
+  }
+
+  ::selection {
+    background: var(--red-tint);
+    color: var(--text-primary);
+  }
+
+  /* Dark scrollbars — a default light scrollbar breaks the single-plane read. */
+  * {
+    scrollbar-color: var(--border-strong) transparent;
+  }
+}
+
+/* Uppercase eyebrow / column head. 11px at 0.09em is the only uppercase in the system. */
+@utility eyebrow {
+  font: var(--type-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+}
+
+/* Tabular mono for dates, counts, years, viewership — anything that lines up in a column. */
+@utility numeric {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+@utility press {
+  transition: var(--transition-control);
+
+  &:active {
+    transform: scale(var(--press-scale));
+  }
+}
+
+/* Protection scrim under hero imagery so type stays legible. */
+@utility protect-bottom {
+  background-image: var(--protect-bottom);
+}
+
+@utility protect-left {
+  background-image: var(--protect-left);
 }
