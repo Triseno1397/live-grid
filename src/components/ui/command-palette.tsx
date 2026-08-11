@@ -36,6 +36,16 @@ export function CommandPalette({
   const [activeIndex, setActiveIndex] = useState(0);
   const listRef = useRef<HTMLDivElement>(null);
 
+  /**
+   * Results already fetched this session, keyed by query.
+   *
+   * Typing "grammy" then backspacing to "gram" is the common motion, and every one of
+   * those keystrokes was a fresh round trip. Kept for the life of the mounted nav rather
+   * than per-open: the same searches recur across openings, and the payload is a handful
+   * of rows.
+   */
+  const cache = useRef(new Map<string, SearchHit[]>());
+
   // Reset on close so reopening never flashes the previous search.
   useEffect(() => {
     if (!open) {
@@ -53,6 +63,15 @@ export function CommandPalette({
       return;
     }
 
+    // A repeat search resolves with no request and no debounce, so retyping feels instant.
+    const cached = cache.current.get(trimmed);
+    if (cached) {
+      setHits(cached);
+      setActiveIndex(0);
+      setLoading(false);
+      return;
+    }
+
     setLoading(true);
     // AbortController, not a "is this the latest response" flag: an in-flight request for
     // "gram" is worthless once the user has typed "gramm", so cancel rather than race.
@@ -64,6 +83,7 @@ export function CommandPalette({
         });
         if (!response.ok) throw new Error(String(response.status));
         const body: { hits: SearchHit[] } = await response.json();
+        cache.current.set(trimmed, body.hits);
         setHits(body.hits);
         setActiveIndex(0);
       } catch (error) {
