@@ -94,6 +94,8 @@ favorites (user_id fk, production_id fk)
 
 **RLS from day one:** public read on all content tables, writes restricted to editor/admin. This IS the admin-panel permission system later.
 
+**Amendment (batch 5, variety):** `variety` added to the `productions.category` check constraint. Live-to-tape talk and sketch — late night, daytime talk, SNL — had no honest home among the original twelve and were being forced into whichever was least wrong. `variety` is the Television Academy's own grouping (Outstanding Variety Talk / Variety Sketch Series), so it covers the format without a stretch; `subcategory` carries the finer distinction so the enum does not grow a row per format. Migration: `20260811010000_variety_category.sql`, mirrored in `CATEGORIES` in `src/lib/import/schema.ts`.
+
 **Amendment (Phase 1, search):** `20260811000000_search_indexes.sql` adds GIN indexes only — FTS expression indexes on `productions.name` / `description`, and `pg_trgm` indexes on the five searchable name columns. No tsvector column and no search RPC, deliberately: the palette queries through PostgREST's `fts` and `ilike` operators, so search behaves identically whether or not the migration has been applied, and nothing breaks in the window between deploying the UI and running `npm run db:push`. The index expressions must keep matching what PostgREST generates or the planner will ignore them.
 
 **Amendment (batch 1, award shows):** `editions.network_id` added. `productions.network_id` alone assumed a production keeps one network for life, which the first real seed batch disproved three times — the Grammys move CBS→ABC in 2027, the Primetime Emmys rotate ABC/CBS/NBC/Fox annually, and the Actor Awards moved from broadcast to Netflix. The production-level column stays as the default; the edition-level one is set only where an edition differs. Migration: `20260806010000_edition_network.sql`.
@@ -142,10 +144,11 @@ The product that answers the Atlanta phone call. Everything public, fast, dark.
 
 All seven pages are built and read the live database: `/`, `/calendar`, `/browse`, `/p/[slug]`, `/city/[slug]`, `/network/[slug]`, `/company/[slug]`, plus the ⌘K palette on `/api/search`. Production, city, network and company pages prerender via `generateStaticParams` with a 5-minute revalidate.
 
-Two things gate "ship", and both are data, not code:
+All migrations through `20260811010000` are applied to the live database, including the search indexes.
 
-1. **The seed is at 34 productions against a 250 target.** The UI is built to be honest at that size rather than to hide it — 7 editions are currently scheduled ahead of today, 13 of 40 editions carry no date, and 28 of 34 productions have no viewership row. Every surface has a real empty or partial state instead of a filler.
-2. **`20260811000000_search_indexes.sql` has not been applied.** Search is correct without it — the palette queries Postgres FTS and `ilike` through PostgREST — but it is unindexed until `npm run db:push` runs. At 34 productions that is not yet measurable; it is what keeps the "under 200ms" criterion true at 250.
+**Seed state: 57 productions / 107 editions across 5 categories** (awards 25, game shows 9, corporate 9, variety 8, tech 6), 43 venues in 16 cities. Batches 3–5 were chosen for edition depth rather than headline count: upfronts, keynotes and late night all recur annually at a named venue, so each carries three or four years of history and the venue column earns its place. Real venue moves now in the data — Fox leaving the Hammerstein Ballroom for New York City Center, The Kelly Clarkson Show leaving the Universal lot for Studio 6A — are the reason the edition table is per-year rather than a single "venue" field on the production.
+
+Still gating ship, and it is data rather than code: **57 of the 250-production target**. The UI is built to be honest at this size — 9 editions are scheduled ahead of today, many editions carry no date because a daily show's season is not a date, and only 6 productions have a viewership row. Every surface has a real empty or partial state rather than filler.
 
 **No images anywhere.** `logo_url` and `hero_image_url` are null on all 34 productions, so the type-only hero is the real path, not a fallback. The scrim and `next/image` wiring exist for when assets land.
 

@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Saturday Night Live",
+    "slug": "saturday-night-live",
+    "category": "variety",
+    "subcategory": "sketch",
+    "network": "NBC",
+    "production_company": { "name": "Broadway Video", "headquarters": "New York, NY" },
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Live from Studio 8H at 30 Rockefeller Plaza. Broadcast live to the East Coast, with a full dress rehearsal in front of a separate audience earlier the same evening.",
+    "editions": [
+      { "year": 2024, "status": "completed", "city": "New York", "venue": "Studio 8H, 30 Rockefeller Plaza" },
+      { "year": 2025, "status": "completed", "city": "New York", "venue": "Studio 8H, 30 Rockefeller Plaza" },
+      { "year": 2026, "status": "confirmed", "city": "New York", "venue": "Studio 8H, 30 Rockefeller Plaza" }
+    ]
+  },
+  {
+    "name": "The Tonight Show Starring Jimmy Fallon",
+    "slug": "tonight-show-jimmy-fallon",
+    "category": "variety",
+    "subcategory": "late night",
+    "network": "NBC",
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Taped weekday afternoons in Studio 6B at 30 Rockefeller Plaza, the studio the franchise used under Jack Paar and Johnny Carson before it moved to Burbank.",
+    "editions": [
+      { "year": 2024, "status": "completed", "city": "New York", "venue": "Studio 6B, 30 Rockefeller Plaza" },
+      { "year": 2025, "status": "completed", "city": "New York", "venue": "Studio 6B, 30 Rockefeller Plaza" },
+      { "year": 2026, "status": "confirmed", "city": "New York", "venue": "Studio 6B, 30 Rockefeller Plaza" }
+    ]
+  },
+  {
+    "name": "Late Night with Seth Meyers",
+    "slug": "late-night-seth-meyers",
+    "category": "variety",
+    "subcategory": "late night",
+    "network": "NBC",
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Taped in Studio 8G at 30 Rockefeller Plaza, one floor below Saturday Night Live.",
+    "editions": [
+      { "year": 2024, "status": "completed", "city": "New York", "venue": "Studio 8G, 30 Rockefeller Plaza" },
+      { "year": 2025, "status": "completed", "city": "New York", "venue": "Studio 8G, 30 Rockefeller Plaza" },
+      { "year": 2026, "status": "confirmed", "city": "New York", "venue": "Studio 8G, 30 Rockefeller Plaza" }
+    ]
+  },
+  {
+    "name": "The Late Show with Stephen Colbert",
+    "slug": "late-show-stephen-colbert",
+    "category": "variety",
+    "subcategory": "late night",
+    "network": "CBS",
+    "recurring": false,
+    "production_scale": 4,
+    "description": "Taped at the Ed Sullivan Theater. CBS announced on 17 July 2025 that it would end the show in May 2026 and retire the Late Show franchise after 33 years, calling it a financial decision. The final episode aired 21 May 2026.",
+    "editions": [
+      { "year": 2024, "status": "completed", "city": "New York", "venue": "Ed Sullivan Theater" },
+      { "year": 2025, "status": "completed", "city": "New York", "venue": "Ed Sullivan Theater" },
+      {
+        "year": 2026,
+        "end_date": "2026-05-21",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Ed Sullivan Theater"
+      }
+    ]
+  },
+  {
+    "name": "Jimmy Kimmel Live!",
+    "slug": "jimmy-kimmel-live",
+    "category": "variety",
+    "subcategory": "late night",
+    "network": "ABC",
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Taped at the El Capitan Entertainment Centre on Hollywood Boulevard, across the street from the El Capitan Theatre.",
+    "editions": [
+      { "year": 2024, "status": "completed", "city": "Los Angeles", "venue": "El Capitan Entertainment Centre" },
+      { "year": 2025, "status": "completed", "city": "Los Angeles", "venue": "El Capitan Entertainment Centre" },
+      { "year": 2026, "status": "confirmed", "city": "Los Angeles", "venue": "El Capitan Entertainment Centre" }
+    ]
+  },
+  {
+    "name": "The Kelly Clarkson Show",
+    "slug": "kelly-clarkson-show",
+    "category": "variety",
+    "subcategory": "daytime talk",
+    "network": "NBC",
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Moved from the Universal lot in Los Angeles to Studio 6A at 30 Rockefeller Plaza for its fifth season, which premiered 16 October 2023. The move followed New York's expanded film tax credit.",
+    "editions": [
+      { "year": 2023, "status": "completed", "city": "Los Angeles", "venue": "Universal Studios Lot" },
+      { "year": 2024, "status": "completed", "city": "New York", "venue": "Studio 6A, 30 Rockefeller Plaza" },
+      { "year": 2025, "status": "completed", "city": "New York", "venue": "Studio 6A, 30 Rockefeller Plaza" },
+      { "year": 2026, "status": "confirmed", "city": "New York", "venue": "Studio 6A, 30 Rockefeller Plaza" }
+    ]
+  },
+  {
+    "name": "The Daily Show",
+    "slug": "the-daily-show",
+    "category": "variety",
+    "subcategory": "late night",
+    "network": { "name": "Comedy Central", "is_streaming": false },
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Taped in Manhattan for Comedy Central.",
+    "editions": [
+      { "year": 2024, "status": "completed", "city": "New York" },
+      { "year": 2025, "status": "completed", "city": "New York" },
+      { "year": 2026, "status": "confirmed", "city": "New York" }
+    ]
+  },
+  {
+    "name": "The View",
+    "slug": "the-view",
+    "category": "variety",
+    "subcategory": "daytime talk",
+    "network": "ABC",
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Live weekday panel show taped at ABC's Upper West Side studios in Manhattan.",
+    "editions": [
+      { "year": 2024, "status": "completed", "city": "New York" },
+      { "year": 2025, "status": "completed", "city": "New York" },
+      { "year": 2026, "status": "confirmed", "city": "New York" }
+    ]
+  }
+]

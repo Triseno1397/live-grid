@@ -23,6 +23,12 @@ z.config(z.locales.en());
  * quietly missing viewership data.
  */
 
+/**
+ * Must stay in sync with the productions_category_check constraint — see
+ * 20260811010000_variety_category.sql, which added `variety`. A value here that the
+ * database rejects surfaces as a failed import, not a validation error, which is a much
+ * worse place to find out.
+ */
 export const CATEGORIES = [
   "awards",
   "sports",
@@ -36,6 +42,9 @@ export const CATEGORIES = [
   "corporate",
   "political",
   "international",
+  // Live-to-tape talk and sketch: the Television Academy's own grouping, so late night
+  // and SNL sit together without either being forced somewhere it does not belong.
+  "variety",
 ] as const;
 
 export const STATUSES = ["confirmed", "rumored", "announced", "completed", "cancelled"] as const;

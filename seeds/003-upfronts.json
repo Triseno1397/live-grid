@@ -1,0 +1,330 @@
+[
+  {
+    "name": "NBCUniversal Upfront",
+    "slug": "nbcuniversal-upfront",
+    "category": "corporate",
+    "subcategory": "upfront",
+    "production_company": { "name": "NBCUniversal", "headquarters": "New York, NY" },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "NBCUniversal's annual sales presentation to ad buyers. Opens upfront week on the Monday morning and has run at Radio City Music Hall each year.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-05-13",
+        "show_date": "2024-05-13",
+        "status": "completed",
+        "city": { "name": "New York", "state": "NY", "country": "USA", "timezone": "America/New_York", "lat": 40.7128, "lng": -74.006 },
+        "venue": { "name": "Radio City Music Hall", "capacity": 5960 }
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-05-12",
+        "show_date": "2025-05-12",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Radio City Music Hall"
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-05-11",
+        "show_date": "2026-05-11",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Radio City Music Hall"
+      }
+    ]
+  },
+  {
+    "name": "Fox Upfront",
+    "slug": "fox-upfront",
+    "category": "corporate",
+    "subcategory": "upfront",
+    "production_company": { "name": "Fox Corporation", "headquarters": "New York, NY" },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Fox Corporation's annual presentation to ad buyers. Held at the Hammerstein Ballroom through 2025, then moved to New York City Center for 2026.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-05-13",
+        "show_date": "2024-05-13",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Hammerstein Ballroom"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-05-12",
+        "show_date": "2025-05-12",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Hammerstein Ballroom"
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-05-11",
+        "show_date": "2026-05-11",
+        "status": "completed",
+        "city": "New York",
+        "venue": "New York City Center"
+      }
+    ]
+  },
+  {
+    "name": "Amazon Upfront",
+    "slug": "amazon-upfront",
+    "category": "corporate",
+    "subcategory": "upfront",
+    "production_company": { "name": "Amazon", "headquarters": "Seattle, WA" },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Amazon Ads' presentation for Prime Video inventory. Moved from Pier 36 to the Beacon Theatre in 2025 and stayed there for 2026.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-05-14",
+        "show_date": "2024-05-14",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Pier 36"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-05-12",
+        "show_date": "2025-05-12",
+        "status": "completed",
+        "city": "New York",
+        "venue": { "name": "Beacon Theatre", "capacity": 2894 }
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-05-11",
+        "show_date": "2026-05-11",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Beacon Theatre"
+      }
+    ]
+  },
+  {
+    "name": "Telemundo Upfront",
+    "slug": "telemundo-upfront",
+    "category": "corporate",
+    "subcategory": "upfront",
+    "production_company": "NBCUniversal",
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Telemundo's Spanish-language upfront, presented separately from the NBCUniversal event on the evening of its own day.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-05-13",
+        "show_date": "2024-05-13",
+        "status": "completed",
+        "city": "New York",
+        "venue": "The Shed"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-05-13",
+        "show_date": "2025-05-13",
+        "status": "completed",
+        "city": "New York"
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-05-12",
+        "show_date": "2026-05-12",
+        "status": "completed",
+        "city": "New York"
+      }
+    ]
+  },
+  {
+    "name": "TelevisaUnivision Upfront",
+    "slug": "televisaunivision-upfront",
+    "category": "corporate",
+    "subcategory": "upfront",
+    "production_company": { "name": "TelevisaUnivision", "headquarters": "Miami, FL" },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "TelevisaUnivision's presentation to Spanish-language ad buyers. Has used a different venue each year: HK Hall, Hall des Lumieres, then Terminal 5.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-05-14",
+        "show_date": "2024-05-14",
+        "status": "completed",
+        "city": "New York",
+        "venue": "HK Hall"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-05-13",
+        "show_date": "2025-05-13",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Hall des Lumieres"
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-05-12",
+        "show_date": "2026-05-12",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Terminal 5"
+      }
+    ]
+  },
+  {
+    "name": "Disney Upfront",
+    "slug": "disney-upfront",
+    "category": "corporate",
+    "subcategory": "upfront",
+    "production_company": { "name": "The Walt Disney Company", "headquarters": "Burbank, CA" },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Disney's combined presentation for ABC, ESPN, Hulu and Disney+. Held on the North stage of the Javits Center each year.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-05-14",
+        "show_date": "2024-05-14",
+        "status": "completed",
+        "city": "New York",
+        "venue": "North Javits Center"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-05-13",
+        "show_date": "2025-05-13",
+        "status": "completed",
+        "city": "New York",
+        "venue": "North Javits Center"
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-05-12",
+        "show_date": "2026-05-12",
+        "status": "completed",
+        "city": "New York",
+        "venue": "North Javits Center"
+      }
+    ]
+  },
+  {
+    "name": "Warner Bros. Discovery Upfront",
+    "slug": "warner-bros-discovery-upfront",
+    "category": "corporate",
+    "subcategory": "upfront",
+    "production_company": { "name": "Warner Bros. Discovery", "headquarters": "New York, NY" },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Warner Bros. Discovery's presentation to ad buyers, covering HBO Max, TNT Sports and the Discovery networks. Held at the Theater at Madison Square Garden.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-05-15",
+        "show_date": "2024-05-15",
+        "status": "completed",
+        "city": "New York"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-05-14",
+        "show_date": "2025-05-14",
+        "status": "completed",
+        "city": "New York",
+        "venue": { "name": "The Theater at Madison Square Garden", "capacity": 5600 }
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-05-13",
+        "show_date": "2026-05-13",
+        "status": "completed",
+        "city": "New York",
+        "venue": "The Theater at Madison Square Garden"
+      }
+    ]
+  },
+  {
+    "name": "Netflix Upfront",
+    "slug": "netflix-upfront",
+    "category": "corporate",
+    "subcategory": "upfront",
+    "production_company": { "name": "Netflix", "headquarters": "Los Gatos, CA" },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Netflix's presentation to ad buyers, first held as a standalone upfront in 2024. Moved from the Perelman Performing Arts Center to Sunset Pier 94 Studios for 2026.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-05-15",
+        "show_date": "2024-05-15",
+        "status": "completed",
+        "city": "New York"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-05-14",
+        "show_date": "2025-05-14",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Perelman Performing Arts Center"
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-05-13",
+        "show_date": "2026-05-13",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Sunset Pier 94 Studios"
+      }
+    ]
+  },
+  {
+    "name": "YouTube Brandcast",
+    "slug": "youtube-brandcast",
+    "category": "corporate",
+    "subcategory": "newfront",
+    "production_company": { "name": "YouTube", "headquarters": "San Bruno, CA" },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "YouTube's annual pitch to ad buyers, closing upfront week. Held at Lincoln Center, in David Geffen Hall for 2026.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-05-15",
+        "show_date": "2024-05-15",
+        "status": "completed",
+        "city": "New York"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-05-14",
+        "show_date": "2025-05-14",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Lincoln Center"
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-05-13",
+        "show_date": "2026-05-13",
+        "status": "completed",
+        "city": "New York",
+        "venue": { "name": "David Geffen Hall", "capacity": 2200 }
+      }
+    ]
+  }
+]

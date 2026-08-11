@@ -1,0 +1,203 @@
+[
+  {
+    "name": "Apple Worldwide Developers Conference",
+    "slug": "apple-wwdc",
+    "category": "tech",
+    "subcategory": "developer conference",
+    "production_company": { "name": "Apple", "headquarters": "Cupertino, CA", "website": "https://www.apple.com" },
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Apple's developer conference. The keynote is pre-produced and streamed, with a same-day in-person audience of invited developers and students at Apple Park.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-06-10",
+        "end_date": "2024-06-14",
+        "show_date": "2024-06-10",
+        "status": "completed",
+        "city": { "name": "Cupertino", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 37.323, "lng": -122.0322 },
+        "venue": "Apple Park"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-06-09",
+        "end_date": "2025-06-13",
+        "show_date": "2025-06-09",
+        "status": "completed",
+        "city": "Cupertino",
+        "venue": "Apple Park"
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-06-08",
+        "end_date": "2026-06-12",
+        "show_date": "2026-06-08",
+        "status": "completed",
+        "city": "Cupertino",
+        "venue": "Apple Park"
+      }
+    ]
+  },
+  {
+    "name": "Apple September Event",
+    "slug": "apple-september-event",
+    "category": "tech",
+    "subcategory": "keynote",
+    "production_company": "Apple",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Apple's autumn hardware keynote, pre-produced and streamed from Apple Park with an invited audience in the Steve Jobs Theater. The 2026 date is not announced.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-09-09",
+        "show_date": "2024-09-09",
+        "status": "completed",
+        "city": "Cupertino",
+        "venue": "Steve Jobs Theater"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-09-09",
+        "show_date": "2025-09-09",
+        "status": "completed",
+        "city": "Cupertino",
+        "venue": "Steve Jobs Theater"
+      },
+      {
+        "year": 2026,
+        "status": "rumored",
+        "city": "Cupertino",
+        "venue": "Steve Jobs Theater"
+      }
+    ]
+  },
+  {
+    "name": "Google I/O",
+    "slug": "google-io",
+    "category": "tech",
+    "subcategory": "developer conference",
+    "production_company": { "name": "Google", "headquarters": "Mountain View, CA", "website": "https://www.google.com" },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Google's developer conference. The opening keynote is staged outdoors at the Shoreline Amphitheatre, a short walk from the company's Mountain View campus.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-05-14",
+        "end_date": "2024-05-15",
+        "show_date": "2024-05-14",
+        "status": "completed",
+        "city": { "name": "Mountain View", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 37.3861, "lng": -122.0839 },
+        "venue": "Shoreline Amphitheatre"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-05-20",
+        "end_date": "2025-05-21",
+        "show_date": "2025-05-20",
+        "status": "completed",
+        "city": "Mountain View",
+        "venue": "Shoreline Amphitheatre"
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-05-19",
+        "end_date": "2026-05-20",
+        "show_date": "2026-05-19",
+        "status": "completed",
+        "city": "Mountain View",
+        "venue": "Shoreline Amphitheatre"
+      }
+    ]
+  },
+  {
+    "name": "CES",
+    "slug": "ces",
+    "category": "tech",
+    "subcategory": "trade show",
+    "production_company": { "name": "Consumer Technology Association", "headquarters": "Arlington, VA" },
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The Consumer Technology Association's annual trade show. Exhibit floors run across the Las Vegas Convention Center and hotel venues, with media day keynotes staged the day before the floor opens.",
+    "editions": [
+      {
+        "year": 2024,
+        "start_date": "2024-01-09",
+        "end_date": "2024-01-12",
+        "status": "completed",
+        "city": "Las Vegas",
+        "venue": "Las Vegas Convention Center"
+      },
+      {
+        "year": 2025,
+        "start_date": "2025-01-07",
+        "end_date": "2025-01-10",
+        "status": "completed",
+        "city": "Las Vegas",
+        "venue": "Las Vegas Convention Center"
+      },
+      {
+        "year": 2026,
+        "start_date": "2026-01-06",
+        "end_date": "2026-01-09",
+        "status": "completed",
+        "city": "Las Vegas",
+        "venue": "Las Vegas Convention Center"
+      },
+      {
+        "year": 2027,
+        "start_date": "2027-01-06",
+        "end_date": "2027-01-09",
+        "status": "confirmed",
+        "city": "Las Vegas",
+        "venue": "Las Vegas Convention Center"
+      }
+    ]
+  },
+  {
+    "name": "NVIDIA GTC",
+    "slug": "nvidia-gtc",
+    "category": "tech",
+    "subcategory": "developer conference",
+    "production_company": { "name": "NVIDIA", "headquarters": "Santa Clara, CA" },
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "NVIDIA's GPU Technology Conference, held at the San Jose McEnery Convention Center. Earlier editions are not yet recorded here.",
+    "editions": [
+      {
+        "year": 2026,
+        "start_date": "2026-03-16",
+        "end_date": "2026-03-19",
+        "status": "completed",
+        "city": { "name": "San Jose", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 37.3382, "lng": -121.8863 },
+        "venue": "San Jose McEnery Convention Center"
+      }
+    ]
+  },
+  {
+    "name": "AWS re:Invent",
+    "slug": "aws-reinvent",
+    "category": "tech",
+    "subcategory": "developer conference",
+    "production_company": { "name": "Amazon Web Services", "headquarters": "Seattle, WA" },
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Amazon Web Services' annual conference. Runs across several Las Vegas resort properties rather than a single hall, with keynotes spread over the week.",
+    "editions": [
+      {
+        "year": 2026,
+        "start_date": "2026-11-30",
+        "end_date": "2026-12-04",
+        "status": "confirmed",
+        "city": "Las Vegas"
+      }
+    ]
+  }
+]

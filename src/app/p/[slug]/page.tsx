@@ -99,7 +99,15 @@ export default async function ProductionPage({ params }: { params: Promise<{ slu
     },
   ];
 
-  const timelineEdition = production.editions.find((e) => hasTimeline(e.timeline)) ?? edition;
+  /**
+   * The schedule panel follows the edition that matters, falling back to the most recent
+   * edition that has one. `editions` is ascending by year, so a plain `.find` returned the
+   * OLDEST schedule on record — a 2026 upfront page showing its 2024 call times.
+   */
+  const timelineEdition =
+    edition && hasTimeline(edition.timeline)
+      ? edition
+      : ([...production.editions].reverse().find((e) => hasTimeline(e.timeline)) ?? edition);
 
   return (
     <PageShell className="pt-0">
