@@ -25,12 +25,16 @@ export function Table({ className, children, ...props }: HTMLAttributes<HTMLTabl
   );
 }
 
-export function THead({ className, children, ...props }: HTMLAttributes<HTMLTableSectionElement>) {
+export function THead({
+  className,
+  children,
+  sticky = true,
+  ...props
+}: HTMLAttributes<HTMLTableSectionElement> & { sticky?: boolean }) {
+  // Sticky is right for a full-page table like browse, and wrong inside a panel — there it
+  // would lift off the card and overlay the rows below as the page scrolls.
   return (
-    <thead
-      className={cn("sticky top-(--nav-h) z-10 bg-page", className)}
-      {...props}
-    >
+    <thead className={cn(sticky && "sticky top-(--nav-h) z-10 bg-page", className)} {...props}>
       {children}
     </thead>
   );
@@ -58,7 +62,9 @@ export function TH({
       scope="col"
       aria-sort={sorted === "asc" ? "ascending" : sorted === "desc" ? "descending" : undefined}
       className={cn(
-        "eyebrow h-(--head-h) border-b border-line-subtle bg-page px-3 text-left align-middle",
+        // No background of its own: table cells paint above the row group, so the sticky
+        // thead's fill shows through transparent cells in both the page and panel contexts.
+        "eyebrow h-(--head-h) border-b border-line-subtle px-3 text-left align-middle",
         "font-medium text-fg-tertiary",
         numeric && "text-right",
         className,

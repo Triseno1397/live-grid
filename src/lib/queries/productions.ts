@@ -157,6 +157,28 @@ export function allEntries(productions: Production[], today = todayISO()): Produ
   return productions.map((p) => pickEdition(p, today));
 }
 
+/**
+ * Reading order for a list of productions: what is coming, soonest first, then what has
+ * happened, most recent first, then whatever carries no date at all.
+ *
+ * Plain date sorting cannot express this — ascending buries the next show under a decade
+ * of history, descending puts it behind last month's. The entity pages all want the same
+ * answer to "what is happening here", so the rule lives here rather than in each of them.
+ */
+export function sortForDisplay(entries: ProductionEntry[]): ProductionEntry[] {
+  return [...entries].sort((a, b) => {
+    if (a.isUpcoming !== b.isUpcoming) return a.isUpcoming ? -1 : 1;
+
+    const aDate = a.edition?.startDate;
+    const bDate = b.edition?.startDate;
+    if (!aDate && !bDate) return a.production.name.localeCompare(b.production.name);
+    if (!aDate) return 1;
+    if (!bDate) return -1;
+
+    return a.isUpcoming ? aDate.localeCompare(bDate) : bDate.localeCompare(aDate);
+  });
+}
+
 /** Every dated edition flattened against its production. */
 export function calendarEvents(productions: Production[]): CalendarEvent[] {
   return productions
