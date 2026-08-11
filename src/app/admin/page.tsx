@@ -1,7 +1,10 @@
 import Link from "next/link";
 
+import { ScaleStars } from "@/components/ui/scale-stars";
+import { StatusBadge } from "@/components/ui/status-badge";
 import { getSeedStats, type SeedStats } from "@/lib/stats";
 import { createClient } from "@/lib/supabase/server";
+import type { EditionStatus } from "@/lib/queries/types";
 
 export const dynamic = "force-dynamic";
 
@@ -12,6 +15,9 @@ export const dynamic = "force-dynamic";
  *
  * Reads through getSeedStats, the same function GET /api/admin/stats serves, so the page
  * and the endpoint cannot drift.
+ *
+ * Styling stays minimal but now runs on the design tokens and the shared StatusBadge, so
+ * "rumored" means the same thing here as it does on a production page.
  */
 export default async function AdminPage() {
   let stats: SeedStats | null = null;
@@ -24,9 +30,11 @@ export default async function AdminPage() {
 
   if (error || !stats) {
     return (
-      <main className="mx-auto max-w-5xl p-6 font-mono text-sm">
-        <h1 className="text-lg font-semibold">Live Grid — seeding status</h1>
-        <p className="mt-4 rounded border border-red-900 bg-red-950/40 p-3 text-red-300">{error}</p>
+      <main className="mx-auto max-w-5xl px-4 pb-16 pt-6 font-mono text-base">
+        <h1 className="text-xl font-semibold tracking-[-0.015em]">Live Grid — seeding status</h1>
+        <p className="mt-4 rounded-md border border-cancelled bg-cancelled-bg p-3 text-fg">
+          {error}
+        </p>
       </main>
     );
   }
@@ -34,23 +42,23 @@ export default async function AdminPage() {
   const { counts, targets, byCategory, byStatus, productions, orphanLookups } = stats;
 
   return (
-    <main className="mx-auto flex max-w-5xl flex-col gap-8 p-6 font-mono text-sm">
+    <main className="mx-auto flex max-w-5xl flex-col gap-8 px-4 pb-16 pt-6 font-mono text-base">
       <header className="flex flex-wrap items-baseline justify-between gap-2">
-        <h1 className="text-lg font-semibold">Live Grid — seeding status</h1>
-        <Link href="/admin/import" className="text-neutral-400 underline hover:text-neutral-100">
+        <h1 className="text-xl font-semibold tracking-[-0.015em]">Live Grid — seeding status</h1>
+        <Link href="/admin/import" className="text-fg-secondary underline-offset-2 hover:text-fg hover:underline">
           → import
         </Link>
       </header>
 
       <section className="flex flex-col gap-3">
-        <h2 className="text-neutral-400">Phase 0 targets</h2>
+        <h2 className="eyebrow text-fg-tertiary">Phase 0 targets</h2>
         <Progress label="productions" value={counts.productions} target={targets.productions} />
         <Progress label="editions" value={counts.editions} target={targets.editions} />
         <Progress label="viewership" value={counts.viewership} target={targets.viewership} />
       </section>
 
       <section className="flex flex-col gap-2">
-        <h2 className="text-neutral-400">Lookup tables</h2>
+        <h2 className="eyebrow text-fg-tertiary">Lookup tables</h2>
         <div className="flex flex-wrap gap-x-6 gap-y-1">
           <Stat label="cities" value={counts.cities} />
           <Stat label="networks" value={counts.networks} />
@@ -61,20 +69,26 @@ export default async function AdminPage() {
 
       <section className="grid gap-6 sm:grid-cols-2">
         <div className="flex flex-col gap-1">
-          <h2 className="mb-1 text-neutral-400">By category</h2>
+          <h2 className="eyebrow mb-1 text-fg-tertiary">By category</h2>
           {byCategory.map(({ category, count }) => (
             <div key={category} className="flex justify-between gap-4">
-              <span className={count === 0 ? "text-neutral-600" : ""}>{category}</span>
-              <span className={count === 0 ? "text-neutral-600" : "tabular-nums"}>{count}</span>
+              <span className={count === 0 ? "text-fg-disabled" : "text-fg-secondary"}>
+                {category}
+              </span>
+              <span className={count === 0 ? "text-fg-disabled" : "tabular-nums text-fg"}>
+                {count}
+              </span>
             </div>
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <h2 className="mb-1 text-neutral-400">Editions by status</h2>
+          <h2 className="eyebrow mb-1 text-fg-tertiary">Editions by status</h2>
           {byStatus.map(({ status, count }) => (
-            <div key={status} className="flex justify-between gap-4">
-              <span className={count === 0 ? "text-neutral-600" : ""}>{status}</span>
-              <span className={count === 0 ? "text-neutral-600" : "tabular-nums"}>{count}</span>
+            <div key={status} className="flex items-center justify-between gap-4">
+              <StatusBadge status={status as EditionStatus} />
+              <span className={count === 0 ? "text-fg-disabled" : "tabular-nums text-fg"}>
+                {count}
+              </span>
             </div>
           ))}
         </div>
@@ -82,14 +96,13 @@ export default async function AdminPage() {
 
       {orphanLookups.length > 0 && (
         <section className="flex flex-col gap-2">
-          <h2 className="text-amber-400">
+          <h2 className="eyebrow text-rumored">
             Unreferenced lookups ({orphanLookups.length}) — likely name variants
           </h2>
-          <div className="rounded border border-amber-900 bg-amber-950/30 p-3">
+          <div className="rounded-md border border-rumored bg-rumored-bg p-3 text-fg-secondary">
             {orphanLookups.map((o) => (
               <div key={`${o.kind}:${o.slug}`}>
-                {o.kind}: {o.name}{" "}
-                <span className="text-neutral-500">({o.slug})</span>
+                {o.kind}: {o.name} <span className="text-fg-tertiary">({o.slug})</span>
               </div>
             ))}
           </div>
@@ -97,28 +110,30 @@ export default async function AdminPage() {
       )}
 
       <section className="flex flex-col gap-2">
-        <h2 className="text-neutral-400">Productions ({productions.length})</h2>
-        {productions.length === 0 && <p className="text-neutral-500">Nothing seeded yet.</p>}
-        <div className="flex flex-col divide-y divide-neutral-800">
+        <h2 className="eyebrow text-fg-tertiary">Productions ({productions.length})</h2>
+        {productions.length === 0 && <p className="text-fg-tertiary">Nothing seeded yet.</p>}
+        <div className="flex flex-col divide-y divide-line-subtle">
           {productions.map((p) => (
             <div key={p.slug} className="flex flex-col gap-1 py-3">
-              <div className="flex flex-wrap items-baseline gap-x-3">
-                <span className="font-semibold">{p.name}</span>
-                <span className="text-neutral-500">{p.category}</span>
-                <span className="text-neutral-500">
-                  {p.scale ? "★".repeat(p.scale) : "—"}
-                </span>
+              <div className="flex flex-wrap items-center gap-x-3">
+                <Link href={`/p/${p.slug}`} className="font-semibold text-fg hover:text-accent">
+                  {p.name}
+                </Link>
+                <span className="text-fg-tertiary">{p.category}</span>
+                <ScaleStars scale={p.scale} />
               </div>
-              <div className="text-neutral-500">
+              <div className="text-fg-tertiary">
                 {p.network ?? "no network"} · {p.company ?? "no company"} ·{" "}
                 {p.viewershipYears.length
                   ? `viewership ${p.viewershipYears.join(", ")}`
                   : "no viewership"}
               </div>
               {p.editions.map((e) => (
-                <div key={e.year} className="text-neutral-400">
-                  {e.year} · <StatusBadge status={e.status} /> · {e.startDate ?? "no date"} ·{" "}
-                  {e.city ?? "no city"}
+                <div key={e.year} className="flex flex-wrap items-center gap-2 text-fg-secondary">
+                  <span className="tabular-nums">{e.year}</span>
+                  <StatusBadge status={e.status as EditionStatus} />
+                  <span className="tabular-nums">{e.startDate ?? "no date"}</span>
+                  <span className="text-fg-tertiary">{e.city ?? "no city"}</span>
                 </div>
               ))}
             </div>
@@ -132,8 +147,8 @@ export default async function AdminPage() {
 function Stat({ label, value }: { label: string; value: number }) {
   return (
     <span>
-      <span className="text-neutral-500">{label}</span>{" "}
-      <span className="tabular-nums">{value}</span>
+      <span className="text-fg-tertiary">{label}</span>{" "}
+      <span className="tabular-nums text-fg">{value}</span>
     </span>
   );
 }
@@ -143,29 +158,14 @@ function Progress({ label, value, target }: { label: string; value: number; targ
   return (
     <div className="flex flex-col gap-1">
       <div className="flex justify-between">
-        <span>{label}</span>
-        <span className="tabular-nums text-neutral-400">
+        <span className="text-fg-secondary">{label}</span>
+        <span className="tabular-nums text-fg-tertiary">
           {value} / {target} ({pct}%)
         </span>
       </div>
-      <div className="h-1.5 w-full overflow-hidden rounded bg-neutral-800">
-        <div className="h-full bg-neutral-300" style={{ width: `${pct}%` }} />
+      <div className="h-1.5 w-full overflow-hidden rounded-full bg-active">
+        <div className="h-full bg-accent" style={{ width: `${pct}%` }} />
       </div>
     </div>
   );
-}
-
-function StatusBadge({ status }: { status: string }) {
-  // rumored is a feature, not a data-quality failure — style it distinctly (AGENTS.md).
-  const tone =
-    status === "confirmed"
-      ? "text-emerald-400"
-      : status === "rumored"
-        ? "text-amber-400"
-        : status === "announced"
-          ? "text-sky-400"
-          : status === "cancelled"
-            ? "text-red-400"
-            : "text-neutral-500";
-  return <span className={tone}>{status}</span>;
 }

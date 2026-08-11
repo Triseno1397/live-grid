@@ -94,6 +94,8 @@ favorites (user_id fk, production_id fk)
 
 **RLS from day one:** public read on all content tables, writes restricted to editor/admin. This IS the admin-panel permission system later.
 
+**Amendment (Phase 1, search):** `20260811000000_search_indexes.sql` adds GIN indexes only — FTS expression indexes on `productions.name` / `description`, and `pg_trgm` indexes on the five searchable name columns. No tsvector column and no search RPC, deliberately: the palette queries through PostgREST's `fts` and `ilike` operators, so search behaves identically whether or not the migration has been applied, and nothing breaks in the window between deploying the UI and running `npm run db:push`. The index expressions must keep matching what PostgREST generates or the planner will ignore them.
+
 **Amendment (batch 1, award shows):** `editions.network_id` added. `productions.network_id` alone assumed a production keeps one network for life, which the first real seed batch disproved three times — the Grammys move CBS→ABC in 2027, the Primetime Emmys rotate ABC/CBS/NBC/Fox annually, and the Actor Awards moved from broadcast to Netflix. The production-level column stays as the default; the edition-level one is set only where an edition differs. Migration: `20260806010000_edition_network.sql`.
 
 ---
@@ -132,9 +134,20 @@ The product that answers the Atlanta phone call. Everything public, fast, dark.
 6. **Search** — global ⌘K command palette (shadcn), Postgres FTS + trigram across productions/venues/companies/cities. "Atlanta" → game show cluster. "Netflix" → their slate.
 7. **Network `/network/[slug]` and Company `/company/[slug]` pages** — thin at first: logo, description, their productions.
 
-**Design direction (lock before building):** dark-only at launch. Bloomberg information density × Apple restraint × Netflix dark palette. Countdown timers as a signature element (broadcast people live on countdowns). Apply the frontend-design skill pass in Antigravity — no default shadcn gray-on-gray.
+**Design direction (locked):** dark-only at launch. Bloomberg information density × Apple restraint × Netflix dark palette. Countdown timers as a signature element (broadcast people live on countdowns). **`DESIGN.md` is now the source of truth** — tokens, the 20 primitives, and copy rules live there.
 
 **Ship criteria:** deployed on Vercel, 250+ productions live, search under 200ms, fully usable on a phone.
+
+### Phase 1 status
+
+All seven pages are built and read the live database: `/`, `/calendar`, `/browse`, `/p/[slug]`, `/city/[slug]`, `/network/[slug]`, `/company/[slug]`, plus the ⌘K palette on `/api/search`. Production, city, network and company pages prerender via `generateStaticParams` with a 5-minute revalidate.
+
+Two things gate "ship", and both are data, not code:
+
+1. **The seed is at 34 productions against a 250 target.** The UI is built to be honest at that size rather than to hide it — 7 editions are currently scheduled ahead of today, 13 of 40 editions carry no date, and 28 of 34 productions have no viewership row. Every surface has a real empty or partial state instead of a filler.
+2. **`20260811000000_search_indexes.sql` has not been applied.** Search is correct without it — the palette queries Postgres FTS and `ilike` through PostgREST — but it is unindexed until `npm run db:push` runs. At 34 productions that is not yet measurable; it is what keeps the "under 200ms" criterion true at 250.
+
+**No images anywhere.** `logo_url` and `hero_image_url` are null on all 34 productions, so the type-only hero is the real path, not a fallback. The scrim and `next/image` wiring exist for when assets land.
 
 ---
 

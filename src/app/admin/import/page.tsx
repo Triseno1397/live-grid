@@ -2,11 +2,15 @@
 
 import { useState } from "react";
 
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/cn";
+
 /**
- * Internal seeding tool. Deliberately unstyled beyond legibility — the Session 1 brief
- * says "no styling effort", and this page never ships to the public product. All logic
- * lives in POST /api/admin/import so the future admin panel and any scripted importer
- * hit the same endpoint (AGENTS.md rule 3).
+ * Internal seeding tool. Still deliberately plain — the Session 1 brief says "no styling
+ * effort", and this page never ships to the public product — but it now reads from the
+ * design tokens rather than raw neutral-* classes, so it cannot drift away from the rest
+ * of the app when a token changes. All logic lives in POST /api/admin/import so the future
+ * admin panel and any scripted importer hit the same endpoint (AGENTS.md rule 3).
  */
 export default function ImportPage() {
   const [token, setToken] = useState("");
@@ -45,53 +49,61 @@ export default function ImportPage() {
   }
 
   return (
-    <main className="mx-auto flex max-w-3xl flex-col gap-4 p-6 font-mono text-sm">
+    <main className="mx-auto flex max-w-3xl flex-col gap-4 px-4 pb-16 pt-6 font-mono text-base">
       <div>
-        <h1 className="text-lg font-semibold">Live Grid — import</h1>
-        <p className="mt-1 text-neutral-400">
+        <h1 className="text-xl font-semibold tracking-[-0.015em]">Live Grid — import</h1>
+        <p className="mt-1 text-fg-secondary">
           Paste a JSON array of productions. Upserts by slug; re-importing the same batch
           updates rather than duplicates.
         </p>
       </div>
 
       <label className="flex flex-col gap-1">
-        <span className="text-neutral-400">Admin token</span>
+        <span className="eyebrow text-fg-tertiary">Admin token</span>
         <input
           type="password"
           value={token}
           onChange={(event) => setToken(event.target.value)}
           autoComplete="off"
-          className="rounded border border-neutral-700 bg-neutral-900 p-2"
+          className="h-(--control-h-md) rounded-md border border-line bg-raised px-2.5 text-base hover:border-line-strong focus:border-line-strong"
         />
       </label>
 
       <label className="flex flex-col gap-1">
-        <span className="text-neutral-400">Productions JSON</span>
+        <span className="eyebrow text-fg-tertiary">Productions JSON</span>
         <textarea
           value={json}
           onChange={(event) => setJson(event.target.value)}
           rows={20}
           spellCheck={false}
           placeholder='[{ "name": "...", "category": "awards" }]'
-          className="rounded border border-neutral-700 bg-neutral-900 p-2"
+          className="rounded-md border border-line bg-raised p-2.5 text-base placeholder:text-fg-tertiary hover:border-line-strong focus:border-line-strong"
         />
       </label>
 
-      <button
-        type="button"
+      <Button
+        variant="primary"
+        size="lg"
         onClick={submit}
         disabled={busy || !token || !json.trim()}
-        className="self-start rounded bg-neutral-100 px-4 py-2 font-semibold text-neutral-900 disabled:opacity-40"
+        className="self-start font-mono"
       >
         {busy ? "Importing…" : "Import"}
-      </button>
+      </Button>
 
       {result !== null && (
         <section className="flex flex-col gap-1">
-          <span className="text-neutral-400">
+          <span className="eyebrow text-fg-tertiary">
             Result{status !== null ? ` — HTTP ${status}` : ""}
           </span>
-          <pre className="overflow-x-auto rounded border border-neutral-700 bg-neutral-900 p-3 whitespace-pre-wrap">
+          <pre
+            className={cn(
+              "overflow-x-auto whitespace-pre-wrap rounded-md border p-3 text-base",
+              status !== null && status >= 400
+                ? "border-cancelled bg-cancelled-bg text-fg"
+                : "border-line bg-raised text-fg-secondary",
+            )}
+          >
             {result}
           </pre>
         </section>

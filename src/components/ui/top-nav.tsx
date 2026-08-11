@@ -62,6 +62,9 @@ export function TopNav() {
                   aria-current={active ? "page" : undefined}
                   className={cn(
                     "press flex h-8 items-center rounded-md px-2.5 text-base font-medium tracking-[-0.015em]",
+                    // 44px tap floor on mobile, and tighter padding so the wordmark, three
+                    // nav items and the search trigger still fit one row at 390px.
+                    "max-sm:h-11 max-sm:px-2",
                     // Active state is a filled surface, never an underline.
                     active ? "bg-active text-fg" : "text-fg-tertiary hover:bg-hover hover:text-fg",
                   )}
@@ -79,6 +82,7 @@ export function TopNav() {
             className={cn(
               "press ml-auto flex h-8 shrink-0 items-center gap-2 rounded-md border border-line",
               "bg-raised px-2.5 text-base text-fg-tertiary",
+              "max-sm:size-11 max-sm:justify-center max-sm:px-0",
               "hover:border-line-strong hover:text-fg",
             )}
           >
