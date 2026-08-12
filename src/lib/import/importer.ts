@@ -9,6 +9,7 @@ import type {
   EditionInputT,
   NetworkInputT,
   ProductionInputT,
+  TeamInputT,
   VenueInputT,
 } from "./schema";
 
@@ -23,6 +24,7 @@ export type ImportReport = {
     productions: Counts;
     editions: Counts;
     viewership: Counts;
+    team: Counts;
   };
   /**
    * Lookup rows this run brought into existence, as "Name (slug)".
@@ -46,6 +48,7 @@ function emptyReport(received: number): ImportReport {
       productions: { created: 0, updated: 0 },
       editions: { created: 0, updated: 0 },
       viewership: { created: 0, updated: 0 },
+      team: { created: 0, updated: 0 },
     },
     createdLookups: { cities: [], networks: [], companies: [], venues: [] },
     errors: [],
@@ -258,12 +261,13 @@ function normalizeEditions(input: ProductionInputT): EditionInputT[] {
   ];
 }
 
+/** Returns the edition's id so `team` entries carrying a `year` can attach to it. */
 async function upsertEdition(
   db: Db,
   productionId: string,
   input: EditionInputT,
   report: ImportReport,
-): Promise<void> {
+): Promise<string> {
   const ctx = `edition ${input.year}`;
 
   // Resolve the edition's own city first so it can seed the venue's city_id when the
@@ -301,14 +305,103 @@ async function upsertEdition(
     const { error: updateError } = await db.from("editions").update(patch).eq("id", existing.id);
     if (updateError) fail(ctx, updateError.message);
     report.summary.editions.updated += 1;
+    return existing.id;
+  }
+
+  const { data: inserted, error: insertError } = await db
+    .from("editions")
+    .insert({ ...patch, production_id: productionId, year: input.year })
+    .select("id")
+    .single();
+  if (insertError) fail(ctx, insertError.message);
+  report.summary.editions.created += 1;
+  return inserted.id;
+}
+
+/**
+ * Who makes the show, optionally pinned to one year.
+ *
+ * Keyed on the table's UNIQUE NULLS NOT DISTINCT constraint rather than a lookup-then-write,
+ * because edition_id and company_id are null on a large share of rows and the default
+ * NULLS DISTINCT would let every re-paste insert a duplicate instead of matching.
+ */
+async function upsertTeam(
+  db: Db,
+  productionId: string,
+  input: TeamInputT,
+  editionIdsByYear: Map<number, string>,
+  report: ImportReport,
+): Promise<void> {
+  const subject = input.company?.name ?? input.person ?? "?";
+  const ctx = `team ${input.role} "${subject}"`;
+
+  /**
+   * The year may belong to an edition already in the database rather than one sent in this
+   * payload — adding team data to an existing production without re-listing all of its
+   * editions is the normal case, not the exception. The in-payload map is only a
+   * short-circuit so a batch that does carry its editions avoids a round trip per entry.
+   */
+  let editionId: string | null = null;
+  if (input.year !== undefined) {
+    editionId = editionIdsByYear.get(input.year) ?? null;
+    if (editionId === null) {
+      const { data: found, error: lookupError } = await db
+        .from("editions")
+        .select("id")
+        .eq("production_id", productionId)
+        .eq("year", input.year)
+        .maybeSingle();
+      if (lookupError) fail(ctx, lookupError.message);
+      if (!found) fail(ctx, `no edition for year ${input.year} on this production`);
+      editionId = found.id;
+      editionIdsByYear.set(input.year, found.id);
+    }
+  }
+
+  // Companies resolve through the shared helper so vendors land in createdLookups and get
+  // the same duplicate-name safety net as networks and cities.
+  const companyId = input.company ? await resolveCompany(db, input.company, report) : null;
+  const personName = input.person ?? null;
+
+  // Matches the UNIQUE NULLS NOT DISTINCT constraint column for column. `.is` and `.eq` are
+  // not interchangeable here: `.eq(col, null)` compares with `=`, which is never true for a
+  // null, so a nullable key column has to be matched with `.is`.
+  let query = db
+    .from("production_team")
+    .select("id")
+    .eq("production_id", productionId)
+    .eq("role", input.role);
+  query = editionId === null ? query.is("edition_id", null) : query.eq("edition_id", editionId);
+  query = companyId === null ? query.is("company_id", null) : query.eq("company_id", companyId);
+  query = personName === null ? query.is("person_name", null) : query.eq("person_name", personName);
+
+  const { data: existing, error } = await query.maybeSingle();
+  if (error) fail(ctx, error.message);
+
+  const patch = definedOnly({ note: input.note, sort_order: input.sort_order });
+
+  if (existing) {
+    if (Object.keys(patch).length > 0) {
+      const { error: updateError } = await db
+        .from("production_team")
+        .update(patch)
+        .eq("id", existing.id);
+      if (updateError) fail(ctx, updateError.message);
+    }
+    report.summary.team.updated += 1;
     return;
   }
 
-  const { error: insertError } = await db
-    .from("editions")
-    .insert({ ...patch, production_id: productionId, year: input.year });
+  const { error: insertError } = await db.from("production_team").insert({
+    ...patch,
+    production_id: productionId,
+    edition_id: editionId,
+    role: input.role,
+    company_id: companyId,
+    person_name: personName,
+  });
   if (insertError) fail(ctx, insertError.message);
-  report.summary.editions.created += 1;
+  report.summary.team.created += 1;
 }
 
 async function upsertViewership(
@@ -398,11 +491,16 @@ async function importRecord(db: Db, input: ProductionInputT, report: ImportRepor
     report.summary.productions.created += 1;
   }
 
+  // Editions first: team entries carrying a `year` need that year's edition id to exist.
+  const editionIdsByYear = new Map<number, string>();
   for (const edition of normalizeEditions(input)) {
-    await upsertEdition(db, productionId, edition, report);
+    editionIdsByYear.set(edition.year, await upsertEdition(db, productionId, edition, report));
   }
   for (const row of input.viewership ?? []) {
     await upsertViewership(db, productionId, row, report);
+  }
+  for (const member of input.team ?? []) {
+    await upsertTeam(db, productionId, member, editionIdsByYear, report);
   }
 }
 

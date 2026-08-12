@@ -38,6 +38,15 @@ export type SeedStats = {
   }[];
   /** Lookup rows nothing points at — usually a near-duplicate created by a typo. */
   orphanLookups: { kind: string; name: string; slug: string }[];
+  /**
+   * Distinct person names on production_team, with a use count.
+   *
+   * Unlike every other name in the database these have no slug and therefore no dedupe:
+   * "Ben Winston" and "Ben Winson" are two people as far as Postgres is concerned. Listing
+   * them for spot-check is the same safety net orphanLookups provides for cities and
+   * networks, and it is the only one free text can have.
+   */
+  teamNames: { name: string; count: number }[];
 };
 
 async function countOf(db: Db, table: CountedTable): Promise<number> {
@@ -104,7 +113,22 @@ export async function getSeedStats(db: Db): Promise<SeedStats> {
     byStatus: [...statusTally].map(([status, count]) => ({ status, count })),
     productions,
     orphanLookups: await findOrphanLookups(db),
+    teamNames: await findTeamNames(db),
   };
+}
+
+async function findTeamNames(db: Db): Promise<SeedStats["teamNames"]> {
+  const { data, error } = await db.from("production_team").select("person_name");
+  if (error) throw new Error(`team names failed: ${error.message}`);
+
+  const tally = new Map<string, number>();
+  for (const row of data ?? []) {
+    if (!row.person_name) continue;
+    tally.set(row.person_name, (tally.get(row.person_name) ?? 0) + 1);
+  }
+  return [...tally]
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
 /**

@@ -1,7 +1,8 @@
-import type { CATEGORIES, STATUSES } from "@/lib/import/schema";
+import type { CATEGORIES, STATUSES, TEAM_ROLES } from "@/lib/import/schema";
 
 export type Category = (typeof CATEGORIES)[number];
 export type EditionStatus = (typeof STATUSES)[number];
+export type TeamRole = (typeof TEAM_ROLES)[number];
 
 /** A named thing with a page of its own. */
 export type Ref = { name: string; slug: string };
@@ -41,6 +42,22 @@ export type ViewershipPoint = {
   peak: number | null;
 };
 
+/**
+ * Who makes the show. Either a company, a named person, or both — a lighting credit
+ * naming a designer and their shop is one row, not two.
+ *
+ * `editionId` null means the entry applies to the production generally rather than to one
+ * year, which is the honest shape for a long-running show whose producer has not changed.
+ */
+export type TeamMember = {
+  role: TeamRole;
+  company: Ref | null;
+  personName: string | null;
+  note: string | null;
+  editionId: string | null;
+  sortOrder: number;
+};
+
 export type Production = {
   id: string;
   name: string;
@@ -60,6 +77,12 @@ export type Production = {
   /** Ascending by year. */
   viewership: ViewershipPoint[];
 };
+
+/**
+ * A production plus its team. Only the detail page reads this — the dashboard and browse
+ * deliberately do not select team rows they never paint.
+ */
+export type ProductionDetail = Production & { team: TeamMember[] };
 
 /**
  * A production paired with the one edition that matters right now, plus the countdown.

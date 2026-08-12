@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Grammy Awards",
+    "slug": "grammy-awards",
+    "category": "awards",
+    "editions": [
+      {
+        "year": 2025,
+        "start_date": "2025-02-02",
+        "show_date": "2025-02-02",
+        "status": "completed",
+        "city": "Los Angeles",
+        "venue": "Crypto.com Arena"
+      }
+    ],
+    "team": [
+      { "year": 2025, "role": "production_company", "company": { "name": "Fulwell 73", "slug": "fulwell-73" } },
+      { "year": 2025, "role": "executive_producer", "person": "Ben Winston", "sort_order": 1 },
+      { "year": 2025, "role": "executive_producer", "person": "Raj Kapoor", "sort_order": 2 },
+      { "year": 2025, "role": "executive_producer", "person": "Jesse Collins", "sort_order": 3 },
+
+      { "year": 2026, "role": "production_company", "company": { "name": "Fulwell 73", "slug": "fulwell-73" } },
+      { "year": 2026, "role": "executive_producer", "person": "Ben Winston", "sort_order": 1 },
+      { "year": 2026, "role": "executive_producer", "person": "Raj Kapoor", "sort_order": 2 },
+      { "year": 2026, "role": "executive_producer", "person": "Jesse Collins", "sort_order": 3 },
+      { "year": 2026, "role": "executive_producer", "person": "Trevor Noah", "sort_order": 4 }
+    ]
+  },
+  {
+    "name": "Academy Awards",
+    "slug": "academy-awards",
+    "category": "awards",
+    "team": [
+      { "year": 2026, "role": "executive_producer", "person": "Raj Kapoor", "sort_order": 1 },
+      { "year": 2026, "role": "executive_producer", "person": "Katy Mullan", "sort_order": 2 },
+      { "year": 2026, "role": "director", "person": "Hamish Hamilton" }
+    ]
+  },
+  {
+    "name": "Primetime Emmy Awards",
+    "slug": "primetime-emmy-awards",
+    "category": "awards",
+    "team": [
+      {
+        "year": 2026,
+        "role": "production_company",
+        "company": { "name": "Jesse Collins Entertainment", "headquarters": "Los Angeles, CA" }
+      },
+      { "year": 2026, "role": "executive_producer", "person": "Jesse Collins", "sort_order": 1 },
+      { "year": 2026, "role": "executive_producer", "person": "Dionne Harmon", "sort_order": 2 },
+      { "year": 2026, "role": "executive_producer", "person": "Jeannae Rouzan-Clay", "sort_order": 3 }
+    ]
+  },
+  {
+    "name": "Tony Awards",
+    "slug": "tony-awards",
+    "category": "awards",
+    "description": "Broadway's annual awards, presented by the Broadway League and the American Theatre Wing. White Cherry Entertainment produced the telecast from 2004 through 2025; Raj Kapoor, Sarah Levine Hall and Jack Sussman took over for the 79th ceremony in 2026.",
+    "editions": [
+      {
+        "year": 2025,
+        "start_date": "2025-06-08",
+        "show_date": "2025-06-08",
+        "status": "completed",
+        "city": "New York",
+        "venue": "Radio City Music Hall"
+      }
+    ],
+    "team": [
+      { "year": 2025, "role": "production_company", "company": { "name": "White Cherry Entertainment" } },
+      { "year": 2025, "role": "executive_producer", "person": "Ricky Kirshner", "sort_order": 1 },
+      { "year": 2025, "role": "director", "person": "Glenn Weiss" },
+
+      { "year": 2026, "role": "executive_producer", "person": "Raj Kapoor", "sort_order": 1 },
+      { "year": 2026, "role": "executive_producer", "person": "Sarah Levine Hall", "sort_order": 2 },
+      { "year": 2026, "role": "executive_producer", "person": "Jack Sussman", "sort_order": 3 },
+      { "year": 2026, "role": "director", "person": "Liz Clare" }
+    ]
+  }
+]

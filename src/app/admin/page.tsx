@@ -39,7 +39,7 @@ export default async function AdminPage() {
     );
   }
 
-  const { counts, targets, byCategory, byStatus, productions, orphanLookups } = stats;
+  const { counts, targets, byCategory, byStatus, productions, orphanLookups, teamNames } = stats;
 
   return (
     <main className="mx-auto flex max-w-5xl flex-col gap-8 px-4 pb-16 pt-6 font-mono text-base">
@@ -104,6 +104,21 @@ export default async function AdminPage() {
               <div key={`${o.kind}:${o.slug}`}>
                 {o.kind}: {o.name} <span className="text-fg-tertiary">({o.slug})</span>
               </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {teamNames.length > 0 && (
+        <section className="flex flex-col gap-2">
+          <h2 className="eyebrow text-fg-tertiary">
+            Team names ({teamNames.length}) — free text, no dedupe: scan for variants
+          </h2>
+          <div className="flex flex-wrap gap-x-4 gap-y-1">
+            {teamNames.map((t) => (
+              <span key={t.name} className="text-fg-secondary">
+                {t.name} <span className="tabular-nums text-fg-tertiary">{t.count}</span>
+              </span>
             ))}
           </div>
         </section>

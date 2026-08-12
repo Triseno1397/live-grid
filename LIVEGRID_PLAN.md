@@ -94,6 +94,12 @@ favorites (user_id fk, production_id fk)
 
 **RLS from day one:** public read on all content tables, writes restricted to editor/admin. This IS the admin-panel permission system later.
 
+**Amendment (batch 6, production team):** `production_team` added — who makes each edition, per year. One table covering both people and companies, because a vendor is a company and an EP is a person but they answer the same question, and splitting them would duplicate the role/ordering/per-edition logic twice. `person_name` is free text with no foreign key: there are no person pages, so a name is the whole record. Roles are constrained to seven (`production_company`, `executive_producer`, `director`, `lighting`, `audio`, `video`, `staging`) — enough to answer "who's running it?", short enough to stay queryable.
+
+This is **not** the v2+ vendor/rental directory listed in Phase 3. It is per-edition metadata on existing content, not a searchable supplier marketplace, and it deliberately stops well short of a credits system: no person pages, no filmographies, no below-the-line department heads. Migration: `20260812000000_production_team.sql`, mirrored in `TEAM_ROLES` in `src/lib/import/schema.ts`.
+
+Two details that matter for anyone extending it. The unique constraint is `UNIQUE NULLS NOT DISTINCT` — `edition_id` and `company_id` are null on a large share of rows, and under the default `NULLS DISTINCT` every re-paste of a batch would insert duplicates instead of matching. And `person_name` is the only name in the database with no slug, therefore no dedupe: `/admin` lists distinct team names with counts so variants get caught by eye, which is the same job `orphanLookups` does for cities and networks.
+
 **Amendment (batch 5, variety):** `variety` added to the `productions.category` check constraint. Live-to-tape talk and sketch — late night, daytime talk, SNL — had no honest home among the original twelve and were being forced into whichever was least wrong. `variety` is the Television Academy's own grouping (Outstanding Variety Talk / Variety Sketch Series), so it covers the format without a stretch; `subcategory` carries the finer distinction so the enum does not grow a row per format. Migration: `20260811010000_variety_category.sql`, mirrored in `CATEGORIES` in `src/lib/import/schema.ts`.
 
 **Amendment (Phase 1, search):** `20260811000000_search_indexes.sql` adds GIN indexes only — FTS expression indexes on `productions.name` / `description`, and `pg_trgm` indexes on the five searchable name columns. No tsvector column and no search RPC, deliberately: the palette queries through PostgREST's `fts` and `ilike` operators, so search behaves identically whether or not the migration has been applied, and nothing breaks in the window between deploying the UI and running `npm run db:push`. The index expressions must keep matching what PostgREST generates or the planner will ignore them.
@@ -130,7 +136,7 @@ The product that answers the Atlanta phone call. Everything public, fast, dark.
 **Pages:**
 1. **Dashboard `/`** — "Upcoming" large cards (name, category icon, days-out countdown, city, status badge), sorted by next edition date. Bloomberg density, Apple restraint.
 2. **Calendar `/calendar`** — custom month grid + agenda list view. Month/Agenda only at MVP (Week/Timeline/Year deferred — low value for month-scale events).
-3. **Production page `/p/[slug]`** — hero, fact table (category, network, producer, venue, city, month, scale stars, status), viewership Recharts trend, edition history, event timeline (load-in → strike) when populated.
+3. **Production page `/p/[slug]`** — hero, fact table (category, network, producer, venue, city, month, scale stars, status), production team per year (production company, EPs, director, and any vendors on record), viewership Recharts trend, edition history, event timeline (load-in → strike) when populated.
 4. **City pages `/city/[slug]`** — upcoming productions, venues, typical busy months.
 5. **Browse `/browse`** — TanStack Table, every production, filter by category/city/network/company/month/scale/status, sortable. This is the power-user page.
 6. **Search** — global ⌘K command palette (shadcn), Postgres FTS + trigram across productions/venues/companies/cities. "Atlanta" → game show cluster. "Netflix" → their slate.

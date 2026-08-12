@@ -9,8 +9,11 @@ import type {
   Edition,
   EditionStatus,
   Production,
+  ProductionDetail,
   ProductionEntry,
   SummaryStats,
+  TeamMember,
+  TeamRole,
 } from "./types";
 
 /**
@@ -26,6 +29,18 @@ import type {
  */
 const PRODUCTION_SELECT =
   "id, name, slug, category, subcategory, production_scale, typical_month, recurring, description, logo_url, hero_image_url, networks(name, slug), companies(name, slug), editions(id, year, start_date, end_date, status, load_in, tech_rehearsal, dress_rehearsal, show_date, strike, cities(name, slug, state), venues(name, slug, capacity), networks(name, slug)), viewership(year, average_viewers, peak_viewers)";
+
+/**
+ * The detail page's select: everything above plus the production team.
+ *
+ * Spelled out in full rather than built from PRODUCTION_SELECT for the same reason that
+ * constant is one literal — concatenation widens the type to `string` and collapses every
+ * joined column to an error. Keeping team out of the shared select is deliberate: the
+ * dashboard, browse and entity pages never paint these rows, and one production page is not
+ * a reason to put them on every payload.
+ */
+const PRODUCTION_DETAIL_SELECT =
+  "id, name, slug, category, subcategory, production_scale, typical_month, recurring, description, logo_url, hero_image_url, networks(name, slug), companies(name, slug), editions(id, year, start_date, end_date, status, load_in, tech_rehearsal, dress_rehearsal, show_date, strike, cities(name, slug, state), venues(name, slug, capacity), networks(name, slug)), viewership(year, average_viewers, peak_viewers), production_team(role, person_name, note, sort_order, edition_id, companies(name, slug))";
 
 type RawProduction = Awaited<ReturnType<typeof fetchRaw>>[number];
 
@@ -94,16 +109,34 @@ export const getProductions = cache(async (): Promise<Production[]> => {
   return (await fetchRaw()).map(mapProduction);
 });
 
-export const getProduction = cache(async (slug: string): Promise<Production | null> => {
+export const getProduction = cache(async (slug: string): Promise<ProductionDetail | null> => {
   const db = createPublicClient();
   const { data, error } = await db
     .from("productions")
-    .select(PRODUCTION_SELECT)
+    .select(PRODUCTION_DETAIL_SELECT)
     .eq("slug", slug)
     .maybeSingle();
   if (error) throw new Error(`production "${slug}" query failed: ${error.message}`);
-  return data ? mapProduction(data) : null;
+  if (!data) return null;
+
+  const team: TeamMember[] = (data.production_team ?? [])
+    .map((row) => ({
+      role: row.role as TeamRole,
+      company: row.companies ? { name: row.companies.name, slug: row.companies.slug } : null,
+      personName: row.person_name,
+      note: row.note,
+      editionId: row.edition_id,
+      sortOrder: row.sort_order,
+    }))
+    .sort((a, b) => a.sortOrder - b.sortOrder);
+
+  return { ...mapProduction(data), team };
 });
+
+/** Team entries for one edition, plus the production-level ones that apply to every year. */
+export function teamForEdition(team: TeamMember[], editionId: string | null): TeamMember[] {
+  return team.filter((m) => m.editionId === null || m.editionId === editionId);
+}
 
 /**
  * The edition that matters right now: the next one scheduled, or failing that the most

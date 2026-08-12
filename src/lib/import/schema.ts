@@ -49,6 +49,25 @@ export const CATEGORIES = [
 
 export const STATUSES = ["confirmed", "rumored", "announced", "completed", "cancelled"] as const;
 
+/**
+ * Who makes the show. Must stay in sync with the production_team role check constraint —
+ * see 20260812000000_production_team.sql.
+ *
+ * Deliberately short. This answers "who's running it?", not "roll the end credits": the
+ * three team roles a freelancer asks about, plus the four supplier disciplines a rental
+ * house does. Adding a role means a migration, which is the point — the vocabulary stays
+ * queryable instead of drifting into free text.
+ */
+export const TEAM_ROLES = [
+  "production_company",
+  "executive_producer",
+  "director",
+  "lighting",
+  "audio",
+  "video",
+  "staging",
+] as const;
+
 /** Empty strings from a pasted spreadsheet mean "unknown", not "". */
 const blankToNull = (v: unknown) => (typeof v === "string" && v.trim() === "" ? null : v);
 
@@ -136,6 +155,27 @@ export const ViewershipInput = z
   })
   .strict();
 
+export const TeamInput = z
+  .object({
+    role: z.enum(TEAM_ROLES),
+    /** Suppliers and production companies. Accepts "Fulwell 73" or the full object. */
+    company: z.preprocess(asObject, CompanyInput.nullish()),
+    /** Free text — there are no person pages, so a name is the whole record. */
+    person: optionalText,
+    /**
+     * Attaches the row to that year's edition. Omitted means the credit applies to the
+     * production generally rather than to one year, which is the right shape for a
+     * long-running show whose producer has not changed.
+     */
+    year: z.number().int().min(1900).max(2200).optional(),
+    note: optionalText,
+    sort_order: z.number().int().optional(),
+  })
+  .strict()
+  .refine((v) => v.company != null || (v.person != null && v.person !== ""), {
+    message: "a team entry needs a `company`, a `person`, or both",
+  });
+
 /**
  * Common aliases from research output are normalized before validation.
  * Kept deliberately short — this is a convenience, not a licence to invent field names.
@@ -180,6 +220,7 @@ export const ProductionInput = z.preprocess(
 
       editions: z.array(EditionInput).optional(),
       viewership: z.array(ViewershipInput).optional(),
+      team: z.array(TeamInput).optional(),
 
       // --- flat single-edition shorthand (see file header) ---
       year: z.number().int().min(1900).max(2200).optional(),
@@ -233,4 +274,5 @@ export type NetworkInputT = z.infer<typeof NetworkInput>;
 export type CompanyInputT = z.infer<typeof CompanyInput>;
 export type EditionInputT = z.infer<typeof EditionInput>;
 export type ViewershipInputT = z.infer<typeof ViewershipInput>;
+export type TeamInputT = z.infer<typeof TeamInput>;
 export type ProductionInputT = z.infer<typeof ProductionInput>;

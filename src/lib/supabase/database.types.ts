@@ -318,6 +318,61 @@ export type Database = {
           },
         ];
       };
+      production_team: {
+        Row: {
+          id: string;
+          production_id: string;
+          edition_id: string | null;
+          role: string;
+          company_id: string | null;
+          person_name: string | null;
+          note: string | null;
+          sort_order: number;
+        };
+        Insert: {
+          id?: string;
+          production_id: string;
+          edition_id?: string | null;
+          role: string;
+          company_id?: string | null;
+          person_name?: string | null;
+          note?: string | null;
+          sort_order?: number;
+        };
+        Update: {
+          id?: string;
+          production_id?: string;
+          edition_id?: string | null;
+          role?: string;
+          company_id?: string | null;
+          person_name?: string | null;
+          note?: string | null;
+          sort_order?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "production_team_production_id_fkey";
+            columns: ["production_id"];
+            isOneToOne: false;
+            referencedRelation: "productions";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "production_team_edition_id_fkey";
+            columns: ["edition_id"];
+            isOneToOne: false;
+            referencedRelation: "editions";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "production_team_company_id_fkey";
+            columns: ["company_id"];
+            isOneToOne: false;
+            referencedRelation: "companies";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
       profiles: {
         Row: { id: string; display_name: string | null; role: string; created_at: string };
         Insert: { id: string; display_name?: string | null; role?: string; created_at?: string };

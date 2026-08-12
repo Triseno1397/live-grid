@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 
 import { EditionTimelineTrack, hasTimeline } from "@/components/edition-timeline";
 import { PageShell, Panel } from "@/components/page-shell";
+import { ProductionTeam } from "@/components/production-team";
 import { ViewershipTrend } from "@/components/viewership-trend";
 import { CategoryTag } from "@/components/ui/category-tag";
 import { Countdown } from "@/components/ui/countdown";
@@ -12,11 +13,30 @@ import { Table, TableScroller, TBody, TD, TH, THead, TR } from "@/components/ui/
 import { FactTable, type Fact } from "@/components/ui/fact-table";
 import { ScaleStars } from "@/components/ui/scale-stars";
 import { StatusBadge } from "@/components/ui/status-badge";
-import { categoryLabel, formatDateISO, formatDateRange, monthName, todayISO } from "@/lib/format";
+import {
+  categoryLabel,
+  formatDateISO,
+  formatDateRange,
+  MIDDOT,
+  monthName,
+  todayISO,
+} from "@/lib/format";
 import { getEntitySlugs } from "@/lib/queries/entities";
-import { getProduction, pickEdition } from "@/lib/queries/productions";
+import { getProduction, pickEdition, teamForEdition } from "@/lib/queries/productions";
+import type { TeamRole } from "@/lib/queries/types";
 
 export const revalidate = 300;
+
+/** Reading order for a condensed team line. Lower sorts first. */
+const TEAM_ROLE_ORDER: Record<TeamRole, number> = {
+  production_company: 0,
+  executive_producer: 1,
+  director: 2,
+  lighting: 3,
+  audio: 4,
+  video: 5,
+  staging: 6,
+};
 
 export async function generateStaticParams() {
   return (await getEntitySlugs("productions")).map((slug) => ({ slug }));
@@ -109,6 +129,28 @@ export default async function ProductionPage({ params }: { params: Promise<{ slu
       ? edition
       : ([...production.editions].reverse().find((e) => hasTimeline(e.timeline)) ?? edition);
 
+  const currentTeam = teamForEdition(production.team, edition?.id ?? null);
+
+  /**
+   * One line per other year on record: who ran it, condensed. Production-level entries are
+   * excluded here — they apply to every year, so repeating them down the list would say
+   * nothing about how a given year differed.
+   */
+  const priorYears = [...production.editions]
+    .reverse()
+    .filter((e) => e.id !== edition?.id)
+    .map((e) => {
+      const names = production.team
+        .filter((m) => m.editionId === e.id)
+        // Company, then producers, then director — reading order, not storage order.
+        // Sorting on sortOrder alone put the director (0) ahead of the first EP (1).
+        .sort((a, b) => TEAM_ROLE_ORDER[a.role] - TEAM_ROLE_ORDER[b.role] || a.sortOrder - b.sortOrder)
+        .map((m) => m.company?.name ?? m.personName)
+        .filter((name): name is string => Boolean(name));
+      return { year: e.year, summary: [...new Set(names)].join(` ${MIDDOT} `) };
+    })
+    .filter((row) => row.summary !== "");
+
   return (
     <PageShell className="pt-0">
       <Hero
@@ -128,6 +170,12 @@ export default async function ProductionPage({ params }: { params: Promise<{ slu
         </aside>
 
         <div className="flex min-w-0 flex-col gap-6">
+          <Panel
+            title={edition ? `Production team — ${edition.year}` : "Production team"}
+          >
+            <ProductionTeam team={currentTeam} edition={edition} priorYears={priorYears} />
+          </Panel>
+
           <Panel title="Average viewers">
             <ViewershipTrend points={production.viewership} />
           </Panel>

@@ -140,10 +140,43 @@ export async function productionsOnNetwork(networkSlug: string): Promise<Product
     .filter((p): p is Production => p !== null && p.editions.length > 0);
 }
 
+/**
+ * Productions a company is attached to, whether as the production company of record or
+ * through a team credit.
+ *
+ * The second half matters: a lighting or audio vendor never sets
+ * `productions.production_company_id`, so matching on that column alone would give every
+ * supplier an empty page while its credits sat in the database.
+ */
 export async function productionsByCompany(companySlug: string): Promise<Production[]> {
-  const productions = await getProductions();
-  return productions.filter((p) => p.company?.slug === companySlug);
+  const [productions, creditedIds] = await Promise.all([
+    getProductions(),
+    productionIdsCreditedTo(companySlug),
+  ]);
+
+  return productions.filter((p) => p.company?.slug === companySlug || creditedIds.has(p.id));
 }
+
+const productionIdsCreditedTo = cache(async (companySlug: string): Promise<Set<string>> => {
+  const db = createPublicClient();
+  const { data, error } = await db
+    .from("production_team")
+    .select("production_id, companies!inner(slug)")
+    .eq("companies.slug", companySlug);
+  if (error) throw new Error(`team credits for "${companySlug}" failed: ${error.message}`);
+  return new Set((data ?? []).map((row) => row.production_id));
+});
+
+/** The roles a company is credited in, for the company page's summary line. */
+export const rolesForCompany = cache(async (companySlug: string): Promise<string[]> => {
+  const db = createPublicClient();
+  const { data, error } = await db
+    .from("production_team")
+    .select("role, companies!inner(slug)")
+    .eq("companies.slug", companySlug);
+  if (error) throw new Error(`team roles for "${companySlug}" failed: ${error.message}`);
+  return [...new Set((data ?? []).map((row) => row.role))].sort();
+});
 
 /** Slugs for generateStaticParams — cheap, and keeps entity pages prerenderable. */
 export const getEntitySlugs = cache(
