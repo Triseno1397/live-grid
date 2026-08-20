@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { EditionTimelineTrack, hasTimeline } from "@/components/edition-timeline";
 import { PageShell, Panel } from "@/components/page-shell";
 import { ProductionTeam } from "@/components/production-team";
+import { SourceList, VerificationLine } from "@/components/sources";
 import { ViewershipTrend } from "@/components/viewership-trend";
 import { CategoryTag } from "@/components/ui/category-tag";
 import { Countdown } from "@/components/ui/countdown";
@@ -132,6 +133,23 @@ export default async function ProductionPage({ params }: { params: Promise<{ slu
   const currentTeam = teamForEdition(production.team, edition?.id ?? null);
 
   /**
+   * Per-edition citations, newest year first so the sources for what is coming sit above the
+   * sources for what already happened. Years with nothing cited are dropped rather than
+   * listed empty — an empty heading reads as "we looked and found none", which is wrong.
+   */
+  const editionSources = [...production.editions]
+    .reverse()
+    .map((e) => ({ year: e.year, sources: production.editionVerification[e.id]?.sources ?? [] }))
+    .filter((row) => row.sources.length > 0);
+
+  const sourceCount = new Set(
+    [
+      ...production.verification.sources,
+      ...editionSources.flatMap((row) => row.sources),
+    ].map((s) => s.url),
+  ).size;
+
+  /**
    * One line per other year on record: who ran it, condensed. Production-level entries are
    * excluded here — they apply to every year, so repeating them down the list would say
    * nothing about how a given year differed.
@@ -163,9 +181,28 @@ export default async function ProductionPage({ params }: { params: Promise<{ slu
       />
 
       <div className="mt-6 grid gap-6 lg:grid-cols-[320px_minmax(0,1fr)]">
-        <aside className="lg:sticky lg:top-[calc(var(--nav-h)+16px)] lg:self-start">
+        <aside className="flex flex-col gap-4 lg:sticky lg:top-[calc(var(--nav-h)+16px)] lg:self-start">
           <Panel title="Facts">
             <FactTable facts={facts} className="px-3 py-1" />
+            {/*
+              Inside the panel rather than below it: the caveat belongs to the facts it
+              qualifies, and a reader who scrolls past the panel has finished with them.
+            */}
+            <div className="border-t border-line-subtle px-3 py-2">
+              <VerificationLine verification={production.verification} />
+            </div>
+          </Panel>
+
+          <Panel
+            title="Sources"
+            action={
+              <span className="numeric text-sm text-fg-tertiary">{sourceCount}</span>
+            }
+          >
+            <SourceList
+              verification={production.verification}
+              editionSources={editionSources}
+            />
           </Panel>
         </aside>
 
@@ -195,6 +232,7 @@ export default async function ProductionPage({ params }: { params: Promise<{ slu
                     <TH>City</TH>
                     <TH>Venue</TH>
                     <TH>Status</TH>
+                    <TH>Sourcing</TH>
                   </tr>
                 </THead>
                 <TBody>
@@ -208,6 +246,16 @@ export default async function ProductionPage({ params }: { params: Promise<{ slu
                       <TD>{e.venue?.name ?? <span className="text-fg-disabled">—</span>}</TD>
                       <TD>
                         <StatusBadge status={e.status} />
+                      </TD>
+                      {/*
+                        Status says what the industry has decided; this says how well we know
+                        it. Kept as plain tertiary type so it never out-shouts the badge.
+                      */}
+                      <TD className="whitespace-nowrap text-fg-tertiary">
+                        {(production.editionVerification[e.id]?.confidence ?? "unverified").replace(
+                          /_/g,
+                          " ",
+                        )}
                       </TD>
                     </TR>
                   ))}

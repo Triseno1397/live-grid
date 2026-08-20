@@ -30,7 +30,7 @@ import { Select } from "@/components/ui/select";
 import { StatusBadge } from "@/components/ui/status-badge";
 import { Switch } from "@/components/ui/switch";
 import { categoryLabel, EM_DASH, formatDateISO, monthName } from "@/lib/format";
-import type { Category, EditionStatus } from "@/lib/queries/types";
+import type { Category, Confidence, EditionStatus } from "@/lib/queries/types";
 
 /**
  * Flattened for the wire. Browse needs one row per production, not the full nested
@@ -49,6 +49,8 @@ export type BrowseRow = {
   network: string | null;
   /** The edition's month where dated, else `typical_month`. Null when neither is known. */
   month: number | null;
+  /** Derived from citations. Drives the "Sourced only" filter. */
+  confidence: Confidence;
 };
 
 type Filters = {
@@ -57,6 +59,7 @@ type Filters = {
   scale: string;
   status: string;
   includeRumored: boolean;
+  sourcedOnly: boolean;
 };
 
 const EMPTY_FILTERS: Filters = {
@@ -65,6 +68,9 @@ const EMPTY_FILTERS: Filters = {
   scale: "",
   status: "",
   includeRumored: true,
+  // Defaults off. Most of the grid predates the provenance schema, and a filter that hides
+  // most of the data by default would read as an empty product rather than an honest one.
+  sourcedOnly: false,
 };
 
 /** Every filter except the one whose facet counts are being computed. */
@@ -76,6 +82,7 @@ function matches(row: BrowseRow, filters: Filters, skipCategory = false): boolea
   if (filters.scale && row.scale !== Number(filters.scale)) return false;
   if (filters.status && row.status !== filters.status) return false;
   if (!filters.includeRumored && row.status === "rumored") return false;
+  if (filters.sourcedOnly && row.confidence === "unverified") return false;
   return true;
 }
 
@@ -196,7 +203,8 @@ export function BrowseTable({ rows, categories }: { rows: BrowseRow[]; categorie
     filters.month !== "" ||
     filters.scale !== "" ||
     filters.status !== "" ||
-    !filters.includeRumored;
+    !filters.includeRumored ||
+    filters.sourcedOnly;
 
   function toggleCategory(category: Category) {
     setFilters((current) => {
@@ -284,6 +292,14 @@ export function BrowseTable({ rows, categories }: { rows: BrowseRow[]; categorie
             label="Include rumored"
             checked={filters.includeRumored}
             onCheckedChange={(next) => setFilters((c) => ({ ...c, includeRumored: next }))}
+          />
+
+          {/* "Sourced", not "verified": it filters on having a citation at all, and the
+              stronger word would promise a standard the lowest tier does not meet. */}
+          <Switch
+            label="Sourced only"
+            checked={filters.sourcedOnly}
+            onCheckedChange={(next) => setFilters((c) => ({ ...c, sourcedOnly: next }))}
           />
         </div>
       </aside>

@@ -39,7 +39,18 @@ export default async function AdminPage() {
     );
   }
 
-  const { counts, targets, byCategory, byStatus, productions, orphanLookups, teamNames } = stats;
+  const {
+    counts,
+    targets,
+    byCategory,
+    byStatus,
+    byConfidence,
+    unverified,
+    staleVerification,
+    productions,
+    orphanLookups,
+    teamNames,
+  } = stats;
 
   return (
     <main className="mx-auto flex max-w-5xl flex-col gap-8 px-4 pb-16 pt-6 font-mono text-base">
@@ -64,7 +75,67 @@ export default async function AdminPage() {
           <Stat label="networks" value={counts.networks} />
           <Stat label="companies" value={counts.companies} />
           <Stat label="venues" value={counts.venues} />
+          <Stat label="sources" value={counts.sources} />
+          <Stat label="citations" value={counts.citations} />
         </div>
+      </section>
+
+      {/*
+        Verification. Category counts say how much is seeded; this says how much is KNOWN.
+        A category can read as full while every row in it rests on one unchecked source.
+      */}
+      <section className="flex flex-col gap-3">
+        <h2 className="eyebrow text-fg-tertiary">Verification</h2>
+        <div className="flex flex-col gap-1">
+          {byConfidence.map(({ confidence, count }) => (
+            <div key={confidence} className="flex justify-between gap-4">
+              <span className={count === 0 ? "text-fg-disabled" : "text-fg-secondary"}>
+                {confidence.replace(/_/g, " ")}
+              </span>
+              <span className={count === 0 ? "text-fg-disabled" : "tabular-nums text-fg"}>
+                {count}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {unverified.length > 0 && (
+          <div className="flex flex-col gap-1">
+            <h3 className="eyebrow text-rumored">
+              No citations ({unverified.length}) — sourced in a commit message is not sourced
+            </h3>
+            <div className="flex flex-wrap gap-x-4 gap-y-1 rounded-md border border-rumored bg-rumored-bg p-3">
+              {unverified.map((p) => (
+                <Link
+                  key={p.slug}
+                  href={`/p/${p.slug}`}
+                  className="text-fg-secondary hover:text-accent"
+                >
+                  {p.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {staleVerification.length > 0 && (
+          <div className="flex flex-col gap-1">
+            <h3 className="eyebrow text-fg-tertiary">Least recently checked</h3>
+            <div className="flex flex-col gap-1">
+              {staleVerification.map((p) => (
+                <div key={p.slug} className="flex flex-wrap items-baseline justify-between gap-x-4">
+                  <Link href={`/p/${p.slug}`} className="text-fg-secondary hover:text-accent">
+                    {p.name}
+                  </Link>
+                  <span className="text-fg-tertiary">
+                    {p.confidence.replace(/_/g, " ")}{" "}
+                    <span className="tabular-nums">{p.verifiedOn}</span>
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
       <section className="grid gap-6 sm:grid-cols-2">
@@ -141,7 +212,9 @@ export default async function AdminPage() {
                 {p.network ?? "no network"} · {p.company ?? "no company"} ·{" "}
                 {p.viewershipYears.length
                   ? `viewership ${p.viewershipYears.join(", ")}`
-                  : "no viewership"}
+                  : "no viewership"}{" "}
+                · {p.confidence.replace(/_/g, " ")}
+                {p.verifiedOn ? ` ${p.verifiedOn}` : ""}
               </div>
               {p.editions.map((e) => (
                 <div key={e.year} className="flex flex-wrap items-center gap-2 text-fg-secondary">

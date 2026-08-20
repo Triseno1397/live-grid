@@ -29,6 +29,7 @@ export default async function BrowsePage() {
     // Month filter falls back to typical_month, so a recurring show with no dated edition
     // is still findable by when it normally runs — which is why the column exists.
     month: edition?.startDate ? Number(edition.startDate.slice(5, 7)) : production.typicalMonth,
+    confidence: production.confidence,
   }));
 
   return (

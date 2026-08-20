@@ -1,7 +1,7 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 
 import type { Database } from "@/lib/supabase/database.types";
-import { CATEGORIES, STATUSES } from "@/lib/import/schema";
+import { CATEGORIES, CONFIDENCE_LEVELS, STATUSES } from "@/lib/import/schema";
 
 type Db = SupabaseClient<Database>;
 
@@ -14,18 +14,42 @@ const COUNTED = [
   "networks",
   "companies",
   "venues",
+  "sources",
+  "citations",
 ] as const;
 
 type CountedTable = (typeof COUNTED)[number];
 
-/** Phase 0 ship criteria from LIVEGRID_PLAN.md — what "done" means for the seed. */
-export const SEED_TARGETS = { productions: 250, editions: 400, viewership: 100 } as const;
+/**
+ * Phase 0 ship criteria from LIVEGRID_PLAN.md — what "done" means for the seed.
+ *
+ * Raised from 250/400/100 for the deep sweep: the original target predates sports, concerts,
+ * holiday, reality, streaming, political, gaming and international having any rows at all,
+ * and `sports` alone is worth most of the old total.
+ */
+export const SEED_TARGETS = { productions: 800, editions: 1600, viewership: 300 } as const;
 
 export type SeedStats = {
   counts: Record<CountedTable, number>;
   targets: typeof SEED_TARGETS;
   byCategory: { category: string; count: number }[];
   byStatus: { status: string; count: number }[];
+  /**
+   * Productions by derived confidence. This is the sweep's real progress bar — a category
+   * can look full while every row in it is a single unchecked source.
+   */
+  byConfidence: { confidence: string; count: number }[];
+  /**
+   * Productions carrying no citation at all, oldest-verified first among those that have
+   * one. During the backfill this is the work queue; after it, anything appearing here is a
+   * record that landed without provenance and needs a pass.
+   */
+  unverified: { name: string; slug: string; category: string }[];
+  /**
+   * Verified records, least recently checked first. A date confirmed two years ago against
+   * a page that has since changed is worse than an honest gap, because it reads as checked.
+   */
+  staleVerification: { name: string; slug: string; verifiedOn: string; confidence: string }[];
   productions: {
     name: string;
     slug: string;
@@ -33,6 +57,8 @@ export type SeedStats = {
     scale: number | null;
     network: string | null;
     company: string | null;
+    confidence: string;
+    verifiedOn: string | null;
     editions: { year: number; status: string; startDate: string | null; city: string | null }[];
     viewershipYears: number[];
   }[];
@@ -71,7 +97,7 @@ export async function getSeedStats(db: Db): Promise<SeedStats> {
     // Must stay a single string literal — Supabase parses the select at the type level,
     // and a concatenation widens to `string`, collapsing every joined column to an error.
     .select(
-      "name, slug, category, production_scale, networks(name), companies(name), editions(year, status, start_date, cities(name)), viewership(year)",
+      "name, slug, category, production_scale, confidence, verified_on, networks(name), companies(name), editions(year, status, start_date, cities(name)), viewership(year)",
     )
     .order("name");
   if (error) throw new Error(`productions overview failed: ${error.message}`);
@@ -83,6 +109,8 @@ export async function getSeedStats(db: Db): Promise<SeedStats> {
     scale: row.production_scale,
     network: row.networks?.name ?? null,
     company: row.companies?.name ?? null,
+    confidence: row.confidence,
+    verifiedOn: row.verified_on,
     editions: (row.editions ?? [])
       .map((e) => ({
         year: e.year,
@@ -106,11 +134,30 @@ export async function getSeedStats(db: Db): Promise<SeedStats> {
     for (const e of p.editions) statusTally.set(e.status, (statusTally.get(e.status) ?? 0) + 1);
   }
 
+  const confidenceTally = new Map<string, number>(CONFIDENCE_LEVELS.map((c) => [c, 0]));
+  for (const p of productions) {
+    confidenceTally.set(p.confidence, (confidenceTally.get(p.confidence) ?? 0) + 1);
+  }
+
   return {
     counts,
     targets: SEED_TARGETS,
     byCategory: [...categoryTally].map(([category, count]) => ({ category, count })),
     byStatus: [...statusTally].map(([status, count]) => ({ status, count })),
+    byConfidence: [...confidenceTally].map(([confidence, count]) => ({ confidence, count })),
+    unverified: productions
+      .filter((p) => p.confidence === "unverified")
+      .map((p) => ({ name: p.name, slug: p.slug, category: p.category })),
+    staleVerification: productions
+      .filter((p): p is typeof p & { verifiedOn: string } => p.verifiedOn !== null)
+      .sort((a, b) => a.verifiedOn.localeCompare(b.verifiedOn))
+      .slice(0, 12)
+      .map((p) => ({
+        name: p.name,
+        slug: p.slug,
+        verifiedOn: p.verifiedOn,
+        confidence: p.confidence,
+      })),
     productions,
     orphanLookups: await findOrphanLookups(db),
     teamNames: await findTeamNames(db),
@@ -137,17 +184,33 @@ async function findTeamNames(db: Db): Promise<SeedStats["teamNames"]> {
  * the import report's createdLookups is meant to catch — this is the standing check.
  */
 async function findOrphanLookups(db: Db): Promise<SeedStats["orphanLookups"]> {
-  const [networks, companies, cities, venues, productions, editions] = await Promise.all([
+  const [networks, companies, cities, venues, productions, editions, team] = await Promise.all([
     db.from("networks").select("name, slug, id"),
     db.from("companies").select("name, slug, id"),
     db.from("cities").select("name, slug, id"),
     db.from("venues").select("name, slug, id, city_id"),
     db.from("productions").select("network_id, production_company_id"),
-    db.from("editions").select("city_id, venue_id"),
+    db.from("editions").select("city_id, venue_id, network_id"),
+    db.from("production_team").select("company_id"),
   ]);
 
-  const usedNetworks = new Set((productions.data ?? []).map((p) => p.network_id));
-  const usedCompanies = new Set((productions.data ?? []).map((p) => p.production_company_id));
+  /**
+   * Every FK that points at a network or a company, not just the one on `productions`.
+   *
+   * Both of these columns were missed originally, and the omission got louder as the data
+   * grew: a network used ONLY per-edition (the Super Bowl has no default broadcaster — it
+   * rotates, so ABC and NBC live on the editions) and a company credited only through
+   * `production_team` (a vendor is never a `production_company_id`) were both reported as
+   * unreferenced. A duplicate-detector that cries wolf is one people stop reading.
+   */
+  const usedNetworks = new Set([
+    ...(productions.data ?? []).map((p) => p.network_id),
+    ...(editions.data ?? []).map((e) => e.network_id),
+  ]);
+  const usedCompanies = new Set([
+    ...(productions.data ?? []).map((p) => p.production_company_id),
+    ...(team.data ?? []).map((t) => t.company_id),
+  ]);
   const usedCities = new Set([
     ...(editions.data ?? []).map((e) => e.city_id),
     ...(venues.data ?? []).map((v) => v.city_id),

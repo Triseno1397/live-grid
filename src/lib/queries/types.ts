@@ -1,8 +1,42 @@
-import type { CATEGORIES, STATUSES, TEAM_ROLES } from "@/lib/import/schema";
+import type {
+  CATEGORIES,
+  CONFIDENCE_LEVELS,
+  SOURCE_TIERS,
+  STATUSES,
+  TEAM_ROLES,
+} from "@/lib/import/schema";
 
 export type Category = (typeof CATEGORIES)[number];
 export type EditionStatus = (typeof STATUSES)[number];
 export type TeamRole = (typeof TEAM_ROLES)[number];
+export type SourceTier = (typeof SOURCE_TIERS)[number];
+export type Confidence = (typeof CONFIDENCE_LEVELS)[number];
+
+/**
+ * A citable document. `tier` is who was in a position to know, not how prestigious the
+ * outlet is: a venue's own booking calendar outranks a trade report of the same booking.
+ */
+export type Source = {
+  url: string;
+  publisher: string;
+  title: string | null;
+  tier: SourceTier;
+  publishedOn: string | null;
+  /** When we last read it. Answers "is this stale?" — `publishedOn` does not. */
+  retrievedOn: string;
+  /** Which fact it backs. Null means the record generally. */
+  field: string | null;
+};
+
+/**
+ * How well-established a record is, derived from its citations by the importer — never
+ * asserted by a seed payload. `verifiedOn` is the most recent `retrievedOn` across them.
+ */
+export type Verification = {
+  confidence: Confidence;
+  verifiedOn: string | null;
+  sources: Source[];
+};
 
 /** A named thing with a page of its own. */
 export type Ref = { name: string; slug: string };
@@ -72,6 +106,11 @@ export type Production = {
   heroImageUrl: string | null;
   network: Ref | null;
   company: Ref | null;
+  /**
+   * Derived from citations. Carried on the base type — not just the detail type — because
+   * browse filters on it, and one text column is cheaper than a second query.
+   */
+  confidence: Confidence;
   /** Ascending by year. */
   editions: Edition[];
   /** Ascending by year. */
@@ -79,10 +118,17 @@ export type Production = {
 };
 
 /**
- * A production plus its team. Only the detail page reads this — the dashboard and browse
- * deliberately do not select team rows they never paint.
+ * A production plus its team and provenance. Only the detail page reads this — the
+ * dashboard and browse deliberately do not select rows they never paint.
+ *
+ * `editionVerification` is keyed by edition id rather than folded into `Edition` so the
+ * shared `Edition` type stays the cheap shape every other surface selects.
  */
-export type ProductionDetail = Production & { team: TeamMember[] };
+export type ProductionDetail = Production & {
+  team: TeamMember[];
+  verification: Verification;
+  editionVerification: Record<string, Verification>;
+};
 
 /**
  * A production paired with the one edition that matters right now, plus the countdown.
