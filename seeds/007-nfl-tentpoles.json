@@ -1,0 +1,656 @@
+[
+  {
+    "name": "Super Bowl",
+    "slug": "super-bowl",
+    "category": "sports",
+    "subcategory": "championship",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The NFL championship game and the largest single live television production in the United States. The broadcast rotates between network partners, so the carrying network changes year to year.",
+    "sources": [
+      {
+        "url": "https://www.nfl.com/news/los-angeles-to-host-super-bowl-lxi-in-2027",
+        "publisher": "NFL",
+        "title": "Los Angeles to host Super Bowl LXI in 2027",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.nbcsports.com/nfl/news/super-bowl-locations-where-will-the-super-bowl-be-played-in-2026-2027-2028-and-beyond",
+        "publisher": "NBC Sports",
+        "title": "Super Bowl Locations: Where will the Super Bowl be played in 2026, 2027, 2028 and beyond?",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-08",
+        "show_date": "2026-02-08",
+        "city": {
+          "name": "Santa Clara",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 37.3541,
+          "lng": -121.9552
+        },
+        "venue": { "name": "Levi's Stadium", "capacity": 68500 },
+        "network": { "name": "NBC", "is_streaming": false },
+        "sources": [
+          {
+            "url": "https://www.nbcsports.com/nfl/news/super-bowl-locations-where-will-the-super-bowl-be-played-in-2026-2027-2028-and-beyond",
+            "publisher": "NBC Sports",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.hollywoodreporter.com/tv/tv-news/super-bowl-lx-tv-ratings-nbc-bad-bunny-1236500505/",
+            "publisher": "The Hollywood Reporter",
+            "title": "Super Bowl LX TV Ratings: No. 2 All Time With 125 Million Viewers",
+            "tier": "trade",
+            "field": "network",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      },
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-02-14",
+        "show_date": "2027-02-14",
+        "city": {
+          "name": "Inglewood",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 33.9562,
+          "lng": -118.3531
+        },
+        "venue": { "name": "SoFi Stadium", "capacity": 70240 },
+        "network": { "name": "ABC", "is_streaming": false },
+        "sources": [
+          {
+            "url": "https://www.nfl.com/news/sofi-stadium-approved-to-host-super-bowl-lxi-in-2027",
+            "publisher": "NFL",
+            "title": "SoFi Stadium approved to host Super Bowl LXI in 2027",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.nfl.com/news/los-angeles-to-host-super-bowl-lxi-in-2027",
+            "publisher": "NFL",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.espn.com/nfl/story/_/id/47819308/super-bowl-2027-espn-how-watch-schedule-facts-stats",
+            "publisher": "ESPN",
+            "title": "Super Bowl 2027 on ESPN: Date, location, venue, more details",
+            "tier": "trade",
+            "field": "network",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      },
+      {
+        "year": 2028,
+        "status": "announced",
+        "start_date": "2028-02-13",
+        "show_date": "2028-02-13",
+        "city": {
+          "name": "Atlanta",
+          "state": "GA",
+          "country": "USA",
+          "timezone": "America/New_York",
+          "lat": 33.749,
+          "lng": -84.388
+        },
+        "venue": { "name": "Mercedes-Benz Stadium", "capacity": 71000 },
+        "sources": [
+          {
+            "url": "https://www.cbssports.com/nfl/news/nfl-announces-atlanta-will-host-super-bowl-lxii-in-2028-marking-fourth-time-city-landed-big-event",
+            "publisher": "CBS Sports",
+            "title": "NFL announces Atlanta will host Super Bowl LXII in 2028",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.nbcsports.com/nfl/news/super-bowl-locations-where-will-the-super-bowl-be-played-in-2026-2027-2028-and-beyond",
+            "publisher": "NBC Sports",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      },
+      {
+        "year": 2029,
+        "status": "announced",
+        "city": "Las Vegas",
+        "venue": { "name": "Allegiant Stadium", "capacity": 65000 },
+        "sources": [
+          {
+            "url": "https://www.nbcsports.com/nfl/news/super-bowl-locations-where-will-the-super-bowl-be-played-in-2026-2027-2028-and-beyond",
+            "publisher": "NBC Sports",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      },
+      {
+        "year": 2030,
+        "status": "announced",
+        "city": {
+          "name": "Nashville",
+          "state": "TN",
+          "country": "USA",
+          "timezone": "America/Chicago",
+          "lat": 36.1627,
+          "lng": -86.7816
+        },
+        "venue": { "name": "Nissan Stadium" },
+        "sources": [
+          {
+            "url": "https://www.nfl.com/news/super-bowl-lxiv-to-be-held-in-nashville-s-new-nissan-stadium-in-2030",
+            "publisher": "NFL",
+            "title": "Super Bowl LXIV to be held in Nashville's new Nissan Stadium in 2030",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2025,
+        "average_viewers": 127710000,
+        "sources": [
+          {
+            "url": "https://www.hollywoodreporter.com/tv/tv-news/super-bowl-lx-tv-ratings-nbc-bad-bunny-1236500505/",
+            "publisher": "The Hollywood Reporter",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://deadline.com/2026/02/super-bowl-lx-ratings-seahawks-patriots-nbc-1236713349/",
+            "publisher": "Deadline",
+            "title": "Super Bowl LX Slips 2% In Viewership On NBC & Peacock",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "average_viewers": 125600000,
+        "peak_viewers": 137800000,
+        "sources": [
+          {
+            "url": "https://variety.com/2026/tv/news/super-bowl-2026-ratings-viewers-1236658484/",
+            "publisher": "Variety",
+            "title": "Super Bowl 2026 Ratings: 125.6 Million Viewers",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.sportsmediawatch.com/2026/02/super-bowl-audience-revised-upward-nielsen/",
+            "publisher": "Sports Media Watch",
+            "title": "Super Bowl audience revised upward",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.hollywoodreporter.com/tv/tv-news/super-bowl-lx-tv-ratings-nbc-bad-bunny-1236500505/",
+            "publisher": "The Hollywood Reporter",
+            "tier": "trade",
+            "field": "peak_viewers",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Super Bowl Halftime Show",
+    "slug": "super-bowl-halftime-show",
+    "category": "concerts",
+    "subcategory": "halftime show",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The music performance staged mid-game at the Super Bowl. Built and struck inside the game's clock, which makes it one of the fastest large-format load-ins in live production.",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/02/super-bowl-lx-ratings-seahawks-patriots-nbc-1236713349/",
+        "publisher": "Deadline",
+        "title": "Super Bowl LX Slips 2% In Viewership On NBC & Peacock; Bad Bunny's Halftime Show Is Most-Watched In Spanish-Language History",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.hollywoodreporter.com/tv/tv-news/super-bowl-lx-tv-ratings-nbc-bad-bunny-1236500505/",
+        "publisher": "The Hollywood Reporter",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-08",
+        "show_date": "2026-02-08",
+        "city": "Santa Clara",
+        "venue": "Levi's Stadium",
+        "network": { "name": "NBC", "is_streaming": false },
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/02/super-bowl-lx-ratings-seahawks-patriots-nbc-1236713349/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2026,
+        "average_viewers": 128200000,
+        "sources": [
+          {
+            "url": "https://www.hollywoodreporter.com/tv/tv-news/super-bowl-lx-tv-ratings-nbc-bad-bunny-1236500505/",
+            "publisher": "The Hollywood Reporter",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://deadline.com/2026/02/super-bowl-lx-ratings-seahawks-patriots-nbc-1236713349/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NFL Draft",
+    "slug": "nfl-draft",
+    "category": "sports",
+    "subcategory": "draft",
+    "typical_month": 4,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The NFL's annual player selection event, staged as a three-day outdoor broadcast in a different host city each year with a purpose-built draft theater and a public fan festival alongside it.",
+    "sources": [
+      {
+        "url": "https://www.nfl.com/news/nfl-announces-dates-for-2027-draft-in-washington-d-c",
+        "publisher": "NFL",
+        "title": "NFL announces dates for 2027 draft in Washington, D.C.",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.espn.com/nfl/story/_/id/49178055/nfl-releases-dates-details-2027-nfl-draft-washington",
+        "publisher": "ESPN",
+        "title": "NFL releases dates, details for 2027 NFL draft in Washington",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-04-29",
+        "end_date": "2027-05-01",
+        "city": {
+          "name": "Washington",
+          "state": "DC",
+          "country": "USA",
+          "timezone": "America/New_York",
+          "lat": 38.9072,
+          "lng": -77.0369
+        },
+        "venue": {
+          "name": "National Mall",
+          "address": "National Mall, Washington, DC"
+        },
+        "sources": [
+          {
+            "url": "https://media.nfl.com/news-and-releases/corporate-communications/nfl-announces-dates-for-2027-nfl-draft-presented-by-bud-light-in",
+            "publisher": "NFL",
+            "title": "NFL Announces Dates for 2027 NFL Draft in Washington, D.C.",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.nfl.com/news/nfl-announces-dates-for-2027-draft-in-washington-d-c",
+            "publisher": "NFL",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-2027-nfl-draft-will-be-held-april-29-may-1-in-washington-d-c",
+            "publisher": "NBC Sports",
+            "title": "The 2027 NFL Draft will be held April 29-May 1 in Washington D.C.",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NFL Kickoff Game",
+    "slug": "nfl-kickoff-game",
+    "category": "sports",
+    "subcategory": "season opener",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The NFL's regular-season opening broadcast, hosted by the reigning champion or another designated club and built out with a pregame show. The 2026 edition moved to a Wednesday to clear Thursday for the league's first regular-season game in Australia.",
+    "sources": [
+      {
+        "url": "https://www.seahawks.com/news/seahawks-to-host-nfl-season-opener-on-wednesday-sept-9",
+        "publisher": "Seattle Seahawks",
+        "title": "Seahawks To Host NFL Season Opener On Wednesday, Sept. 9",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.nbcsports.com/nfl/news/when-does-the-2026-nfl-season-start-schedule-tv-channel-live-stream-week-1-matchups",
+        "publisher": "NBC Sports",
+        "title": "When does the 2026 NFL Season Start?",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-09",
+        "show_date": "2026-09-09",
+        "city": {
+          "name": "Seattle",
+          "state": "WA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 47.6062,
+          "lng": -122.3321
+        },
+        "network": { "name": "NBC", "is_streaming": false },
+        "sources": [
+          {
+            "url": "https://www.seahawks.com/news/seahawks-to-host-nfl-season-opener-on-wednesday-sept-9",
+            "publisher": "Seattle Seahawks",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.nfl.com/videos/2026-regular-season-to-kick-off-in-seattle-on-wed-sept-9-the-insiders",
+            "publisher": "NFL",
+            "title": "2026 regular season to kick off in Seattle on Wed, Sept. 9",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.foxsports.com/stories/nfl/when-does-2026-nfl-season-start-complete-week-1-schedule",
+            "publisher": "FOX Sports",
+            "title": "When Does the 2026 NFL Regular Season Start? Week 1 Schedule",
+            "tier": "trade",
+            "field": "network",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NFL Christmas Gameday",
+    "slug": "nfl-christmas-gameday",
+    "category": "sports",
+    "subcategory": "holiday game",
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Netflix's Christmas Day NFL doubleheader, streamed in over 200 countries. Carried across two host stadiums in a single day, so it runs as two full remote productions rather than one.",
+    "network": { "name": "Netflix", "is_streaming": true },
+    "sources": [
+      {
+        "url": "https://www.netflix.com/tudum/articles/nfl-games-on-netflix",
+        "publisher": "Netflix",
+        "title": "NFL on Netflix 2026 Schedule",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.sportsmediawatch.com/2026/05/netflix-nfl-deal-expanded-christmas-thanksgiving-eve-first-last-weeks-season/",
+        "publisher": "Sports Media Watch",
+        "title": "Netflix officially announces expanded NFL deal",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-12-25",
+        "show_date": "2026-12-25",
+        "sources": [
+          {
+            "url": "https://www.netflix.com/tudum/articles/nfl-games-on-netflix",
+            "publisher": "Netflix",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.sportsmediawatch.com/2026/05/netflix-nfl-deal-expanded-christmas-thanksgiving-eve-first-last-weeks-season/",
+            "publisher": "Sports Media Watch",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NFL Thanksgiving Eve Game",
+    "slug": "nfl-thanksgiving-eve-game",
+    "category": "sports",
+    "subcategory": "holiday game",
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The NFL's first Thanksgiving Eve game, added to Netflix's slate in 2026. Packers at Rams from SoFi Stadium.",
+    "network": { "name": "Netflix", "is_streaming": true },
+    "sources": [
+      {
+        "url": "https://www.netflix.com/tudum/articles/nfl-games-on-netflix",
+        "publisher": "Netflix",
+        "title": "NFL on Netflix 2026 Schedule",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.sportsmediawatch.com/2026/05/netflix-nfl-deal-expanded-christmas-thanksgiving-eve-first-last-weeks-season/",
+        "publisher": "Sports Media Watch",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-11-25",
+        "show_date": "2026-11-25",
+        "city": "Inglewood",
+        "venue": "SoFi Stadium",
+        "sources": [
+          {
+            "url": "https://www.netflix.com/tudum/articles/nfl-games-on-netflix",
+            "publisher": "Netflix",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.whats-on-netflix.com/news/netflix-nfl-schedule-2026-games/",
+            "publisher": "What's on Netflix",
+            "title": "Netflix NFL Schedule 2026",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pro Football Hall of Fame Enshrinement",
+    "slug": "pro-football-hall-of-fame-enshrinement",
+    "category": "sports",
+    "subcategory": "ceremony",
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The Pro Football Hall of Fame's annual induction ceremony in Canton, staged outdoors across an afternoon and carried simultaneously by ESPN and NFL Network.",
+    "sources": [
+      {
+        "url": "https://www.profootballhof.com/events/class-of-2026-enshrinement",
+        "publisher": "Pro Football Hall of Fame",
+        "title": "Class of 2026 Enshrinement",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.si.com/nfl/pro-football-hall-of-fame-induction-2026-schedule-how-to-watch",
+        "publisher": "Sports Illustrated",
+        "title": "Pro Football Hall of Fame Induction 2026 Schedule & How to Watch",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-08-08",
+        "show_date": "2026-08-08",
+        "city": {
+          "name": "Canton",
+          "state": "OH",
+          "country": "USA",
+          "timezone": "America/New_York",
+          "lat": 40.7989,
+          "lng": -81.3784
+        },
+        "network": { "name": "ESPN", "is_streaming": false },
+        "sources": [
+          {
+            "url": "https://www.profootballhof.com/events/class-of-2026-enshrinement",
+            "publisher": "Pro Football Hall of Fame",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.si.com/nfl/pro-football-hall-of-fame-induction-2026-schedule-how-to-watch",
+            "publisher": "Sports Illustrated",
+            "tier": "trade",
+            "field": "network",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NFL Scouting Combine",
+    "slug": "nfl-scouting-combine",
+    "category": "sports",
+    "subcategory": "combine",
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The NFL's week-long pre-draft evaluation event in Indianapolis, carried live on NFL Network. Moves to a March window from 2027, and is contracted to stay in Indianapolis through 2028.",
+    "network": { "name": "NFL Network", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.colts.com/news/nfl-combine-to-remain-in-indianapolis-in-2027-2028",
+        "publisher": "Indianapolis Colts",
+        "title": "NFL Combine to remain in Indianapolis in 2027, 2028",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.buccaneers.com/news/nfl-moves-start-of-scouting-combine-to-march-in-2027",
+        "publisher": "Tampa Bay Buccaneers",
+        "title": "NFL Moves Start of Scouting Combine to March in 2027",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "start_date": "2027-03-01",
+        "end_date": "2027-03-08",
+        "city": {
+          "name": "Indianapolis",
+          "state": "IN",
+          "country": "USA",
+          "timezone": "America/Indiana/Indianapolis",
+          "lat": 39.7684,
+          "lng": -86.1581
+        },
+        "sources": [
+          {
+            "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-scouting-combine-will-remain-in-indianapolis-in-2027-2028",
+            "publisher": "NBC Sports",
+            "title": "NFL Scouting Combine will remain in Indianapolis in 2027, 2028",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.buccaneers.com/news/nfl-moves-start-of-scouting-combine-to-march-in-2027",
+            "publisher": "Tampa Bay Buccaneers",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  }
+]

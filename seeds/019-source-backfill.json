@@ -1,0 +1,124 @@
+[
+  {
+    "name": "Academy Awards",
+    "slug": "academy-awards",
+    "category": "awards",
+    "sources": [
+      {
+        "url": "https://press.oscars.org/news/academy-and-abc-announce-show-dates-99th-and-100th-oscarsr",
+        "publisher": "Academy of Motion Picture Arts and Sciences",
+        "title": "The Academy and ABC Announce Show Dates for 99th and 100th Oscars",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://variety.com/2026/film/awards/oscars-2027-2028-ceremony-dates-march-1236710777/",
+        "publisher": "Variety",
+        "title": "Oscars 2027, 2028 Set March Ceremony Dates",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "sources": [
+          {
+            "url": "https://press.oscars.org/news/academy-and-abc-announce-show-dates-99th-and-100th-oscarsr",
+            "publisher": "Academy of Motion Picture Arts and Sciences",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://variety.com/2026/film/awards/oscars-2027-2028-ceremony-dates-march-1236710777/",
+            "publisher": "Variety",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/98th_Academy_Awards",
+            "publisher": "Wikipedia",
+            "title": "98th Academy Awards",
+            "tier": "reference",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.thegoldknight.com/2025/07/oscars-2026-academy-sets-key-dates-for.html",
+            "publisher": "The Gold Knight",
+            "title": "Oscars 2026: Academy sets key dates for 98th Academy Awards",
+            "tier": "reference",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.hollywoodreporter.com/tv/tv-news/oscars-2026-tv-ratings-1236534637/",
+            "publisher": "The Hollywood Reporter",
+            "title": "Oscars 2026 TV Ratings Fall to 17.9 Million Viewers",
+            "tier": "trade",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2026,
+        "average_viewers": 17860000,
+        "sources": [
+          {
+            "url": "https://variety.com/2026/awards/awards/oscars-ratings-17-9-million-down-1236691799/",
+            "publisher": "Variety",
+            "title": "Oscars Ratings Hit 17.9 Million Viewers, Down 9% From Last Year and Lowest Since 2022",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://deadline.com/2026/03/2026-oscars-tv-ratings-viewership-abc-streaming-1236758129/",
+            "publisher": "Deadline",
+            "title": "2026 Oscars TV Ratings: Audience Down 9% To 4-Year Low",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.tvline.com/2126074/oscars-ratings-2026-down-viewers-abc-hulu/",
+            "publisher": "TVLine",
+            "title": "Oscars Ratings Hit 4-Year Low, Drop 9 Percent To 17.86 Million Viewers",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "average_viewers": 19690000,
+        "sources": [
+          {
+            "url": "https://deadline.com/2025/03/oscar-ratings-2025-1236309304/",
+            "publisher": "Deadline",
+            "title": "Oscar Ratings: How Many Viewers Tuned In For Hollywood's Biggest Night",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://variety.com/2026/awards/awards/oscars-ratings-17-9-million-down-1236691799/",
+            "publisher": "Variety",
+            "title": "Oscars Ratings Hit 17.9 Million Viewers, Down 9% From Last Year and Lowest Since 2022",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  }
+]
