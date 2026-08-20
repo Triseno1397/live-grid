@@ -46,7 +46,7 @@ export function TopNav() {
         <div className="mx-auto flex h-full max-w-(--page-max) items-center gap-1 px-4">
           <Link
             href="/"
-            className="mr-2 shrink-0 text-xl font-semibold tracking-[-0.03em]"
+            className="mr-2 shrink-0 text-lg font-semibold tracking-[-0.03em] sm:text-xl"
             aria-label="Live Grid home"
           >
             {/* The only place the name is set closed-up. Product copy says "Live Grid". */}
@@ -54,7 +54,14 @@ export function TopNav() {
             <span className="text-accent">Grid</span>
           </Link>
 
-          <nav className="flex min-w-0 items-center gap-0.5">
+          {/*
+            Four items, a wordmark and the search trigger do not comfortably fit 390px on
+            measurement, and the failure mode of a plain flex row is the search button being
+            pushed off-screen entirely. Scrolling the nav instead keeps every control
+            reachable: the nav is the only thing allowed to shrink, and the button is
+            shrink-0. scrollbar-none because a visible bar inside a 52px header is noise.
+          */}
+          <nav className="flex min-w-0 items-center gap-0.5 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {NAV.map((item) => {
               const active =
                 item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
@@ -64,10 +71,9 @@ export function TopNav() {
                   href={item.href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "press flex h-8 items-center rounded-md px-2.5 text-base font-medium tracking-[-0.015em]",
-                    // 44px tap floor on mobile, and tighter padding so the wordmark, four
-                    // nav items and the search trigger still fit one row at 390px. The
-                    // fourth item is why the mobile padding drops again to 1.5.
+                    "press flex h-8 shrink-0 items-center rounded-md px-2.5 text-base font-medium tracking-[-0.015em]",
+                    // 44px tap floor on mobile (--tap-min), tighter padding for the fourth
+                    // item, and shrink-0 so a label wraps mid-word rather than compressing.
                     "max-sm:h-11 max-sm:px-1.5",
                     // Active state is a filled surface, never an underline.
                     active ? "bg-active text-fg" : "text-fg-tertiary hover:bg-hover hover:text-fg",
