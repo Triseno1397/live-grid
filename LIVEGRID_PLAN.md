@@ -94,6 +94,41 @@ favorites (user_id fk, production_id fk)
 
 **RLS from day one:** public read on all content tables, writes restricted to editor/admin. This IS the admin-panel permission system later.
 
+**Amendment (provenance):** `sources` and `citations` added, plus `confidence` and
+`verified_on` on `productions` and `editions`. Six batches shipped with their verification
+recorded in commit messages — "web-verified", "every fact is sourced" — and none of it was in
+the database. A freelancer looking at a 2027 date had no way to ask where it came from, and
+neither did the next seeding session, so every re-check started from zero.
+
+`sources` is the citable document, deduped on `url` so one Deadline story backing eight
+records is one row. `citations` attaches a source to the exact thing it backs, via four
+nullable typed FKs plus `check (num_nonnulls(...) = 1)` rather than the usual
+`(subject_type, subject_id)` pair — the pair cannot be a foreign key, so a deleted edition
+would strand its citations. Same `UNIQUE NULLS NOT DISTINCT` reasoning as `production_team`.
+
+**`confidence` is derived, never asserted.** The importer recomputes it from stored citations
+after every write (`deriveConfidence`), and `ProductionInput` is strict, so a batch that tries
+to set it fails loudly. The rule:
+
+| Tier | Requires |
+|---|---|
+| `official` | ≥1 `official`-tier source **and** ≥2 distinct publishers |
+| `corroborated` | ≥2 distinct publishers, at least one not `reference` |
+| `single_source` | 1 source, or several that are all `reference` |
+| `unverified` | no citations |
+
+Source tiers are `official` (the party that decides the fact — network press site, venue
+calendar, league schedule), `trade` (Variety, THR, Deadline, SBJ), and `reference` (Wikipedia,
+aggregators, fan wikis). Reference-tier alone can never exceed `single_source`; that gate is
+what stops the column from becoming a second place to be optimistic. Migration:
+`20260819000000_provenance.sql`, mirrored in `SOURCE_TIERS` / `CONFIDENCE_LEVELS` in
+`src/lib/import/schema.ts`.
+
+The seed target rises with it: **800 productions / 1600 editions / 300 viewership rows**. The
+old 250 predates `sports`, `concerts`, `holiday`, `reality`, `streaming`, `political`,
+`gaming` and `international` having a single row between them, and sports alone is worth most
+of the old total. Batch state lives in `seeds/PROGRESS.md`.
+
 **Amendment (batch 6, production team):** `production_team` added — who makes each edition, per year. One table covering both people and companies, because a vendor is a company and an EP is a person but they answer the same question, and splitting them would duplicate the role/ordering/per-edition logic twice. `person_name` is free text with no foreign key: there are no person pages, so a name is the whole record. Roles are constrained to seven (`production_company`, `executive_producer`, `director`, `lighting`, `audio`, `video`, `staging`) — enough to answer "who's running it?", short enough to stay queryable.
 
 This is **not** the v2+ vendor/rental directory listed in Phase 3. It is per-edition metadata on existing content, not a searchable supplier marketplace, and it deliberately stops well short of a credits system: no person pages, no filmographies, no below-the-line department heads. Migration: `20260812000000_production_team.sql`, mirrored in `TEAM_ROLES` in `src/lib/import/schema.ts`.

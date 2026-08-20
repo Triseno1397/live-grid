@@ -68,6 +68,29 @@ export const TEAM_ROLES = [
   "staging",
 ] as const;
 
+/**
+ * How much weight a source carries. Must stay in sync with the sources tier check
+ * constraint — see 20260819000000_provenance.sql.
+ *
+ * The split is by who is in a position to know, not by prestige. A venue's own booking
+ * calendar is `official` for "is the show at this venue"; Variety reporting the same thing
+ * is `trade`. `reference` covers Wikipedia, aggregators and fan wikis — useful for finding
+ * a fact, never sufficient for confirming one.
+ */
+export const SOURCE_TIERS = ["official", "trade", "reference"] as const;
+
+/**
+ * Derived from citations by the importer, never written from a payload — see
+ * `deriveConfidence` in importer.ts and the rules in the provenance migration. It is listed
+ * here because the UI and stats need the vocabulary, not because a seed record may set it.
+ */
+export const CONFIDENCE_LEVELS = [
+  "unverified",
+  "single_source",
+  "corroborated",
+  "official",
+] as const;
+
 /** Empty strings from a pasted spreadsheet mean "unknown", not "". */
 const blankToNull = (v: unknown) => (typeof v === "string" && v.trim() === "" ? null : v);
 
@@ -84,6 +107,33 @@ const optionalUrl = z.preprocess(blankToNull, z.string().url("expected a full UR
 
 /** Accept "Atlanta" as shorthand for { name: "Atlanta" }. */
 const asObject = (v: unknown) => (typeof v === "string" ? { name: v } : v);
+
+/**
+ * Where a fact came from. Attachable to a production, an edition, a viewership row or a team
+ * credit — whichever the source actually backs.
+ *
+ * `retrieved_on` is required and `published_on` is not, deliberately: a network press page
+ * carries no publication date but the date we read it is always knowable, and "is this
+ * stale?" is answered by when it was last checked.
+ */
+export const SourceInput = z
+  .object({
+    url: z.string().url("expected a full URL"),
+    /** The organisation that published it. Drives the distinct-publisher count. */
+    publisher: z.string().min(1),
+    tier: z.enum(SOURCE_TIERS),
+    title: optionalText,
+    published_on: dateString,
+    retrieved_on: z
+      .string()
+      .regex(/^\d{4}-\d{2}-\d{2}$/, "expected an ISO date in YYYY-MM-DD form"),
+    /**
+     * Which fact this backs — 'show_date', 'venue', 'network', 'viewership'. Omitted means
+     * the record generally, the right shape for a profile piece about the show itself.
+     */
+    field: optionalText,
+  })
+  .strict();
 
 export const CityInput = z
   .object({
@@ -144,6 +194,8 @@ export const EditionInput = z
     dress_rehearsal: dateString,
     show_date: dateString,
     strike: dateString,
+    /** Backs this year's facts specifically — the date, the venue, the broadcaster. */
+    sources: z.array(SourceInput).optional(),
   })
   .strict();
 
@@ -152,6 +204,7 @@ export const ViewershipInput = z
     year: z.number().int().min(1900).max(2200),
     average_viewers: z.number().nonnegative().nullish(),
     peak_viewers: z.number().nonnegative().nullish(),
+    sources: z.array(SourceInput).optional(),
   })
   .strict();
 
@@ -170,6 +223,8 @@ export const TeamInput = z
     year: z.number().int().min(1900).max(2200).optional(),
     note: optionalText,
     sort_order: z.number().int().optional(),
+    /** Backs this credit. A trade story naming the EP is the usual case. */
+    sources: z.array(SourceInput).optional(),
   })
   .strict()
   .refine((v) => v.company != null || (v.person != null && v.person !== ""), {
@@ -221,6 +276,16 @@ export const ProductionInput = z.preprocess(
       editions: z.array(EditionInput).optional(),
       viewership: z.array(ViewershipInput).optional(),
       team: z.array(TeamInput).optional(),
+
+      /**
+       * Backs the production itself — what it is, who makes it, roughly when it runs.
+       * Per-year facts belong on the edition's own `sources`, not here.
+       *
+       * There is deliberately no `confidence` key. It is derived from these citations after
+       * the write, and the strict object below will reject a batch that tries to assert it —
+       * which is the point: a tier you can set is a tier you will over-set.
+       */
+      sources: z.array(SourceInput).optional(),
 
       // --- flat single-edition shorthand (see file header) ---
       year: z.number().int().min(1900).max(2200).optional(),
@@ -275,4 +340,5 @@ export type CompanyInputT = z.infer<typeof CompanyInput>;
 export type EditionInputT = z.infer<typeof EditionInput>;
 export type ViewershipInputT = z.infer<typeof ViewershipInput>;
 export type TeamInputT = z.infer<typeof TeamInput>;
+export type SourceInputT = z.infer<typeof SourceInput>;
 export type ProductionInputT = z.infer<typeof ProductionInput>;

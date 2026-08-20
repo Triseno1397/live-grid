@@ -1,417 +1,708 @@
-/**
- * PLACEHOLDER — hand-authored to mirror supabase/migrations/20260806000000_init.sql.
- *
- * This file is REGENERATED from the live database, never hand-edited long-term:
- *   npm run db:types
- * It exists in hand-written form only so the app typechecks before the Supabase
- * project is linked. Once `npm run db:types` runs, this content is overwritten.
- */
-
-export type Json = string | number | boolean | null | { [key: string]: Json | undefined } | Json[];
+export type Json =
+  | string
+  | number
+  | boolean
+  | null
+  | { [key: string]: Json | undefined }
+  | Json[]
 
 export type Database = {
+  // Allows to automatically instantiate createClient with right options
+  // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
+  __InternalSupabase: {
+    PostgrestVersion: "14.15"
+  }
+  graphql_public: {
+    Tables: {
+      [_ in never]: never
+    }
+    Views: {
+      [_ in never]: never
+    }
+    Functions: {
+      graphql: {
+        Args: {
+          extensions?: Json
+          operationName?: string
+          query?: string
+          variables?: Json
+        }
+        Returns: Json
+      }
+    }
+    Enums: {
+      [_ in never]: never
+    }
+    CompositeTypes: {
+      [_ in never]: never
+    }
+  }
   public: {
     Tables: {
+      citations: {
+        Row: {
+          edition_id: string | null
+          field: string | null
+          id: string
+          production_id: string | null
+          retrieved_on: string
+          source_id: string
+          team_id: string | null
+          viewership_id: string | null
+        }
+        Insert: {
+          edition_id?: string | null
+          field?: string | null
+          id?: string
+          production_id?: string | null
+          retrieved_on: string
+          source_id: string
+          team_id?: string | null
+          viewership_id?: string | null
+        }
+        Update: {
+          edition_id?: string | null
+          field?: string | null
+          id?: string
+          production_id?: string | null
+          retrieved_on?: string
+          source_id?: string
+          team_id?: string | null
+          viewership_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "citations_edition_id_fkey"
+            columns: ["edition_id"]
+            isOneToOne: false
+            referencedRelation: "editions"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "citations_production_id_fkey"
+            columns: ["production_id"]
+            isOneToOne: false
+            referencedRelation: "productions"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "citations_source_id_fkey"
+            columns: ["source_id"]
+            isOneToOne: false
+            referencedRelation: "sources"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "citations_team_id_fkey"
+            columns: ["team_id"]
+            isOneToOne: false
+            referencedRelation: "production_team"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "citations_viewership_id_fkey"
+            columns: ["viewership_id"]
+            isOneToOne: false
+            referencedRelation: "viewership"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       cities: {
         Row: {
-          id: string;
-          name: string;
-          slug: string;
-          state: string | null;
-          country: string;
-          timezone: string | null;
-          lat: number | null;
-          lng: number | null;
-        };
+          country: string
+          id: string
+          lat: number | null
+          lng: number | null
+          name: string
+          slug: string
+          state: string | null
+          timezone: string | null
+        }
         Insert: {
-          id?: string;
-          name: string;
-          slug: string;
-          state?: string | null;
-          country?: string;
-          timezone?: string | null;
-          lat?: number | null;
-          lng?: number | null;
-        };
+          country?: string
+          id?: string
+          lat?: number | null
+          lng?: number | null
+          name: string
+          slug: string
+          state?: string | null
+          timezone?: string | null
+        }
         Update: {
-          id?: string;
-          name?: string;
-          slug?: string;
-          state?: string | null;
-          country?: string;
-          timezone?: string | null;
-          lat?: number | null;
-          lng?: number | null;
-        };
-        Relationships: [];
-      };
-      networks: {
-        Row: {
-          id: string;
-          name: string;
-          slug: string;
-          logo_url: string | null;
-          is_streaming: boolean;
-          website: string | null;
-        };
-        Insert: {
-          id?: string;
-          name: string;
-          slug: string;
-          logo_url?: string | null;
-          is_streaming?: boolean;
-          website?: string | null;
-        };
-        Update: {
-          id?: string;
-          name?: string;
-          slug?: string;
-          logo_url?: string | null;
-          is_streaming?: boolean;
-          website?: string | null;
-        };
-        Relationships: [];
-      };
+          country?: string
+          id?: string
+          lat?: number | null
+          lng?: number | null
+          name?: string
+          slug?: string
+          state?: string | null
+          timezone?: string | null
+        }
+        Relationships: []
+      }
       companies: {
         Row: {
-          id: string;
-          name: string;
-          slug: string;
-          logo_url: string | null;
-          headquarters: string | null;
-          website: string | null;
-        };
+          headquarters: string | null
+          id: string
+          logo_url: string | null
+          name: string
+          slug: string
+          website: string | null
+        }
         Insert: {
-          id?: string;
-          name: string;
-          slug: string;
-          logo_url?: string | null;
-          headquarters?: string | null;
-          website?: string | null;
-        };
+          headquarters?: string | null
+          id?: string
+          logo_url?: string | null
+          name: string
+          slug: string
+          website?: string | null
+        }
         Update: {
-          id?: string;
-          name?: string;
-          slug?: string;
-          logo_url?: string | null;
-          headquarters?: string | null;
-          website?: string | null;
-        };
-        Relationships: [];
-      };
-      venues: {
-        Row: {
-          id: string;
-          name: string;
-          slug: string;
-          address: string | null;
-          city_id: string | null;
-          capacity: number | null;
-          website: string | null;
-        };
-        Insert: {
-          id?: string;
-          name: string;
-          slug: string;
-          address?: string | null;
-          city_id?: string | null;
-          capacity?: number | null;
-          website?: string | null;
-        };
-        Update: {
-          id?: string;
-          name?: string;
-          slug?: string;
-          address?: string | null;
-          city_id?: string | null;
-          capacity?: number | null;
-          website?: string | null;
-        };
-        Relationships: [
-          {
-            foreignKeyName: "venues_city_id_fkey";
-            columns: ["city_id"];
-            isOneToOne: false;
-            referencedRelation: "cities";
-            referencedColumns: ["id"];
-          },
-        ];
-      };
-      productions: {
-        Row: {
-          id: string;
-          name: string;
-          slug: string;
-          category: string;
-          subcategory: string | null;
-          network_id: string | null;
-          production_company_id: string | null;
-          typical_month: number | null;
-          recurring: boolean;
-          production_scale: number | null;
-          description: string | null;
-          logo_url: string | null;
-          hero_image_url: string | null;
-          created_at: string;
-          updated_at: string;
-        };
-        Insert: {
-          id?: string;
-          name: string;
-          slug: string;
-          category: string;
-          subcategory?: string | null;
-          network_id?: string | null;
-          production_company_id?: string | null;
-          typical_month?: number | null;
-          recurring?: boolean;
-          production_scale?: number | null;
-          description?: string | null;
-          logo_url?: string | null;
-          hero_image_url?: string | null;
-          created_at?: string;
-          updated_at?: string;
-        };
-        Update: {
-          id?: string;
-          name?: string;
-          slug?: string;
-          category?: string;
-          subcategory?: string | null;
-          network_id?: string | null;
-          production_company_id?: string | null;
-          typical_month?: number | null;
-          recurring?: boolean;
-          production_scale?: number | null;
-          description?: string | null;
-          logo_url?: string | null;
-          hero_image_url?: string | null;
-          created_at?: string;
-          updated_at?: string;
-        };
-        Relationships: [
-          {
-            foreignKeyName: "productions_network_id_fkey";
-            columns: ["network_id"];
-            isOneToOne: false;
-            referencedRelation: "networks";
-            referencedColumns: ["id"];
-          },
-          {
-            foreignKeyName: "productions_production_company_id_fkey";
-            columns: ["production_company_id"];
-            isOneToOne: false;
-            referencedRelation: "companies";
-            referencedColumns: ["id"];
-          },
-        ];
-      };
+          headquarters?: string | null
+          id?: string
+          logo_url?: string | null
+          name?: string
+          slug?: string
+          website?: string | null
+        }
+        Relationships: []
+      }
       editions: {
         Row: {
-          id: string;
-          production_id: string;
-          year: number;
-          start_date: string | null;
-          end_date: string | null;
-          venue_id: string | null;
-          city_id: string | null;
-          network_id: string | null;
-          status: string;
-          load_in: string | null;
-          tech_rehearsal: string | null;
-          dress_rehearsal: string | null;
-          show_date: string | null;
-          strike: string | null;
-        };
+          city_id: string | null
+          confidence: string
+          dress_rehearsal: string | null
+          end_date: string | null
+          id: string
+          load_in: string | null
+          network_id: string | null
+          production_id: string
+          show_date: string | null
+          start_date: string | null
+          status: string
+          strike: string | null
+          tech_rehearsal: string | null
+          venue_id: string | null
+          verified_on: string | null
+          year: number
+        }
         Insert: {
-          id?: string;
-          production_id: string;
-          year: number;
-          start_date?: string | null;
-          end_date?: string | null;
-          venue_id?: string | null;
-          city_id?: string | null;
-          network_id?: string | null;
-          status?: string;
-          load_in?: string | null;
-          tech_rehearsal?: string | null;
-          dress_rehearsal?: string | null;
-          show_date?: string | null;
-          strike?: string | null;
-        };
+          city_id?: string | null
+          confidence?: string
+          dress_rehearsal?: string | null
+          end_date?: string | null
+          id?: string
+          load_in?: string | null
+          network_id?: string | null
+          production_id: string
+          show_date?: string | null
+          start_date?: string | null
+          status?: string
+          strike?: string | null
+          tech_rehearsal?: string | null
+          venue_id?: string | null
+          verified_on?: string | null
+          year: number
+        }
         Update: {
-          id?: string;
-          production_id?: string;
-          year?: number;
-          start_date?: string | null;
-          end_date?: string | null;
-          venue_id?: string | null;
-          city_id?: string | null;
-          network_id?: string | null;
-          status?: string;
-          load_in?: string | null;
-          tech_rehearsal?: string | null;
-          dress_rehearsal?: string | null;
-          show_date?: string | null;
-          strike?: string | null;
-        };
+          city_id?: string | null
+          confidence?: string
+          dress_rehearsal?: string | null
+          end_date?: string | null
+          id?: string
+          load_in?: string | null
+          network_id?: string | null
+          production_id?: string
+          show_date?: string | null
+          start_date?: string | null
+          status?: string
+          strike?: string | null
+          tech_rehearsal?: string | null
+          venue_id?: string | null
+          verified_on?: string | null
+          year?: number
+        }
         Relationships: [
           {
-            foreignKeyName: "editions_production_id_fkey";
-            columns: ["production_id"];
-            isOneToOne: false;
-            referencedRelation: "productions";
-            referencedColumns: ["id"];
+            foreignKeyName: "editions_city_id_fkey"
+            columns: ["city_id"]
+            isOneToOne: false
+            referencedRelation: "cities"
+            referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "editions_venue_id_fkey";
-            columns: ["venue_id"];
-            isOneToOne: false;
-            referencedRelation: "venues";
-            referencedColumns: ["id"];
+            foreignKeyName: "editions_network_id_fkey"
+            columns: ["network_id"]
+            isOneToOne: false
+            referencedRelation: "networks"
+            referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "editions_city_id_fkey";
-            columns: ["city_id"];
-            isOneToOne: false;
-            referencedRelation: "cities";
-            referencedColumns: ["id"];
+            foreignKeyName: "editions_production_id_fkey"
+            columns: ["production_id"]
+            isOneToOne: false
+            referencedRelation: "productions"
+            referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "editions_network_id_fkey";
-            columns: ["network_id"];
-            isOneToOne: false;
-            referencedRelation: "networks";
-            referencedColumns: ["id"];
+            foreignKeyName: "editions_venue_id_fkey"
+            columns: ["venue_id"]
+            isOneToOne: false
+            referencedRelation: "venues"
+            referencedColumns: ["id"]
           },
-        ];
-      };
-      viewership: {
+        ]
+      }
+      favorites: {
         Row: {
-          id: string;
-          production_id: string;
-          year: number;
-          average_viewers: number | null;
-          peak_viewers: number | null;
-        };
+          created_at: string
+          production_id: string
+          user_id: string
+        }
         Insert: {
-          id?: string;
-          production_id: string;
-          year: number;
-          average_viewers?: number | null;
-          peak_viewers?: number | null;
-        };
+          created_at?: string
+          production_id: string
+          user_id: string
+        }
         Update: {
-          id?: string;
-          production_id?: string;
-          year?: number;
-          average_viewers?: number | null;
-          peak_viewers?: number | null;
-        };
+          created_at?: string
+          production_id?: string
+          user_id?: string
+        }
         Relationships: [
           {
-            foreignKeyName: "viewership_production_id_fkey";
-            columns: ["production_id"];
-            isOneToOne: false;
-            referencedRelation: "productions";
-            referencedColumns: ["id"];
+            foreignKeyName: "favorites_production_id_fkey"
+            columns: ["production_id"]
+            isOneToOne: false
+            referencedRelation: "productions"
+            referencedColumns: ["id"]
           },
-        ];
-      };
+          {
+            foreignKeyName: "favorites_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      networks: {
+        Row: {
+          id: string
+          is_streaming: boolean
+          logo_url: string | null
+          name: string
+          slug: string
+          website: string | null
+        }
+        Insert: {
+          id?: string
+          is_streaming?: boolean
+          logo_url?: string | null
+          name: string
+          slug: string
+          website?: string | null
+        }
+        Update: {
+          id?: string
+          is_streaming?: boolean
+          logo_url?: string | null
+          name?: string
+          slug?: string
+          website?: string | null
+        }
+        Relationships: []
+      }
       production_team: {
         Row: {
-          id: string;
-          production_id: string;
-          edition_id: string | null;
-          role: string;
-          company_id: string | null;
-          person_name: string | null;
-          note: string | null;
-          sort_order: number;
-        };
+          company_id: string | null
+          edition_id: string | null
+          id: string
+          note: string | null
+          person_name: string | null
+          production_id: string
+          role: string
+          sort_order: number
+        }
         Insert: {
-          id?: string;
-          production_id: string;
-          edition_id?: string | null;
-          role: string;
-          company_id?: string | null;
-          person_name?: string | null;
-          note?: string | null;
-          sort_order?: number;
-        };
+          company_id?: string | null
+          edition_id?: string | null
+          id?: string
+          note?: string | null
+          person_name?: string | null
+          production_id: string
+          role: string
+          sort_order?: number
+        }
         Update: {
-          id?: string;
-          production_id?: string;
-          edition_id?: string | null;
-          role?: string;
-          company_id?: string | null;
-          person_name?: string | null;
-          note?: string | null;
-          sort_order?: number;
-        };
+          company_id?: string | null
+          edition_id?: string | null
+          id?: string
+          note?: string | null
+          person_name?: string | null
+          production_id?: string
+          role?: string
+          sort_order?: number
+        }
         Relationships: [
           {
-            foreignKeyName: "production_team_production_id_fkey";
-            columns: ["production_id"];
-            isOneToOne: false;
-            referencedRelation: "productions";
-            referencedColumns: ["id"];
+            foreignKeyName: "production_team_company_id_fkey"
+            columns: ["company_id"]
+            isOneToOne: false
+            referencedRelation: "companies"
+            referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "production_team_edition_id_fkey";
-            columns: ["edition_id"];
-            isOneToOne: false;
-            referencedRelation: "editions";
-            referencedColumns: ["id"];
+            foreignKeyName: "production_team_edition_id_fkey"
+            columns: ["edition_id"]
+            isOneToOne: false
+            referencedRelation: "editions"
+            referencedColumns: ["id"]
           },
           {
-            foreignKeyName: "production_team_company_id_fkey";
-            columns: ["company_id"];
-            isOneToOne: false;
-            referencedRelation: "companies";
-            referencedColumns: ["id"];
+            foreignKeyName: "production_team_production_id_fkey"
+            columns: ["production_id"]
+            isOneToOne: false
+            referencedRelation: "productions"
+            referencedColumns: ["id"]
           },
-        ];
-      };
+        ]
+      }
+      productions: {
+        Row: {
+          category: string
+          confidence: string
+          created_at: string
+          description: string | null
+          hero_image_url: string | null
+          id: string
+          logo_url: string | null
+          name: string
+          network_id: string | null
+          production_company_id: string | null
+          production_scale: number | null
+          recurring: boolean
+          slug: string
+          subcategory: string | null
+          typical_month: number | null
+          updated_at: string
+          verified_on: string | null
+        }
+        Insert: {
+          category: string
+          confidence?: string
+          created_at?: string
+          description?: string | null
+          hero_image_url?: string | null
+          id?: string
+          logo_url?: string | null
+          name: string
+          network_id?: string | null
+          production_company_id?: string | null
+          production_scale?: number | null
+          recurring?: boolean
+          slug: string
+          subcategory?: string | null
+          typical_month?: number | null
+          updated_at?: string
+          verified_on?: string | null
+        }
+        Update: {
+          category?: string
+          confidence?: string
+          created_at?: string
+          description?: string | null
+          hero_image_url?: string | null
+          id?: string
+          logo_url?: string | null
+          name?: string
+          network_id?: string | null
+          production_company_id?: string | null
+          production_scale?: number | null
+          recurring?: boolean
+          slug?: string
+          subcategory?: string | null
+          typical_month?: number | null
+          updated_at?: string
+          verified_on?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "productions_network_id_fkey"
+            columns: ["network_id"]
+            isOneToOne: false
+            referencedRelation: "networks"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "productions_production_company_id_fkey"
+            columns: ["production_company_id"]
+            isOneToOne: false
+            referencedRelation: "companies"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       profiles: {
-        Row: { id: string; display_name: string | null; role: string; created_at: string };
-        Insert: { id: string; display_name?: string | null; role?: string; created_at?: string };
-        Update: { id?: string; display_name?: string | null; role?: string; created_at?: string };
-        Relationships: [];
-      };
-      favorites: {
-        Row: { user_id: string; production_id: string; created_at: string };
-        Insert: { user_id: string; production_id: string; created_at?: string };
-        Update: { user_id?: string; production_id?: string; created_at?: string };
+        Row: {
+          created_at: string
+          display_name: string | null
+          id: string
+          role: string
+        }
+        Insert: {
+          created_at?: string
+          display_name?: string | null
+          id: string
+          role?: string
+        }
+        Update: {
+          created_at?: string
+          display_name?: string | null
+          id?: string
+          role?: string
+        }
+        Relationships: []
+      }
+      sources: {
+        Row: {
+          created_at: string
+          id: string
+          published_on: string | null
+          publisher: string
+          tier: string
+          title: string | null
+          url: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          published_on?: string | null
+          publisher: string
+          tier: string
+          title?: string | null
+          url: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          published_on?: string | null
+          publisher?: string
+          tier?: string
+          title?: string | null
+          url?: string
+        }
+        Relationships: []
+      }
+      venues: {
+        Row: {
+          address: string | null
+          capacity: number | null
+          city_id: string | null
+          id: string
+          name: string
+          slug: string
+          website: string | null
+        }
+        Insert: {
+          address?: string | null
+          capacity?: number | null
+          city_id?: string | null
+          id?: string
+          name: string
+          slug: string
+          website?: string | null
+        }
+        Update: {
+          address?: string | null
+          capacity?: number | null
+          city_id?: string | null
+          id?: string
+          name?: string
+          slug?: string
+          website?: string | null
+        }
         Relationships: [
           {
-            foreignKeyName: "favorites_user_id_fkey";
-            columns: ["user_id"];
-            isOneToOne: false;
-            referencedRelation: "profiles";
-            referencedColumns: ["id"];
+            foreignKeyName: "venues_city_id_fkey"
+            columns: ["city_id"]
+            isOneToOne: false
+            referencedRelation: "cities"
+            referencedColumns: ["id"]
           },
+        ]
+      }
+      viewership: {
+        Row: {
+          average_viewers: number | null
+          id: string
+          peak_viewers: number | null
+          production_id: string
+          year: number
+        }
+        Insert: {
+          average_viewers?: number | null
+          id?: string
+          peak_viewers?: number | null
+          production_id: string
+          year: number
+        }
+        Update: {
+          average_viewers?: number | null
+          id?: string
+          peak_viewers?: number | null
+          production_id?: string
+          year?: number
+        }
+        Relationships: [
           {
-            foreignKeyName: "favorites_production_id_fkey";
-            columns: ["production_id"];
-            isOneToOne: false;
-            referencedRelation: "productions";
-            referencedColumns: ["id"];
+            foreignKeyName: "viewership_production_id_fkey"
+            columns: ["production_id"]
+            isOneToOne: false
+            referencedRelation: "productions"
+            referencedColumns: ["id"]
           },
-        ];
-      };
-    };
-    Views: Record<never, never>;
+        ]
+      }
+    }
+    Views: {
+      [_ in never]: never
+    }
     Functions: {
-      is_editor: { Args: Record<PropertyKey, never>; Returns: boolean };
-    };
-    Enums: Record<never, never>;
-    CompositeTypes: Record<never, never>;
-  };
-};
+      is_editor: { Args: never; Returns: boolean }
+    }
+    Enums: {
+      [_ in never]: never
+    }
+    CompositeTypes: {
+      [_ in never]: never
+    }
+  }
+}
 
-/** Convenience row aliases used across the app. */
-export type Tables<T extends keyof Database["public"]["Tables"]> =
-  Database["public"]["Tables"][T]["Row"];
-export type TablesInsert<T extends keyof Database["public"]["Tables"]> =
-  Database["public"]["Tables"][T]["Insert"];
+type DatabaseWithoutInternals = Omit<Database, "__InternalSupabase">
+
+type DefaultSchema = DatabaseWithoutInternals[Extract<keyof Database, "public">]
+
+export type Tables<
+  DefaultSchemaTableNameOrOptions extends
+    | keyof (DefaultSchema["Tables"] & DefaultSchema["Views"])
+    | { schema: keyof DatabaseWithoutInternals },
+  TableName extends DefaultSchemaTableNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof (DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"] &
+        DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Views"])
+    : never = never,
+> = DefaultSchemaTableNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? (DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"] &
+      DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Views"])[TableName] extends {
+      Row: infer R
+    }
+    ? R
+    : never
+  : DefaultSchemaTableNameOrOptions extends keyof (DefaultSchema["Tables"] &
+        DefaultSchema["Views"])
+    ? (DefaultSchema["Tables"] &
+        DefaultSchema["Views"])[DefaultSchemaTableNameOrOptions] extends {
+        Row: infer R
+      }
+      ? R
+      : never
+    : never
+
+export type TablesInsert<
+  DefaultSchemaTableNameOrOptions extends
+    | keyof DefaultSchema["Tables"]
+    | { schema: keyof DatabaseWithoutInternals },
+  TableName extends DefaultSchemaTableNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"]
+    : never = never,
+> = DefaultSchemaTableNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"][TableName] extends {
+      Insert: infer I
+    }
+    ? I
+    : never
+  : DefaultSchemaTableNameOrOptions extends keyof DefaultSchema["Tables"]
+    ? DefaultSchema["Tables"][DefaultSchemaTableNameOrOptions] extends {
+        Insert: infer I
+      }
+      ? I
+      : never
+    : never
+
+export type TablesUpdate<
+  DefaultSchemaTableNameOrOptions extends
+    | keyof DefaultSchema["Tables"]
+    | { schema: keyof DatabaseWithoutInternals },
+  TableName extends DefaultSchemaTableNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"]
+    : never = never,
+> = DefaultSchemaTableNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"][TableName] extends {
+      Update: infer U
+    }
+    ? U
+    : never
+  : DefaultSchemaTableNameOrOptions extends keyof DefaultSchema["Tables"]
+    ? DefaultSchema["Tables"][DefaultSchemaTableNameOrOptions] extends {
+        Update: infer U
+      }
+      ? U
+      : never
+    : never
+
+export type Enums<
+  DefaultSchemaEnumNameOrOptions extends
+    | keyof DefaultSchema["Enums"]
+    | { schema: keyof DatabaseWithoutInternals },
+  EnumName extends DefaultSchemaEnumNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[DefaultSchemaEnumNameOrOptions["schema"]]["Enums"]
+    : never = never,
+> = DefaultSchemaEnumNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[DefaultSchemaEnumNameOrOptions["schema"]]["Enums"][EnumName]
+  : DefaultSchemaEnumNameOrOptions extends keyof DefaultSchema["Enums"]
+    ? DefaultSchema["Enums"][DefaultSchemaEnumNameOrOptions]
+    : never
+
+export type CompositeTypes<
+  PublicCompositeTypeNameOrOptions extends
+    | keyof DefaultSchema["CompositeTypes"]
+    | { schema: keyof DatabaseWithoutInternals },
+  CompositeTypeName extends PublicCompositeTypeNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"]
+    : never = never,
+> = PublicCompositeTypeNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"][CompositeTypeName]
+  : PublicCompositeTypeNameOrOptions extends keyof DefaultSchema["CompositeTypes"]
+    ? DefaultSchema["CompositeTypes"][PublicCompositeTypeNameOrOptions]
+    : never
+
+export const Constants = {
+  graphql_public: {
+    Enums: {},
+  },
+  public: {
+    Enums: {},
+  },
+} as const

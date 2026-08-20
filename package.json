@@ -9,8 +9,9 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "db:push": "supabase db push",
-    "db:types": "supabase gen types typescript --linked -o src/lib/supabase/database.types.ts",
-    "db:diff": "supabase db diff --linked"
+    "db:types": "supabase gen types typescript --project-id $SUPABASE_PROJECT_REF > src/lib/supabase/database.types.ts",
+    "db:diff": "supabase db diff --linked",
+    "seeds:check": "tsx scripts/check-seeds.ts"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.23",
@@ -37,6 +38,7 @@
     "eslint-config-next": "15.5.22",
     "supabase": "^2.111.0",
     "tailwindcss": "^4",
+    "tsx": "^4.20.6",
     "typescript": "^5"
   }
 }

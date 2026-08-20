@@ -9,13 +9,21 @@ import type {
   EditionInputT,
   NetworkInputT,
   ProductionInputT,
+  SourceInputT,
   TeamInputT,
   VenueInputT,
+  ViewershipInputT,
 } from "./schema";
 
 type Db = SupabaseClient<Database>;
 
 export type Counts = { created: number; updated: number };
+
+/**
+ * Confidence tiers, in ascending order. Mirrored from CONFIDENCE_LEVELS; the order matters
+ * here because it is what `deriveConfidence` compares against.
+ */
+type Confidence = "unverified" | "single_source" | "corroborated" | "official";
 
 export type ImportReport = {
   ok: boolean;
@@ -25,6 +33,8 @@ export type ImportReport = {
     editions: Counts;
     viewership: Counts;
     team: Counts;
+    sources: Counts;
+    citations: Counts;
   };
   /**
    * Lookup rows this run brought into existence, as "Name (slug)".
@@ -37,6 +47,12 @@ export type ImportReport = {
     companies: string[];
     venues: string[];
   };
+  /**
+   * Confidence as recomputed from citations at the end of the run, tallied.
+   * `unverified` here is not an error — it is a record whose sources have not been
+   * researched yet, and reading this row is how a half-sourced batch gets noticed.
+   */
+  confidence: Record<Confidence, number>;
   errors: { index: number; name: string | null; message: string }[];
 };
 
@@ -49,11 +65,48 @@ function emptyReport(received: number): ImportReport {
       editions: { created: 0, updated: 0 },
       viewership: { created: 0, updated: 0 },
       team: { created: 0, updated: 0 },
+      sources: { created: 0, updated: 0 },
+      citations: { created: 0, updated: 0 },
     },
     createdLookups: { cities: [], networks: [], companies: [], venues: [] },
+    confidence: { unverified: 0, single_source: 0, corroborated: 0, official: 0 },
     errors: [],
   };
 }
+
+/**
+ * Per-run memo of resolved lookup ids, keyed by slug.
+ *
+ * Every resolver below is find-by-slug-else-create, which costs a round trip even when the
+ * answer has not changed since the last record. Measured at ~150ms per Supabase call, and a
+ * 35-record sports batch resolves "NBC" and "Los Angeles" dozens of times — that repetition
+ * alone was most of a batch's runtime and the reason batch size had to stay small.
+ *
+ * Correct because the run is the only writer: nothing else can change a lookup row mid-batch,
+ * and the resolvers write field updates on the FIRST encounter, which is when a record's
+ * richer lookup object (an address, a capacity) actually arrives.
+ */
+type LookupCache = {
+  cities: Map<string, string>;
+  networks: Map<string, string>;
+  companies: Map<string, string>;
+  /** Venues carry a city too, so the memo has to hold both halves of the return. */
+  venues: Map<string, { venueId: string; cityId: string | null }>;
+  sources: Map<string, string>;
+};
+
+function emptyCache(): LookupCache {
+  return {
+    cities: new Map(),
+    networks: new Map(),
+    companies: new Map(),
+    venues: new Map(),
+    sources: new Map(),
+  };
+}
+
+/** Everything the per-record helpers need that is not the record itself. */
+type Run = { db: Db; report: ImportReport; cache: LookupCache };
 
 /**
  * Drops `undefined` keys but keeps explicit `null`s.
@@ -78,8 +131,12 @@ function fail(context: string, message: string): never {
 // always win over what is already stored.
 // ---------------------------------------------------------------------------
 
-async function resolveCity(db: Db, input: CityInputT, report: ImportReport): Promise<string> {
+async function resolveCity(run: Run, input: CityInputT): Promise<string> {
   const slug = input.slug ?? slugify(input.name);
+  const cached = run.cache.cities.get(slug);
+  if (cached) return cached;
+
+  const { db, report } = run;
   const ctx = `city "${input.name}"`;
 
   const { data: existing, error } = await db
@@ -101,6 +158,7 @@ async function resolveCity(db: Db, input: CityInputT, report: ImportReport): Pro
   if (existing) {
     const { error: updateError } = await db.from("cities").update(patch).eq("id", existing.id);
     if (updateError) fail(ctx, updateError.message);
+    run.cache.cities.set(slug, existing.id);
     return existing.id;
   }
 
@@ -112,11 +170,16 @@ async function resolveCity(db: Db, input: CityInputT, report: ImportReport): Pro
   if (insertError) fail(ctx, insertError.message);
 
   report.createdLookups.cities.push(`${input.name} (${slug})`);
+  run.cache.cities.set(slug, inserted.id);
   return inserted.id;
 }
 
-async function resolveNetwork(db: Db, input: NetworkInputT, report: ImportReport): Promise<string> {
+async function resolveNetwork(run: Run, input: NetworkInputT): Promise<string> {
   const slug = input.slug ?? slugify(input.name);
+  const cached = run.cache.networks.get(slug);
+  if (cached) return cached;
+
+  const { db, report } = run;
   const ctx = `network "${input.name}"`;
 
   const { data: existing, error } = await db
@@ -136,6 +199,7 @@ async function resolveNetwork(db: Db, input: NetworkInputT, report: ImportReport
   if (existing) {
     const { error: updateError } = await db.from("networks").update(patch).eq("id", existing.id);
     if (updateError) fail(ctx, updateError.message);
+    run.cache.networks.set(slug, existing.id);
     return existing.id;
   }
 
@@ -147,11 +211,16 @@ async function resolveNetwork(db: Db, input: NetworkInputT, report: ImportReport
   if (insertError) fail(ctx, insertError.message);
 
   report.createdLookups.networks.push(`${input.name} (${slug})`);
+  run.cache.networks.set(slug, inserted.id);
   return inserted.id;
 }
 
-async function resolveCompany(db: Db, input: CompanyInputT, report: ImportReport): Promise<string> {
+async function resolveCompany(run: Run, input: CompanyInputT): Promise<string> {
   const slug = input.slug ?? slugify(input.name);
+  const cached = run.cache.companies.get(slug);
+  if (cached) return cached;
+
+  const { db, report } = run;
   const ctx = `company "${input.name}"`;
 
   const { data: existing, error } = await db
@@ -171,6 +240,7 @@ async function resolveCompany(db: Db, input: CompanyInputT, report: ImportReport
   if (existing) {
     const { error: updateError } = await db.from("companies").update(patch).eq("id", existing.id);
     if (updateError) fail(ctx, updateError.message);
+    run.cache.companies.set(slug, existing.id);
     return existing.id;
   }
 
@@ -182,13 +252,13 @@ async function resolveCompany(db: Db, input: CompanyInputT, report: ImportReport
   if (insertError) fail(ctx, insertError.message);
 
   report.createdLookups.companies.push(`${input.name} (${slug})`);
+  run.cache.companies.set(slug, inserted.id);
   return inserted.id;
 }
 
 async function resolveVenue(
-  db: Db,
+  run: Run,
   input: VenueInputT,
-  report: ImportReport,
   /**
    * City to fall back to when the venue itself doesn't name one. Seed records usually put
    * the city on the edition rather than nested inside the venue, and an edition held at
@@ -198,9 +268,16 @@ async function resolveVenue(
   fallbackCityId: string | null = null,
 ): Promise<{ venueId: string; cityId: string | null }> {
   const slug = input.slug ?? slugify(input.name);
+  const { db, report } = run;
   const ctx = `venue "${input.name}"`;
 
-  const cityId = input.city ? await resolveCity(db, input.city, report) : fallbackCityId;
+  const cityId = input.city ? await resolveCity(run, input.city) : fallbackCityId;
+
+  // Cached only when this call adds no city the memo does not already carry. A venue first
+  // seen without a city and seen again with one must still get its city_id written, which
+  // is the normal shape when an early edition names only the venue.
+  const cached = run.cache.venues.get(slug);
+  if (cached && (cityId === null || cached.cityId === cityId)) return cached;
 
   const { data: existing, error } = await db
     .from("venues")
@@ -220,7 +297,9 @@ async function resolveVenue(
   if (existing) {
     const { error: updateError } = await db.from("venues").update(patch).eq("id", existing.id);
     if (updateError) fail(ctx, updateError.message);
-    return { venueId: existing.id, cityId: cityId ?? existing.city_id };
+    const resolved = { venueId: existing.id, cityId: cityId ?? existing.city_id };
+    run.cache.venues.set(slug, resolved);
+    return resolved;
   }
 
   const { data: inserted, error: insertError } = await db
@@ -231,7 +310,199 @@ async function resolveVenue(
   if (insertError) fail(ctx, insertError.message);
 
   report.createdLookups.venues.push(`${input.name} (${slug})`);
-  return { venueId: inserted.id, cityId };
+  const resolved = { venueId: inserted.id, cityId };
+  run.cache.venues.set(slug, resolved);
+  return resolved;
+}
+
+// ---------------------------------------------------------------------------
+// Provenance
+// ---------------------------------------------------------------------------
+
+/** The subject a citation attaches to. Exactly one, matching citations_one_subject. */
+type CitationSubject =
+  | { production_id: string }
+  | { edition_id: string }
+  | { viewership_id: string }
+  | { team_id: string };
+
+/**
+ * Sources dedupe on `url`, which is the natural key and is UNIQUE in the schema. One
+ * Deadline story backing eight records is one row cited eight times, so the
+ * distinct-publisher count that drives confidence counts publishers rather than mentions.
+ */
+async function resolveSource(run: Run, input: SourceInputT): Promise<string> {
+  const cached = run.cache.sources.get(input.url);
+  if (cached) return cached;
+
+  const { db, report } = run;
+  const ctx = `source "${input.url}"`;
+
+  const { data: existing, error } = await db
+    .from("sources")
+    .select("id")
+    .eq("url", input.url)
+    .maybeSingle();
+  if (error) fail(ctx, error.message);
+
+  const patch = definedOnly({
+    publisher: input.publisher,
+    title: input.title,
+    tier: input.tier,
+    published_on: input.published_on,
+  });
+
+  if (existing) {
+    const { error: updateError } = await db.from("sources").update(patch).eq("id", existing.id);
+    if (updateError) fail(ctx, updateError.message);
+    report.summary.sources.updated += 1;
+    run.cache.sources.set(input.url, existing.id);
+    return existing.id;
+  }
+
+  const { data: inserted, error: insertError } = await db
+    .from("sources")
+    .insert({ ...patch, url: input.url, publisher: input.publisher, tier: input.tier })
+    .select("id")
+    .single();
+  if (insertError) fail(ctx, insertError.message);
+
+  report.summary.sources.created += 1;
+  run.cache.sources.set(input.url, inserted.id);
+  return inserted.id;
+}
+
+/**
+ * Attaches sources to one subject.
+ *
+ * Matched against the citations_unique tuple rather than upserted, and null columns are
+ * matched with `.is` not `.eq` — the same trap `upsertTeam` documents below. Three of the
+ * four subject columns are null on every row here, so getting that wrong would insert a
+ * duplicate on every re-paste rather than matching.
+ */
+async function writeCitations(
+  run: Run,
+  subject: CitationSubject,
+  inputs: SourceInputT[] | undefined,
+): Promise<void> {
+  if (!inputs?.length) return;
+  const { db, report } = run;
+
+  const subjectColumns = ["production_id", "edition_id", "viewership_id", "team_id"] as const;
+
+  for (const input of inputs) {
+    const sourceId = await resolveSource(run, input);
+    const field = input.field ?? null;
+    const ctx = `citation "${input.url}"`;
+
+    let query = db.from("citations").select("id").eq("source_id", sourceId);
+    for (const column of subjectColumns) {
+      const value = (subject as Record<string, string | undefined>)[column];
+      query = value === undefined ? query.is(column, null) : query.eq(column, value);
+    }
+    query = field === null ? query.is("field", null) : query.eq("field", field);
+
+    const { data: existing, error } = await query.maybeSingle();
+    if (error) fail(ctx, error.message);
+
+    if (existing) {
+      // retrieved_on is the one mutable fact: re-checking a source in a later pass is
+      // exactly what the triple-check protocol does, and the new date is the useful one.
+      const { error: updateError } = await db
+        .from("citations")
+        .update({ retrieved_on: input.retrieved_on })
+        .eq("id", existing.id);
+      if (updateError) fail(ctx, updateError.message);
+      report.summary.citations.updated += 1;
+      continue;
+    }
+
+    const { error: insertError } = await db.from("citations").insert({
+      ...subject,
+      source_id: sourceId,
+      field,
+      retrieved_on: input.retrieved_on,
+    });
+    if (insertError) fail(ctx, insertError.message);
+    report.summary.citations.created += 1;
+  }
+}
+
+/**
+ * The rule that makes a confidence column mean something.
+ *
+ *   official      >=1 official-tier source AND >=2 distinct publishers
+ *   corroborated  >=2 distinct publishers, at least one not reference-tier
+ *   single_source  1 source, or several that are all reference-tier
+ *   unverified     no citations
+ *
+ * Publishers, not citations: one story cited under three different `field` values is still
+ * one publisher, and counting rows instead would let a single source promote itself to
+ * "corroborated" just by being thorough.
+ */
+function rankConfidence(rows: { tier: string; publisher: string }[]): Confidence {
+  if (rows.length === 0) return "unverified";
+
+  const publishers = new Set(rows.map((r) => r.publisher.trim().toLowerCase()));
+  const hasOfficial = rows.some((r) => r.tier === "official");
+  const hasNonReference = rows.some((r) => r.tier !== "reference");
+
+  if (hasOfficial && publishers.size >= 2) return "official";
+  if (publishers.size >= 2 && hasNonReference) return "corroborated";
+  return "single_source";
+}
+
+/**
+ * Recomputes confidence for a production and each of its editions from what is actually
+ * stored, then writes it. Runs after every other write for the record.
+ *
+ * Derived rather than accepted from the payload on purpose. A tier a research batch can set
+ * is a tier a hurried research batch will over-set, and "official" needs to mean the network
+ * said so — not that someone was confident.
+ */
+async function deriveConfidence(
+  run: Run,
+  productionId: string,
+  editionIds: string[],
+): Promise<void> {
+  const { db, report } = run;
+  const ctx = "confidence";
+
+  const apply = async (
+    table: "productions" | "editions",
+    id: string,
+    rows: { retrieved_on: string; sources: { tier: string; publisher: string } | null }[],
+  ) => {
+    const cited = rows.flatMap((r) => (r.sources ? [r.sources] : []));
+    const confidence = rankConfidence(cited);
+    const verifiedOn =
+      rows.length === 0
+        ? null
+        : rows.reduce((latest, r) => (r.retrieved_on > latest ? r.retrieved_on : latest), rows[0].retrieved_on);
+
+    const { error } = await db
+      .from(table)
+      .update({ confidence, verified_on: verifiedOn })
+      .eq("id", id);
+    if (error) fail(ctx, error.message);
+    report.confidence[confidence] += 1;
+  };
+
+  const { data: productionRows, error: productionError } = await db
+    .from("citations")
+    .select("retrieved_on, sources(tier, publisher)")
+    .eq("production_id", productionId);
+  if (productionError) fail(ctx, productionError.message);
+  await apply("productions", productionId, productionRows ?? []);
+
+  for (const editionId of editionIds) {
+    const { data: editionRows, error: editionError } = await db
+      .from("citations")
+      .select("retrieved_on, sources(tier, publisher)")
+      .eq("edition_id", editionId);
+    if (editionError) fail(ctx, editionError.message);
+    await apply("editions", editionId, editionRows ?? []);
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -263,21 +534,21 @@ function normalizeEditions(input: ProductionInputT): EditionInputT[] {
 
 /** Returns the edition's id so `team` entries carrying a `year` can attach to it. */
 async function upsertEdition(
-  db: Db,
+  run: Run,
   productionId: string,
   input: EditionInputT,
-  report: ImportReport,
 ): Promise<string> {
+  const { db, report } = run;
   const ctx = `edition ${input.year}`;
 
   // Resolve the edition's own city first so it can seed the venue's city_id when the
   // venue doesn't carry one. The inference runs both ways: a venue also implies a city,
   // so an edition naming only a venue still ends up with a city_id.
-  const explicitCityId = input.city ? await resolveCity(db, input.city, report) : null;
-  const venue = input.venue ? await resolveVenue(db, input.venue, report, explicitCityId) : null;
+  const explicitCityId = input.city ? await resolveCity(run, input.city) : null;
+  const venue = input.venue ? await resolveVenue(run, input.venue, explicitCityId) : null;
   const cityId = explicitCityId ?? venue?.cityId ?? null;
   // Left null unless the edition names its own broadcaster; null inherits the production's.
-  const networkId = input.network ? await resolveNetwork(db, input.network, report) : null;
+  const networkId = input.network ? await resolveNetwork(run, input.network) : null;
 
   const patch = definedOnly({
     start_date: input.start_date,
@@ -305,6 +576,7 @@ async function upsertEdition(
     const { error: updateError } = await db.from("editions").update(patch).eq("id", existing.id);
     if (updateError) fail(ctx, updateError.message);
     report.summary.editions.updated += 1;
+    await writeCitations(run, { edition_id: existing.id }, input.sources);
     return existing.id;
   }
 
@@ -315,6 +587,7 @@ async function upsertEdition(
     .single();
   if (insertError) fail(ctx, insertError.message);
   report.summary.editions.created += 1;
+  await writeCitations(run, { edition_id: inserted.id }, input.sources);
   return inserted.id;
 }
 
@@ -326,12 +599,12 @@ async function upsertEdition(
  * NULLS DISTINCT would let every re-paste insert a duplicate instead of matching.
  */
 async function upsertTeam(
-  db: Db,
+  run: Run,
   productionId: string,
   input: TeamInputT,
   editionIdsByYear: Map<number, string>,
-  report: ImportReport,
 ): Promise<void> {
+  const { db, report } = run;
   const subject = input.company?.name ?? input.person ?? "?";
   const ctx = `team ${input.role} "${subject}"`;
 
@@ -360,7 +633,7 @@ async function upsertTeam(
 
   // Companies resolve through the shared helper so vendors land in createdLookups and get
   // the same duplicate-name safety net as networks and cities.
-  const companyId = input.company ? await resolveCompany(db, input.company, report) : null;
+  const companyId = input.company ? await resolveCompany(run, input.company) : null;
   const personName = input.person ?? null;
 
   // Matches the UNIQUE NULLS NOT DISTINCT constraint column for column. `.is` and `.eq` are
@@ -389,27 +662,33 @@ async function upsertTeam(
       if (updateError) fail(ctx, updateError.message);
     }
     report.summary.team.updated += 1;
+    await writeCitations(run, { team_id: existing.id }, input.sources);
     return;
   }
 
-  const { error: insertError } = await db.from("production_team").insert({
-    ...patch,
-    production_id: productionId,
-    edition_id: editionId,
-    role: input.role,
-    company_id: companyId,
-    person_name: personName,
-  });
+  const { data: inserted, error: insertError } = await db
+    .from("production_team")
+    .insert({
+      ...patch,
+      production_id: productionId,
+      edition_id: editionId,
+      role: input.role,
+      company_id: companyId,
+      person_name: personName,
+    })
+    .select("id")
+    .single();
   if (insertError) fail(ctx, insertError.message);
   report.summary.team.created += 1;
+  await writeCitations(run, { team_id: inserted.id }, input.sources);
 }
 
 async function upsertViewership(
-  db: Db,
+  run: Run,
   productionId: string,
-  input: { year: number; average_viewers?: number | null; peak_viewers?: number | null },
-  report: ImportReport,
+  input: ViewershipInputT,
 ): Promise<void> {
+  const { db, report } = run;
   const ctx = `viewership ${input.year}`;
 
   const patch = definedOnly({
@@ -429,27 +708,32 @@ async function upsertViewership(
     const { error: updateError } = await db.from("viewership").update(patch).eq("id", existing.id);
     if (updateError) fail(ctx, updateError.message);
     report.summary.viewership.updated += 1;
+    await writeCitations(run, { viewership_id: existing.id }, input.sources);
     return;
   }
 
-  const { error: insertError } = await db
+  const { data: inserted, error: insertError } = await db
     .from("viewership")
-    .insert({ ...patch, production_id: productionId, year: input.year });
+    .insert({ ...patch, production_id: productionId, year: input.year })
+    .select("id")
+    .single();
   if (insertError) fail(ctx, insertError.message);
   report.summary.viewership.created += 1;
+  await writeCitations(run, { viewership_id: inserted.id }, input.sources);
 }
 
 // ---------------------------------------------------------------------------
 // Records
 // ---------------------------------------------------------------------------
 
-async function importRecord(db: Db, input: ProductionInputT, report: ImportReport): Promise<void> {
+async function importRecord(run: Run, input: ProductionInputT): Promise<void> {
+  const { db, report } = run;
   const slug = input.slug ?? slugify(input.name);
   const ctx = `production "${input.name}"`;
 
-  const networkId = input.network ? await resolveNetwork(db, input.network, report) : null;
+  const networkId = input.network ? await resolveNetwork(run, input.network) : null;
   const companyId = input.production_company
-    ? await resolveCompany(db, input.production_company, report)
+    ? await resolveCompany(run, input.production_company)
     : null;
 
   const patch = definedOnly({
@@ -491,17 +775,24 @@ async function importRecord(db: Db, input: ProductionInputT, report: ImportRepor
     report.summary.productions.created += 1;
   }
 
+  await writeCitations(run, { production_id: productionId }, input.sources);
+
   // Editions first: team entries carrying a `year` need that year's edition id to exist.
   const editionIdsByYear = new Map<number, string>();
   for (const edition of normalizeEditions(input)) {
-    editionIdsByYear.set(edition.year, await upsertEdition(db, productionId, edition, report));
+    editionIdsByYear.set(edition.year, await upsertEdition(run, productionId, edition));
   }
   for (const row of input.viewership ?? []) {
-    await upsertViewership(db, productionId, row, report);
+    await upsertViewership(run, productionId, row);
   }
   for (const member of input.team ?? []) {
-    await upsertTeam(db, productionId, member, editionIdsByYear, report);
+    await upsertTeam(run, productionId, member, editionIdsByYear);
   }
+
+  // Last, and over every edition the record touched — including ones already in the database
+  // that this payload only added team data to, since their citation set is unchanged but
+  // their tally still belongs in the report.
+  await deriveConfidence(run, productionId, [...editionIdsByYear.values()]);
 }
 
 /** Best-effort name for the error report, before the record is known to be valid. */
@@ -527,6 +818,9 @@ function peekName(record: unknown): string | null {
  */
 export async function runImport(db: Db, records: unknown[]): Promise<ImportReport> {
   const report = emptyReport(records.length);
+  // One cache for the whole batch — see LookupCache. Scoped to the run rather than the
+  // module so a long-lived serverless instance never serves a stale id after a manual edit.
+  const run: Run = { db, report, cache: emptyCache() };
 
   for (const [index, raw] of records.entries()) {
     const parsed = ProductionInput.safeParse(raw);
@@ -546,7 +840,7 @@ export async function runImport(db: Db, records: unknown[]): Promise<ImportRepor
     }
 
     try {
-      await importRecord(db, parsed.data, report);
+      await importRecord(run, parsed.data);
     } catch (cause) {
       report.ok = false;
       report.errors.push({

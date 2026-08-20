@@ -45,3 +45,5 @@ Live Grid — searchable database + calendar of live broadcast productions (awar
 ## When Uncertain
 
 Ask or flag — never guess at production facts, dates, or scope decisions. Uncertain seed data gets `status: rumored`, not an invented fact.
+
+**Every seeded fact carries its source.** Records go in with a `sources` array; `confidence` is derived from those citations by the importer and must never be written from a payload. A `reference`-tier source (Wikipedia, aggregators, fan wikis) is enough to *find* a fact and never enough to *confirm* one — reference-only tops out at `single_source`, and `status: confirmed` on a future edition requires an `official`-tier citation. Run `npm run seeds:check` before any import. Gaps stay gaps: a null is honest, a guess is not.

@@ -9,6 +9,13 @@ import { createAdminClient } from "@/lib/supabase/admin";
 export const runtime = "nodejs";
 
 /**
+ * Seed batches are dozens of records deep and every write is a separate PostgREST round trip
+ * (~150ms each), so a full batch runs in minutes, not seconds. 300s is Vercel's ceiling.
+ * Keep batches at or under ~35 records — see seeds/PROGRESS.md.
+ */
+export const maxDuration = 300;
+
+/**
  * Constant-time comparison over SHA-256 digests.
  *
  * Hashing first keeps the comparison constant-time even when the supplied token has a
