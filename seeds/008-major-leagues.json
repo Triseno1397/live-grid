@@ -1,0 +1,442 @@
+[
+  {
+    "name": "NBA Finals",
+    "slug": "nba-finals",
+    "category": "sports",
+    "subcategory": "championship",
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The NBA championship series, carried on ABC with ESPN production. A best-of-seven played in two home arenas, so the broadcast compound moves between cities mid-series.",
+    "network": { "name": "ABC", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.nba.com/news/nba-finals-2026-viewership-most-watched-28-years",
+        "publisher": "NBA",
+        "title": "Knicks-Spurs delivers most-watched NBA Finals since 1998",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.hollywoodreporter.com/tv/tv-news/nba-finals-2026-tv-ratings-best-since-1998-1236622090/",
+        "publisher": "The Hollywood Reporter",
+        "title": "TV Ratings: Knicks' Victory Caps Most Watched NBA Finals Since 1998",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "city": {
+          "name": "New York",
+          "state": "NY",
+          "country": "USA",
+          "timezone": "America/New_York",
+          "lat": 40.7128,
+          "lng": -74.006
+        },
+        "sources": [
+          {
+            "url": "https://www.nba.com/news/nba-finals-2026-viewership-most-watched-28-years",
+            "publisher": "NBA",
+            "tier": "official",
+            "field": "network",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.sportico.com/business/media/2026/nba-finals-knicks-championship-tv-viewers-ratings-abc-1234909990/",
+            "publisher": "Sportico",
+            "title": "2026 NBA Finals Ratings Impress Even With Nielsen Measurement Context",
+            "tier": "trade",
+            "field": "network",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2026,
+        "average_viewers": 20600000,
+        "peak_viewers": 33000000,
+        "sources": [
+          {
+            "url": "https://www.nba.com/news/nba-finals-2026-viewership-most-watched-28-years",
+            "publisher": "NBA",
+            "tier": "official",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.hollywoodreporter.com/tv/tv-news/nba-finals-2026-tv-ratings-best-since-1998-1236622090/",
+            "publisher": "The Hollywood Reporter",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.thewrap.com/creative-content/tv-shows/nba-finals-game-3-ratings-2026/",
+            "publisher": "TheWrap",
+            "title": "NBA Finals Game 3 Nears 24 Million Viewers, Biggest Audience Since 1998",
+            "tier": "trade",
+            "field": "peak_viewers",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NBA All-Star Weekend",
+    "slug": "nba-all-star-weekend",
+    "category": "sports",
+    "subcategory": "all-star",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Three days of NBA exhibition programming built around the All-Star Game, moving to a different host arena each year. Phoenix hosts its fourth in 2027, after 1975, 1995 and 2009.",
+    "sources": [
+      {
+        "url": "https://www.nba.com/news/phoenix-suns-nba-all-star-2027-official-release",
+        "publisher": "NBA",
+        "title": "Phoenix Suns to host NBA All-Star 2027",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.visitphoenix.com/event/nba-all-star-2027/147254/",
+        "publisher": "Visit Phoenix",
+        "title": "NBA All-Star 2027 - Phoenix, AZ",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-02-19",
+        "end_date": "2027-02-21",
+        "show_date": "2027-02-21",
+        "city": {
+          "name": "Phoenix",
+          "state": "AZ",
+          "country": "USA",
+          "timezone": "America/Phoenix",
+          "lat": 33.4484,
+          "lng": -112.074
+        },
+        "venue": { "name": "Footprint Center", "capacity": 18055 },
+        "sources": [
+          {
+            "url": "https://www.nba.com/news/phoenix-suns-nba-all-star-2027-official-release",
+            "publisher": "NBA",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.visitphoenix.com/event/nba-all-star-2027/147254/",
+            "publisher": "Visit Phoenix",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NBA Christmas Day",
+    "slug": "nba-christmas-day",
+    "category": "sports",
+    "subcategory": "holiday game",
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The NBA's Christmas Day slate, five games back to back across five arenas on ABC and ESPN. One of the densest single-day remote production loads in American sport.",
+    "network": { "name": "ABC", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.nba.com/news/nba-on-christmas-day-schedule-2026-27",
+        "publisher": "NBA",
+        "title": "NBA Finals rematch at MSG tips off 2026 NBA on Christmas Day action",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.foxsports.com/stories/nba/2026-nba-christmas-games-schedule-matchups-start-times",
+        "publisher": "FOX Sports",
+        "title": "2026 NBA Christmas Games: Schedule, Matchups, Start Times",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-12-25",
+        "show_date": "2026-12-25",
+        "sources": [
+          {
+            "url": "https://www.nba.com/news/nba-on-christmas-day-schedule-2026-27",
+            "publisher": "NBA",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.foxsports.com/stories/nba/2026-nba-christmas-games-schedule-matchups-start-times",
+            "publisher": "FOX Sports",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "World Series",
+    "slug": "world-series",
+    "category": "sports",
+    "subcategory": "championship",
+    "typical_month": 10,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Major League Baseball's championship series, carried by Fox. A best-of-seven across two ballparks, with the window fixed before the participants are known.",
+    "network": { "name": "FOX", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
+        "publisher": "MLB",
+        "title": "2026 MLB Playoff and World Series schedule",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.espn.com/mlb/story/_/id/49639373/2026-mlb-postseason-schedule-playoffs-world-series",
+        "publisher": "ESPN",
+        "title": "MLB playoffs 2026: Full postseason schedule from wild-card round to World Series",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-10-23",
+        "end_date": "2026-10-31",
+        "sources": [
+          {
+            "url": "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
+            "publisher": "MLB",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.foxsports.com/stories/mlb/2026-mlb-playoff-schedule-dates-rounds-how-watch",
+            "publisher": "FOX Sports",
+            "title": "2026 MLB Playoff Schedule: Dates, Rounds, World Series",
+            "tier": "trade",
+            "field": "network",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MLB All-Star Game",
+    "slug": "mlb-all-star-game",
+    "category": "sports",
+    "subcategory": "all-star",
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Major League Baseball's midsummer exhibition, hosted by a different club each year and carried by Fox. Wrigley Field's fourth turn comes in 2027.",
+    "network": { "name": "FOX", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.mlb.com/news/2027-mlb-all-star-game-at-wrigley-field",
+        "publisher": "MLB",
+        "title": "2027 MLB All-Star Game to be held at Wrigley Field",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.foxsports.com/stories/mlb/mlb-all-star-game-locations",
+        "publisher": "FOX Sports",
+        "title": "MLB All-Star Game Locations, Dates for 2026, 2027 Plus All Past Venues",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-07-13",
+        "show_date": "2027-07-13",
+        "city": {
+          "name": "Chicago",
+          "state": "IL",
+          "country": "USA",
+          "timezone": "America/Chicago",
+          "lat": 41.8781,
+          "lng": -87.6298
+        },
+        "venue": { "name": "Wrigley Field", "capacity": 41649 },
+        "sources": [
+          {
+            "url": "https://www.mlb.com/news/2027-mlb-all-star-game-at-wrigley-field",
+            "publisher": "MLB",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.mlb.com/cubs/fans/all-star-game",
+            "publisher": "Chicago Cubs",
+            "title": "2027 All-Star Game",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.si.com/mlb/mlb-officially-announces-location-of-2027-all-star-game-wrigley-field",
+            "publisher": "Sports Illustrated",
+            "title": "MLB officially announces location of 2027 All-Star Game: Wrigley Field",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NHL Winter Classic",
+    "slug": "nhl-winter-classic",
+    "category": "sports",
+    "subcategory": "outdoor game",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The NHL's marquee outdoor game, played in a football or baseball stadium with a purpose-built rink. The 2027 edition moves back to New Year's Eve.",
+    "sources": [
+      {
+        "url": "https://www.nhl.com/news/utah-mammoth-colorado-avalanche-2027-winter-classic-set-for-new-years-eve",
+        "publisher": "NHL",
+        "title": "Mammoth, Avalanche set for 2027 Winter Classic on New Year's Eve",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/2027_NHL_Winter_Classic",
+        "publisher": "Wikipedia",
+        "title": "2027 NHL Winter Classic",
+        "tier": "reference",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2026-12-31",
+        "show_date": "2026-12-31",
+        "city": {
+          "name": "Salt Lake City",
+          "state": "UT",
+          "country": "USA",
+          "timezone": "America/Denver",
+          "lat": 40.7608,
+          "lng": -111.891
+        },
+        "venue": { "name": "Rice-Eccles Stadium", "capacity": 51444 },
+        "sources": [
+          {
+            "url": "https://www.nhl.com/news/utah-mammoth-colorado-avalanche-2027-winter-classic-set-for-new-years-eve",
+            "publisher": "NHL",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/2027_NHL_Winter_Classic",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NHL Stadium Series",
+    "slug": "nhl-stadium-series",
+    "category": "sports",
+    "subcategory": "outdoor game",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The NHL's second outdoor property, played in an NFL or college stadium. The 2027 edition puts the Dallas Stars in AT&T Stadium.",
+    "sources": [
+      {
+        "url": "https://www.arlingtontx.gov/News-Articles/2025/November/Dallas-Stars-to-be-home-team-for-the-2027-Navy-Federal-Credit-Union-NHL-Stadium-Series-at-ATT-Stadium",
+        "publisher": "City of Arlington, TX",
+        "title": "Dallas Stars to Host 2027 NHL Stadium Series at AT&T Stadium",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/2027_NHL_Stadium_Series",
+        "publisher": "Wikipedia",
+        "title": "2027 NHL Stadium Series",
+        "tier": "reference",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "start_date": "2027-02-20",
+        "show_date": "2027-02-20",
+        "city": {
+          "name": "Arlington",
+          "state": "TX",
+          "country": "USA",
+          "timezone": "America/Chicago",
+          "lat": 32.7357,
+          "lng": -97.1081
+        },
+        "venue": { "name": "AT&T Stadium", "capacity": 80000 },
+        "network": { "name": "ABC", "is_streaming": false },
+        "sources": [
+          {
+            "url": "https://www.arlingtontx.gov/News-Articles/2025/November/Dallas-Stars-to-be-home-team-for-the-2027-Navy-Federal-Credit-Union-NHL-Stadium-Series-at-ATT-Stadium",
+            "publisher": "City of Arlington, TX",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/2027_NHL_Stadium_Series",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  }
+]

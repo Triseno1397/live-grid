@@ -1,0 +1,310 @@
+[
+  {
+    "name": "Daytona 500",
+    "slug": "daytona-500",
+    "category": "sports",
+    "subcategory": "motorsport",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "NASCAR's season-opening race and its biggest broadcast, run at Daytona International Speedway. The 2027 running moves off its traditional Presidents' Day weekend slot to clear Super Bowl LXI.",
+    "network": { "name": "FOX", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.daytonainternationalspeedway.com/2025/10/22/daytona-international-speedway-announces-2027-daytona-500-date/",
+        "publisher": "Daytona International Speedway",
+        "title": "Daytona International Speedway Announces 2027 DAYTONA 500 Date",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://sports.yahoo.com/articles/daytona-international-speedway-announces-nascar-133016330.html",
+        "publisher": "Yahoo Sports",
+        "title": "Daytona International Speedway announces NASCAR dates for 2027",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-02-21",
+        "show_date": "2027-02-21",
+        "city": {
+          "name": "Daytona Beach",
+          "state": "FL",
+          "country": "USA",
+          "timezone": "America/New_York",
+          "lat": 29.2108,
+          "lng": -81.0228
+        },
+        "venue": { "name": "Daytona International Speedway", "capacity": 101500 },
+        "sources": [
+          {
+            "url": "https://www.daytonainternationalspeedway.com/2025/10/22/daytona-international-speedway-announces-2027-daytona-500-date/",
+            "publisher": "Daytona International Speedway",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://dailydownforce.com/all-confirmed-dates-on-the-2027-nascar-schedule-so-far/",
+            "publisher": "The Daily Downforce",
+            "title": "All Confirmed Dates on the 2027 NASCAR Schedule (So Far)",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Indianapolis 500",
+    "slug": "indianapolis-500",
+    "category": "sports",
+    "subcategory": "motorsport",
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "IndyCar's flagship race at Indianapolis Motor Speedway, run over Memorial Day weekend and preceded by a month of qualifying and practice programming.",
+    "sources": [
+      {
+        "url": "https://fox59.com/news/indy-500-sports/ims-unveils-2027-indy-500-logo-releases-information-on-ticket-renewals/",
+        "publisher": "FOX59",
+        "title": "IMS unveils 2027 Indy 500 logo, releases information on ticket renewals",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.foxsports.com/stories/motor/2027-indycar-schedule-tracker",
+        "publisher": "FOX Sports",
+        "title": "2027 INDYCAR Schedule Tracker: First 8 Dates Announced",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "start_date": "2027-05-30",
+        "show_date": "2027-05-30",
+        "city": "Indianapolis",
+        "venue": { "name": "Indianapolis Motor Speedway", "capacity": 257000 },
+        "sources": [
+          {
+            "url": "https://www.foxsports.com/stories/motor/2027-indycar-schedule-tracker",
+            "publisher": "FOX Sports",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://fox59.com/news/indy-500-sports/ims-unveils-2027-indy-500-logo-releases-information-on-ticket-renewals/",
+            "publisher": "FOX59",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kentucky Derby",
+    "slug": "kentucky-derby",
+    "category": "sports",
+    "subcategory": "horse racing",
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The first leg of American thoroughbred racing's Triple Crown, run at Churchill Downs on the first Saturday in May. A two-minute race carried by several hours of live broadcast.",
+    "sources": [
+      {
+        "url": "https://www.kentuckyderby.com/",
+        "publisher": "Churchill Downs",
+        "title": "2027 Kentucky Derby & Oaks",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://www.horseracingnation.com/race/2027_Kentucky_Derby",
+        "publisher": "Horse Racing Nation",
+        "title": "2027 Kentucky Derby G1",
+        "tier": "reference",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-05-01",
+        "show_date": "2027-05-01",
+        "city": {
+          "name": "Louisville",
+          "state": "KY",
+          "country": "USA",
+          "timezone": "America/Kentucky/Louisville",
+          "lat": 38.2527,
+          "lng": -85.7585
+        },
+        "venue": { "name": "Churchill Downs", "capacity": 165000 },
+        "sources": [
+          {
+            "url": "https://www.kentuckyderby.com/",
+            "publisher": "Churchill Downs",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.churchilldowns.com/calendar/2027-05/",
+            "publisher": "Churchill Downs",
+            "title": "Calendar | May 2027",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.horseracingnation.com/race/2027_Kentucky_Derby",
+            "publisher": "Horse Racing Nation",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Masters Tournament",
+    "slug": "masters-tournament",
+    "category": "sports",
+    "subcategory": "golf",
+    "typical_month": 4,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The first men's major of the golf season, played at Augusta National. Four competition rounds follow a week of practice rounds and the Par 3 Contest.",
+    "sources": [
+      {
+        "url": "https://www.roadtrips.com/professional-golf-packages/masters/schedule/",
+        "publisher": "Roadtrips",
+        "title": "Masters Schedule Augusta Golf Tournament 2027",
+        "tier": "reference",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://voyages.golf/golf-event/the-masters-2027/",
+        "publisher": "Voyages.golf",
+        "title": "The Masters 2027 at Augusta",
+        "tier": "reference",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "start_date": "2027-04-08",
+        "end_date": "2027-04-11",
+        "city": {
+          "name": "Augusta",
+          "state": "GA",
+          "country": "USA",
+          "timezone": "America/New_York",
+          "lat": 33.4735,
+          "lng": -82.0105
+        },
+        "venue": { "name": "Augusta National Golf Club" },
+        "sources": [
+          {
+            "url": "https://www.roadtrips.com/professional-golf-packages/masters/schedule/",
+            "publisher": "Roadtrips",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://voyages.golf/golf-event/the-masters-2027/",
+            "publisher": "Voyages.golf",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ryder Cup",
+    "slug": "ryder-cup",
+    "category": "sports",
+    "subcategory": "golf",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The biennial match-play contest between the United States and Europe, alternating continents. The 2027 edition is at Adare Manor in County Limerick, with four activation days ahead of three days of competition.",
+    "sources": [
+      {
+        "url": "https://www.rydercup.com/news-media/dates-announced-for-the-2027-ryder-cup",
+        "publisher": "Ryder Cup",
+        "title": "Dates Announced for the 2027 Ryder Cup",
+        "tier": "official",
+        "retrieved_on": "2026-08-19"
+      },
+      {
+        "url": "https://feeds.bbci.co.uk/sport/golf/articles/ce9vde77xkno",
+        "publisher": "BBC Sport",
+        "title": "Dates announced for 2027 Ryder Cup at Adare Manor",
+        "tier": "trade",
+        "retrieved_on": "2026-08-19"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-09-17",
+        "end_date": "2027-09-19",
+        "load_in": "2027-09-13",
+        "city": {
+          "name": "Adare",
+          "state": "County Limerick",
+          "country": "Ireland",
+          "timezone": "Europe/Dublin",
+          "lat": 52.5642,
+          "lng": -8.7889
+        },
+        "venue": { "name": "Adare Manor" },
+        "sources": [
+          {
+            "url": "https://www.rydercup.com/news-media/dates-announced-for-the-2027-ryder-cup",
+            "publisher": "Ryder Cup",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://www.rydercup.com/future-venues/2027",
+            "publisher": "Ryder Cup",
+            "title": "Ryder Cup Future Venues 2027",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-19"
+          },
+          {
+            "url": "https://sportforbusiness.com/ryder-cup-dates-confirmed-for-adare-manor-in-september-2027/",
+            "publisher": "Sport for Business",
+            "title": "Ryder Cup Dates Confirmed for Adare Manor in September 2027",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-19"
+          }
+        ]
+      }
+    ]
+  }
+]

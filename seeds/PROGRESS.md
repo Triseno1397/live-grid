@@ -4,7 +4,21 @@ Durable state for the 600–800 production sweep. The sweep is far longer than o
 session, so this file — not anyone's memory — is what says where it got to.
 
 **Target:** 800 productions / ~1600 editions across all 13 categories.
-**At last update:** 57 productions / 107 editions across 5 categories.
+**At last update:** 77 productions / 133 editions across 7 categories, 68 sources / 113 citations.
+
+## Two things the sweep keeps running into
+
+**Not everything is fetchable.** `oscars.org`, Variety and The Hollywood Reporter all refuse
+automated fetches (403, or a redirect to a paywall proxy). Verification therefore runs mostly
+through corroborating *search results* across independent publishers, with a direct fetch
+where the site allows one. League and venue sites are the reliable ones — `nfl.com`,
+`nba.com`, `mlb.com`, `nhl.com`, `netflix.com/tudum`, club sites, `profootballhof.com`,
+`kentuckyderby.com`, `rydercup.com` all work.
+
+**Aggregator pages lie in past tense.** A RealGM page presented the *2027* NBA Draft as
+already run, with a date. It is a template stub. Anything phrased as settled about a future
+event, on a site that auto-generates per-year pages, gets dropped rather than seeded — the
+NBA Draft is absent from batch 008 for exactly this reason.
 
 ## The protocol
 
@@ -37,6 +51,8 @@ exceed `single_source`.
 | 005 | `005-variety.json` | variety | 8 | — | yes | Pre-provenance. |
 | 006 | `006-production-team.json` | team overlay | 4 | — | yes | Pre-provenance. Overlays 001. |
 | 007 | `007-nfl-tentpoles.json` | sports · NFL | 8 | 4 | yes | 26 sources / 47 citations. 14 official, 3 corroborated, 3 single-source. |
+| 008 | `008-major-leagues.json` | sports · NBA/MLB/NHL | 7 | 4 | yes | 19 sources / 32 citations. All 14 records official. |
+| 009 | `009-annual-classics.json` | sports · motorsport, racing, golf | 5 | 4 | yes | 14 sources / 22 citations. Masters is single-source — see below. |
 | 019 | `019-source-backfill.json` | backfill | 1 of 57 | 4 | yes | Academy Awards done. 56 productions still uncited. |
 
 Batches 000–006 predate the provenance schema. They are listed in `LEGACY_UNSOURCED` in
