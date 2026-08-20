@@ -39,6 +39,24 @@ export type Database = {
   }
   public: {
     Tables: {
+      chat_usage: {
+        Row: {
+          count: number
+          day: string
+          ip_hash: string
+        }
+        Insert: {
+          count?: number
+          day?: string
+          ip_hash: string
+        }
+        Update: {
+          count?: number
+          day?: string
+          ip_hash?: string
+        }
+        Relationships: []
+      }
       citations: {
         Row: {
           edition_id: string | null
@@ -570,6 +588,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      bump_chat_usage: { Args: { p_ip_hash: string }; Returns: number }
       is_editor: { Args: never; Returns: boolean }
     }
     Enums: {

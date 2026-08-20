@@ -9,10 +9,13 @@ import { cn } from "@/lib/cn";
 
 import { CommandPalette } from "./command-palette";
 
+// "Expert", not "Expert Chatbot": the row below is tuned to fit the wordmark, the nav and
+// the search trigger on one line at 390px, and the longer label breaks it.
 const NAV = [
   { href: "/", label: "Dashboard" },
   { href: "/calendar", label: "Calendar" },
   { href: "/browse", label: "Browse" },
+  { href: "/chat", label: "Expert" },
 ];
 
 export function TopNav() {
@@ -62,9 +65,10 @@ export function TopNav() {
                   aria-current={active ? "page" : undefined}
                   className={cn(
                     "press flex h-8 items-center rounded-md px-2.5 text-base font-medium tracking-[-0.015em]",
-                    // 44px tap floor on mobile, and tighter padding so the wordmark, three
-                    // nav items and the search trigger still fit one row at 390px.
-                    "max-sm:h-11 max-sm:px-2",
+                    // 44px tap floor on mobile, and tighter padding so the wordmark, four
+                    // nav items and the search trigger still fit one row at 390px. The
+                    // fourth item is why the mobile padding drops again to 1.5.
+                    "max-sm:h-11 max-sm:px-1.5",
                     // Active state is a filled surface, never an underline.
                     active ? "bg-active text-fg" : "text-fg-tertiary hover:bg-hover hover:text-fg",
                   )}
