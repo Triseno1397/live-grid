@@ -29,10 +29,41 @@ type CountedTable = (typeof COUNTED)[number];
  */
 export const SEED_TARGETS = { productions: 800, editions: 1600, viewership: 300 } as const;
 
+/**
+ * Each category's share of `SEED_TARGETS.productions`, from the Wave 1/2 scope tables in
+ * `seeds/PROGRESS.md`.
+ *
+ * A raw count answers "is there anything here"; a target answers "is this done". Those are
+ * different questions and the second one is the one the sweep is actually working through —
+ * `tech` at 6 and `gaming` at 0 look similar in a bare list, and one of them is a fifth of
+ * the way there while the other has not started.
+ *
+ * The scope tables sum to 765. The remaining 35 go to awards, concerts and corporate, which
+ * are the three whose scope lists are explicitly open-ended ("every upfront", "guild awards"),
+ * so the total reconciles with `SEED_TARGETS.productions`. `check-seeds.ts` asserts that sum
+ * on every run — a category quietly falling out of the plan is otherwise invisible.
+ */
+export const CATEGORY_TARGETS: Record<(typeof CATEGORIES)[number], number> = {
+  sports: 180,
+  concerts: 80,
+  awards: 75,
+  corporate: 70,
+  holiday: 60,
+  reality: 60,
+  international: 50,
+  streaming: 50,
+  game_shows: 40,
+  variety: 40,
+  political: 35,
+  gaming: 30,
+  tech: 30,
+};
+
 export type SeedStats = {
   counts: Record<CountedTable, number>;
   targets: typeof SEED_TARGETS;
-  byCategory: { category: string; count: number }[];
+  /** Count against this category's share of the target — see CATEGORY_TARGETS. */
+  byCategory: { category: string; count: number; target: number }[];
   byStatus: { status: string; count: number }[];
   /**
    * Productions by derived confidence. This is the sweep's real progress bar — a category
@@ -142,7 +173,15 @@ export async function getSeedStats(db: Db): Promise<SeedStats> {
   return {
     counts,
     targets: SEED_TARGETS,
-    byCategory: [...categoryTally].map(([category, count]) => ({ category, count })),
+    byCategory: [...categoryTally]
+      .map(([category, count]) => ({
+        category,
+        count,
+        target: CATEGORY_TARGETS[category as (typeof CATEGORIES)[number]] ?? 0,
+      }))
+      // Biggest remaining gap first, so an empty category cannot hide in an alphabetical
+      // list. This is the sweep's work queue, and it should read like one.
+      .sort((a, b) => b.target - b.count - (a.target - a.count)),
     byStatus: [...statusTally].map(([status, count]) => ({ status, count })),
     byConfidence: [...confidenceTally].map(([confidence, count]) => ({ confidence, count })),
     unverified: productions
@@ -184,15 +223,18 @@ async function findTeamNames(db: Db): Promise<SeedStats["teamNames"]> {
  * the import report's createdLookups is meant to catch — this is the standing check.
  */
 async function findOrphanLookups(db: Db): Promise<SeedStats["orphanLookups"]> {
-  const [networks, companies, cities, venues, productions, editions, team] = await Promise.all([
-    db.from("networks").select("name, slug, id"),
-    db.from("companies").select("name, slug, id"),
-    db.from("cities").select("name, slug, id"),
-    db.from("venues").select("name, slug, id, city_id"),
-    db.from("productions").select("network_id, production_company_id"),
-    db.from("editions").select("city_id, venue_id, network_id"),
-    db.from("production_team").select("company_id"),
-  ]);
+  const [networks, companies, cities, venues, productions, editions, team, sources, citations] =
+    await Promise.all([
+      db.from("networks").select("name, slug, id"),
+      db.from("companies").select("name, slug, id"),
+      db.from("cities").select("name, slug, id"),
+      db.from("venues").select("name, slug, id, city_id"),
+      db.from("productions").select("network_id, production_company_id"),
+      db.from("editions").select("city_id, venue_id, network_id"),
+      db.from("production_team").select("company_id"),
+      db.from("sources").select("id, url, publisher"),
+      db.from("citations").select("source_id"),
+    ]);
 
   /**
    * Every FK that points at a network or a company, not just the one on `productions`.
@@ -232,5 +274,23 @@ async function findOrphanLookups(db: Db): Promise<SeedStats["orphanLookups"]> {
   collect("company", companies.data, usedCompanies);
   collect("city", cities.data, usedCities);
   collect("venue", venues.data, usedVenues);
+
+  /**
+   * A source nothing cites.
+   *
+   * Sources dedupe on `url`, so correcting a citation's URL does not move the row — it
+   * creates a second one and leaves the first behind, still counted in the sources total and
+   * still looking like provenance. `npm run seeds:links` produces exactly that situation
+   * every time it catches a rotted link, so the cleanup needs somewhere to be visible.
+   *
+   * Listed with the url rather than a slug, because a url IS the source's identity here.
+   */
+  const usedSources = new Set((citations.data ?? []).map((c) => c.source_id));
+  for (const source of sources.data ?? []) {
+    if (!usedSources.has(source.id)) {
+      orphans.push({ kind: "source", name: source.publisher, slug: source.url });
+    }
+  }
+
   return orphans;
 }

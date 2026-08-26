@@ -32,7 +32,22 @@ applies only to editions dated today or later — the ones someone would actuall
 | 3 · Corroborate | Re-check every date, venue and network fact against a **different publisher**. | Second citation, or a downgrade: conflicting facts take the more authoritative value, keep one citation, and drop to `status: rumored` with the conflict noted. |
 | 4 · Confirm | For upcoming editions only, check the primary source — network press site, venue calendar, league schedule, the event's own site. | An `official`-tier citation and `status: confirmed`, or it stays `announced`. |
 
-Then `npm run seeds:check`, then `npm run seeds:import -- seeds/NNN-slice.json --verify`.
+Then the gates, in order:
+
+```
+npm run seeds:lookups                  # BEFORE writing: the vocabulary already in the database
+npm run seeds:check                    # shape, dates, provenance, forks. --strict while authoring
+npm run seeds:links -- --file 'NNN-*'  # do the cited pages exist?
+npm run seeds:import -- seeds/NNN-slice.json --verify
+```
+
+`seeds:links` is the one that cannot be reasoned about from the file. Everything else in
+`seeds:check` is deterministic and offline; whether a URL resolves is not, and a plausible URL
+that was never read looks exactly like one that was to every other gate here. It found a dead
+BBC citation on its first run over a corpus that had passed every check six times.
+
+It is deliberately not wired into `seeds:check` — a network call has no business gating a
+deterministic file checker. Run it per batch, and over the whole corpus periodically.
 
 `--verify` is the idempotency proof, and it is now the machine's job rather than the reader's:
 the CLI imports the batch, imports it again, and fails the run unless the second pass created
@@ -45,6 +60,24 @@ from "rewritten with the same values", which is the difference between a proof a
 `confidence` is never written by hand — the importer derives it from the citations that
 actually landed. A `reference`-tier source alone (Wikipedia, aggregators, fan wikis) can never
 exceed `single_source`.
+
+And corroboration counts **domains, not publisher labels**. "Deadline" and "Deadline Hollywood"
+are one outlet and two strings, and counting strings bought a `corroborated` tier with one
+publisher's word. Two citations only corroborate each other if they come from two registrable
+domains. Where one outlet genuinely publishes from two, `PUBLISHER_GROUPS` in `src/lib/url.ts`
+merges them — that lowers a stored tier, so it comes with `npm run seeds:rederive`.
+
+### Cleaning up after a correction
+
+The importer is additive: it adds citations, never removes ones a file stopped mentioning,
+because batch 006 hangs credits on citations batch 001 wrote. So correcting a rotted URL leaves
+the old `sources` row behind, still attached, still reading as provenance.
+
+```
+npm run seeds:prune            # sources cited by no seed file. Dry by default
+npm run seeds:prune -- --apply # deletes them; citations cascade
+npm run seeds:rederive         # confidence is derived from citations that just changed
+```
 
 ## Batches
 

@@ -139,16 +139,29 @@ export default async function AdminPage() {
       </section>
 
       <section className="grid gap-6 sm:grid-cols-2">
-        <div className="flex flex-col gap-1">
-          <h2 className="eyebrow mb-1 text-fg-tertiary">By category</h2>
-          {byCategory.map(({ category, count }) => (
-            <div key={category} className="flex justify-between gap-4">
-              <span className={count === 0 ? "text-fg-disabled" : "text-fg-secondary"}>
-                {category}
-              </span>
-              <span className={count === 0 ? "text-fg-disabled" : "tabular-nums text-fg"}>
-                {count}
-              </span>
+        {/*
+          Ordered by remaining gap rather than alphabetically — this list is the sweep's work
+          queue, and an empty category should be at the top of it, not filed under g.
+        */}
+        <div className="flex flex-col gap-2">
+          <h2 className="eyebrow mb-1 text-fg-tertiary">By category — count / target</h2>
+          {byCategory.map(({ category, count, target }) => (
+            <div key={category} className="flex flex-col gap-1">
+              <div className="flex justify-between gap-4">
+                <span className={count === 0 ? "text-fg-disabled" : "text-fg-secondary"}>
+                  {category}
+                </span>
+                <span className={count === 0 ? "text-fg-disabled" : "tabular-nums text-fg"}>
+                  {count}
+                  <span className="text-fg-tertiary"> / {target}</span>
+                </span>
+              </div>
+              <div className="h-1 w-full overflow-hidden rounded-full bg-active">
+                <div
+                  className="h-full bg-accent"
+                  style={{ width: `${Math.min(100, Math.round((count / target) * 100))}%` }}
+                />
+              </div>
             </div>
           ))}
         </div>

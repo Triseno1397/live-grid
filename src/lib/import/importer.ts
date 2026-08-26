@@ -2,6 +2,7 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 
 import type { Database } from "@/lib/supabase/database.types";
 import { slugify } from "@/lib/slug";
+import { publisherKey } from "@/lib/url";
 import { ProductionInput } from "./schema";
 import type {
   CityInputT,
@@ -840,11 +841,16 @@ async function flushCitations(run: Run): Promise<void> {
  * Publishers, not citations: one story cited under three different `field` values is still
  * one publisher, and counting rows instead would let a single source promote itself to
  * "corroborated" just by being thorough.
+ *
+ * And publishers by DOMAIN, not by label — see `publisherKey`. The free-text `publisher`
+ * field is a byline, and bylines vary: "Deadline" and "Deadline Hollywood" are two strings
+ * and one outlet, which under a label count is a corroboration tier bought with one
+ * publisher's word.
  */
-function rankConfidence(rows: { tier: string; publisher: string }[]): Confidence {
+function rankConfidence(rows: { tier: string; publisher: string; url: string }[]): Confidence {
   if (rows.length === 0) return "unverified";
 
-  const publishers = new Set(rows.map((r) => r.publisher.trim().toLowerCase()));
+  const publishers = new Set(rows.map((r) => publisherKey(r.url, r.publisher)));
   const hasOfficial = rows.some((r) => r.tier === "official");
   const hasNonReference = rows.some((r) => r.tier !== "reference");
 
@@ -853,7 +859,10 @@ function rankConfidence(rows: { tier: string; publisher: string }[]): Confidence
   return "single_source";
 }
 
-type CitationRow = { retrieved_on: string; sources: { tier: string; publisher: string } | null };
+type CitationRow = {
+  retrieved_on: string;
+  sources: { tier: string; publisher: string; url: string } | null;
+};
 
 /**
  * Recomputes confidence for every production and edition the run touched, from what is
@@ -884,7 +893,7 @@ async function deriveConfidenceBulk(run: Run): Promise<void> {
         .from("citations")
         // Must stay a single string literal — the Supabase client parses the select at the
         // type level, and a concatenation widens to `string`.
-        .select("production_id, edition_id, retrieved_on, sources(tier, publisher)")
+        .select("production_id, edition_id, retrieved_on, sources(tier, publisher, url)")
         .in(column, chunk);
       if (error) fail(ctx, error.message);
       return data ?? [];

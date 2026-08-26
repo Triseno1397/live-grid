@@ -16,16 +16,41 @@
  * Exit code 1 on any error. Warnings never fail the run — they are for eyes, not gates.
  */
 
-import { readFileSync, readdirSync } from "node:fs";
-import { join } from "node:path";
-
 import { CATEGORIES, ProductionInput, STATUSES } from "../src/lib/import/schema";
+import { CATEGORY_TARGETS, SEED_TARGETS } from "../src/lib/stats";
 import { slugify } from "../src/lib/slug";
-
-const SEEDS_DIR = join(process.cwd(), "seeds");
+import { isReferenceDomain, registrableDomain } from "../src/lib/url";
+import {
+  allSourcesOf,
+  editionsOf,
+  loadSeedRecords,
+  sourcesOf,
+  type Loaded,
+  type Problem,
+  type SourceLike,
+} from "./lib/seeds";
 
 /** Today in the same ISO form the seeds use, in UTC so the check is machine-independent. */
 const TODAY = new Date().toISOString().slice(0, 10);
+
+/**
+ * How long a citation on a FUTURE edition stays trustworthy before it wants another look.
+ *
+ * Only future editions: a viewership figure sourced in 2019 is as true as it was then, while
+ * a 2027 date read eight months ago has had eight months to move.
+ */
+const STALE_AFTER_DAYS = 180;
+
+/**
+ * `--strict` promotes the time-sensitive warnings to errors.
+ *
+ * On for the person authoring a batch, off for a sweep over the whole corpus. The difference
+ * matters: a seed file is a snapshot, so "this confirmed edition is now in the past" is a
+ * fact about the calendar rather than a defect in the file, and erroring by default would
+ * turn every old and correct batch red on a clock tick. That is the same cries-wolf failure
+ * `findOrphanLookups` was fixed for.
+ */
+const STRICT = process.argv.slice(2).includes("--strict");
 
 /**
  * Batches imported before the provenance migration existed. Their facts were verified — the
@@ -46,8 +71,6 @@ const LEGACY_UNSOURCED = new Set([
   "006-production-team.json",
 ]);
 
-type Problem = { file: string; record: string; message: string };
-
 const errors: Problem[] = [];
 const warnings: Problem[] = [];
 
@@ -57,47 +80,8 @@ function error(file: string, record: string, message: string) {
 function warn(file: string, record: string, message: string) {
   warnings.push({ file, record, message });
 }
-
-// ---------------------------------------------------------------------------
-// Load
-// ---------------------------------------------------------------------------
-
-type Loaded = { file: string; index: number; record: Record<string, unknown> };
-
-function loadAll(): Loaded[] {
-  let files: string[];
-  try {
-    files = readdirSync(SEEDS_DIR)
-      .filter((f) => f.endsWith(".json"))
-      .sort();
-  } catch {
-    console.error(`No seeds directory at ${SEEDS_DIR}.`);
-    process.exit(1);
-  }
-
-  const loaded: Loaded[] = [];
-  for (const file of files) {
-    let parsed: unknown;
-    try {
-      parsed = JSON.parse(readFileSync(join(SEEDS_DIR, file), "utf8"));
-    } catch (cause) {
-      error(file, "-", `not valid JSON: ${cause instanceof Error ? cause.message : cause}`);
-      continue;
-    }
-    if (!Array.isArray(parsed)) {
-      error(file, "-", "top level is not a JSON array");
-      continue;
-    }
-    parsed.forEach((record, index) => {
-      if (typeof record !== "object" || record === null || Array.isArray(record)) {
-        error(file, `#${index}`, "record is not an object");
-        return;
-      }
-      loaded.push({ file, index, record: record as Record<string, unknown> });
-    });
-  }
-  return loaded;
-}
+/** Time-sensitive findings: a defect while authoring, a calendar fact afterwards. */
+const timeSensitive = STRICT ? error : warn;
 
 // ---------------------------------------------------------------------------
 // Per-record checks
@@ -105,38 +89,15 @@ function loadAll(): Loaded[] {
 
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
-type SourceLike = { tier?: unknown; url?: unknown; publisher?: unknown };
-
-function sourcesOf(value: unknown): SourceLike[] {
-  return Array.isArray(value) ? (value as SourceLike[]) : [];
-}
-
 function hasOfficial(sources: SourceLike[]): boolean {
   return sources.some((s) => s.tier === "official");
 }
 
-/**
- * Editions arrive in two shapes — the nested array, or the flat single-edition shorthand
- * written on the production. Collapsing them here mirrors `normalizeEditions` in the
- * importer so the check sees exactly what the database will.
- */
-function editionsOf(record: Record<string, unknown>): Record<string, unknown>[] {
-  const nested = record.editions;
-  if (Array.isArray(nested) && nested.length > 0) {
-    return nested.filter(
-      (e): e is Record<string, unknown> => typeof e === "object" && e !== null && !Array.isArray(e),
-    );
-  }
-  if (record.year === undefined) return [];
-  return [
-    {
-      year: record.year,
-      status: record.status,
-      start_date: record.start_date,
-      end_date: record.end_date,
-      sources: record.sources,
-    },
-  ];
+/** Whole days between two ISO dates. Both are UTC midnight, so no DST correction is needed. */
+function daysBetween(from: string, to: string): number {
+  return Math.round(
+    (Date.parse(`${to}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / 86_400_000,
+  );
 }
 
 function checkDates(file: string, name: string, label: string, e: Record<string, unknown>) {
@@ -251,7 +212,9 @@ function checkRecord({ file, index, record }: Loaded) {
 
     const start = typeof e.start_date === "string" ? e.start_date : null;
     const isFuture = start !== null && start >= TODAY;
-    if (e.status === "confirmed" && isFuture && !hasOfficial(sourcesOf(e.sources))) {
+    const editionSourceList = sourcesOf(e.sources);
+
+    if (e.status === "confirmed" && isFuture && !hasOfficial(editionSourceList)) {
       sourceProblem(
         file,
         name,
@@ -259,14 +222,86 @@ function checkRecord({ file, index, record }: Loaded) {
           "downgrade it to announced or cite the primary source",
       );
     }
-    if (isFuture && sourcesOf(e.sources).length === 0 && !legacy) {
+    if (isFuture && editionSourceList.length === 0 && !legacy) {
       warn(file, name, `${label} is upcoming (${start}) with no source of its own`);
+    }
+
+    /**
+     * A completed edition whose date has not arrived.
+     *
+     * Unconditionally an error, and the highest-value check in this pass. It is exactly the
+     * failure `seeds/PROGRESS.md` records: aggregator pages auto-generate a page per year
+     * and describe next year's event in the past tense, with a date. A record that says an
+     * event both already happened and has not happened yet is not stale — it is wrong.
+     */
+    if (e.status === "completed" && isFuture) {
+      error(file, name, `${label} is marked completed but ${start} has not happened yet`);
+    }
+
+    // The mirror image, and a fact about the calendar rather than the file — see STRICT.
+    if ((e.status === "confirmed" || e.status === "announced") && start !== null && start < TODAY) {
+      timeSensitive(file, name, `${label} is still "${e.status}" but ${start} has passed`);
+    }
+
+    /**
+     * An upcoming edition whose newest citation is old.
+     *
+     * A date confirmed against a page that has since changed reads as checked and is not,
+     * which is worse than an honest gap. Scoped to future editions: pass 4 is the one that
+     * goes stale, because it is the only one whose subject can still move.
+     */
+    if (isFuture && editionSourceList.length > 0) {
+      const newest = editionSourceList
+        .map((s) => (typeof s.retrieved_on === "string" ? s.retrieved_on : ""))
+        .reduce((latest, value) => (value > latest ? value : latest), "");
+      if (newest !== "" && daysBetween(newest, TODAY) > STALE_AFTER_DAYS) {
+        warn(
+          file,
+          name,
+          `${label} is upcoming (${start}) and its newest citation was read ` +
+            `${daysBetween(newest, TODAY)} days ago — re-run pass 4`,
+        );
+      }
     }
   }
 
   for (const s of allSources) {
-    if (typeof s.url === "string" && !/^https?:\/\//i.test(s.url)) {
-      error(file, name, `source url is not http(s): ${s.url}`);
+    const url = typeof s.url === "string" ? s.url : null;
+    if (url !== null && !/^https?:\/\//i.test(url)) {
+      error(file, name, `source url is not http(s): ${url}`);
+    }
+
+    /**
+     * `official` means the party that decides the fact said so. An encyclopedia or a fan
+     * wiki cannot be that party by definition, and a batch that tiers one `official` has
+     * mislabelled it — usually by copying the tier from the row above. Left unchecked it is
+     * the one way a reference source reaches the `official` confidence tier.
+     */
+    if (url !== null && s.tier === "official" && isReferenceDomain(url)) {
+      error(
+        file,
+        name,
+        `${registrableDomain(url)} is a reference source and cannot be official-tier: ${url}`,
+      );
+    }
+
+    // Dates that describe reading a page. Each of these is impossible rather than unlikely,
+    // and an impossible retrieval date is the cheapest fabrication tell there is.
+    const retrieved = typeof s.retrieved_on === "string" ? s.retrieved_on : null;
+    const published = typeof s.published_on === "string" ? s.published_on : null;
+
+    if (retrieved !== null && retrieved > TODAY) {
+      error(file, name, `source retrieved_on is in the future (${retrieved}): ${url}`);
+    }
+    if (published !== null && published > TODAY) {
+      error(file, name, `source published_on is in the future (${published}): ${url}`);
+    }
+    if (retrieved !== null && published !== null && published > retrieved) {
+      error(
+        file,
+        name,
+        `source was published ${published} but retrieved ${retrieved} — read before it existed: ${url}`,
+      );
     }
   }
 }
@@ -352,6 +387,154 @@ function editDistanceAtMostOne(a: string, b: string): boolean {
 }
 
 /**
+ * Publisher identity, now that corroboration counts domains rather than labels.
+ *
+ * Three findings, at two severities:
+ *
+ *  - **One domain cited at two different tiers** is an error. `tier` is what gates the
+ *    `official` confidence level, so a site that is `official` in one record and `trade` in
+ *    the next means one of them is wrong, and the wrong one is load-bearing. Every host in
+ *    the corpus maps to exactly one tier today, so this lands green and stays a real gate.
+ *  - **One domain under two publisher labels** is a warning, not an error. `mlb.com`
+ *    legitimately carries both MLB's newsroom and the Cubs', and both are `official` for
+ *    different facts. Under domain-keyed counting the labels can no longer inflate anything,
+ *    which drops this from a gate to hygiene — worth seeing, not worth blocking.
+ *  - **One label across two domains** is a warning: either an outlet that genuinely publishes
+ *    from two places (a `PUBLISHER_GROUPS` entry, and a re-derive), or a typo.
+ */
+function checkPublisherIdentity(loaded: Loaded[]) {
+  const tiers = new Map<string, Map<string, string[]>>();
+  const labels = new Map<string, Set<string>>();
+  const domains = new Map<string, Set<string>>();
+
+  for (const { file, record } of loaded) {
+    const name = typeof record.name === "string" ? record.name : "?";
+    for (const source of allSourcesOf(record)) {
+      if (typeof source.url !== "string") continue;
+      const domain = registrableDomain(source.url);
+      if (domain === null) continue;
+
+      const publisher = typeof source.publisher === "string" ? source.publisher : "?";
+      const tier = typeof source.tier === "string" ? source.tier : "?";
+
+      const byTier = tiers.get(domain) ?? new Map<string, string[]>();
+      byTier.set(tier, [...(byTier.get(tier) ?? []), `${file} — ${name}`]);
+      tiers.set(domain, byTier);
+
+      labels.set(domain, (labels.get(domain) ?? new Set()).add(publisher));
+      domains.set(publisher, (domains.get(publisher) ?? new Set()).add(domain));
+    }
+  }
+
+  for (const [domain, byTier] of tiers) {
+    if (byTier.size < 2) continue;
+    const detail = [...byTier]
+      .map(([tier, where]) => `${tier} (${where[0]}${where.length > 1 ? ` +${where.length - 1}` : ""})`)
+      .join(" vs ");
+    error("seeds", domain, `cited at more than one tier — ${detail}. One of them is wrong.`);
+  }
+
+  for (const [domain, names] of labels) {
+    if (names.size < 2) continue;
+    warn("seeds", domain, `one domain, ${names.size} publisher labels: ${[...names].join(" / ")}`);
+  }
+
+  for (const [publisher, hosts] of domains) {
+    if (hosts.size < 2) continue;
+    warn(
+      "seeds",
+      publisher,
+      `one publisher label, ${hosts.size} domains: ${[...hosts].join(" / ")} — ` +
+        "corroboration counts them separately unless PUBLISHER_GROUPS says otherwise",
+    );
+  }
+}
+
+/**
+ * The fork that concurrent batch authoring actually produces.
+ *
+ * `checkCollisions` covers production slugs. Lookups had nothing: batch 011 writes
+ * `{"name": "Netflix"}`, batch 014 writes `{"name": "Netflix (US)"}`, and the result is two
+ * network rows, two sets of productions hanging off them, and no error anywhere — because
+ * both are perfectly valid records. `orphanLookups` on /admin only notices after the import
+ * has already created the fork, and only if one side ends up referenced by nothing.
+ *
+ * This is the check that makes researching several batches at once safe. Run
+ * `npm run seeds:lookups` to see the vocabulary already in the database before writing one.
+ */
+function checkLookupNames(loaded: Loaded[]) {
+  /** kind -> slug -> the distinct names written under it, and where. */
+  const byKind = new Map<string, Map<string, Map<string, Set<string>>>>();
+
+  const note = (kind: string, value: unknown, where: string) => {
+    if (typeof value === "string") return record(kind, value, where);
+    if (typeof value !== "object" || value === null || Array.isArray(value)) return;
+    const name = (value as { name?: unknown }).name;
+    const slug = (value as { slug?: unknown }).slug;
+    if (typeof name !== "string") return;
+    record(kind, name, where, typeof slug === "string" ? slug : undefined);
+    // A venue can carry its own city object.
+    if (kind === "venue") note("city", (value as { city?: unknown }).city, where);
+  };
+
+  const record = (kind: string, name: string, where: string, explicitSlug?: string) => {
+    const slug = explicitSlug ?? slugify(name);
+    const kindMap = byKind.get(kind) ?? new Map<string, Map<string, Set<string>>>();
+    const slugMap = kindMap.get(slug) ?? new Map<string, Set<string>>();
+    slugMap.set(name, (slugMap.get(name) ?? new Set()).add(where));
+    kindMap.set(slug, slugMap);
+    byKind.set(kind, kindMap);
+  };
+
+  for (const { file, record: row } of loaded) {
+    const where = file;
+    note("network", row.network, where);
+    note("company", row.production_company, where);
+    note("city", row.city, where);
+    note("venue", row.venue, where);
+
+    for (const edition of editionsOf(row)) {
+      note("city", edition.city, where);
+      note("venue", edition.venue, where);
+      note("network", edition.network, where);
+    }
+    if (Array.isArray(row.team)) {
+      for (const member of row.team as Record<string, unknown>[]) {
+        note("company", member.company, where);
+      }
+    }
+  }
+
+  for (const [kind, kindMap] of byKind) {
+    // Two names under one slug is harmless — the importer keys on the slug, so they converge
+    // and the LAST one wins the `name` column. Worth seeing, because which one wins is
+    // decided by file order rather than by anyone.
+    for (const [slug, names] of kindMap) {
+      if (names.size < 2) continue;
+      warn(
+        "seeds",
+        `${kind}:${slug}`,
+        `same slug, different names: ${[...names.keys()].map((n) => `"${n}"`).join(" vs ")} — ` +
+          "the last file imported wins",
+      );
+    }
+
+    // Two slugs one edit apart is the real fork: two rows that should have been one.
+    const slugs = [...kindMap.keys()].sort();
+    for (let i = 0; i < slugs.length; i += 1) {
+      for (let j = i + 1; j < slugs.length && j <= i + 4; j += 1) {
+        if (!editDistanceAtMostOne(slugs[i], slugs[j])) continue;
+        warn(
+          "seeds",
+          `${kind}:${slugs[i]}`,
+          `one edit away from "${slugs[j]}" — two ${kind} rows that should be one?`,
+        );
+      }
+    }
+  }
+}
+
+/**
  * `subcategory` is free text by design, which is exactly why it drifts. "late night" and
  * "late-night" are two facets in the browse table and one concept in the world.
  */
@@ -380,7 +563,9 @@ function checkSubcategories(loaded: Loaded[]) {
 // ---------------------------------------------------------------------------
 
 function main() {
-  const loaded = loadAll();
+  const { loaded, errors: loadErrors } = loadSeedRecords();
+  errors.push(...loadErrors);
+
   if (loaded.length === 0 && errors.length === 0) {
     console.log("No seed records found.");
     return;
@@ -388,6 +573,8 @@ function main() {
 
   for (const item of loaded) checkRecord(item);
   checkCollisions(loaded);
+  checkLookupNames(loaded);
+  checkPublisherIdentity(loaded);
   checkSubcategories(loaded);
 
   const files = new Set(loaded.map((l) => l.file)).size;
@@ -406,9 +593,23 @@ function main() {
     }
   }
 
+  // The plan's per-category targets have to keep adding up to the headline number, or a
+  // category can drift out of scope with nothing to notice. Cheap, and it fails loudly.
+  const targetSum = Object.values(CATEGORY_TARGETS).reduce((a, b) => a + b, 0);
+  if (targetSum !== SEED_TARGETS.productions) {
+    error(
+      "src/lib/stats.ts",
+      "CATEGORY_TARGETS",
+      `sums to ${targetSum} but SEED_TARGETS.productions is ${SEED_TARGETS.productions}`,
+    );
+  }
+
   console.log("By category:");
   for (const [category, count] of categoryTally) {
-    console.log(`  ${category.padEnd(15)} ${String(count).padStart(4)}`);
+    const target = CATEGORY_TARGETS[category as (typeof CATEGORIES)[number]] ?? 0;
+    console.log(
+      `  ${category.padEnd(15)} ${String(count).padStart(4)} / ${String(target).padStart(3)}`,
+    );
   }
   console.log("\nBy edition status:");
   for (const [status, count] of statusTally) {

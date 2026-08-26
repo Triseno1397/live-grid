@@ -12,7 +12,11 @@
     "db:types": "supabase gen types typescript --project-id $SUPABASE_PROJECT_REF > src/lib/supabase/database.types.ts",
     "db:diff": "supabase db diff --linked",
     "seeds:check": "tsx scripts/check-seeds.ts",
-    "seeds:import": "tsx --env-file-if-exists=.env.local scripts/import-seeds.ts"
+    "seeds:lookups": "tsx --env-file-if-exists=.env.local scripts/lookups.ts",
+    "seeds:links": "tsx --env-file-if-exists=.env.local scripts/check-links.ts",
+    "seeds:prune": "tsx --env-file-if-exists=.env.local scripts/prune-sources.ts",
+    "seeds:import": "tsx --env-file-if-exists=.env.local scripts/import-seeds.ts",
+    "seeds:rederive": "tsx --env-file-if-exists=.env.local scripts/rederive-confidence.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.120.0",
