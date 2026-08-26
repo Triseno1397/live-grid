@@ -120,5 +120,196 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Apple Worldwide Developers Conference",
+    "slug": "apple-wwdc",
+    "category": "tech",
+    "sources": [
+      {
+        "url": "https://www.apple.com/newsroom/2026/05/apple-kicks-off-worldwide-developers-conference-on-june-8/",
+        "publisher": "Apple",
+        "tier": "official",
+        "title": "Apple kicks off Worldwide Developers Conference on June 8",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://developer.apple.com/wwdc26/special-event/",
+        "publisher": "Apple",
+        "tier": "official",
+        "title": "Special event at Apple Park - WWDC26",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://www.apple.com/newsroom/2026/03/apples-worldwide-developers-conference-returns-the-week-of-june-8/",
+            "publisher": "Apple",
+            "tier": "official",
+            "title": "Apple's Worldwide Developers Conference returns the week of June 8",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.macrumors.com/how-to/how-to-watch-apple-wwdc-2026/",
+            "publisher": "MacRumors",
+            "tier": "trade",
+            "title": "How to Watch Apple's WWDC 2026 Keynote on June 8",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Google I/O",
+    "slug": "google-io",
+    "category": "tech",
+    "sources": [
+      {
+        "url": "https://io.google/2026/about",
+        "publisher": "Google",
+        "tier": "official",
+        "title": "About Google I/O 2026",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/io-2026-save-the-date/",
+        "publisher": "Google",
+        "tier": "official",
+        "title": "Save the date! Google I/O 2026 is May 19-20.",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/io-2026-save-the-date/",
+            "publisher": "Google",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://io.google/2026/explore/google-keynote-1",
+            "publisher": "Google",
+            "tier": "official",
+            "title": "Google I/O 2026: Google keynote",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CES",
+    "slug": "ces",
+    "category": "tech",
+    "sources": [
+      {
+        "url": "https://www.ces.tech/about-ces/about-ces/",
+        "publisher": "Consumer Technology Association",
+        "tier": "official",
+        "title": "About CES",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cta.tech/events/ces-2027/",
+        "publisher": "Consumer Technology Association",
+        "tier": "official",
+        "title": "CES 2027",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "sources": [
+          {
+            "url": "https://www.cta.tech/events/ces-2027/",
+            "publisher": "Consumer Technology Association",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://www.ces.tech/press-releases/ces-2026-audit-shows-four-percent-growth-in-participation-as-innovators-showed-up-in-las-vegas",
+            "publisher": "Consumer Technology Association",
+            "tier": "official",
+            "title": "CES 2026 Audit Shows Four Percent Growth in Participation",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AWS re:Invent",
+    "slug": "aws-reinvent",
+    "category": "tech",
+    "sources": [
+      {
+        "url": "https://aws.amazon.com/events/reinvent/agenda/",
+        "publisher": "Amazon Web Services",
+        "tier": "official",
+        "title": "AWS re:Invent 2026 Agenda",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://aws.amazon.com/events/reinvent/agenda/",
+            "publisher": "Amazon Web Services",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NVIDIA GTC",
+    "slug": "nvidia-gtc",
+    "category": "tech",
+    "sources": [
+      {
+        "url": "https://www.nvidia.com/gtc/",
+        "publisher": "NVIDIA",
+        "tier": "official",
+        "title": "NVIDIA GTC",
+        "retrieved_on": "2026-08-26"
+      }
+    ]
+  },
+  {
+    "name": "Apple September Event",
+    "slug": "apple-september-event",
+    "category": "tech",
+    "sources": [
+      {
+        "url": "https://www.apple.com/newsroom/",
+        "publisher": "Apple",
+        "tier": "official",
+        "title": "Apple Newsroom",
+        "retrieved_on": "2026-08-26"
+      }
+    ]
   }
 ]

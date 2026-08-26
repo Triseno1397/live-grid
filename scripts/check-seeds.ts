@@ -60,13 +60,17 @@ const STRICT = process.argv.slice(2).includes("--strict");
  * Listed explicitly rather than tolerated silently so the debt is visible in code and the
  * gate stays live for everything new. Batch 019 backfills these and empties this array; a
  * file only earns a place here by predating the schema, never by being in a hurry.
+ *
+ * `004-tech-keynotes.json` has left: all six of its records now carry citations through the
+ * 019 overlay, which `sourcesBySlug` sees. Removing a file from here is the only thing that
+ * proves the backfill actually finished — the warning it emits otherwise never stops being
+ * true on its own.
  */
 const LEGACY_UNSOURCED = new Set([
   "000-session1-smoke.json",
   "001-award-shows.json",
   "002-game-shows.json",
   "003-upfronts.json",
-  "004-tech-keynotes.json",
   "005-variety.json",
   "006-production-team.json",
 ]);
@@ -156,6 +160,51 @@ function checkDates(file: string, name: string, label: string, e: Record<string,
   }
 }
 
+/**
+ * Every source any file contributes to a given production slug.
+ *
+ * Built once and consulted by the provenance check, because the importer merges overlays by
+ * slug and the database therefore ends up with the union. Without this, the batch 019
+ * backfill could never actually retire a file from `LEGACY_UNSOURCED`: the citations land in
+ * 019, the bare record stays in 004, and a per-file check would keep calling 004 unsourced
+ * forever while the database had every citation it needed.
+ *
+ * Only the "is this backed at all" question reads across files. The rules that make a
+ * specific claim — a confirmed future edition needing an official source — stay per-record,
+ * because a source attached to a different year is not evidence for this one.
+ */
+const sourcesBySlug = new Map<string, SourceLike[]>();
+
+/**
+ * The same union, but keyed `slug:year`.
+ *
+ * The confirmed-future-edition rule needs this granularity and not the looser one. A source
+ * proving the 2026 date says nothing about 2027, so "does this record have sources somewhere"
+ * is the wrong question for it — but "does this production-year have an official source in
+ * any file" is exactly right, because that is what the database ends up holding.
+ */
+const sourcesBySlugYear = new Map<string, SourceLike[]>();
+
+function indexSources(loaded: Loaded[]) {
+  for (const { record } of loaded) {
+    const name = typeof record.name === "string" ? record.name : null;
+    if (!name) continue;
+    const slug = typeof record.slug === "string" ? record.slug : slugify(name);
+
+    const found = allSourcesOf(record);
+    if (found.length > 0) {
+      sourcesBySlug.set(slug, [...(sourcesBySlug.get(slug) ?? []), ...found]);
+    }
+
+    for (const edition of editionsOf(record)) {
+      const editionSources = sourcesOf(edition.sources);
+      if (editionSources.length === 0) continue;
+      const key = `${slug}:${edition.year}`;
+      sourcesBySlugYear.set(key, [...(sourcesBySlugYear.get(key) ?? []), ...editionSources]);
+    }
+  }
+}
+
 function checkRecord({ file, index, record }: Loaded) {
   const name = typeof record.name === "string" ? record.name : `#${index}`;
 
@@ -170,6 +219,7 @@ function checkRecord({ file, index, record }: Loaded) {
     return;
   }
 
+  const slug = typeof record.slug === "string" ? record.slug : slugify(name);
   const productionSources = sourcesOf(record.sources);
   const editions = editionsOf(record);
   const editionSources = editions.flatMap((e) => sourcesOf(e.sources));
@@ -192,7 +242,9 @@ function checkRecord({ file, index, record }: Loaded) {
   const legacy = LEGACY_UNSOURCED.has(file);
   const sourceProblem = legacy ? warn : error;
 
-  if (allSources.length === 0) {
+  const backfilled = (sourcesBySlug.get(slug) ?? []).length > 0;
+
+  if (allSources.length === 0 && !backfilled) {
     sourceProblem(
       file,
       name,
@@ -200,6 +252,10 @@ function checkRecord({ file, index, record }: Loaded) {
         ? "predates provenance — awaiting the batch 019 source backfill"
         : "no sources anywhere on the record — every seeded fact needs provenance",
     );
+  } else if (allSources.length === 0) {
+    // Backed by an overlay in another file. The database will hold the union, so this is
+    // sourced — but a reader of this file alone cannot tell, which is worth one line.
+    warn(file, name, "no sources in this file; backed by an overlay batch");
   } else if (productionSources.length === 0) {
     warn(file, name, "no production-level source; only per-edition facts are backed");
   }
@@ -214,7 +270,14 @@ function checkRecord({ file, index, record }: Loaded) {
     const isFuture = start !== null && start >= TODAY;
     const editionSourceList = sourcesOf(e.sources);
 
-    if (e.status === "confirmed" && isFuture && !hasOfficial(editionSourceList)) {
+    // Sources for this exact production-year, from any file — an overlay batch citing
+    // "ces 2027" backs this edition just as the database will see it.
+    const yearSources = [
+      ...editionSourceList,
+      ...(sourcesBySlugYear.get(`${slug}:${e.year}`) ?? []),
+    ];
+
+    if (e.status === "confirmed" && isFuture && !hasOfficial(yearSources)) {
       sourceProblem(
         file,
         name,
@@ -222,7 +285,7 @@ function checkRecord({ file, index, record }: Loaded) {
           "downgrade it to announced or cite the primary source",
       );
     }
-    if (isFuture && editionSourceList.length === 0 && !legacy) {
+    if (isFuture && yearSources.length === 0 && !legacy) {
       warn(file, name, `${label} is upcoming (${start}) with no source of its own`);
     }
 
@@ -598,6 +661,8 @@ function main() {
     return;
   }
 
+  // Index first: the provenance check reads sources contributed by overlay batches.
+  indexSources(loaded);
   for (const item of loaded) checkRecord(item);
   checkCollisions(loaded);
   checkLookupNames(loaded);
