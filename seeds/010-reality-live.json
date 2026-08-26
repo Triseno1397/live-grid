@@ -1,0 +1,1260 @@
+[
+  {
+    "name": "The Voice",
+    "slug": "the-voice",
+    "category": "reality",
+    "subcategory": "singing competition",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "NBC's flagship singing competition, taped on Stage 30 of the Universal Studios lot in Los Angeles and run in two cycles a year — a spring season and a fall season. Season 29 ran in spring 2026; Season 30 opens the fall schedule on September 21 with Adam Levine and Kelly Clarkson in the red chairs alongside first-time coaches Queen Latifah and Riley Green. The live playoffs and finale weeks are the live-broadcast portion of the run.",
+    "network": { "name": "NBC", "is_streaming": false },
+    "production_company": { "name": "MGM Television" },
+    "sources": [
+      {
+        "url": "https://www.nbc.com/nbc-insider/where-is-the-voice-filmed",
+        "publisher": "NBC",
+        "title": "Where Is The Voice Filmed? All About the Iconic Location",
+        "tier": "official",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.televisionacademy.com/shows/the-voice",
+        "publisher": "Television Academy",
+        "title": "The Voice — Emmy Awards and Nominations",
+        "tier": "reference",
+        "field": "production_company",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-21",
+        "city": "Los Angeles",
+        "venue": { "name": "Universal Studios Lot" },
+        "sources": [
+          {
+            "url": "https://www.nbc.com/nbc-insider/nbc-fall-2026-premiere-dates-shows-details",
+            "publisher": "NBC",
+            "title": "NBC Reveals Fall 2026 Schedule: See the Full Lineup of Shows",
+            "tier": "official",
+            "field": "show_date",
+            "published_on": "2026-06-24",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.nbc.com/nbc-insider/the-voice-season-30-everything-to-know",
+            "publisher": "NBC",
+            "title": "Everything to Know About The Voice Season 30: Coaches, Premiere Date, and More",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.goldderby.com/reality-tv/2026/the-voice-season-30-coaches-premiere-date-filming-kelly-clarkson-adam-levine/",
+            "publisher": "Gold Derby",
+            "title": "'The Voice' Season 30 sets premiere date at NBC with coaches Queen Latifah, Riley Green, Kelly Clarkson, Adam Levine",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "team": [
+      {
+        "role": "production_company",
+        "company": { "name": "MGM Television" },
+        "note": "with Warner Bros. Unscripted Television, in association with Warner Horizon and ITV Studios The Voice USA, Inc.",
+        "sources": [
+          {
+            "url": "https://www.televisionacademy.com/shows/the-voice",
+            "publisher": "Television Academy",
+            "tier": "reference",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "American Idol",
+    "slug": "american-idol",
+    "category": "reality",
+    "subcategory": "singing competition",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "ABC's singing competition, and the season that moved the show's centre of gravity to Tennessee: for Season 24 the in-person auditions were held at a single site — Belmont University's Fisher Center in Nashville — and Hollywood Week was rebranded the Music City Takeover and staged there too. The 'Ohana round taped at Disney's Aulani resort in Hawaii before the live shows returned to California. Ryan Seacrest hosts; Luke Bryan, Lionel Richie and Carrie Underwood judge.",
+    "network": { "name": "ABC", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.belmont.edu/stories/articles/2025/american-idol-2026.html",
+        "publisher": "Belmont University",
+        "title": "American Idol 2026",
+        "tier": "official",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.tvinsider.com/1188983/american-idol-season-24-judges-premiere-date-details/",
+        "publisher": "TV Insider",
+        "title": "'American Idol' Season 24: Judges, Premiere Date and More Details",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-01-26",
+        "end_date": "2026-05-11",
+        "city": "Nashville",
+        "venue": { "name": "Fisher Center for the Performing Arts" },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/American_Idol_season_24",
+            "publisher": "Wikipedia",
+            "title": "American Idol season 24",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.belmont.edu/stories/articles/2025/american-idol-2026.html",
+            "publisher": "Belmont University",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dancing with the Stars",
+    "slug": "dancing-with-the-stars",
+    "category": "reality",
+    "subcategory": "dance competition",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Live every Tuesday from Television City on Beverly Boulevard in Los Angeles, simulcast on ABC and Disney+ — the fourth season to go out live on both. Season 35 gets a two-night, four-hour launch on September 15 and 16, with Alfonso Ribeiro hosting and Julianne Hough co-hosting. Season 34 ended December 2, 2025 with Robert Irwin taking the mirrorball.",
+    "network": { "name": "ABC", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://on-camera-audiences.com/shows/dancing-with-the-stars/",
+        "publisher": "On Camera Audiences",
+        "title": "Dancing with the Stars — taping information",
+        "tier": "official",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_(American_TV_series)_season_35",
+        "publisher": "Wikipedia",
+        "title": "Dancing with the Stars (American TV series) season 35",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-15",
+        "city": "Los Angeles",
+        "venue": { "name": "Television City" },
+        "sources": [
+          {
+            "url": "https://abc.com/news/68176c48-d9cc-47a7-a237-d961a53fccaf/category/1138628",
+            "publisher": "ABC",
+            "title": "ABC's Fall 2026 Premiere Dates & Primetime TV Schedule",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.detpress.com/abc/pressrelease/abc-announces-fall-2026-premiere-dates/",
+            "publisher": "Disney Entertainment Television",
+            "title": "ABC Announces Fall 2026 Premiere Dates",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.tvline.com/2224402/abc-2026-fall-premiere-dates-911-dancing-with-the-stars-scrubs-full-schedule/",
+            "publisher": "TVLine",
+            "title": "ABC 2026 Fall Premiere Dates: 911, Dancing With The Stars, Scrubs — Full Schedule",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Big Brother",
+    "slug": "big-brother",
+    "category": "reality",
+    "subcategory": "competition series",
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The summer's longest continuous live production: a purpose-built house on Stage 18 of Radford Studio Center in Studio City, wired for a 24/7 feed, with live evictions on Thursdays hosted by Julie Chen Moonves. Season 28 — Big Brother: Time Trip — runs July 9 to October 1, 2026 and includes the series' 1,000th primetime episode; companion show Big Brother: Unlocked plays to a live studio audience for the first time.",
+    "network": { "name": "CBS", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.thestudiotour.com/wp/studios/cbs-studio-center/",
+        "publisher": "The Studio Tour",
+        "title": "Radford Studio Center (CBS Studio Center)",
+        "tier": "reference",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/big-brother/releases/?view=112872-big-brother-turns-up-the-heat-with-its-biggest-season-yet-premiering-thursday-july-9-with-a-90-minute-episode",
+        "publisher": "Paramount Press Express",
+        "title": "Big Brother Turns Up the Heat with Its Biggest Season Yet, Premiering Thursday, July 9 with a 90-Minute Episode",
+        "tier": "official",
+        "published_on": "2026-05-13",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-07-09",
+        "end_date": "2026-10-01",
+        "city": "Los Angeles",
+        "venue": { "name": "Radford Studio Center" },
+        "sources": [
+          {
+            "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/big-brother/releases/?view=112872-big-brother-turns-up-the-heat-with-its-biggest-season-yet-premiering-thursday-july-9-with-a-90-minute-episode",
+            "publisher": "Paramount Press Express",
+            "tier": "official",
+            "field": "show_date",
+            "published_on": "2026-05-13",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Big_Brother_28_(American_season)",
+            "publisher": "Wikipedia",
+            "title": "Big Brother 28 (American season)",
+            "tier": "reference",
+            "field": "end_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.tvline.com/2172051/big-brother-season-28-premiere-date-cbs/",
+            "publisher": "TVLine",
+            "title": "Big Brother Season 28 Gets Premiere Date At CBS",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2026,
+        "average_viewers": 3880000,
+        "sources": [
+          {
+            "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/big-brother/releases/?view=113051-big-brother-delivers-most-watched-premiere-since-2021",
+            "publisher": "Paramount Press Express",
+            "title": "Big Brother Delivers Most-Watched Premiere Since 2021 — the July 9 premiere averaged 3.88 million viewers",
+            "tier": "official",
+            "field": "average_viewers",
+            "published_on": "2026-07-14",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Survivor",
+    "slug": "survivor",
+    "category": "reality",
+    "subcategory": "competition series",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Shot in the Mamanuca Islands in Fiji — the only location the show has used since 2016 — and cut for a fall and a spring cycle each season year. Survivor 50: In the Hands of the Fans ran February to May 2026 with its reunion embedded in the live finale; Survivor 51, The Open Era, resets with 21 brand-new players and opens the CBS fall schedule on September 23 with a two-hour premiere. Jeff Probst hosts and executive produces.",
+    "network": { "name": "CBS", "is_streaming": false },
+    "production_company": { "name": "Amazon MGM Studios" },
+    "sources": [
+      {
+        "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/survivor/releases/?view=113157-survivor-reveals-the-21-new-castaways-competing-on-the-51st-edition-the-first-in-the-series-new-open-era-with-a-two-hour-season-premiere-on-wednesday",
+        "publisher": "Paramount Press Express",
+        "title": "Survivor Reveals the 21 New Castaways Competing on the 51st Edition",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Survivor_50:_In_the_Hands_of_the_Fans",
+        "publisher": "Wikipedia",
+        "title": "Survivor 50: In the Hands of the Fans",
+        "tier": "reference",
+        "field": "city",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-23",
+        "city": {
+          "name": "Mamanuca Islands",
+          "country": "Fiji",
+          "timezone": "Pacific/Fiji"
+        },
+        "sources": [
+          {
+            "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/survivor/releases/?view=113157-survivor-reveals-the-21-new-castaways-competing-on-the-51st-edition-the-first-in-the-series-new-open-era-with-a-two-hour-season-premiere-on-wednesday",
+            "publisher": "Paramount Press Express",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.tvinsider.com/1240917/survivor-51-cast-premiere-date-theme-format-filming-updates/",
+            "publisher": "TV Insider",
+            "title": "'Survivor 51': Cast, Premiere Date, Theme, Format, Filming Updates",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Survivor_50:_In_the_Hands_of_the_Fans",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "city",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "team": [
+      {
+        "role": "executive_producer",
+        "person": "Jeff Probst",
+        "sources": [
+          {
+            "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/survivor/releases/?view=113157-survivor-reveals-the-21-new-castaways-competing-on-the-51st-edition-the-first-in-the-series-new-open-era-with-a-two-hour-season-premiere-on-wednesday",
+            "publisher": "Paramount Press Express",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "role": "production_company",
+        "company": { "name": "Amazon MGM Studios" },
+        "note": "distributed by Paramount Global Content Distribution",
+        "sources": [
+          {
+            "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/survivor/releases/?view=113157-survivor-reveals-the-21-new-castaways-competing-on-the-51st-edition-the-first-in-the-series-new-open-era-with-a-two-hour-season-premiere-on-wednesday",
+            "publisher": "Paramount Press Express",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "America's Got Talent",
+    "slug": "americas-got-talent",
+    "category": "reality",
+    "subcategory": "talent competition",
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Auditions and live shows both tape at the Pasadena Civic Auditorium. Season 21's live run — quarterfinals, semifinals and finale, all broadcast live on NBC with next-day streaming on Peacock — starts August 18, 2026 and finishes with the live final on September 22 and the live finale on September 23, handing the Tuesday slot straight to The Voice. Terry Crews hosts; Simon Cowell, Howie Mandel, Sofía Vergara and Mel B judge.",
+    "network": { "name": "NBC", "is_streaming": false },
+    "production_company": { "name": "Fremantle" },
+    "sources": [
+      {
+        "url": "https://www.nbc.com/nbc-insider/agt-season-21-live-shows-details",
+        "publisher": "NBC",
+        "title": "Everything To Know About AGT Season 21 Live Shows",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.televisionacademy.com/shows/americas-got-talent",
+        "publisher": "Television Academy",
+        "title": "America's Got Talent — Emmy Awards and Nominations",
+        "tier": "reference",
+        "field": "production_company",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-08-18",
+        "end_date": "2026-09-23",
+        "city": "Pasadena",
+        "venue": { "name": "Pasadena Civic Auditorium" },
+        "sources": [
+          {
+            "url": "https://www.nbc.com/nbc-insider/agt-season-21-live-shows-details",
+            "publisher": "NBC",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.goldderby.com/reality-tv/2026/americas-got-talent-21-live-show-schedule-44-acts-perform/",
+            "publisher": "Gold Derby",
+            "title": "America's Got Talent 21 live show schedule: When will 44 acts perform?",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "team": [
+      {
+        "role": "production_company",
+        "company": { "name": "Fremantle" },
+        "note": "with Syco Entertainment",
+        "sources": [
+          {
+            "url": "https://www.televisionacademy.com/shows/americas-got-talent",
+            "publisher": "Television Academy",
+            "tier": "reference",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Masked Singer",
+    "slug": "the-masked-singer",
+    "category": "reality",
+    "subcategory": "singing competition",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "FOX's costumed guessing game, taped on a Los Angeles soundstage in a compressed autumn block — Season 14 shot between mid-October and mid-November 2025 and aired January 7 to April 1, 2026, opening with a two-hour double unmasking. The production changes hands for Season 15: FOX has moved it from Fox Entertainment Studios to Fremantle-owned Eureka Productions, which plans to relocate the shoot to New Jersey for the tax incentive.",
+    "network": { "name": "FOX", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.tvinsider.com/1263284/masked-singer-season-15-renewed-major-change-production-company-location/",
+        "publisher": "TV Insider",
+        "title": "'The Masked Singer' Renewed for Season 15 With a Major Change",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://deadline.com/2026/05/the-masked-singer-eureka-productions-renewed-season-15-fox-1236887180/",
+        "publisher": "Deadline",
+        "title": "'The Masked Singer' Renewed For Season 15 At Fox",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-01-07",
+        "end_date": "2026-04-01",
+        "city": "Los Angeles",
+        "sources": [
+          {
+            "url": "https://www.foxflash.com/shows/the-masked-singer/releases/view/foxs-winter-2026-lineup-brings-heart-pounding-dramas-wild-workplace-comedies-and-adventure-fueled-series",
+            "publisher": "FOX Entertainment",
+            "title": "FOX's Winter 2026 Lineup Brings Heart Pounding Dramas, Wild Workplace Comedies and Adventure-Fueled Series",
+            "tier": "official",
+            "field": "show_date",
+            "published_on": "2025-11-11",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Masked_Singer_(American_TV_series)_season_14",
+            "publisher": "Wikipedia",
+            "title": "The Masked Singer (American TV series) season 14",
+            "tier": "reference",
+            "field": "end_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Love Island USA",
+    "slug": "love-island-usa",
+    "category": "reality",
+    "subcategory": "competition series",
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Peacock's summer tentpole, shot in a purpose-built villa in Fiji and cut overnight into an almost-daily drop — new episodes land six nights a week for five weeks. Season 8 ran June 2 to July 12, 2026 with Ariana Madix hosting for a third year; the taped reunion, co-hosted by Madix and Andy Cohen, streams August 31.",
+    "network": { "name": "Peacock", "is_streaming": true },
+    "sources": [
+      {
+        "url": "https://www.peacocktv.com/blog/love-island-usa-season-8-reunion-announcement",
+        "publisher": "Peacock",
+        "title": "What to Know About Love Island USA Season 8's Reunion: Date, Trailer, Photos, & More",
+        "tier": "official",
+        "published_on": "2026-07-12",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Love_Island_USA_season_8",
+        "publisher": "Wikipedia",
+        "title": "Love Island USA season 8",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-06-02",
+        "end_date": "2026-08-31",
+        "sources": [
+          {
+            "url": "https://www.peacocktv.com/blog/love-island-usa-season-8-reunion-announcement",
+            "publisher": "Peacock",
+            "tier": "official",
+            "field": "end_date",
+            "published_on": "2026-07-12",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Love_Island_USA_season_8",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RuPaul's Drag Race",
+    "slug": "rupauls-drag-race",
+    "category": "reality",
+    "subcategory": "drag competition",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "World of Wonder's franchise anchor, shot in Los Angeles — the Werk Room and main stage have lived at Sunset Las Palmas Studios since the first season — and aired on MTV in 90-minute Friday episodes with Untucked following. Season 18 ran January 2 to April 17, 2026 with 14 queens and set the highest season-premiere rating in the franchise's history; Myki Meeks won.",
+    "network": { "name": "MTV", "is_streaming": false },
+    "production_company": { "name": "World of Wonder" },
+    "sources": [
+      {
+        "url": "https://www.paramountpressexpress.com/mtv/shows/rupauls-drag-race-season-18/releases/?view=112138-rupauls-drag-race-ruveals-the-new-queens-of-season-18-premiering-friday-january-2-at-800-pm-etpt-on-mtv",
+        "publisher": "Paramount Press Express",
+        "title": "RuPaul's Drag Race Ruveals the New Queens of Season 18, premiering Friday, January 2 at 8:00 PM ET/PT on MTV",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://thecinemaholic.com/where-is-rupauls-drag-race-filmed/",
+        "publisher": "The Cinemaholic",
+        "title": "Where is RuPaul's Drag Race Filmed?",
+        "tier": "reference",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-01-02",
+        "end_date": "2026-04-17",
+        "city": "Los Angeles",
+        "sources": [
+          {
+            "url": "https://www.paramountpressexpress.com/mtv/shows/rupauls-drag-race-season-18/releases/?view=112138-rupauls-drag-race-ruveals-the-new-queens-of-season-18-premiering-friday-january-2-at-800-pm-etpt-on-mtv",
+            "publisher": "Paramount Press Express",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/RuPaul%27s_Drag_Race_season_18",
+            "publisher": "Wikipedia",
+            "title": "RuPaul's Drag Race season 18",
+            "tier": "reference",
+            "field": "end_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Traitors",
+    "slug": "the-traitors-us",
+    "category": "reality",
+    "subcategory": "competition series",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The American edition of the Dutch format, shot at Ardross Castle in the Scottish Highlands with Alan Cumming hosting. Season 4 ran January 8 to February 26, 2026 on Peacock with 23 celebrity players and a Secret Traitor twist; Rob Rausch won. A civilian-cast companion, The Traitors: New Blood, moves the franchise to NBC in September 2026.",
+    "network": { "name": "Peacock", "is_streaming": true },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Traitors_(American_TV_series)_season_4",
+        "publisher": "Wikipedia",
+        "title": "The Traitors (American TV series) season 4",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nbcuniversal.com/article/traitors-new-blood-expands-traitors-fandom-nbc-viewers",
+        "publisher": "NBCUniversal",
+        "title": "'The Traitors: New Blood' Expands 'Traitors' Fandom to NBC Viewers",
+        "tier": "official",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-01-08",
+        "end_date": "2026-02-26",
+        "city": {
+          "name": "Ardross",
+          "state": "Scotland",
+          "country": "United Kingdom",
+          "timezone": "Europe/London"
+        },
+        "venue": { "name": "Ardross Castle" },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Traitors_(American_TV_series)_season_4",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Traitors: New Blood",
+    "slug": "the-traitors-new-blood",
+    "category": "reality",
+    "subcategory": "competition series",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The franchise's first broadcast-network edition and its first all-civilian American cast: 22 ordinary players picked from more than 80,000 applicants, again at Ardross Castle in the Scottish Highlands with Alan Cumming presiding. Production ran in early 2026; the series premieres on NBC with a two-hour episode on September 17, 2026, followed by a second two-hour episode on September 24 before settling into an hour on October 8.",
+    "network": { "name": "NBC", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.nbcuniversal.com/article/traitors-new-blood-expands-traitors-fandom-nbc-viewers",
+        "publisher": "NBCUniversal",
+        "title": "'The Traitors: New Blood' Expands 'Traitors' Fandom to NBC Viewers",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.goldderby.com/reality-tv/2026/the-traitors-nbc-civilian-edition-alan-cumming/",
+        "publisher": "Gold Derby",
+        "title": "NBC's 'The Traitors: New Blood' releases full-length trailer ahead of September premiere date",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-17",
+        "city": {
+          "name": "Ardross",
+          "state": "Scotland",
+          "country": "United Kingdom",
+          "timezone": "Europe/London"
+        },
+        "venue": { "name": "Ardross Castle" },
+        "sources": [
+          {
+            "url": "https://www.nbc.com/nbc-insider/nbc-fall-2026-premiere-dates-shows-details",
+            "publisher": "NBC",
+            "title": "NBC Reveals Fall 2026 Schedule: See the Full Lineup of Shows",
+            "tier": "official",
+            "field": "show_date",
+            "published_on": "2026-06-24",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.nbcuniversal.com/article/traitors-new-blood-expands-traitors-fandom-nbc-viewers",
+            "publisher": "NBCUniversal",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.goldderby.com/reality-tv/2026/the-traitors-nbc-civilian-edition-alan-cumming/",
+            "publisher": "Gold Derby",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Top Chef",
+    "slug": "top-chef",
+    "category": "reality",
+    "subcategory": "cooking competition",
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Bravo's travelling cooking competition, which rebuilds its kitchen in a different American city every season. Season 23 — Top Chef: Carolinas — was centred on Charlotte, North Carolina with several episodes in Greenville, South Carolina, shot between August and October 2025 on a purpose-built set in Steele Creek, and aired March 9 to June 8, 2026. Kristen Kish hosts alongside Tom Colicchio and Gail Simmons.",
+    "network": { "name": "Bravo", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.bravotv.com/the-daily-dish/top-chef-season-23-filming-location-production-details-revealed",
+        "publisher": "Bravo",
+        "title": "Top Chef Season 23 Is Going to Be Cooking Down South: Find Out the Filming Location",
+        "tier": "official",
+        "field": "city",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Top_Chef:_Carolinas",
+        "publisher": "Wikipedia",
+        "title": "Top Chef: Carolinas",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-03-09",
+        "end_date": "2026-06-08",
+        "city": {
+          "name": "Charlotte",
+          "state": "NC",
+          "country": "USA",
+          "timezone": "America/New_York"
+        },
+        "sources": [
+          {
+            "url": "https://www.bravotv.com/the-daily-dish/top-chef-season-23-trailer-cast-location-premiere-date",
+            "publisher": "Bravo",
+            "title": "Top Chef Season 23: Trailer, Cast, Location, Premiere Date",
+            "tier": "official",
+            "field": "show_date",
+            "published_on": "2026-01-29",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Top_Chef:_Carolinas",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "end_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MasterChef",
+    "slug": "masterchef-us",
+    "category": "reality",
+    "subcategory": "cooking competition",
+    "typical_month": 4,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Gordon Ramsay's home-cook competition for FOX, which for its sixteenth season left its usual Los Angeles soundstage and shot on the MasterChef Canada set in Toronto, with location days around the city and in Brampton. Season 16 — Global Gauntlet — premiered April 15, 2026 with 20 cooks representing the Americas, Europe, Africa and Asia-Pacific, and took a six-week break for the FIFA World Cup; Ramsay judges with Joe Bastianich and Tiffany Derry.",
+    "network": { "name": "FOX", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.foxflash.com/shows/masterchef/releases/view/fox-unveils-spring-2026-premiere-dates-anchored-by-eventized-storytelling-and-epic-high-profile-adventure-action-adventure-series-running-wild-with-be",
+        "publisher": "FOX Entertainment",
+        "title": "FOX Unveils Spring 2026 Premiere Dates",
+        "tier": "official",
+        "field": "show_date",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://collider.com/masterchef-season-16-gordon-ramsay-fox-series-set-visit/",
+        "publisher": "Collider",
+        "title": "'MasterChef' Season 16 Rewrites the FOX Competition With Its Most Unexpected Twist Yet",
+        "tier": "trade",
+        "field": "city",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "city": "Toronto",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/MasterChef_(American_TV_series)_season_16",
+            "publisher": "Wikipedia",
+            "title": "MasterChef (American TV series) season 16",
+            "tier": "reference",
+            "field": "city",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://collider.com/masterchef-season-16-gordon-ramsay-fox-series-set-visit/",
+            "publisher": "Collider",
+            "tier": "trade",
+            "field": "city",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hell's Kitchen",
+    "slug": "hells-kitchen",
+    "category": "reality",
+    "subcategory": "cooking competition",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Gordon Ramsay's restaurant competition, which left Los Angeles for the East Coast in 2024: a set custom-built on the property at Foxwoods Resort Casino in Mashantucket, Connecticut, next to Ramsay's own Hell's Kitchen restaurant there. Seasons 25 and 26 shot at Foxwoods in front of a live audience. Season 25 — '25 Chefs Under 25' — premieres Thursday, September 24, 2026.",
+    "network": { "name": "FOX", "is_streaming": false },
+    "production_company": { "name": "A. Smith & Co. Productions" },
+    "sources": [
+      {
+        "url": "https://asmithco.com/press/hells-kitchen-moving-to-connecticut-studio-for-seasons-23-24/",
+        "publisher": "A. Smith & Co. Productions",
+        "title": "Hell's Kitchen Moving to Connecticut Studio for Seasons 23 & 24",
+        "tier": "official",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.wtnh.com/news/connecticut/new-london/new-seasons-of-hells-kitchen-to-be-filmed-at-foxwoods-again/",
+        "publisher": "WTNH News 8",
+        "title": "New seasons of 'Hell's Kitchen' to be filmed at Foxwoods again",
+        "tier": "trade",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-24",
+        "city": {
+          "name": "Mashantucket",
+          "state": "CT",
+          "country": "USA",
+          "timezone": "America/New_York"
+        },
+        "venue": { "name": "Foxwoods Resort Casino" },
+        "sources": [
+          {
+            "url": "https://www.foxflash.com/shows/hells-kitchen/releases/view/fox-sets-fall-2026-premiere-dates-for-a-season-of-bold-iconic-and-energetic-entertainment",
+            "publisher": "FOX Entertainment",
+            "title": "FOX Sets Fall 2026 Premiere Dates for a Season of Bold, Iconic and Energetic Entertainment",
+            "tier": "official",
+            "field": "show_date",
+            "published_on": "2026-07-13",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.wtnh.com/news/connecticut/new-london/new-seasons-of-hells-kitchen-to-be-filmed-at-foxwoods-again/",
+            "publisher": "WTNH News 8",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Amazing Race",
+    "slug": "the-amazing-race",
+    "category": "reality",
+    "subcategory": "competition series",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "A twelve-leg, 25,000-mile race shot as a travelling production rather than on a stage. Season 39 started at Jack Poole Plaza in Vancouver and ran through Canada, Spain, Morocco, Albania, Sri Lanka, Laos, Australia, New Zealand and Hawaii, shot September 22 to October 17, 2025; it premieres on CBS across two nights, September 30 and October 1, 2026. Phil Keoghan hosts and executive produces.",
+    "network": { "name": "CBS", "is_streaming": false },
+    "production_company": { "name": "World Race Productions" },
+    "sources": [
+      {
+        "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/the-amazing-race/releases/?view=113116-meet-the-cast-of-the-39th-season-of-the-amazing-race",
+        "publisher": "Paramount Press Express",
+        "title": "Meet the Cast of the 39th Season of The Amazing Race",
+        "tier": "official",
+        "published_on": "2026-08-12",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Amazing_Race_39",
+        "publisher": "Wikipedia",
+        "title": "The Amazing Race 39",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-30",
+        "city": {
+          "name": "Vancouver",
+          "state": "British Columbia",
+          "country": "Canada",
+          "timezone": "America/Vancouver"
+        },
+        "sources": [
+          {
+            "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/the-amazing-race/releases/?view=113116-meet-the-cast-of-the-39th-season-of-the-amazing-race",
+            "publisher": "Paramount Press Express",
+            "tier": "official",
+            "field": "show_date",
+            "published_on": "2026-08-12",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Amazing_Race_39",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "city",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "team": [
+      {
+        "role": "production_company",
+        "company": { "name": "World Race Productions" },
+        "note": "in association with Jerry Bruckheimer Television, ABC Studios and Amazing Race Productions",
+        "sources": [
+          {
+            "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/the-amazing-race/releases/?view=113116-meet-the-cast-of-the-39th-season-of-the-amazing-race",
+            "publisher": "Paramount Press Express",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "American Ninja Warrior",
+    "slug": "american-ninja-warrior",
+    "category": "reality",
+    "subcategory": "competition series",
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Since Season 17 the whole competition — qualifiers, semifinals and National Finals — has been staged on one obstacle-course site in Las Vegas, off Las Vegas Boulevard at 10180 Ensworth Street, with tapings open to the public. Season 18 ran June 8 to August 31, 2026, an all-racing National Finals for a $250,000 prize plus a new Women's Bonus Tournament worth $50,000. Matt Iseman and Akbar Gbajabiamila call it with Zuri Hall.",
+    "network": { "name": "NBC", "is_streaming": false },
+    "production_company": { "name": "A. Smith & Co. Productions" },
+    "sources": [
+      {
+        "url": "https://www.nbc.com/nbc-insider/where-is-american-ninja-warrior-filmed-location",
+        "publisher": "NBC",
+        "title": "Where Is American Ninja Warrior Filmed? All About the Competition's Location",
+        "tier": "official",
+        "field": "city",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/American_Ninja_Warrior_season_18",
+        "publisher": "Wikipedia",
+        "title": "American Ninja Warrior season 18",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-06-08",
+        "end_date": "2026-08-31",
+        "city": "Las Vegas",
+        "sources": [
+          {
+            "url": "https://www.nbc.com/nbc-insider/american-ninja-warrior-results-2026-episode-guide",
+            "publisher": "NBC",
+            "title": "American Ninja Warrior Results: A Guide to Every Season 18 Episode",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/American_Ninja_Warrior_season_18",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "end_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Challenge",
+    "slug": "the-challenge",
+    "category": "reality",
+    "subcategory": "competition series",
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "MTV's long-running alumni competition, shot on location abroad and, from Season 42, dropped first on Paramount+ rather than on the cable channel. Season 42 — Cutthroat — was filmed in Bangkok and Chonburi, Thailand and premiered August 5, 2026 with a two-episode launch on Paramount+ and a same-day MTV airing of episode one, bringing back the three-team Cutthroat format from Season 20 for a share of $500,000. T. J. Lavin hosts; Bunim/Murray Productions makes it.",
+    "network": { "name": "Paramount+", "slug": "paramount-plus", "is_streaming": true },
+    "production_company": { "name": "Bunim/Murray Productions" },
+    "sources": [
+      {
+        "url": "https://www.paramountpressexpress.com/paramount-plus/shows/the-challenge/releases/?view=113053-mtvs-the-challenge-cutthroat-premieres-august-5-on-paramount",
+        "publisher": "Paramount Press Express",
+        "title": "MTV's The Challenge: Cutthroat Premieres August 5 on Paramount+",
+        "tier": "official",
+        "published_on": "2026-07-15",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.tvinsider.com/1231789/the-challenge-season-42-premiere-date-cast-details/",
+        "publisher": "TV Insider",
+        "title": "'The Challenge' Season 42 Cast, Premiere Date, Trailer Revealed",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "city": {
+          "name": "Bangkok",
+          "country": "Thailand",
+          "timezone": "Asia/Bangkok"
+        },
+        "sources": [
+          {
+            "url": "https://www.paramountpressexpress.com/paramount-plus/shows/the-challenge/releases/?view=113053-mtvs-the-challenge-cutthroat-premieres-august-5-on-paramount",
+            "publisher": "Paramount Press Express",
+            "tier": "official",
+            "published_on": "2026-07-15",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Challenge:_Cutthroat_(2026_season)",
+            "publisher": "Wikipedia",
+            "title": "The Challenge: Cutthroat (2026 season)",
+            "tier": "reference",
+            "field": "city",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shark Tank",
+    "slug": "shark-tank",
+    "category": "reality",
+    "subcategory": "business pitch",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "ABC's pitch show, taped at Sony Pictures Studios in Culver City for most of its run — the exceptions were a pandemic bubble at The Venetian in Las Vegas and a stint at Warner Bros. Studios in Burbank. Season 18 opens with a two-episode premiere on September 30, 2026 before settling into Wednesdays at 10; Kendra Scott and Rashaun Williams are now permanent Sharks, with guest investors including MrBeast, Mindy Kaling and J.J. Watt.",
+    "network": { "name": "ABC", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.looper.com/1385280/where-shark-tank-filmed/",
+        "publisher": "Looper",
+        "title": "Where Is Shark Tank Filmed?",
+        "tier": "reference",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.tvinsider.com/1274075/shark-tank-season-18-cast-premiere-date-details/",
+        "publisher": "TV Insider",
+        "title": "'Shark Tank's Season 18 Official Return Details Revealed",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-30",
+        "city": "Culver City",
+        "venue": { "name": "Sony Pictures Studios" },
+        "sources": [
+          {
+            "url": "https://abc.com/news/68176c48-d9cc-47a7-a237-d961a53fccaf/category/1138628",
+            "publisher": "ABC",
+            "title": "ABC's Fall 2026 Premiere Dates & Primetime TV Schedule",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.detpress.com/abc/pressrelease/abc-announces-fall-2026-premiere-dates/",
+            "publisher": "Disney Entertainment Television",
+            "title": "ABC Announces Fall 2026 Premiere Dates",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.looper.com/1385280/where-shark-tank-filmed/",
+            "publisher": "Looper",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Special Forces: World's Toughest Test",
+    "slug": "special-forces-worlds-toughest-test",
+    "category": "reality",
+    "subcategory": "competition series",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "FOX's celebrity endurance format, which relocates to a new hostile environment each season — Wadi Rum in Jordan, New Zealand's South Island, Wales, Morocco, and for Season 5 the jungle in Malaysia. Fifteen recruits, no eliminations by vote: contestants leave only by withdrawing, failing or being pulled by the directing staff. Season 5 premieres Thursday, September 24, 2026. Produced by Minnow Films.",
+    "network": { "name": "FOX", "is_streaming": false },
+    "production_company": { "name": "Minnow Films" },
+    "sources": [
+      {
+        "url": "https://www.foxflash.com/shows/special-forces-worlds-toughest-test/releases/view/go-hard-or-go-home-fox-enlists-a-new-group-of-all-star-celebrity-recruits-for-the-fifth-season-of-special-forces-worlds-toughest-test-premiering-thurs",
+        "publisher": "FOX Entertainment",
+        "title": "Go Hard or Go Home: FOX Enlists a New Group of All-Star Celebrity Recruits for the Fifth Season of Special Forces: World's Toughest Test",
+        "tier": "official",
+        "published_on": "2026-07-15",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.tvinsider.com/gallery/special-forces-season-5-cast-premiere-date-details/",
+        "publisher": "TV Insider",
+        "title": "'Special Forces' Season 5: Cast, Trailer, Directing Staff, and More Updates",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-24",
+        "sources": [
+          {
+            "url": "https://www.foxflash.com/shows/special-forces-worlds-toughest-test/releases/view/go-hard-or-go-home-fox-enlists-a-new-group-of-all-star-celebrity-recruits-for-the-fifth-season-of-special-forces-worlds-toughest-test-premiering-thurs",
+            "publisher": "FOX Entertainment",
+            "tier": "official",
+            "field": "show_date",
+            "published_on": "2026-07-15",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.tvinsider.com/gallery/special-forces-season-5-cast-premiere-date-details/",
+            "publisher": "TV Insider",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fear Factor: House of Fear",
+    "slug": "fear-factor-house-of-fear",
+    "category": "reality",
+    "subcategory": "competition series",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Endemol Shine North America's reboot of the stunt format, rebuilt as a house game: fourteen contestants live together in an isolated house and face stunts for a $200,000 prize, with Johnny Knoxville hosting. The house and every challenge were shot in the Vancouver, British Columbia area. It ran January 11 to March 25, 2026 on FOX, became the network's most-streamed unscripted series of the season and was renewed for a second season in April 2026.",
+    "network": { "name": "FOX", "is_streaming": false },
+    "production_company": { "name": "Endemol Shine North America" },
+    "sources": [
+      {
+        "url": "https://www.foxflash.com/shows/fear-factor-house-of-fear/releases/view/fox-renews-hit-competition-series-fear-factor-house-of-fear-for-season-two",
+        "publisher": "FOX Entertainment",
+        "title": "FOX Renews Hit Competition Series Fear Factor: House of Fear for Season Two",
+        "tier": "official",
+        "field": "production_company",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Fear_Factor:_House_of_Fear",
+        "publisher": "Wikipedia",
+        "title": "Fear Factor: House of Fear",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-01-11",
+        "end_date": "2026-03-25",
+        "city": {
+          "name": "Vancouver",
+          "state": "British Columbia",
+          "country": "Canada",
+          "timezone": "America/Vancouver"
+        },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Fear_Factor:_House_of_Fear",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.foxflash.com/shows/fear-factor-house-of-fear/releases/view/fox-renews-hit-competition-series-fear-factor-house-of-fear-for-season-two",
+            "publisher": "FOX Entertainment",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  }
+]

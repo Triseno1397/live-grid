@@ -4,12 +4,13 @@ Durable state for the 600–800 production sweep. The sweep is far longer than o
 session, so this file — not anyone's memory — is what says where it got to.
 
 **Target:** 800 productions / ~1600 editions across all 13 categories.
-**At last update:** 195 productions / 283 editions across 12 of 13 categories, 480 sources /
-774 citations, 25 viewership rows. 119 productions derive `official` confidence, 21 remain
-`unverified`. 74 editions carry a date still ahead of today, up from 9.
+**At last update:** 215 productions / 303 editions, **all 13 categories populated**, 539
+sources / 865 citations, 26 viewership rows. 21 productions remain `unverified` — the 18
+older award shows and the three Atlanta game shows below.
 
-Only `reality` is still at zero. `streaming`, `political`, `holiday`, `international`, `gaming`
-and `concerts` all came off it.
+Every category came off zero this sweep: `streaming`, `political`, `holiday`, `international`,
+`gaming`, `concerts` and `reality`. The next question is depth, not coverage — `sports` at
+25/180 and `corporate` at 9/70 are the widest gaps.
 
 ## Two things the sweep keeps running into
 
@@ -123,6 +124,7 @@ against the shows' own audience-ticketing pages and the Georgia Film Office.
 | 016 | `016-international.json` | international | 9 | 4 | yes | Eurovision → Burgas, Sundance → Boulder, Berlinale restructures its run of show. |
 | 018 | `018-concerts-festivals.json` | concerts | 23 | 4 | yes | 51 URLs, 0 warnings — the cleanest link check in the corpus. Coachella skipped as a duplicate of the streaming record. |
 | 020 | `020-sports-depth.json` | sports | 6 | 4 | yes | CFP, Final Four, WrestleMania, Royal Rumble, Army–Navy, F1 Vegas. |
+| 010 | `010-reality-live.json` | reality | 20 | 4 | yes | 36 of 40 subjects official. Bachelor/Bachelorette dropped — S22 pulled before air, S30 has no lead. |
 | 021 | `021-awards-2027.json` | awards | 4 | 4 | yes | PGA new; Golden Globes / Critics Choice / Actor Awards 2027 dates filled in. |
 | 019 | `019-source-backfill.json` | backfill | 33 | 4 | yes | tech, variety, upfronts and the six upcoming award shows. 21 productions still uncited — awards (18 old ones) and the three Atlanta game shows above. |
 
