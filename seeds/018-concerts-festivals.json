@@ -1,0 +1,1392 @@
+[
+  {
+    "name": "Lollapalooza",
+    "slug": "lollapalooza",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "Hulu", "is_streaming": true },
+    "production_company": { "name": "C3 Presents" },
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Four days and eight stages in Grant Park, and the largest annual festival livestream in the United States. Hulu carries the official stream; from 2026 it runs on Disney+ as well, split across two simultaneous channels so viewers can move between stages when sets clash. The stream is live-only — nothing is left on demand once the festival ends.",
+    "sources": [
+      {
+        "url": "https://www.lollapalooza.com/livestream",
+        "publisher": "Lollapalooza",
+        "title": "Livestream | Lollapalooza",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://press.disneyplus.com/news/music-festivals",
+        "publisher": "Disney+",
+        "title": "Disney+ Joins Hulu to Livestream Bonnaroo, Lollapalooza, and Austin City Limits Music Festivals Globally",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.c3presents.com/festivals",
+        "publisher": "C3 Presents",
+        "title": "C3 Presents Music Festivals",
+        "tier": "official",
+        "field": "production_company",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-07-30",
+        "end_date": "2026-08-02",
+        "city": {
+          "name": "Chicago",
+          "state": "IL",
+          "country": "USA",
+          "timezone": "America/Chicago"
+        },
+        "venue": { "name": "Grant Park" },
+        "sources": [
+          {
+            "url": "https://www.hulu.com/guides/special-events/lollapalooza-live-stream",
+            "publisher": "Hulu",
+            "title": "Lollapalooza 2026: How To Watch, Lineup, Schedule & More",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.lollapalooza.com/livestream",
+            "publisher": "Lollapalooza",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bonnaroo Music & Arts Festival",
+    "slug": "bonnaroo",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "Hulu", "is_streaming": true },
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Four days on a farm in Manchester, Tennessee, running to 4am on the smaller stages. 2026 was the first year Bonnaroo streamed on Disney+ alongside Hulu, with the live window opening at 6:45pm CT on the Thursday and running to the end of each night's programme.",
+    "sources": [
+      {
+        "url": "https://www.bonnaroo.com/livestream",
+        "publisher": "Bonnaroo",
+        "title": "Livestream | Bonnaroo Music & Arts Festival",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://press.disneyplus.com/news/music-festivals",
+        "publisher": "Disney+",
+        "title": "Disney+ Joins Hulu to Livestream Bonnaroo, Lollapalooza, and Austin City Limits Music Festivals Globally",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-06-11",
+        "end_date": "2026-06-14",
+        "city": {
+          "name": "Manchester",
+          "slug": "manchester-tn",
+          "state": "TN",
+          "country": "USA",
+          "timezone": "America/Chicago"
+        },
+        "sources": [
+          {
+            "url": "https://press.disneyplus.com/news/music-festivals",
+            "publisher": "Disney+",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.bonnaroo.com/livestream",
+            "publisher": "Bonnaroo",
+            "tier": "official",
+            "field": "network",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Austin City Limits Music Festival",
+    "slug": "austin-city-limits-music-festival",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "Hulu", "is_streaming": true },
+    "production_company": { "name": "C3 Presents" },
+    "typical_month": 10,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Two three-day weekends in Zilker Park, sharing a name with the PBS series but a different production entirely. Disney+ and Hulu became the official streaming destinations in 2026, carrying select live sets from weekend one plus The Live Set, an on-site interview studio built into the festival grounds.",
+    "sources": [
+      {
+        "url": "https://www.aclfestival.com/",
+        "publisher": "Austin City Limits Music Festival",
+        "title": "Austin City Limits Music Festival | Oct 2-4 & 9-11, 2026 | Austin, TX",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://press.disneyplus.com/news/music-festivals",
+        "publisher": "Disney+",
+        "title": "Disney+ Joins Hulu to Livestream Bonnaroo, Lollapalooza, and Austin City Limits Music Festivals Globally",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.c3presents.com/festivals",
+        "publisher": "C3 Presents",
+        "tier": "official",
+        "field": "production_company",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-10-02",
+        "end_date": "2026-10-11",
+        "city": {
+          "name": "Austin",
+          "state": "TX",
+          "country": "USA",
+          "timezone": "America/Chicago"
+        },
+        "venue": { "name": "Zilker Park" },
+        "sources": [
+          {
+            "url": "https://www.aclfestival.com/",
+            "publisher": "Austin City Limits Music Festival",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://press.disneyplus.com/news/music-festivals",
+            "publisher": "Disney+",
+            "tier": "official",
+            "field": "network",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Austin City Limits",
+    "slug": "austin-city-limits",
+    "category": "concerts",
+    "subcategory": "concert series",
+    "network": { "name": "PBS" },
+    "production_company": { "name": "Austin PBS" },
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The longest-running music series in American television history, taped before a live audience at ACL Live at The Moody Theater and distributed nationally by PBS. Season 52 runs to eighteen episodes and is the first to give every featured artist a full hour rather than splitting the hour between two acts — and the first produced entirely on community support after federal funding for Austin PBS ended in 2025.",
+    "sources": [
+      {
+        "url": "https://www.pbs.org/show/austin-city-limits/",
+        "publisher": "PBS",
+        "title": "Austin City Limits",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://acltv.com/2026/08/13/austin-city-limits-announces-season-52-broadcast-lineup/",
+        "publisher": "Austin City Limits",
+        "title": "Austin City Limits Announces Season 52 Broadcast Lineup",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://acltv.com/tapings/",
+        "publisher": "Austin City Limits",
+        "title": "Upcoming ACL TV Tapings",
+        "tier": "official",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "team": [
+      {
+        "role": "executive_producer",
+        "person": "Terry Lickona",
+        "sources": [
+          {
+            "url": "https://acltv.com/2026/08/13/austin-city-limits-announces-season-52-broadcast-lineup/",
+            "publisher": "Austin City Limits",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-04",
+        "city": {
+          "name": "Austin",
+          "state": "TX",
+          "country": "USA",
+          "timezone": "America/Chicago"
+        },
+        "venue": {
+          "name": "ACL Live at The Moody Theater",
+          "address": "310 W. 2nd Street, Austin, TX"
+        },
+        "sources": [
+          {
+            "url": "https://acltv.com/2026/08/13/austin-city-limits-announces-season-52-broadcast-lineup/",
+            "publisher": "Austin City Limits",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Stagecoach Festival",
+    "slug": "stagecoach",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "Prime Video", "is_streaming": true },
+    "typical_month": 4,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Country music's three days in Indio, on the same grounds Coachella uses a fortnight earlier. Amazon Music is the livestream home: the feed runs from 3pm PT daily on Prime Video, Twitch and the Amazon Music app, with the Fire TV app added in 2026 and daily rebroadcasts for international time zones the following morning.",
+    "sources": [
+      {
+        "url": "https://www.stagecoachfestival.com/livestream/",
+        "publisher": "Stagecoach Festival",
+        "title": "Amazon Music livestream",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.aboutamazon.com/news/entertainment/stagecoach-livestream",
+        "publisher": "Amazon",
+        "title": "2026 Stagecoach Festival livestream: Watch on Prime Video, Twitch, and Amazon Music",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-04-24",
+        "end_date": "2026-04-26",
+        "city": {
+          "name": "Indio",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "sources": [
+          {
+            "url": "https://www.aboutamazon.com/news/entertainment/stagecoach-livestream",
+            "publisher": "Amazon",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.timeout.com/usa/news/heres-how-to-watch-the-2026-stagecoach-festival-livestream-042426",
+            "publisher": "Time Out",
+            "title": "How to watch the Stagecoach Festival 2026 livestream on Prime Video",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Outside Lands",
+    "slug": "outside-lands",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "Prime Video", "is_streaming": true },
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Three days in Golden Gate Park. 2026 was Amazon Music's fourth consecutive year as exclusive global livestream home and the first with two simultaneous channels, carried on the Amazon Music app, Prime Video, Amazon Music's Twitch channel and the Amazon Live channel on Fire TV and Samsung TV Plus, from 3pm PT daily.",
+    "sources": [
+      {
+        "url": "https://www.sfoutsidelands.com/",
+        "publisher": "Outside Lands",
+        "title": "Outside Lands Music Festival",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://consequence.net/2026/08/outside-lands-2026-livestream-lineup-schedule-amazon-music/",
+        "publisher": "Consequence",
+        "title": "Outside Lands 2026 Livestream Lineup for Amazon Music Revealed",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-08-07",
+        "end_date": "2026-08-09",
+        "city": {
+          "name": "San Francisco",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "venue": { "name": "Golden Gate Park" },
+        "sources": [
+          {
+            "url": "https://consequence.net/2026/08/outside-lands-2026-livestream-lineup-schedule-amazon-music/",
+            "publisher": "Consequence",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-08-06",
+        "end_date": "2027-08-08",
+        "city": {
+          "name": "San Francisco",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "venue": { "name": "Golden Gate Park" },
+        "sources": [
+          {
+            "url": "https://www.sfoutsidelands.com/",
+            "publisher": "Outside Lands",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rolling Loud",
+    "slug": "rolling-loud",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "Prime Video", "is_streaming": true },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The largest hip-hop festival in the world, which moved its flagship US edition out of Miami to Camping World Stadium in Orlando for 2026 after eleven years in its home city. The livestream runs through Amazon Music and Prime Video, opening at 2:40pm ET each day.",
+    "sources": [
+      {
+        "url": "https://www.aceshowbiz.com/news/view/00257460.html",
+        "publisher": "AceShowbiz",
+        "title": "How to Watch Rolling Loud 2026 Livestream Featuring Don Toliver and More",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-05-08",
+        "end_date": "2026-05-10",
+        "city": {
+          "name": "Orlando",
+          "state": "FL",
+          "country": "USA",
+          "timezone": "America/New_York"
+        },
+        "venue": { "name": "Camping World Stadium" },
+        "sources": [
+          {
+            "url": "https://www.aceshowbiz.com/news/view/00257460.html",
+            "publisher": "AceShowbiz",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Electric Daisy Carnival",
+    "slug": "electric-daisy-carnival",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "YouTube", "is_streaming": true },
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Insomniac's flagship, three overnight sessions under the lights in Las Vegas. The broadcast is exclusive to YouTube and free: six live feeds a day off the Insomniac channel, opening at 6:45pm PT, and from 2026 a multiview that puts four stages on screen at once.",
+    "sources": [
+      {
+        "url": "https://blog.youtube/news-and-events/edc-2026-las-vegas-youtube-live/",
+        "publisher": "YouTube",
+        "title": "Tune in to EDC Las Vegas exclusively on YouTube, live May 15-17",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-05-15",
+        "end_date": "2026-05-17",
+        "city": {
+          "name": "Las Vegas",
+          "state": "NV",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "sources": [
+          {
+            "url": "https://blog.youtube/news-and-events/edc-2026-las-vegas-youtube-live/",
+            "publisher": "YouTube",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CMA Fest",
+    "slug": "cma-fest",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "ABC" },
+    "production_company": { "name": "Country Music Association" },
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Four days across downtown Nashville stages, culminating each night inside Nissan Stadium, and filmed for a three-hour ABC primetime special that streams the next day on Hulu. The 54th edition in 2027 is the first inside the rebuilt, enclosed Nissan Stadium.",
+    "sources": [
+      {
+        "url": "https://www.cmaworld.com/cma-fest-presented-by-sofi-returns-to-downtown-nashville-june-4-7/",
+        "publisher": "Country Music Association",
+        "title": "CMA Fest Presented By SoFi Returns To Downtown Nashville",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://cmafest.com/",
+        "publisher": "CMA Fest",
+        "title": "CMA Fest presented by SoFi | June 10-13, 2027",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-06-04",
+        "end_date": "2026-06-07",
+        "city": {
+          "name": "Nashville",
+          "state": "TN",
+          "country": "USA",
+          "timezone": "America/Chicago"
+        },
+        "venue": { "name": "Nissan Stadium" },
+        "sources": [
+          {
+            "url": "https://www.cmaworld.com/cma-fest-presented-by-sofi-returns-to-downtown-nashville-june-4-7/",
+            "publisher": "Country Music Association",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-06-10",
+        "end_date": "2027-06-13",
+        "city": {
+          "name": "Nashville",
+          "state": "TN",
+          "country": "USA",
+          "timezone": "America/Chicago"
+        },
+        "venue": { "name": "Nissan Stadium" },
+        "sources": [
+          {
+            "url": "https://cmafest.com/",
+            "publisher": "CMA Fest",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://nissanstadium.com/event/cma-fest-2027/",
+            "publisher": "Nissan Stadium",
+            "title": "CMA Fest | Nissan Stadium",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iHeartRadio Music Festival",
+    "slug": "iheartradio-music-festival",
+    "category": "concerts",
+    "subcategory": "arena concert",
+    "network": { "name": "Hulu", "is_streaming": true },
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Two nights at T-Mobile Arena in Las Vegas, hosted by Ryan Seacrest, built as a radio event first: the show goes out live across more than 150 iHeartMedia markets. Disney+ and Hulu are the official streaming destination and carry every performance.",
+    "sources": [
+      {
+        "url": "https://www.iheartmedia.com/press/iheartmedia-announces-lineup-2026-iheartradio-music-festival-presented-capital-one",
+        "publisher": "iHeartMedia",
+        "title": "iHeartMedia Announces Lineup for the 2026 iHeartRadio Music Festival Presented by Capital One",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-18",
+        "end_date": "2026-09-19",
+        "city": {
+          "name": "Las Vegas",
+          "state": "NV",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "venue": { "name": "T-Mobile Arena" },
+        "sources": [
+          {
+            "url": "https://www.iheartmedia.com/press/iheartmedia-announces-lineup-2026-iheartradio-music-festival-presented-capital-one",
+            "publisher": "iHeartMedia",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iHeartRadio Jingle Ball",
+    "slug": "iheartradio-jingle-ball",
+    "category": "concerts",
+    "subcategory": "concert tour",
+    "network": { "name": "ABC" },
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "A December arena tour rather than one show — nine markets in seventeen days, each promoted by the local iHeartMedia station — cut down into a network special that airs on ABC and streams next day on Hulu. The 2026 run visits Fort Worth, Los Angeles, Chicago, Detroit, New York, Boston, Washington DC, Philadelphia and Nashville.",
+    "sources": [
+      {
+        "url": "https://www.iheartmedia.com/advertise/insights/articles/iheart-jingle-ball-2026-brand-opportunities",
+        "publisher": "iHeartMedia",
+        "title": "2026 iHeartRadio Jingle Ball: Put Your Brand at the Center of the Holiday Season",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://abc.com/news/97dfb126-a209-4aca-a350-552dcf7cda6b/category/1138628",
+        "publisher": "ABC",
+        "title": "Watch an All-New iHeartRadio Jingle Ball Tour Special on ABC",
+        "tier": "official",
+        "field": "network",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-12-01",
+        "end_date": "2026-12-17",
+        "sources": [
+          {
+            "url": "https://www.iheartmedia.com/advertise/insights/articles/iheart-jingle-ball-2026-brand-opportunities",
+            "publisher": "iHeartMedia",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Global Citizen Festival",
+    "slug": "global-citizen-festival",
+    "category": "concerts",
+    "subcategory": "benefit concert",
+    "production_company": { "name": "Live Nation" },
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "A free show on the Great Lawn in Central Park where the tickets are earned rather than bought — attendees take actions on Global Citizen's advocacy campaigns to enter the draw. Live Nation is the production partner, iHeartMedia the exclusive US audio partner, and the show is carried internationally across linear and digital platforms, with Veeps holding the broadcasts on demand afterwards.",
+    "sources": [
+      {
+        "url": "https://www.globalcitizen.org/en/enquiries/press/2026/2026-global-citizen-festival-lineup/",
+        "publisher": "Global Citizen",
+        "title": "2026 Global Citizen Festival Lineup to Feature Ms. Lauryn Hill & Wyclef Jean, Lenny Kravitz, John Legend, Lainey Wilson, Shaboozey and Tomorrow X Together",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.globalcitizen.org/en/events-broadcasts/",
+        "publisher": "Global Citizen",
+        "title": "Events & Broadcasts",
+        "tier": "official",
+        "field": "network",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://veeps.com/globalcitizen",
+        "publisher": "Veeps",
+        "title": "Global Citizen Festival Livestreams",
+        "tier": "official",
+        "field": "network",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-26",
+        "end_date": "2026-09-26",
+        "show_date": "2026-09-26",
+        "city": {
+          "name": "New York",
+          "state": "NY",
+          "country": "USA",
+          "timezone": "America/New_York"
+        },
+        "venue": { "name": "Central Park" },
+        "sources": [
+          {
+            "url": "https://www.globalcitizen.org/en/enquiries/press/2026/2026-global-citizen-festival-lineup/",
+            "publisher": "Global Citizen",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Farm Aid",
+    "slug": "farm-aid",
+    "category": "concerts",
+    "subcategory": "benefit concert",
+    "network": { "name": "CNN" },
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The benefit Willie Nelson, Neil Young and John Mellencamp founded in 1985, and one of the few concerts that runs four distribution paths on the same day. In 2026, from Virginia Beach: a free all-day stream at farmaid.org, on nugs and on Farm Aid's YouTube channel from 11:30am ET, a SiriusXM audio broadcast from noon, and a four-hour CNN primetime special from 7pm ET co-anchored by John Berman and Laura Coates.",
+    "sources": [
+      {
+        "url": "https://www.farmaid.org/",
+        "publisher": "Farm Aid",
+        "title": "Farm Aid",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.farmaid.org/blog/how-to-watch-farm-aid-2026/",
+        "publisher": "Farm Aid",
+        "title": "How to Watch Farm Aid 2026 on September 26",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://cnnpressroom.blogs.cnn.com/2026/08/20/cnn-brings-farm-aid-live-to-audiences-nationwide-on-saturday-september-26-at-7pm-et/",
+        "publisher": "CNN",
+        "title": "CNN Brings Farm Aid Live to Audiences Nationwide on Saturday, September 26 at 7pm ET",
+        "tier": "trade",
+        "field": "network",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-26",
+        "end_date": "2026-09-26",
+        "show_date": "2026-09-26",
+        "city": {
+          "name": "Virginia Beach",
+          "state": "VA",
+          "country": "USA",
+          "timezone": "America/New_York"
+        },
+        "venue": { "name": "Veterans United Home Loans Amphitheater" },
+        "sources": [
+          {
+            "url": "https://www.farmaid.org/blog/how-to-watch-farm-aid-2026/",
+            "publisher": "Farm Aid",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://cnnpressroom.blogs.cnn.com/2026/08/20/cnn-brings-farm-aid-live-to-audiences-nationwide-on-saturday-september-26-at-7pm-et/",
+            "publisher": "CNN",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Glastonbury Festival",
+    "slug": "glastonbury-festival",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "BBC One" },
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Five days at Worthy Farm in Pilton, Somerset, and the BBC's biggest annual music outside broadcast — the corporation took the television coverage over from Channel 4 and has carried it since. 2026 is a fallow year, the site left to recover; the festival returns 23–27 June 2027.",
+    "sources": [
+      {
+        "url": "https://www.glastonburyfestivals.co.uk/info/",
+        "publisher": "Glastonbury Festivals",
+        "title": "Glastonbury Festival - Info",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Glastonbury_Festival",
+        "publisher": "Wikipedia",
+        "title": "Glastonbury Festival",
+        "tier": "reference",
+        "field": "network",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-06-23",
+        "end_date": "2027-06-27",
+        "city": {
+          "name": "Pilton",
+          "country": "United Kingdom",
+          "timezone": "Europe/London",
+          "lat": 51.1663,
+          "lng": -2.587
+        },
+        "venue": { "name": "Worthy Farm" },
+        "sources": [
+          {
+            "url": "https://www.glastonburyfestivals.co.uk/info/",
+            "publisher": "Glastonbury Festivals",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Reading and Leeds Festivals",
+    "slug": "reading-and-leeds-festivals",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "BBC Radio 1" },
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "A twin festival over the August bank holiday weekend, the same bill rotating between the Reading and Leeds sites. With Glastonbury fallow, 2026 is Britain's largest music festival of the year. BBC Radio 1 broadcasts live from Reading across the weekend on Radio 1 and BBC Sounds, and BBC Radio 6 Music's Indie Forever stream carries an hour of headline sets a day the week after.",
+    "sources": [
+      {
+        "url": "https://www.readingfestival.com/",
+        "publisher": "Reading Festival",
+        "title": "Reading Festival",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://radiotoday.co.uk/2026/08/bbc-music-to-cover-reading-and-leeds-2026/",
+        "publisher": "RadioToday",
+        "title": "BBC Music to cover Reading and Leeds 2026",
+        "tier": "trade",
+        "field": "network",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-08-27",
+        "end_date": "2026-08-30",
+        "city": {
+          "name": "Reading",
+          "country": "United Kingdom",
+          "timezone": "Europe/London"
+        },
+        "venue": {
+          "name": "Richfield Avenue",
+          "address": "Richfield Avenue, Reading"
+        },
+        "sources": [
+          {
+            "url": "https://www.readingfestival.com/",
+            "publisher": "Reading Festival",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://radiotoday.co.uk/2026/08/bbc-music-to-cover-reading-and-leeds-2026/",
+            "publisher": "RadioToday",
+            "tier": "trade",
+            "field": "network",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BBC Proms",
+    "slug": "bbc-proms",
+    "category": "concerts",
+    "subcategory": "concert series",
+    "network": { "name": "BBC One" },
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Eight weeks of concerts, most of them at the Royal Albert Hall, and the largest classical broadcast operation in the world. Every Prom goes out on BBC Radio 3 and BBC Sounds; 27 were commissioned for television in 2026 across BBC One, Two, Four, CBBC and iPlayer. The season opens with a First Night simulcast on BBC Two and Radio 3 and closes with a Last Night split between BBC Two and BBC One.",
+    "sources": [
+      {
+        "url": "https://www.tvblighty.co.uk/news/2026-07-16-bbc-announces-television-schedule-for-2026-proms",
+        "publisher": "TV Blighty",
+        "title": "BBC Announces Television Schedule For 2026 Proms",
+        "tier": "trade",
+        "field": "network",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://theartsshelf.com/2026/04/21/bbc-proms-2026-programme-royal-albert-hall/",
+        "publisher": "The Arts Shelf",
+        "title": "BBC Proms 2026 Programme Announced",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-07-17",
+        "end_date": "2026-09-12",
+        "city": {
+          "name": "London",
+          "country": "United Kingdom",
+          "timezone": "Europe/London"
+        },
+        "venue": { "name": "Royal Albert Hall" },
+        "sources": [
+          {
+            "url": "https://theartsshelf.com/2026/04/21/bbc-proms-2026-programme-royal-albert-hall/",
+            "publisher": "The Arts Shelf",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://bachtrack.com/concert-event/last-night-of-the-proms-2026-bbc-symphony-orchestra-royal-albert-hall-12-september-2026/437813",
+            "publisher": "Bachtrack",
+            "title": "Last Night of the Proms 2026",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sanremo Music Festival",
+    "slug": "sanremo-music-festival",
+    "category": "concerts",
+    "subcategory": "song contest",
+    "network": { "name": "Rai 1" },
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Five consecutive nights of live television from the Teatro Ariston, running since 1951 and reliably the most-watched Italian broadcast of the year. Rai stages it and it is the contest that picks Italy's Eurovision entry. Stefano De Martino takes over as host and artistic director for the 77th edition in 2027, succeeding Carlo Conti.",
+    "sources": [
+      {
+        "url": "https://escxtra.com/2026/06/10/rai-reveals-dates-for-sanremo-2027/",
+        "publisher": "ESCXTRA",
+        "title": "RAI reveals dates for Sanremo 2027",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q206959",
+        "publisher": "Wikidata",
+        "title": "Sanremo Music Festival",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "start_date": "2027-02-16",
+        "end_date": "2027-02-20",
+        "show_date": "2027-02-20",
+        "city": {
+          "name": "Sanremo",
+          "country": "Italy",
+          "timezone": "Europe/Rome",
+          "lat": 43.8175,
+          "lng": 7.775
+        },
+        "venue": { "name": "Teatro Ariston" },
+        "sources": [
+          {
+            "url": "https://escxtra.com/2026/06/10/rai-reveals-dates-for-sanremo-2027/",
+            "publisher": "ESCXTRA",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tomorrowland",
+    "slug": "tomorrowland",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "YouTube", "is_streaming": true },
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Two weekends at De Schorre in Boom, and the electronic festival with the most elaborate in-house broadcast operation of any. The official stream is free — Mainstage and Freedom Stage sets from 2pm CEST daily on Tomorrowland's own YouTube channel, site and app — and One World Radio, the festival's own 24/7 station, runs audio around it on DAB+ across five countries.",
+    "sources": [
+      {
+        "url": "https://djmag.com/news/tomorrowland-2026-streaming-programme-announced",
+        "publisher": "DJ Mag",
+        "title": "Tomorrowland 2026 streaming programme announced",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.beatportal.com/articles/1506367-how-to-stream-tomorrowland-2026-full-schedule",
+        "publisher": "Beatportal",
+        "title": "How to Stream Tomorrowland 2026: Full Schedule",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q606649",
+        "publisher": "Wikidata",
+        "title": "Tomorrowland",
+        "tier": "reference",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-07-17",
+        "end_date": "2026-07-26",
+        "city": {
+          "name": "Boom",
+          "country": "Belgium",
+          "timezone": "Europe/Brussels",
+          "lat": 51.0887,
+          "lng": 4.37953
+        },
+        "venue": { "name": "De Schorre" },
+        "sources": [
+          {
+            "url": "https://www.beatportal.com/articles/1506367-how-to-stream-tomorrowland-2026-full-schedule",
+            "publisher": "Beatportal",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://djmag.com/news/tomorrowland-2026-streaming-programme-announced",
+            "publisher": "DJ Mag",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ultra Music Festival",
+    "slug": "ultra-music-festival",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "YouTube", "is_streaming": true },
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Three days on Bayfront Park in downtown Miami. UMF TV carries the #ULTRALIVE broadcast free on YouTube, running five simultaneous feeds — Mainstage, Ultra Worldwide, RESISTANCE MegaStructure, RESISTANCE The Cove and the Live Stage.",
+    "sources": [
+      {
+        "url": "https://ultramusicfestival.com/livestream/",
+        "publisher": "Ultra Music Festival",
+        "title": "Live Stream - Ultra Music Festival",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q957459",
+        "publisher": "Wikidata",
+        "title": "Ultra Music Festival",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-03-26",
+        "end_date": "2027-03-28",
+        "city": {
+          "name": "Miami",
+          "state": "FL",
+          "country": "USA",
+          "timezone": "America/New_York"
+        },
+        "venue": { "name": "Bayfront Park" },
+        "sources": [
+          {
+            "url": "https://ultramusicfestival.com/livestream/",
+            "publisher": "Ultra Music Festival",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hellfest",
+    "slug": "hellfest",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "ARTE" },
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Four days of metal in Clisson, in the Loire vineyards. ARTE Concert is the broadcast partner and streams roughly forty sets free — live on the ARTE Concert YouTube channel and live or on demand on arte.tv — an editorial selection across the stages rather than blanket coverage.",
+    "sources": [
+      {
+        "url": "https://hellfest.fr/en/news",
+        "publisher": "Hellfest",
+        "title": "Hellfest | 17 > 20 June 2027 | Clisson - France",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.sortiraparis.com/en/what-to-see-in-paris/concerts-music-festival/articles/315149-hellfest-2026-the-lineup-of-concerts-you-can-watch-live-or-on-demand-on-arte-concert",
+        "publisher": "Sortiraparis",
+        "title": "Hellfest 2026: the lineup of concerts you can watch live or on demand on Arte Concert",
+        "tier": "trade",
+        "field": "network",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-06-18",
+        "end_date": "2026-06-21",
+        "city": {
+          "name": "Clisson",
+          "country": "France",
+          "timezone": "Europe/Paris"
+        },
+        "sources": [
+          {
+            "url": "https://www.sortiraparis.com/en/what-to-see-in-paris/concerts-music-festival/articles/315149-hellfest-2026-the-lineup-of-concerts-you-can-watch-live-or-on-demand-on-arte-concert",
+            "publisher": "Sortiraparis",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-06-17",
+        "end_date": "2027-06-20",
+        "city": {
+          "name": "Clisson",
+          "country": "France",
+          "timezone": "Europe/Paris"
+        },
+        "sources": [
+          {
+            "url": "https://hellfest.fr/en/news",
+            "publisher": "Hellfest",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wacken Open Air",
+    "slug": "wacken-open-air",
+    "category": "concerts",
+    "subcategory": "music festival",
+    "network": { "name": "MagentaTV", "is_streaming": true },
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Four days of metal in a Schleswig-Holstein village, running since 1990. Deutsche Telekom's MagentaMusik carries a free four-day livestream off the Harder, Faster and Louder stages — on the MagentaMusik 1 and 2 channels, at magentamusik.de and on MagentaTV — presented from site with interviews between sets.",
+    "sources": [
+      {
+        "url": "https://www.wacken.com/en/",
+        "publisher": "Wacken Open Air",
+        "title": "Wacken Open Air",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.metal-hammer.de/wacken-2026-live-dabei-mit-magentamusik-2533901/",
+        "publisher": "Metal Hammer",
+        "title": "Wacken 2026: Live bei MagentaMusik",
+        "tier": "trade",
+        "field": "network",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-07-29",
+        "end_date": "2026-08-01",
+        "city": {
+          "name": "Wacken",
+          "country": "Germany",
+          "timezone": "Europe/Berlin"
+        },
+        "sources": [
+          {
+            "url": "https://www.metal-hammer.de/wacken-2026-live-dabei-mit-magentamusik-2533901/",
+            "publisher": "Metal Hammer",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-07-28",
+        "end_date": "2027-07-31",
+        "city": {
+          "name": "Wacken",
+          "country": "Germany",
+          "timezone": "Europe/Berlin"
+        },
+        "sources": [
+          {
+            "url": "https://www.wacken.com/en/",
+            "publisher": "Wacken Open Air",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bayreuth Festival",
+    "slug": "bayreuth-festival",
+    "category": "concerts",
+    "subcategory": "opera festival",
+    "network": { "name": "BR-Klassik" },
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Five weeks of Wagner in the Festspielhaus he had built for the purpose, 1,974 seats and a covered orchestra pit. Bayerischer Rundfunk is the broadcast home: BR-Klassik carries the operas live on radio through the ARD Radiofestival and Deutschlandradio, with video livestreams on ARD Klassik in the ARD Mediathek and a television recording on 3sat.",
+    "sources": [
+      {
+        "url": "https://www.bayreuther-festspiele.de/en/programme/programme/",
+        "publisher": "Bayreuth Festival",
+        "title": "Programme of the Bayreuth Festival",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.presseportal.de/pm/7560/6317623",
+        "publisher": "Bayerischer Rundfunk",
+        "title": "Alles Wagner: Die Bayreuther Festspiele 2026 im Radio, TV und Video-Livestream",
+        "tier": "official",
+        "field": "network",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q157596",
+        "publisher": "Wikidata",
+        "title": "Bayreuth Festival",
+        "tier": "reference",
+        "field": "venue",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-07-24",
+        "end_date": "2026-08-26",
+        "city": {
+          "name": "Bayreuth",
+          "country": "Germany",
+          "timezone": "Europe/Berlin",
+          "lat": 49.96,
+          "lng": 11.579722
+        },
+        "venue": {
+          "name": "Bayreuth Festival Theatre",
+          "capacity": 1974
+        },
+        "sources": [
+          {
+            "url": "https://www.bayreuther-festspiele.de/en/programme/programme/",
+            "publisher": "Bayreuth Festival",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.presseportal.de/pm/7560/6317623",
+            "publisher": "Bayerischer Rundfunk",
+            "tier": "official",
+            "field": "network",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Vienna New Year's Concert",
+    "slug": "vienna-new-years-concert",
+    "category": "concerts",
+    "subcategory": "orchestral concert",
+    "network": { "name": "ORF" },
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The Vienna Philharmonic's New Year's Day matinee, hosted for broadcast by ORF and relayed worldwide over the EBU's Eurovision network — around 50 million viewers in more than 150 countries, with market shares over 40 per cent in several of them. Tugan Sokhiev conducts the 2027 concert, his first.",
+    "sources": [
+      {
+        "url": "https://www.wienerphilharmoniker.at/en/newyearsconcert",
+        "publisher": "Vienna Philharmonic",
+        "title": "New Year's Concert of the Vienna Philharmonic",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.ebu.ch/tv-co-production/content-offers/vienna-philharmonic-orchestra-concerts",
+        "publisher": "European Broadcasting Union",
+        "title": "Vienna Philharmonic Orchestra Concerts",
+        "tier": "official",
+        "field": "network",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "start_date": "2027-01-01",
+        "end_date": "2027-01-01",
+        "show_date": "2027-01-01",
+        "city": {
+          "name": "Vienna",
+          "country": "Austria",
+          "timezone": "Europe/Vienna"
+        },
+        "sources": [
+          {
+            "url": "https://www.wienerphilharmoniker.at/en/newyearsconcert",
+            "publisher": "Vienna Philharmonic",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  }
+]
