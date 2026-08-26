@@ -953,5 +953,110 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Family Feud",
+    "slug": "family-feud",
+    "category": "game_shows",
+    "sources": [
+      {
+        "url": "https://www.thewrap.com/family-feud-resume-filming-atlanta-studio-august/",
+        "publisher": "TheWrap",
+        "tier": "trade",
+        "title": "'Family Feud' to Resume Filming at Atlanta Studio in August",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://on-camera-audiences.com/shows/celebrity-family-feud-atlanta/",
+        "publisher": "On Camera Audiences",
+        "tier": "official",
+        "title": "Celebrity Family Feud — Atlanta",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://on-camera-audiences.com/shows/celebrity-family-feud-atlanta/",
+            "publisher": "On Camera Audiences",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Price Is Right",
+    "slug": "the-price-is-right",
+    "category": "game_shows",
+    "sources": [
+      {
+        "url": "https://deadline.com/2023/06/the-price-is-right-leaves-television-city-moving-glendale-1235424943/",
+        "publisher": "Deadline",
+        "tier": "trade",
+        "title": "'The Price Is Right' Says Farewell To Television City",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.tvline.com/news/the-price-is-right-new-studio-home-cbs-television-city-1234943741/",
+        "publisher": "TVLine",
+        "tier": "trade",
+        "title": "'The Price Is Right' Getting New Home Studio, Leaving Television City",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cbsnews.com/news/price-is-right-leaves-television-city-los-angeles-new-home-glendale/",
+        "publisher": "CBS News",
+        "tier": "trade",
+        "title": "After more than 50 years, 'The Price is Right' leaves its iconic Television City studio",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://deadline.com/2023/06/the-price-is-right-leaves-television-city-moving-glendale-1235424943/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wheel of Fortune",
+    "slug": "wheel-of-fortune",
+    "category": "game_shows",
+    "sources": [
+      {
+        "url": "https://on-camera-audiences.com/shows/wheel-of-fortune/",
+        "publisher": "On Camera Audiences",
+        "tier": "official",
+        "title": "Wheel of Fortune — audience tickets, Sony Pictures Studios",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://on-camera-audiences.com/shows/wheel-of-fortune/",
+            "publisher": "On Camera Audiences",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
   }
 ]

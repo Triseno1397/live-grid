@@ -81,6 +81,24 @@ npm run seeds:prune -- --apply # deletes them; citations cascade
 npm run seeds:rederive         # confidence is derived from citations that just changed
 ```
 
+## Open questions the backfill turned up
+
+**Where the Atlanta game shows actually tape.** `002-game-shows.json` records
+`the-1-percent-club`, `celebrity-weakest-link` and `press-your-luck` in Georgia. Wikipedia's
+infobox puts The 1% Club at Television City in Los Angeles, and a search summary claiming
+seven game shows had shot in Georgia turned out not to be in the article it cited — the CBS
+News Atlanta piece does not mention game shows at all.
+
+So there is currently no source good enough to confirm Georgia *or* to overturn it. Wikipedia
+is `reference` tier, which by this project's own rule is enough to find a fact and never
+enough to settle one, and certainly not enough to rewrite a stored value. Those three records
+are therefore left uncited rather than backed with something that would not survive being
+read, and `002-game-shows.json` stays in `LEGACY_UNSOURCED`.
+
+This matters more than a normal gap: "what tapes in Atlanta next month" is the question the
+whole product is built around, and these are the rows that answer it. Worth a proper pass
+against the shows' own audience-ticketing pages and the Georgia Film Office.
+
 ## Batches
 
 | # | File | Slice | Records | Pass | Imported | Notes |
