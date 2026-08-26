@@ -647,7 +647,7 @@
     "recurring": true,
     "production_scale": 4,
     "network": { "name": "Apple TV", "is_streaming": true },
-    "description": "Every Major League Soccer match, produced by Apple's live sports group since 2023 and folded into the base Apple TV subscription from 2026 when the standalone MLS Season Pass was retired. The package carries its own whip-around studio show, MLS 360, a featured Walmart Saturday Showdown match with an enhanced production, and bespoke English and Spanish graphics.",
+    "description": "Every Major League Soccer match, produced by Apple's live sports group since 2023 and folded into the base Apple TV subscription from 2026 when the standalone MLS Season Pass was retired. The 2026 season opened on 21 February with Inter Miami at LAFC and ends with MLS Cup on 18 December. The package carries its own whip-around studio show, MLS 360, a featured Walmart Saturday Showdown match with an enhanced production, and bespoke English and Spanish graphics.",
     "sources": [
       {
         "url": "https://www.apple.com/newsroom/2026/02/major-league-soccer-kicks-off-2026-season-on-apple-tv/",

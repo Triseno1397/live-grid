@@ -1,0 +1,1486 @@
+[
+  {
+    "name": "State of the Union Address",
+    "slug": "state-of-the-union-address",
+    "category": "political",
+    "subcategory": "government address",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The constitutionally mandated annual message to Congress, delivered before a joint session in the House chamber of the United States Capitol and carried live by every broadcast and cable news network from a shared camera pool. Nielsen counted 15 networks on the 2026 address.",
+    "sources": [
+      {
+        "url": "https://www.govinfo.gov/features/state-of-the-union",
+        "publisher": "U.S. Government Publishing Office",
+        "title": "State of the Union | GovInfo",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nielsen.com/news-center/2026/32-6-million-watch-2026-state-of-the-union-address/",
+        "publisher": "Nielsen",
+        "title": "32.6 Million Watch 2026 State of the Union Address",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2024,
+        "status": "completed",
+        "start_date": "2024-03-07",
+        "show_date": "2024-03-07",
+        "city": "Washington",
+        "venue": { "name": "United States Capitol", "city": "Washington" },
+        "sources": [
+          {
+            "url": "https://www.govinfo.gov/features/state-of-the-union",
+            "publisher": "U.S. Government Publishing Office",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-24",
+        "show_date": "2026-02-24",
+        "city": "Washington",
+        "venue": { "name": "United States Capitol", "city": "Washington" },
+        "sources": [
+          {
+            "url": "https://www.govinfo.gov/features/state-of-the-union",
+            "publisher": "U.S. Government Publishing Office",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.cbsnews.com/live-updates/state-of-the-union-2026/",
+            "publisher": "CBS News",
+            "title": "Highlights from Trump's 2026 State of the Union speech",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/2026_State_of_the_Union_Address",
+            "publisher": "Wikipedia",
+            "title": "2026 State of the Union Address",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2024,
+        "average_viewers": 32200000,
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2026/32-6-million-watch-2026-state-of-the-union-address/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "average_viewers": 32600000,
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2026/32-6-million-watch-2026-state-of-the-union-address/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.hollywoodreporter.com/tv/tv-news/state-of-the-union-2026-tv-ratimgs-trump-1236514822/",
+            "publisher": "The Hollywood Reporter",
+            "title": "TV Ratings: State of the Union Draws 32.6 Million Viewers, Down From 2025",
+            "tier": "trade",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Presidential Address to a Joint Session of Congress",
+    "slug": "presidential-address-joint-session-of-congress",
+    "category": "political",
+    "subcategory": "government address",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "A newly inaugurated president's first address to a joint session of Congress, staged in the House chamber under the same pool camera and network simulcast arrangements as the State of the Union but not formally titled one. The most recent was delivered on 4 March 2025 and carried by 15 networks.",
+    "sources": [
+      {
+        "url": "https://www.nielsen.com/news-center/2025/over-36-million-tune-in-to-president-trumps-2025-joint-address-to-congress/",
+        "publisher": "Nielsen",
+        "title": "Over 36 Million Tune In To President Trump's 2025 Joint Address to Congress",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.govinfo.gov/features/state-of-the-union",
+        "publisher": "U.S. Government Publishing Office",
+        "title": "State of the Union | GovInfo",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-03-04",
+        "show_date": "2025-03-04",
+        "city": "Washington",
+        "venue": { "name": "United States Capitol", "city": "Washington" },
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2025/over-36-million-tune-in-to-president-trumps-2025-joint-address-to-congress/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.hollywoodreporter.com/tv/tv-news/tv-ratings-trump-congressional-address-march-4-2025-1236155800/",
+            "publisher": "The Hollywood Reporter",
+            "title": "TV Ratings: Trump's Address to Congress Draws 36.6M Viewers",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2025,
+        "average_viewers": 36600000,
+        "peak_viewers": 37895000,
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2025/over-36-million-tune-in-to-president-trumps-2025-joint-address-to-congress/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Presidential Inauguration",
+    "slug": "presidential-inauguration",
+    "category": "political",
+    "subcategory": "inauguration",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The quadrennial swearing-in ceremony at the United States Capitol, held on 20 January under the Twentieth Amendment and staged on the Capitol's West Front since 1981. The Joint Congressional Committee on Inaugural Ceremonies builds the platform and runs the ceremony; the Presidential Inaugural Committee produces the parade and evening balls. The 2025 ceremony was moved indoors to the Capitol Rotunda because of cold, the first such move since 1985.",
+    "sources": [
+      {
+        "url": "https://www.inaugural.senate.gov/frequently-asked-questions/",
+        "publisher": "Joint Congressional Committee on Inaugural Ceremonies",
+        "title": "Frequently Asked Questions",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.usa.gov/inauguration",
+        "publisher": "USAGov",
+        "title": "Inauguration of the president of the United States",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-01-20",
+        "show_date": "2025-01-20",
+        "city": "Washington",
+        "venue": { "name": "United States Capitol", "city": "Washington" },
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2025/viewership-2025-us-presidential-inauguration/",
+            "publisher": "Nielsen",
+            "title": "24.6 Million Viewers Watch President Donald Trump's Inauguration as 47th U.S. President",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.hollywoodreporter.com/tv/tv-news/trump-inauguration-2025-tv-ratings-1236113911/",
+            "publisher": "The Hollywood Reporter",
+            "title": "Trump Inauguration 2025 TV Ratings Down vs. 2021, 2017",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2029,
+        "status": "confirmed",
+        "start_date": "2029-01-20",
+        "show_date": "2029-01-20",
+        "city": "Washington",
+        "venue": { "name": "United States Capitol", "city": "Washington" },
+        "sources": [
+          {
+            "url": "https://www.inaugural.senate.gov/frequently-asked-questions/",
+            "publisher": "Joint Congressional Committee on Inaugural Ceremonies",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.usa.gov/inauguration",
+            "publisher": "USAGov",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2025,
+        "average_viewers": 24600000,
+        "peak_viewers": 34400000,
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2025/viewership-2025-us-presidential-inauguration/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Joint Session of Congress to Count Electoral Votes",
+    "slug": "electoral-vote-count-joint-session",
+    "category": "political",
+    "subcategory": "government address",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The quadrennial joint session in the House chamber at which Congress opens and counts the electoral votes, carried live from the House floor pool feed. Federal law sets the session for 6 January following the meeting of the electors, moving to 7 January when the 6th is a Sunday.",
+    "sources": [
+      {
+        "url": "https://www.congress.gov/crs-product/R48309",
+        "publisher": "Congressional Research Service",
+        "title": "Joint Session of Congress for Counting Electoral Votes for President",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cbsnews.com/news/electoral-count-reform-act-congress-january-6/",
+        "publisher": "CBS News",
+        "title": "How the Electoral Count Reform Act changed Congress' process on Jan. 6",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-01-06",
+        "show_date": "2025-01-06",
+        "city": "Washington",
+        "venue": { "name": "United States Capitol", "city": "Washington" },
+        "sources": [
+          {
+            "url": "https://www.cbsnews.com/news/electoral-count-reform-act-congress-january-6/",
+            "publisher": "CBS News",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2029,
+        "status": "announced",
+        "start_date": "2029-01-06",
+        "show_date": "2029-01-06",
+        "city": "Washington",
+        "venue": { "name": "United States Capitol", "city": "Washington" },
+        "sources": [
+          {
+            "url": "https://www.congress.gov/crs-product/R48309",
+            "publisher": "Congressional Research Service",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Democratic National Convention",
+    "slug": "democratic-national-convention",
+    "category": "political",
+    "subcategory": "convention",
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "A four-night arena build with a purpose-built stage, network skyboxes and a separate media workspace, produced by the party's convention committee and carried across roughly fifteen networks each night. The 2028 convention has an announced date but no host city: the DNC narrowed the field to Boston, Denver and Philadelphia in August 2026.",
+    "sources": [
+      {
+        "url": "https://democrats.org/dnc-announces-2028-convention-date-and-host-city-frontrunners/",
+        "publisher": "Democratic National Committee",
+        "title": "DNC Announces 2028 Convention Date and Host City Frontrunners",
+        "tier": "official",
+        "published_on": "2026-03-02",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cbsnews.com/news/dnc-narrows-2028-convention-finalists-boston-denver-philadelphia/",
+        "publisher": "CBS News",
+        "title": "Democrats narrow 2028 convention finalists to Boston, Denver and Philadelphia",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2024,
+        "status": "completed",
+        "start_date": "2024-08-19",
+        "end_date": "2024-08-22",
+        "city": "Chicago",
+        "venue": { "name": "United Center", "city": "Chicago" },
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2024/final-night-of-2024-democratic-national-convention-attracts-over-26-million-viewers/",
+            "publisher": "Nielsen",
+            "title": "Final Night of 2024 Democratic National Convention Attracts Over 26 Million Viewers",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/2024_Democratic_National_Convention",
+            "publisher": "Wikipedia",
+            "title": "2024 Democratic National Convention",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2028,
+        "status": "announced",
+        "start_date": "2028-08-07",
+        "end_date": "2028-08-10",
+        "sources": [
+          {
+            "url": "https://democrats.org/dnc-announces-2028-convention-date-and-host-city-frontrunners/",
+            "publisher": "Democratic National Committee",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.cbsnews.com/news/dnc-narrows-2028-convention-finalists-boston-denver-philadelphia/",
+            "publisher": "CBS News",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2024,
+        "average_viewers": 26200000,
+        "peak_viewers": 28900000,
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2024/final-night-of-2024-democratic-national-convention-attracts-over-26-million-viewers/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Republican National Convention",
+    "slug": "republican-national-convention",
+    "category": "political",
+    "subcategory": "convention",
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "A four-night arena build with a purpose-built stage, network skyboxes and an adjacent media centre, carried across roughly fifteen networks each night. Houston was named the 2028 host city in August 2023; the RNC has not set the dates, and the host organisation expects the build to centre on Toyota Center with the George R. Brown Convention Center and Minute Maid Park in support.",
+    "sources": [
+      {
+        "url": "https://www.gop.com/press-release/rnc-announces-houston-as-host-city-for-2028-convention/",
+        "publisher": "Republican National Committee",
+        "title": "RNC Announces Houston as Host City for 2028 Convention",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.houstonfirst.com/news/rnc-selects-houston-for-2028-republican-national-convention",
+        "publisher": "Houston First Corporation",
+        "title": "RNC Selects Houston for 2028 Republican National Convention",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nbcnews.com/politics/politics-news/rnc-chooses-houston-2028-presidential-convention-rcna101833",
+        "publisher": "NBC News",
+        "title": "RNC chooses Houston for 2028 presidential convention",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2024,
+        "status": "completed",
+        "start_date": "2024-07-15",
+        "end_date": "2024-07-18",
+        "city": {
+          "name": "Milwaukee",
+          "state": "WI",
+          "country": "USA",
+          "timezone": "America/Chicago",
+          "lat": 43.0389,
+          "lng": -87.9065
+        },
+        "venue": { "name": "Fiserv Forum", "city": "Milwaukee" },
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2024/over-25-million-viewers-tune-in-for-final-night-of-2024-republican-national-convention/",
+            "publisher": "Nielsen",
+            "title": "Over 25 Million Viewers Tune In For Final Night of 2024 Republican National Convention",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/2024_Republican_National_Convention",
+            "publisher": "Wikipedia",
+            "title": "2024 Republican National Convention",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2028,
+        "status": "announced",
+        "city": {
+          "name": "Houston",
+          "state": "TX",
+          "country": "USA",
+          "timezone": "America/Chicago",
+          "lat": 29.7604,
+          "lng": -95.3698
+        },
+        "sources": [
+          {
+            "url": "https://www.gop.com/press-release/rnc-announces-houston-as-host-city-for-2028-convention/",
+            "publisher": "Republican National Committee",
+            "tier": "official",
+            "field": "city",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.houstonfirst.com/news/rnc-selects-houston-for-2028-republican-national-convention",
+            "publisher": "Houston First Corporation",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2024,
+        "average_viewers": 25380000,
+        "peak_viewers": 28400000,
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2024/over-25-million-viewers-tune-in-for-final-night-of-2024-republican-national-convention/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "General Election Presidential Debates",
+    "slug": "general-election-presidential-debates",
+    "category": "political",
+    "subcategory": "debate",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Head-to-head general election debates, built as a single-set studio or hall production by the host network and simulcast to every other network from a shared feed. The 2024 cycle was arranged directly between the campaigns and the host networks rather than through the Commission on Presidential Debates: CNN produced the 27 June debate from its Atlanta studios with no audience, and ABC News produced the 10 September debate from the National Constitution Center in Philadelphia. No 2028 debate has been scheduled.",
+    "sources": [
+      {
+        "url": "https://thehill.com/homenews/ap/ap-politics/ap-the-commission-on-presidential-debates-faces-an-uncertain-future-after-biden-and-trump-bypassed-it/",
+        "publisher": "The Hill",
+        "title": "The Commission on Presidential Debates faces an uncertain future after Biden and Trump bypassed it",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nielsen.com/news-center/2024/over-67-million-viewers-tune-in-for-abc-news-harris-trump-debate/",
+        "publisher": "Nielsen",
+        "title": "Over 67 Million Viewers Tune In for ABC News Harris-Trump Debate",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2024,
+        "status": "completed",
+        "start_date": "2024-06-27",
+        "end_date": "2024-09-10",
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2024/over-67-million-viewers-tune-in-for-abc-news-harris-trump-debate/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://ballotpedia.org/Presidential_debate_(September_10,_2024)",
+            "publisher": "Ballotpedia",
+            "title": "Presidential debate (September 10, 2024)",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.cnn.com/2024/09/11/media/debate-ratings-abc-trump-harris-2024-election/index.html",
+            "publisher": "CNN",
+            "title": "67 million watched first Harris-Trump debate, blowing past Biden matchup",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2028,
+        "status": "rumored",
+        "sources": [
+          {
+            "url": "https://thehill.com/homenews/ap/ap-politics/ap-the-commission-on-presidential-debates-faces-an-uncertain-future-after-biden-and-trump-bypassed-it/",
+            "publisher": "The Hill",
+            "tier": "trade",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2024,
+        "average_viewers": 67100000,
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2024/over-67-million-viewers-tune-in-for-abc-news-harris-trump-debate/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Vice Presidential Debate",
+    "slug": "vice-presidential-debate",
+    "category": "political",
+    "subcategory": "debate",
+    "typical_month": 10,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The single vice presidential debate of a general election cycle, produced by one host network and simulcast to the rest. CBS News staged the 2024 debate at the CBS Broadcast Center in New York on 1 October, where Nielsen counted 43.15 million viewers across 15 networks. No 2028 debate has been scheduled.",
+    "sources": [
+      {
+        "url": "https://www.nielsen.com/news-center/2024/2024-vice-presidential-debate-draws-over-43-million-viewers/",
+        "publisher": "Nielsen",
+        "title": "2024 Vice Presidential Debate Draws Over 43 Million Viewers",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cbsnews.com/news/vp-debate-2024-location/",
+        "publisher": "CBS News",
+        "title": "Where is the VP debate being held? See behind the scenes at the CBS Broadcast Center in NYC",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2024,
+        "status": "completed",
+        "start_date": "2024-10-01",
+        "show_date": "2024-10-01",
+        "city": "New York",
+        "venue": { "name": "CBS Broadcast Center", "city": "New York" },
+        "network": "CBS",
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2024/2024-vice-presidential-debate-draws-over-43-million-viewers/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.cbsnews.com/news/vp-debate-2024-location/",
+            "publisher": "CBS News",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2028,
+        "status": "rumored",
+        "sources": [
+          {
+            "url": "https://thehill.com/homenews/ap/ap-politics/ap-the-commission-on-presidential-debates-faces-an-uncertain-future-after-biden-and-trump-bypassed-it/",
+            "publisher": "The Hill",
+            "tier": "trade",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2024,
+        "average_viewers": 43150000,
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2024/2024-vice-presidential-debate-draws-over-43-million-viewers/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Election Night Coverage",
+    "slug": "election-night-coverage",
+    "category": "political",
+    "subcategory": "election night",
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The networks' results broadcasts on the Tuesday after the first Monday in November — decision desks, touchscreen result walls, purpose-built studios and dozens of remote positions, all for one night. Nielsen counted 42.3 million viewers across 18 networks on 5 November 2024.",
+    "sources": [
+      {
+        "url": "https://www.nielsen.com/news-center/2024/over-42-million-viewers-tune-in-to-watch-2024-presidential-election-coverage/",
+        "publisher": "Nielsen",
+        "title": "Over 42 Million Viewers Tune In to Watch 2024 Presidential Election Coverage",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Election_Day_(United_States)",
+        "publisher": "Wikipedia",
+        "title": "Election Day (United States)",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2024,
+        "status": "completed",
+        "start_date": "2024-11-05",
+        "show_date": "2024-11-05",
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2024/over-42-million-viewers-tune-in-to-watch-2024-presidential-election-coverage/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-11-03",
+        "show_date": "2026-11-03",
+        "sources": [
+          {
+            "url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
+            "publisher": "California Secretary of State",
+            "title": "General Election - November 3, 2026",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/2026_United_States_elections",
+            "publisher": "Wikipedia",
+            "title": "2026 United States elections",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2028,
+        "status": "announced",
+        "start_date": "2028-11-07",
+        "show_date": "2028-11-07",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/2028_United_States_elections",
+            "publisher": "Wikipedia",
+            "title": "2028 United States elections",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2024,
+        "average_viewers": 42300000,
+        "sources": [
+          {
+            "url": "https://www.nielsen.com/news-center/2024/over-42-million-viewers-tune-in-to-watch-2024-presidential-election-coverage/",
+            "publisher": "Nielsen",
+            "tier": "official",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Iowa Caucuses",
+    "slug": "iowa-caucuses",
+    "category": "political",
+    "subcategory": "election night",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The first Republican nominating contest of a presidential cycle and the broadcast that goes with it: networks move anchor desks and satellite trucks to Des Moines for the week and originate most of a day's programming from Iowa. The 2028 Republican calendar had not been adopted as of August 2026, and Iowa Democrats are not among the party's approved early states.",
+    "sources": [
+      {
+        "url": "https://www.adweek.com/tvnewser/news-networks-descend-on-des-moines-for-2024-iowa-caucuses/",
+        "publisher": "Adweek",
+        "title": "News Networks Descend on Des Moines for 2024 Iowa Caucuses",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://deadline.com/2024/01/iowa-caucus-trump-media-coverage-1235792186/",
+        "publisher": "Deadline",
+        "title": "Iowa Caucuses: Networks Face Fierce Competition For Attention In Coverage Of 2024 Vote",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2024,
+        "status": "completed",
+        "start_date": "2024-01-15",
+        "show_date": "2024-01-15",
+        "city": {
+          "name": "Des Moines",
+          "state": "IA",
+          "country": "USA",
+          "timezone": "America/Chicago",
+          "lat": 41.5868,
+          "lng": -93.625
+        },
+        "sources": [
+          {
+            "url": "https://cnnpressroom.blogs.cnn.com/2024/01/15/cnns-coverage-of-the-2024-iowa-caucuses-january-14-15-2024/",
+            "publisher": "CNN",
+            "title": "CNN's Coverage of the 2024 Iowa Caucuses",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/2024_Iowa_caucus",
+            "publisher": "Wikipedia",
+            "title": "2024 Iowa caucus",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2028,
+        "status": "rumored",
+        "sources": [
+          {
+            "url": "https://www.nbcnews.com/politics/2028-election/democrats-officially-set-2028-primary-calendar-south-carolina-going-fi-rcna592519",
+            "publisher": "NBC News",
+            "title": "Democrats officially set their 2028 primary calendar, with South Carolina going first",
+            "tier": "trade",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "New Hampshire Primary",
+    "slug": "new-hampshire-primary",
+    "category": "political",
+    "subcategory": "election night",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The first-in-the-nation presidential primary and a week-long remote broadcast operation for the networks, which base anchor positions and result studios in the state. The date is set by the New Hampshire Secretary of State rather than by either national party, and the state has previously scheduled ahead of the party-sanctioned slot: the DNC's 2028 calendar places New Hampshire on 8 February 2028, but the state has not set its own date and no edition date is recorded here.",
+    "sources": [
+      {
+        "url": "https://www.nbcnews.com/politics/2024-election/new-hampshire-sets-presidential-primary-date-jan-23-defying-bidens-new-rcna125161",
+        "publisher": "NBC News",
+        "title": "New Hampshire sets presidential primary date for Jan. 23, defying Biden's new primary order",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/2024_New_Hampshire_Republican_presidential_primary",
+        "publisher": "Wikipedia",
+        "title": "2024 New Hampshire Republican presidential primary",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2024,
+        "status": "completed",
+        "start_date": "2024-01-23",
+        "show_date": "2024-01-23",
+        "sources": [
+          {
+            "url": "https://www.nbcnews.com/politics/2024-election/new-hampshire-sets-presidential-primary-date-jan-23-defying-bidens-new-rcna125161",
+            "publisher": "NBC News",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.cbsnews.com/live-updates/new-hampshire-primary-2024-updates/",
+            "publisher": "CBS News",
+            "title": "Trump wins 2024 New Hampshire primary as Haley vows to continue fight",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2028,
+        "status": "rumored",
+        "sources": [
+          {
+            "url": "https://www.npr.org/2026/07/24/nx-s1-5906834/dnc-primary-election-calendar-south-carolina-2028",
+            "publisher": "NPR",
+            "title": "Democrats approve a new primary election calendar, putting South Carolina first",
+            "tier": "trade",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://democrats.org/dnc-votes-to-officially-select-early-states-for-2028-democratic-presidential-nominating-calendar/",
+            "publisher": "Democratic National Committee",
+            "title": "DNC Votes to Officially Select Early States for 2028 Democratic Presidential Nominating Calendar",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "South Carolina Democratic Presidential Primary",
+    "slug": "south-carolina-democratic-presidential-primary",
+    "category": "political",
+    "subcategory": "election night",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The opening contest of the Democratic nominating calendar from 2028, and a full remote broadcast for the news networks, which set up result studios and anchor positions in the state for primary week. The DNC voted in August 2026 to place South Carolina first, on 22 January 2028.",
+    "sources": [
+      {
+        "url": "https://democrats.org/dnc-votes-to-officially-select-early-states-for-2028-democratic-presidential-nominating-calendar/",
+        "publisher": "Democratic National Committee",
+        "title": "DNC Votes to Officially Select Early States for 2028 Democratic Presidential Nominating Calendar",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cbsnews.com/news/democratic-national-committee-presidential-primary-south-carolina-vote/",
+        "publisher": "CBS News",
+        "title": "South Carolina to hold first 2028 Democratic presidential primary, DNC vote confirms",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2028,
+        "status": "confirmed",
+        "start_date": "2028-01-22",
+        "show_date": "2028-01-22",
+        "sources": [
+          {
+            "url": "https://democrats.org/dnc-votes-to-officially-select-early-states-for-2028-democratic-presidential-nominating-calendar/",
+            "publisher": "Democratic National Committee",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.nbcnews.com/politics/2028-election/democrats-officially-set-2028-primary-calendar-south-carolina-going-fi-rcna592519",
+            "publisher": "NBC News",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Super Tuesday",
+    "slug": "super-tuesday",
+    "category": "political",
+    "subcategory": "election night",
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The largest multi-state primary night of a presidential cycle and the biggest results broadcast between the early states and election night: a full decision-desk operation, a results studio and remote positions in a dozen or more states. Sixteen states and one territory voted on 5 March 2024; the 2028 date has not been set.",
+    "sources": [
+      {
+        "url": "https://www.nbcnews.com/politics/2024-primary-elections/calendar",
+        "publisher": "NBC News",
+        "title": "2024 Presidential Election Calendar: Primary, Caucus & Event Dates",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cbsnews.com/news/next-primary-after-new-hampshire-election/",
+        "publisher": "CBS News",
+        "title": "When is the next primary after New Hampshire? Here are the dates for upcoming 2024 Republican elections",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2024,
+        "status": "completed",
+        "start_date": "2024-03-05",
+        "show_date": "2024-03-05",
+        "sources": [
+          {
+            "url": "https://www.nbcnews.com/politics/2024-primary-elections/calendar",
+            "publisher": "NBC News",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.cbsnews.com/news/next-primary-after-new-hampshire-election/",
+            "publisher": "CBS News",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Republican Presidential Primary Debates",
+    "slug": "republican-presidential-primary-debates",
+    "category": "political",
+    "subcategory": "debate",
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Network-hosted primary debates staged in arenas and theatres with a party-sanctioned candidate lectern set. Fox News opened the 2024 cycle from Fiserv Forum in Milwaukee on 23 August 2023, an exclusive broadcast simulcast on Rumble. No 2028-cycle debate schedule has been announced.",
+    "sources": [
+      {
+        "url": "https://www.npr.org/2023/08/23/1195372100/republican-debate-milwaukee-trump-desantis-fox-news-gop-primary",
+        "publisher": "NPR",
+        "title": "5 questions ahead of the first GOP primary debate of the 2024 election cycle",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://ballotpedia.org/Republican_presidential_primary_debate_(August_23,_2023)",
+        "publisher": "Ballotpedia",
+        "title": "Republican presidential primary debate (August 23, 2023)",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2023,
+        "status": "completed",
+        "start_date": "2023-08-23",
+        "show_date": "2023-08-23",
+        "city": "Milwaukee",
+        "venue": { "name": "Fiserv Forum", "city": "Milwaukee" },
+        "network": { "name": "Fox News Channel", "is_streaming": false },
+        "sources": [
+          {
+            "url": "https://www.tmj4.com/news/local-news/first-republican-presidential-primary-debate-will-be-held-in-fiserv-forum-in-milwaukee-on-aug-23",
+            "publisher": "TMJ4",
+            "title": "First Republican presidential primary debate will be held in Fiserv Forum in Milwaukee on Aug. 23",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://ballotpedia.org/Republican_presidential_primary_debate_(August_23,_2023)",
+            "publisher": "Ballotpedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Democratic Presidential Primary Debates",
+    "slug": "democratic-presidential-primary-debates",
+    "category": "political",
+    "subcategory": "debate",
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Network-hosted primary debates staged as a two-night theatre build when the field is too large for one stage. NBC News, MSNBC and Telemundo opened the 2020 cycle from the Adrienne Arsht Center for the Performing Arts in Miami on 26 and 27 June 2019, with a five-moderator desk and a simultaneous Spanish-language feed. No 2028-cycle debate schedule has been announced.",
+    "sources": [
+      {
+        "url": "https://www.nbcnews.com/politics/politics-news/first-democratic-presidential-debate-set-miami-s-arsht-center-host-n1004076",
+        "publisher": "NBC News",
+        "title": "First Democratic presidential debate set for Miami's Arsht Center, host NBC News announces",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://ballotpedia.org/Democratic_presidential_primary_debate_(June_26-27,_2019)",
+        "publisher": "Ballotpedia",
+        "title": "Democratic presidential primary debate (June 26-27, 2019)",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2019,
+        "status": "completed",
+        "start_date": "2019-06-26",
+        "end_date": "2019-06-27",
+        "city": {
+          "name": "Miami",
+          "state": "FL",
+          "country": "USA",
+          "timezone": "America/New_York",
+          "lat": 25.7617,
+          "lng": -80.1918
+        },
+        "venue": { "name": "Adrienne Arsht Center for the Performing Arts", "city": "Miami" },
+        "network": "NBC",
+        "sources": [
+          {
+            "url": "https://www.nbcnews.com/politics/politics-news/first-democratic-presidential-debate-set-miami-s-arsht-center-host-n1004076",
+            "publisher": "NBC News",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://ballotpedia.org/Democratic_presidential_primary_debate_(June_26-27,_2019)",
+            "publisher": "Ballotpedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "White House Correspondents' Association Dinner",
+    "slug": "white-house-correspondents-association-dinner",
+    "category": "political",
+    "subcategory": "annual dinner",
+    "network": { "name": "C-SPAN", "is_streaming": false },
+    "typical_month": 4,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The White House Correspondents' Association's annual black-tie dinner, normally held on the last Saturday in April in the International Ballroom of the Washington Hilton and carried live gavel-to-gavel by C-SPAN. The 2026 dinner was rescheduled from 25 April to 24 July and moved to a smaller ballroom at the Waldorf Astoria in Washington, with a reduced guest list, added security screening and no red-carpet arrivals line.",
+    "sources": [
+      {
+        "url": "https://whca.press/news/annual-dinner/",
+        "publisher": "White House Correspondents' Association",
+        "title": "Dinner | White House Correspondents' Association",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/White_House_Correspondents%27_Dinner",
+        "publisher": "Wikipedia",
+        "title": "White House Correspondents' Dinner",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-07-24",
+        "show_date": "2026-07-24",
+        "city": "Washington",
+        "venue": { "name": "Waldorf Astoria Washington DC", "city": "Washington" },
+        "sources": [
+          {
+            "url": "https://www.whitehouse.gov/gallery/president-donald-j-trump-attends-the-white-house-correspondents-association-dinner-in-washington-d-c-july-24-2026/",
+            "publisher": "The White House",
+            "title": "President Donald J. Trump attends the White House Correspondents' Association dinner in Washington, D.C., July 24, 2026",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.aljazeera.com/news/2026/7/24/what-to-know-about-the-white-house-correspondents-dinner-take-two",
+            "publisher": "Al Jazeera",
+            "title": "What to know about the White House Correspondents' Dinner, take two",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://thehill.com/homenews/administration/5990184-donald-trump-white-house-correspondents-dinner-speech-fiery-moments/",
+            "publisher": "The Hill",
+            "title": "5 standout moments from Trump's appearance at makeup WHCA dinner",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Alfred E. Smith Memorial Foundation Dinner",
+    "slug": "alfred-e-smith-memorial-foundation-dinner",
+    "category": "political",
+    "subcategory": "annual dinner",
+    "typical_month": 10,
+    "recurring": true,
+    "production_scale": 2,
+    "description": "A white-tie charity dinner held on the third Thursday of October at the Waldorf Astoria New York, and in presidential years a televised set-piece at which both major-party nominees speak. The 80th dinner returned to the Waldorf Astoria on 16 October 2025 after eight years elsewhere while the hotel was closed for renovation.",
+    "sources": [
+      {
+        "url": "https://archny.org/80th-al-smith-dinner-to-be-held-at-waldorf-astoria-new-york/",
+        "publisher": "Archdiocese of New York",
+        "title": "80th Al Smith Dinner to Be Held at Waldorf Astoria New York",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Alfred_E._Smith_Memorial_Foundation_Dinner",
+        "publisher": "Wikipedia",
+        "title": "Alfred E. Smith Memorial Foundation Dinner",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-10-16",
+        "show_date": "2025-10-16",
+        "city": "New York",
+        "venue": { "name": "Waldorf Astoria New York", "city": "New York" },
+        "sources": [
+          {
+            "url": "https://archny.org/80th-al-smith-dinner-to-be-held-at-waldorf-astoria-new-york/",
+            "publisher": "Archdiocese of New York",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://thegoodnewsroom.org/the-80th-al-smith-dinner-to-be-held-october-16-at-the-waldorf-astoria-in-manhattan/",
+            "publisher": "The Good Newsroom",
+            "title": "The 80th Al Smith Dinner To Be Held October 16 at the Waldorf Astoria in Manhattan",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "status": "announced",
+        "start_date": "2026-10-15",
+        "show_date": "2026-10-15",
+        "city": "New York",
+        "sources": [
+          {
+            "url": "https://www.alsmithfoundation.org/wp-content/uploads/2026/03/AES-2026-Dinner-Save-the-Date-General-RSVP-Card-compressed.pdf",
+            "publisher": "Alfred E. Smith Memorial Foundation",
+            "title": "Save the Date — Thursday, October 15, 2026",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Conservative Political Action Conference",
+    "slug": "conservative-political-action-conference",
+    "category": "political",
+    "subcategory": "convention",
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "A multi-day conference built around a main-stage broadcast set with a livestreamed speaker programme, a radio row and an exhibition hall. Long a fixture at the Gaylord National Resort in National Harbor, Maryland, it has moved between Gaylord properties in recent years: the Gaylord Texan in Grapevine in 2026 and the Gaylord Palms near Orlando in 2027.",
+    "sources": [
+      {
+        "url": "https://www.cpac.org/us/events",
+        "publisher": "CPAC",
+        "title": "Events - CPAC.org",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Conservative_Political_Action_Conference",
+        "publisher": "Wikipedia",
+        "title": "Conservative Political Action Conference",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-03-25",
+        "end_date": "2026-03-28",
+        "city": {
+          "name": "Grapevine",
+          "state": "TX",
+          "country": "USA",
+          "timezone": "America/Chicago",
+          "lat": 32.9343,
+          "lng": -97.0781
+        },
+        "venue": { "name": "Gaylord Texan Resort and Convention Center", "city": "Grapevine" },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Conservative_Political_Action_Conference",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-04-14",
+        "end_date": "2027-04-17",
+        "city": {
+          "name": "Kissimmee",
+          "state": "FL",
+          "country": "USA",
+          "timezone": "America/New_York",
+          "lat": 28.292,
+          "lng": -81.4076
+        },
+        "venue": { "name": "Gaylord Palms Resort & Convention Center", "city": "Kissimmee" },
+        "sources": [
+          {
+            "url": "https://www.cpac.org/us/events",
+            "publisher": "CPAC",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Conservative_Political_Action_Conference",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Netroots Nation",
+    "slug": "netroots-nation",
+    "category": "political",
+    "subcategory": "convention",
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 2,
+    "description": "An annual multi-day progressive conference built around a livestreamed keynote hall plus dozens of breakout rooms, held in a different convention centre each year. The 2027 edition is set for Denver.",
+    "sources": [
+      {
+        "url": "https://www.netrootsnation.org/",
+        "publisher": "Netroots Nation",
+        "title": "Netroots Nation",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.paconvention.com/events/detail/netroots-nation-2026-national-convention-26295",
+        "publisher": "Pennsylvania Convention Center",
+        "title": "Netroots Nation 2026 National Convention",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-07-08",
+        "end_date": "2027-07-10",
+        "city": {
+          "name": "Denver",
+          "state": "CO",
+          "country": "USA",
+          "timezone": "America/Denver",
+          "lat": 39.7392,
+          "lng": -104.9903
+        },
+        "sources": [
+          {
+            "url": "https://www.netrootsnation.org/",
+            "publisher": "Netroots Nation",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "National Prayer Breakfast",
+    "slug": "national-prayer-breakfast",
+    "category": "political",
+    "subcategory": "annual breakfast",
+    "network": { "name": "C-SPAN", "is_streaming": false },
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 2,
+    "description": "An annual morning event in Washington, held in the International Ballroom of the Washington Hilton and carried live by C-SPAN. The 74th breakfast was held on 5 February 2026.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/National_Prayer_Breakfast",
+        "publisher": "Wikipedia",
+        "title": "National Prayer Breakfast",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://religionnews.com/2026/02/05/at-dueling-national-prayer-breakfasts-sings-of-a-simmering-religious-debate-over-trump/",
+        "publisher": "Religion News Service",
+        "title": "At dueling National Prayer Breakfasts, a religious debate over immigration policy",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-05",
+        "show_date": "2026-02-05",
+        "city": "Washington",
+        "venue": { "name": "Washington Hilton", "city": "Washington" },
+        "sources": [
+          {
+            "url": "https://religionnews.com/2026/02/05/at-dueling-national-prayer-breakfasts-sings-of-a-simmering-religious-debate-over-trump/",
+            "publisher": "Religion News Service",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/National_Prayer_Breakfast",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  }
+]

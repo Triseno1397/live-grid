@@ -238,9 +238,36 @@ function checkRecord({ file, index, record }: Loaded) {
       error(file, name, `${label} is marked completed but ${start} has not happened yet`);
     }
 
-    // The mirror image, and a fact about the calendar rather than the file — see STRICT.
-    if ((e.status === "confirmed" || e.status === "announced") && start !== null && start < TODAY) {
-      timeSensitive(file, name, `${label} is still "${e.status}" but ${start} has passed`);
+    /**
+     * The mirror image: a confirmed or announced edition whose date has gone by.
+     *
+     * "Has it started" is the wrong question — the right one is "has it finished". A
+     * season-long package is one edition with a real opening date in the past and months
+     * still to run, and `confirmed` is exactly the right status for it while it is on air.
+     * Batch 011 is where this surfaced: MLS on Apple TV opens in February and ends in
+     * December, and flagging it in August would be reporting that a season in progress is
+     * stale data.
+     *
+     * So an edition is only late if it has an `end_date` that has also passed, or no
+     * `end_date` at all. A running season with no end date still warns — that is a genuine
+     * gap in the record rather than a false positive.
+     */
+    const end = typeof e.end_date === "string" ? e.end_date : null;
+    const stillRunning = end !== null && end >= TODAY;
+    if (
+      (e.status === "confirmed" || e.status === "announced") &&
+      start !== null &&
+      start < TODAY &&
+      !stillRunning
+    ) {
+      timeSensitive(
+        file,
+        name,
+        end === null
+          ? `${label} is still "${e.status}", ${start} has passed, and it has no end_date — ` +
+              "a season still running and a record gone stale look identical without one"
+          : `${label} is still "${e.status}" but it ended ${end}`,
+      );
     }
 
     /**
