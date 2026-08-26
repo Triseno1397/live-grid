@@ -1,0 +1,1733 @@
+[
+  {
+    "name": "The Game Awards",
+    "slug": "the-game-awards",
+    "category": "gaming",
+    "subcategory": "awards ceremony",
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 5,
+    "network": { "name": "YouTube", "is_streaming": true },
+    "description": "Geoff Keighley's annual video-game awards show, staged at the Peacock Theater in Los Angeles with a live orchestra and streamed free across YouTube, Twitch and other platforms rather than sold to a television network. Keighley created it in 2014 after Spike dropped the Video Game Awards, and world premieres now carry as much of the running order as the trophies. The 2025 show drew 4.4 million peak concurrent viewers across western platforms.",
+    "sources": [
+      {
+        "url": "https://thegameawards.com/",
+        "publisher": "The Game Awards",
+        "title": "The Game Awards",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Game_Awards",
+        "publisher": "Wikipedia",
+        "title": "The Game Awards",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-12-10",
+        "show_date": "2026-12-10",
+        "city": {
+          "name": "Los Angeles",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 34.0522,
+          "lng": -118.2437
+        },
+        "venue": { "name": "Peacock Theater" },
+        "sources": [
+          {
+            "url": "https://thegameawards.com/",
+            "publisher": "The Game Awards",
+            "title": "The Game Awards - December 10, 2026",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.peacocktheater.com/events/detail/the-game-awards-121026",
+            "publisher": "Peacock Theater",
+            "title": "The Game Awards | Peacock Theater",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.nintendolife.com/news/2026/08/geoff-keighley-confirms-the-game-awards-will-return-on-10th-december-2026",
+            "publisher": "Nintendo Life",
+            "title": "Geoff Keighley Confirms The Game Awards Will Return On 10th December 2026",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-12-11",
+        "show_date": "2025-12-11",
+        "city": {
+          "name": "Los Angeles",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "venue": { "name": "Peacock Theater" },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Game_Awards",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://variety.com/2025/digital/news/game-awards-2025-viewing-record-livestreams-worldwide-1236611146/",
+            "publisher": "Variety",
+            "title": "Game Awards 2025 Set New Record, Delivering Whopping 171 Million Livestreams Worldwide",
+            "tier": "trade",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2025,
+        "peak_viewers": 4400000,
+        "sources": [
+          {
+            "url": "https://thegameawards.com/news/the-game-awards-breaks-viewership-record",
+            "publisher": "The Game Awards",
+            "title": "The Game Awards 2025 Breaks Record: 171 Million Livestreams",
+            "tier": "official",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://variety.com/2025/digital/news/game-awards-2025-viewing-record-livestreams-worldwide-1236611146/",
+            "publisher": "Variety",
+            "tier": "trade",
+            "field": "viewership",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "team": [
+      {
+        "role": "executive_producer",
+        "person": "Geoff Keighley",
+        "note": "creator, producer and host",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Game_Awards",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Summer Game Fest",
+    "slug": "summer-game-fest",
+    "category": "gaming",
+    "subcategory": "publisher showcase",
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "YouTube", "is_streaming": true },
+    "description": "Geoff Keighley's June cross-platform showcase, the de facto successor to E3's summer slot. A roughly two-hour live main show anchors several days of Play Days hands-on sessions and partner streams. The 2026 edition moved from the YouTube Theater in Inglewood to the Dolby Theatre in Hollywood and was co-hosted by Lucy James.",
+    "sources": [
+      {
+        "url": "https://www.summergamefest.com/",
+        "publisher": "Summer Game Fest",
+        "title": "Summer Game Fest 2026",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Summer_Game_Fest",
+        "publisher": "Wikipedia",
+        "title": "Summer Game Fest",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-06-05",
+        "end_date": "2026-06-08",
+        "show_date": "2026-06-05",
+        "city": {
+          "name": "Los Angeles",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "venue": { "name": "Dolby Theatre" },
+        "sources": [
+          {
+            "url": "https://www.summergamefest.com/",
+            "publisher": "Summer Game Fest",
+            "title": "Live June 5, 2026 from Dolby Theatre in LA",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Summer_Game_Fest",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-06-06",
+        "end_date": "2025-06-09",
+        "show_date": "2025-06-06",
+        "city": {
+          "name": "Inglewood",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Summer_Game_Fest",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "team": [
+      {
+        "role": "executive_producer",
+        "person": "Geoff Keighley",
+        "note": "organiser and host",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Summer_Game_Fest",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gamescom Opening Night Live",
+    "slug": "gamescom-opening-night-live",
+    "category": "gaming",
+    "subcategory": "publisher showcase",
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "YouTube", "is_streaming": true },
+    "description": "The two-hour showcase that opens gamescom, staged at Koelnmesse in Cologne on the evening before the fair's doors open and streamed worldwide. Geoff Keighley has hosted it since 2019; the 2026 edition added Eefje \"sjokz\" Depoortere as co-host. gamescom itself, run by Koelnmesse, is the largest games event in the world by attendance.",
+    "sources": [
+      {
+        "url": "https://www.gamescom.global/en/program/onl",
+        "publisher": "gamescom",
+        "title": "gamescom Opening Night Live",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Gamescom",
+        "publisher": "Wikipedia",
+        "title": "Gamescom",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-08-25",
+        "show_date": "2026-08-25",
+        "city": {
+          "name": "Cologne",
+          "country": "Germany",
+          "timezone": "Europe/Berlin",
+          "lat": 50.9375,
+          "lng": 6.9603
+        },
+        "venue": { "name": "Koelnmesse" },
+        "sources": [
+          {
+            "url": "https://www.gamescom.global/en/event/gamescom-opening-night-live-2026",
+            "publisher": "gamescom",
+            "title": "gamescom Opening Night Live 2026",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.gamesradar.com/games/events-conferences/gamescom-2026-schedule/",
+            "publisher": "GamesRadar+",
+            "title": "Gamescom 2026 schedule: All of the dates, times, and where to watch the showcases",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://dotesports.com/general/news/gamescom-onl-announcements-trailers",
+            "publisher": "Dot Esports",
+            "title": "All gamescom Opening Night Live 2026 announcements and trailers",
+            "tier": "trade",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Evo",
+    "slug": "evo",
+    "category": "gaming",
+    "subcategory": "esports championship",
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Twitch", "is_streaming": true },
+    "description": "The Evolution Championship Series, the largest open-bracket fighting-game tournament in the world. Thousands of entrants play down on a hall floor for three days before the finals move to a main stage, broadcast on Twitch and YouTube. The Las Vegas flagship moved from its early-August weekend in 2025 to late June in 2026, and the brand now also runs Evo Japan and Evo France.",
+    "sources": [
+      {
+        "url": "https://evo.gg/events/evo2026/",
+        "publisher": "Evo",
+        "title": "Evo 2026",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Evo_2026",
+        "publisher": "Wikipedia",
+        "title": "Evo 2026",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-06-26",
+        "end_date": "2026-06-28",
+        "city": {
+          "name": "Las Vegas",
+          "state": "NV",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "venue": { "name": "Las Vegas Convention Center" },
+        "sources": [
+          {
+            "url": "https://evo.gg/events/evo2026/",
+            "publisher": "Evo",
+            "title": "Friday, June 26, 2026 through Sunday, June 28, 2026 at the Las Vegas Convention Center",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Evo_2026",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-03",
+        "city": {
+          "name": "Las Vegas",
+          "state": "NV",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "venue": { "name": "Las Vegas Convention Center" },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Evo_2025",
+            "publisher": "Wikipedia",
+            "title": "Evo 2025",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The International",
+    "slug": "the-international",
+    "category": "gaming",
+    "subcategory": "esports championship",
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Valve's annual Dota 2 world championship, running since 2011 and the tournament that made crowdfunded esports prize pools famous. A Swiss-format group stage feeds an arena playoff; the 2026 edition was the fifteenth and put the main event in Shanghai's Oriental Sports Center, where Team Spirit became the first side to lift the Aegis three times.",
+    "sources": [
+      {
+        "url": "https://liquipedia.net/dota2/The_International/2026",
+        "publisher": "Liquipedia",
+        "title": "The International 2026",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_International_2025",
+        "publisher": "Wikipedia",
+        "title": "The International 2025",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-08-13",
+        "end_date": "2026-08-23",
+        "city": {
+          "name": "Shanghai",
+          "country": "China",
+          "timezone": "Asia/Shanghai",
+          "lat": 31.2304,
+          "lng": 121.4737
+        },
+        "venue": { "name": "Oriental Sports Center" },
+        "sources": [
+          {
+            "url": "https://dotesports.com/dota-2/news/valve-dota-2-ti-2026-dates",
+            "publisher": "Dot Esports",
+            "title": "Valve sets key dates for Dota 2 TI 2026 in Shanghai",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.gosugamers.net/dota2/news/77974-the-international-2026-venue-and-schedule-revealed",
+            "publisher": "GosuGamers",
+            "title": "The International 2026 venue and schedule revealed",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://liquipedia.net/dota2/The_International/2026",
+            "publisher": "Liquipedia",
+            "tier": "reference",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-09-04",
+        "end_date": "2025-09-14",
+        "city": {
+          "name": "Hamburg",
+          "country": "Germany",
+          "timezone": "Europe/Berlin",
+          "lat": 53.5511,
+          "lng": 9.9937
+        },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/The_International_2025",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "League of Legends World Championship",
+    "slug": "league-of-legends-world-championship",
+    "category": "gaming",
+    "subcategory": "esports championship",
+    "typical_month": 10,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Riot Games' annual League of Legends world championship, the largest esports broadcast of the year and the one with the most elaborate opening ceremony. The month-long 2026 run is split across three US venues: play-ins at the Riot Games Arena in Los Angeles, the Swiss stage and knockouts at the Credit Union of Texas Event Center in Allen, and the final at Barclays Center in Brooklyn.",
+    "sources": [
+      {
+        "url": "https://lolesports.com/en-US/news/msi-and-worlds-updates",
+        "publisher": "LoL Esports",
+        "title": "MSI and Worlds Updates",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/2026_League_of_Legends_World_Championship",
+        "publisher": "Wikipedia",
+        "title": "2026 League of Legends World Championship",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-10-15",
+        "end_date": "2026-11-14",
+        "show_date": "2026-11-14",
+        "city": {
+          "name": "New York",
+          "state": "NY",
+          "country": "USA",
+          "timezone": "America/New_York"
+        },
+        "venue": { "name": "Barclays Center" },
+        "sources": [
+          {
+            "url": "https://lolesports.com/en-US/news/msi-and-worlds-updates",
+            "publisher": "LoL Esports",
+            "title": "Worlds 2026 will run October 15-November 14",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.barclayscenter.com/events/detail/league-of-legends-2026",
+            "publisher": "Barclays Center",
+            "title": "League of Legends 2026 World Championship",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.cutxeventcenter.com/news/detail/credit-union-of-texas-event-center-to-host-key-rounds-of-the-2026-league-of-legends-world-championship",
+            "publisher": "Credit Union of Texas Event Center",
+            "title": "Credit Union of Texas Event Center to Host Key Rounds of the 2026 League of Legends World Championship",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-10-14",
+        "end_date": "2025-11-09",
+        "city": {
+          "name": "Chengdu",
+          "country": "China",
+          "timezone": "Asia/Shanghai",
+          "lat": 30.5728,
+          "lng": 104.0668
+        },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/2025_League_of_Legends_World_Championship",
+            "publisher": "Wikipedia",
+            "title": "2025 League of Legends World Championship",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Valorant Champions",
+    "slug": "valorant-champions",
+    "category": "gaming",
+    "subcategory": "esports championship",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The world championship that closes Riot Games' Valorant Champions Tour season. Sixteen teams play four GSL groups into an eight-team double-elimination playoff. Riot announced in August 2025 that the 2026 edition would be China's first, splitting the group stage and the playoffs between two Shanghai venues; it is also the last Champions of the franchised era before the VCT moves to open qualifiers in 2027.",
+    "sources": [
+      {
+        "url": "https://valorantesports.com/en-US/news/champions-2026-is-coming-to-shanghai",
+        "publisher": "VALORANT Esports",
+        "title": "Champions 2026 is Coming to Shanghai!",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/2026_Valorant_Champions",
+        "publisher": "Wikipedia",
+        "title": "2026 Valorant Champions",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "announced",
+        "start_date": "2026-09-24",
+        "end_date": "2026-10-18",
+        "city": {
+          "name": "Shanghai",
+          "country": "China",
+          "timezone": "Asia/Shanghai"
+        },
+        "sources": [
+          {
+            "url": "https://valorantesports.com/en-US/news/champions-2026-is-coming-to-shanghai",
+            "publisher": "VALORANT Esports",
+            "tier": "official",
+            "field": "city",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/2026_Valorant_Champions_Tour",
+            "publisher": "Wikipedia",
+            "title": "2026 Valorant Champions Tour",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.sheepesports.com/en/all/articles/valorant-2026-champions-tour-schedule-with-dates-and-locations/en",
+            "publisher": "Sheep Esports",
+            "title": "VALORANT: 2026 Champions Tour schedule, with dates and locations",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Counter-Strike Major Championship",
+    "slug": "counter-strike-major-championship",
+    "category": "gaming",
+    "subcategory": "esports championship",
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The Valve-sanctioned Counter-Strike world championship, run twice a year by a rotating cast of tournament organisers. Each Major opens with a 32-team qualifying stage in a studio before the last eight move to an arena for the playoffs. The 2026 cycle ran IEM Cologne in June, won by Team Falcons at the Lanxess Arena, and closes with PGL's Singapore Major, the first Major held in Southeast Asia.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026",
+        "publisher": "Wikipedia",
+        "title": "IEM Cologne Major 2026",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.hltv.org/events/8302/pgl-singapore-major-2026",
+        "publisher": "HLTV",
+        "title": "PGL Singapore Major 2026",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "announced",
+        "start_date": "2026-11-25",
+        "end_date": "2026-12-13",
+        "city": {
+          "name": "Singapore",
+          "country": "Singapore",
+          "timezone": "Asia/Singapore",
+          "lat": 1.3521,
+          "lng": 103.8198
+        },
+        "venue": { "name": "Singapore Indoor Stadium" },
+        "sources": [
+          {
+            "url": "https://www.thekallang.com.sg/events/pgl-major-singapore-2026",
+            "publisher": "The Kallang",
+            "title": "PGL Major Singapore 2026",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://dotesports.com/counter-strike/news/pgl-unveils-cs2-singapore-major-2026",
+            "publisher": "Dot Esports",
+            "title": "PGL unveils CS2 Singapore Major in 2026",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.hltv.org/events/8302/pgl-singapore-major-2026",
+            "publisher": "HLTV",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-11-24",
+        "end_date": "2025-12-14",
+        "city": {
+          "name": "Budapest",
+          "country": "Hungary",
+          "timezone": "Europe/Budapest",
+          "lat": 47.4979,
+          "lng": 19.0402
+        },
+        "venue": { "name": "MVM Dome" },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/StarLadder_Budapest_Major_2025",
+            "publisher": "Wikipedia",
+            "title": "StarLadder Budapest Major 2025",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Intel Extreme Masters",
+    "slug": "intel-extreme-masters",
+    "category": "gaming",
+    "subcategory": "esports championship",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "ESL's flagship Counter-Strike circuit, first run as the Intel Extreme Masters in 2007 and best known for the winter World Championship that filled the Spodek arena in Katowice. From 2027 that winter event moves to the Tauron Arena in Krakow, with 24 teams playing three stages into a four-day arena playoff.",
+    "sources": [
+      {
+        "url": "https://pro.eslgaming.com/tour/cs/krakow/",
+        "publisher": "ESL",
+        "title": "IEM Krakow 2027 - ESL Pro Tour",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Intel_Extreme_Masters",
+        "publisher": "Wikipedia",
+        "title": "Intel Extreme Masters",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-02-04",
+        "end_date": "2027-02-07",
+        "city": {
+          "name": "Krakow",
+          "country": "Poland",
+          "timezone": "Europe/Warsaw",
+          "lat": 50.0647,
+          "lng": 19.945
+        },
+        "venue": { "name": "Tauron Arena Krakow" },
+        "sources": [
+          {
+            "url": "https://pro.eslgaming.com/tour/cs/krakow/",
+            "publisher": "ESL",
+            "title": "IEM Krakow 2027",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Call of Duty League Championship",
+    "slug": "call-of-duty-league-championship",
+    "category": "gaming",
+    "subcategory": "esports championship",
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The season-ending playoff of the Call of Duty League, an eight-team best-of-seven bracket played over four days for a $2 million prize pool. The 2026 championship was hosted by FaZe Esports at the Michelob ULTRA Arena inside Mandalay Bay in Las Vegas, with ESL FACEIT Group as production partner; FaZe Vegas beat OpTic Texas 5-2 in the final.",
+    "sources": [
+      {
+        "url": "https://eslfaceitgroup.com/press/esl-faceit-group-and-faze-esports-announce-2026-call-of-duty-league-championship-details-for-las-vegas/",
+        "publisher": "ESL FACEIT Group",
+        "title": "ESL FACEIT Group and FaZe Esports Announce 2026 Call of Duty League Championship Details for Las Vegas",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/2026_Call_of_Duty_League_season",
+        "publisher": "Wikipedia",
+        "title": "2026 Call of Duty League season",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-07-16",
+        "end_date": "2026-07-19",
+        "city": {
+          "name": "Las Vegas",
+          "state": "NV",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "venue": { "name": "Michelob ULTRA Arena" },
+        "sources": [
+          {
+            "url": "https://eslfaceitgroup.com/press/esl-faceit-group-and-faze-esports-announce-2026-call-of-duty-league-championship-details-for-las-vegas/",
+            "publisher": "ESL FACEIT Group",
+            "title": "July 16 - July 19, 2026 at Michelob ULTRA Arena, Mandalay Bay Resort and Casino",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://dotesports.com/call-of-duty/news/faze-vegas-win-cod-champs-2026-vs-optic-texas",
+            "publisher": "Dot Esports",
+            "title": "FaZe Vegas deny OpTic Texas a three-peat to win CoD Champs 2026",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://insider-gaming.com/cdl-champs-2026-venue-revealed-tickets-on-sale/",
+            "publisher": "Insider Gaming",
+            "title": "CDL Champs 2026 Venue Revealed as Tickets Go On Sale Today",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "team": [
+      {
+        "role": "production_company",
+        "company": { "name": "ESL FACEIT Group" },
+        "year": 2026,
+        "note": "official production partner; FaZe Esports was host organisation",
+        "sources": [
+          {
+            "url": "https://eslfaceitgroup.com/press/esl-faceit-group-and-faze-esports-announce-2026-call-of-duty-league-championship-details-for-las-vegas/",
+            "publisher": "ESL FACEIT Group",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pokémon World Championships",
+    "slug": "pokemon-world-championships",
+    "category": "gaming",
+    "subcategory": "esports championship",
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The Pokémon Company's invitation-only world finals, run across four competitions at once - the Trading Card Game, video-game doubles, Pokémon GO and Pokémon UNITE - and streamed on the official Pokémon Twitch channel and the Play! Pokémon YouTube channel. The 2026 edition takes over San Francisco's Moscone Center alongside the first PokémonXP fan convention, with the Sunday finals staged at Chase Center.",
+    "network": { "name": "Twitch", "is_streaming": true },
+    "sources": [
+      {
+        "url": "https://www.pokemon.com/us/news/save-the-date-for-the-2026-world-championships-preview-show",
+        "publisher": "The Pokémon Company",
+        "title": "Save the Date for the 2026 World Championships Preview Show",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://abc7news.com/post/pokmon-events-more-50000-fans-expected-san-franciscos-moscone-center-chase/19716882/",
+        "publisher": "ABC7 News",
+        "title": "Pokémon events: More than 50,000 fans expected at San Francisco's Moscone Center and Chase Center",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-08-28",
+        "end_date": "2026-08-30",
+        "city": {
+          "name": "San Francisco",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "venue": { "name": "Moscone Center" },
+        "sources": [
+          {
+            "url": "https://www.pokemon.com/us/news/save-the-date-for-the-2026-world-championships-preview-show",
+            "publisher": "The Pokémon Company",
+            "title": "August 28-30, 2026 in San Francisco, California",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://abc7news.com/post/pokmon-events-more-50000-fans-expected-san-franciscos-moscone-center-chase/19716882/",
+            "publisher": "ABC7 News",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-08-15",
+        "end_date": "2025-08-17",
+        "city": {
+          "name": "Anaheim",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 33.8366,
+          "lng": -117.9143
+        },
+        "venue": { "name": "Anaheim Convention Center" },
+        "sources": [
+          {
+            "url": "https://www.pokemon.com/us/pokemon-news/2025-pokemon-world-championships-programming",
+            "publisher": "The Pokémon Company",
+            "title": "August 15-17 at the Anaheim Convention Center in Anaheim, California",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Esports World Cup",
+    "slug": "esports-world-cup",
+    "category": "gaming",
+    "subcategory": "esports championship",
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "A seven-week multi-title festival run by the Esports Foundation, with more than 20 game championships and a cross-game Club Championship on top. Held in Riyadh from its 2024 launch, the 2026 edition was relocated to Paris - the Paris Expo Porte de Versailles for most of the run, with Championship Sunday moved up to the Accor Arena after tickets sold out. AG.AL took the $7 million club title.",
+    "sources": [
+      {
+        "url": "https://www.esportsworldcup.com/en/press-releases/esports-world-cup-2026-to-be-hosted-in-paris",
+        "publisher": "Esports World Cup",
+        "title": "Esports World Cup 2026 to be Hosted in Paris, France",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Esports_World_Cup",
+        "publisher": "Wikipedia",
+        "title": "Esports World Cup",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-07-06",
+        "end_date": "2026-08-23",
+        "city": {
+          "name": "Paris",
+          "country": "France",
+          "timezone": "Europe/Paris",
+          "lat": 48.8566,
+          "lng": 2.3522
+        },
+        "venue": { "name": "Paris Expo Porte de Versailles" },
+        "sources": [
+          {
+            "url": "https://www.esportsworldcup.com/en/press-releases/esports-world-cup-2026-to-be-hosted-in-paris",
+            "publisher": "Esports World Cup",
+            "title": "July 6 through August 23, 2026 in Paris, France",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/2026_Esports_World_Cup",
+            "publisher": "Wikipedia",
+            "title": "2026 Esports World Cup",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.sheepesports.com/en/all/articles/esports-world-cup-2026-relocated-to-paris-with-details-revealed/en",
+            "publisher": "Sheep Esports",
+            "title": "Esports World Cup 2026 relocated to Paris, with details revealed",
+            "tier": "trade",
+            "field": "city",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-07-07",
+        "end_date": "2025-08-24",
+        "city": {
+          "name": "Riyadh",
+          "country": "Saudi Arabia",
+          "timezone": "Asia/Riyadh",
+          "lat": 24.7136,
+          "lng": 46.6753
+        },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Esports_World_Cup",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rocket League World Championship",
+    "slug": "rocket-league-world-championship",
+    "category": "gaming",
+    "subcategory": "esports championship",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The season finale of the Rocket League Championship Series, run by Epic Games with BLAST. Twenty teams from seven regions play three closed days before the arena opens for a three-day public finals weekend and a $1.2 million prize pool. The 2026 edition returns to Dickies Arena in Fort Worth, the venue's third time hosting Worlds after 2022 and 2024.",
+    "sources": [
+      {
+        "url": "https://blast.tv/rl/tournaments/rlcs-world-championship-2026",
+        "publisher": "BLAST",
+        "title": "RLCS World Championship 2026",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://insider-gaming.com/rocket-league-rlcs-world-championship-2026-returns-to-fort-worth/",
+        "publisher": "Insider Gaming",
+        "title": "Rocket League RLCS World Championship 2026 Returns to Fort Worth",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-15",
+        "end_date": "2026-09-20",
+        "city": {
+          "name": "Fort Worth",
+          "state": "TX",
+          "country": "USA",
+          "timezone": "America/Chicago",
+          "lat": 32.7555,
+          "lng": -97.3308
+        },
+        "venue": { "name": "Dickies Arena" },
+        "sources": [
+          {
+            "url": "https://blast.tv/rl/tournaments/rlcs-world-championship-2026",
+            "publisher": "BLAST",
+            "title": "September 15-20, 2026, Dickies Arena in Fort Worth, Texas",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://dickiesarena.com/event/2026-09-15-20-rocket-league/",
+            "publisher": "Dickies Arena",
+            "title": "Rocket League - Fort Worth, TX",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://insider-gaming.com/rocket-league-rlcs-world-championship-2026-returns-to-fort-worth/",
+            "publisher": "Insider Gaming",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "team": [
+      {
+        "role": "production_company",
+        "company": { "name": "BLAST" },
+        "note": "runs the RLCS with Epic Games",
+        "sources": [
+          {
+            "url": "https://blast.tv/rl/tournaments/rlcs-world-championship-2026",
+            "publisher": "BLAST",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Overwatch Champions Series",
+    "slug": "overwatch-champions-series",
+    "category": "gaming",
+    "subcategory": "esports championship",
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 3,
+    "network": { "name": "Twitch", "is_streaming": true },
+    "description": "Blizzard's Overwatch 2 circuit, run with FACEIT since 2024 as the successor to the franchised Overwatch League. Regional leagues in North America/EMEA, Asia and China feed three international live events a year - Champions Clash in May, the Midseason Championship in the summer and the World Finals in December. The 2026 World Finals are China's first.",
+    "sources": [
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/24246297/owcs-2026-season-competitive-details/",
+        "publisher": "Blizzard Entertainment",
+        "title": "OWCS 2026 Season: Competitive Details",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://liquipedia.net/overwatch/Overwatch_Champions_Series/2026/World_Finals",
+        "publisher": "Liquipedia",
+        "title": "Overwatch Champions Series 2026 World Finals",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-12-02",
+        "end_date": "2026-12-06",
+        "city": {
+          "name": "Guangzhou",
+          "country": "China",
+          "timezone": "Asia/Shanghai",
+          "lat": 23.1291,
+          "lng": 113.2644
+        },
+        "sources": [
+          {
+            "url": "https://overwatch.blizzard.com/en-us/news/24246297/owcs-2026-season-competitive-details/",
+            "publisher": "Blizzard Entertainment",
+            "title": "World Finals: Dec 2-6",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://liquipedia.net/overwatch/Overwatch_Champions_Series/2026/World_Finals",
+            "publisher": "Liquipedia",
+            "tier": "reference",
+            "field": "city",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://esports.gg/guides/overwatch/owcs-midseason-championship-2026-schedule-results-teams-and-more/",
+            "publisher": "Esports.gg",
+            "title": "OWCS Midseason Championship 2026: Results, teams, and more",
+            "tier": "trade",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "League of Legends EMEA Championship",
+    "slug": "league-of-legends-emea-championship",
+    "category": "gaming",
+    "subcategory": "esports league",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Riot's top-tier European League of Legends league, played almost entirely from the Riot Games Arena in Berlin - a purpose-built broadcast facility rather than a touring show. The 2026 season runs three tournaments (LEC Versus, Spring and Summer) with arena road trips to Paris, Madrid and a Summer Finals at the Palais Nikaia in Nice.",
+    "sources": [
+      {
+        "url": "https://lolesports.com/en-GB/news/2026-lec-summer-format-roadtrips-tickets",
+        "publisher": "LoL Esports",
+        "title": "2026 LEC Summer: Format, Roadtrips, Tickets",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/2026_LEC_season",
+        "publisher": "Wikipedia",
+        "title": "2026 LEC season",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-01-17",
+        "end_date": "2026-09-20",
+        "city": {
+          "name": "Berlin",
+          "country": "Germany",
+          "timezone": "Europe/Berlin"
+        },
+        "venue": { "name": "Riot Games Arena" },
+        "sources": [
+          {
+            "url": "https://lolesports.com/en-GB/news/2026-lec-summer-format-roadtrips-tickets",
+            "publisher": "LoL Esports",
+            "title": "Running from July 24 to September 20, the Summer Split is going to be huge",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/2026_LEC_season",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "League of Legends Champions Korea",
+    "slug": "league-of-legends-champions-korea",
+    "category": "gaming",
+    "subcategory": "esports league",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Korea's top League of Legends league, contested by ten teams and played out of CHZZK LoL Park in Jongno, Seoul. The 2026 season runs from mid-January to mid-September across the LCK Cup, two round-robin blocks and playoffs, with the finals weekend at the 15,000-seat KSPO Dome, the 1988 Olympic gymnastics arena.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/2026_LCK_season",
+        "publisher": "Wikipedia",
+        "title": "2026 LCK season",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.sheepesports.com/en/all/articles/lol-lck-finals-at-kspo-dome-on-september-12-13-road-to-msi-in-wonju-on-june-12-14/en",
+        "publisher": "Sheep Esports",
+        "title": "LCK Finals at KSPO Dome on September 12-13, Road to MSI in Wonju on June 12-14",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-01-14",
+        "end_date": "2026-09-13",
+        "city": {
+          "name": "Seoul",
+          "country": "South Korea",
+          "timezone": "Asia/Seoul",
+          "lat": 37.5665,
+          "lng": 126.978
+        },
+        "venue": { "name": "CHZZK LoL Park" },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/2026_LCK_season",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.sheepesports.com/en/all/articles/lol-lck-finals-at-kspo-dome-on-september-12-13-road-to-msi-in-wonju-on-june-12-14/en",
+            "publisher": "Sheep Esports",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PAX West",
+    "slug": "pax-west",
+    "category": "gaming",
+    "subcategory": "gaming convention",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The original Penny Arcade Expo, created in 2004 by the authors of the Penny Arcade webcomic, held in Seattle since 2007 and now co-organised with RELX. Four days at the Seattle Convention Center over Labor Day weekend: an expo hall, panel theatres, tabletop halls, tournaments and a main-stage concert programme. Sibling shows run as PAX East in Boston, PAX Aus in Melbourne and PAX Unplugged in Philadelphia.",
+    "sources": [
+      {
+        "url": "https://www.paxsite.com/",
+        "publisher": "PAX",
+        "title": "PAX - a celebration of gaming and gaming culture",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/PAX_(event)",
+        "publisher": "Wikipedia",
+        "title": "PAX (event)",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.pocketgamer.biz/events/pax-west-seattle-2026/",
+        "publisher": "PocketGamer.biz",
+        "title": "PAX West Seattle 2026",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-04",
+        "end_date": "2026-09-07",
+        "city": {
+          "name": "Seattle",
+          "state": "WA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles"
+        },
+        "venue": { "name": "Seattle Convention Center" },
+        "sources": [
+          {
+            "url": "https://www.paxsite.com/",
+            "publisher": "PAX",
+            "title": "PAX West 2026 - Seattle, WA - September 4-7, 2026",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.pocketgamer.biz/events/pax-west-seattle-2026/",
+            "publisher": "PocketGamer.biz",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "QuakeCon",
+    "slug": "quakecon",
+    "category": "gaming",
+    "subcategory": "gaming convention",
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "id Software's annual gathering, running since 1996 and built around a 24-hour Bring-Your-Own-Computer hall where attendees haul in their own towers for four days of LAN play. Bethesda hosts it at the Gaylord Texan in Grapevine, with tournaments, tabletop, panels and a streamed programme; 2026 was the 30th anniversary.",
+    "sources": [
+      {
+        "url": "https://quakecon.bethesda.net/en/",
+        "publisher": "QuakeCon",
+        "title": "QuakeCon - Home",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/QuakeCon",
+        "publisher": "Wikipedia",
+        "title": "QuakeCon",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-08-06",
+        "end_date": "2026-08-09",
+        "city": {
+          "name": "Grapevine",
+          "state": "TX",
+          "country": "USA",
+          "timezone": "America/Chicago"
+        },
+        "venue": { "name": "Gaylord Texan Resort and Convention Center" },
+        "sources": [
+          {
+            "url": "https://quakecon.bethesda.net/en/",
+            "publisher": "QuakeCon",
+            "title": "QuakeCon 2026 - August 6-9, Gaylord Texan Resort & Convention Center",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://bleedingcool.com/games/bethesda-reveals-new-details-about-quakecon-2026/",
+            "publisher": "Bleeding Cool",
+            "title": "Bethesda Reveals New Details About QuakeCon 2026",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gen Con",
+    "slug": "gen-con",
+    "category": "gaming",
+    "subcategory": "gaming convention",
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "North America's largest and longest-running tabletop games convention, founded in 1968 and held since 2003 across the Indiana Convention Center, Lucas Oil Stadium and the connected downtown Indianapolis hotels. Thousands of ticketed events run in parallel - board games, card games, role-playing, seminars and a streamed programme.",
+    "sources": [
+      {
+        "url": "https://www.gencon.com/attend/futuredates",
+        "publisher": "Gen Con",
+        "title": "Gen Con | Future Show Dates",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Gen_Con",
+        "publisher": "Wikipedia",
+        "title": "Gen Con",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-08-05",
+        "end_date": "2027-08-08",
+        "city": {
+          "name": "Indianapolis",
+          "state": "IN",
+          "country": "USA",
+          "timezone": "America/Indiana/Indianapolis"
+        },
+        "venue": { "name": "Indiana Convention Center" },
+        "sources": [
+          {
+            "url": "https://www.gencon.com/attend/futuredates",
+            "publisher": "Gen Con",
+            "title": "Gen Con 2027: August 5 - August 8, 2027",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-07-30",
+        "end_date": "2026-08-02",
+        "city": {
+          "name": "Indianapolis",
+          "state": "IN",
+          "country": "USA",
+          "timezone": "America/Indiana/Indianapolis"
+        },
+        "venue": { "name": "Indiana Convention Center" },
+        "sources": [
+          {
+            "url": "https://www.gencon.com/attend/futuredates",
+            "publisher": "Gen Con",
+            "title": "Gen Con 2026: July 30 - August 2, 2026",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Gen_Con",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Games Done Quick",
+    "slug": "games-done-quick",
+    "category": "gaming",
+    "subcategory": "charity marathon",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 3,
+    "network": { "name": "Twitch", "is_streaming": true },
+    "description": "A week-long speedrunning charity marathon broadcast around the clock from a hotel ballroom, with a live audience, couch commentary and donation incentives read on air. Two marathons run each year: Awesome Games Done Quick in January for the Prevent Cancer Foundation and Summer Games Done Quick in the summer for Doctors Without Borders. Streams on Twitch and, since AGDQ 2026, simulcast on YouTube. SGDQ 2026 in Minneapolis raised $2,409,821.",
+    "sources": [
+      {
+        "url": "https://gamesdonequick.com/",
+        "publisher": "Games Done Quick",
+        "title": "Games Done Quick",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Games_Done_Quick",
+        "publisher": "Wikipedia",
+        "title": "Games Done Quick",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "start_date": "2027-01-03",
+        "end_date": "2027-01-10",
+        "city": {
+          "name": "Atlanta",
+          "state": "GA",
+          "country": "USA",
+          "timezone": "America/New_York"
+        },
+        "venue": { "name": "Hilton Atlanta" },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Games_Done_Quick",
+            "publisher": "Wikipedia",
+            "title": "AGDQ 2027, January 3-10, Hilton Atlanta",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-01-04",
+        "end_date": "2026-01-11",
+        "city": {
+          "name": "Atlanta",
+          "state": "GA",
+          "country": "USA",
+          "timezone": "America/New_York"
+        },
+        "venue": { "name": "Hilton Atlanta" },
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Games_Done_Quick",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.shacknews.com/article/147374/awesome-games-done-quick-2026-final-total-raised",
+            "publisher": "Shacknews",
+            "title": "Awesome Games Done Quick 2026 fires up with $2.4+ million raised for charity",
+            "tier": "trade",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nintendo Direct",
+    "slug": "nintendo-direct",
+    "category": "gaming",
+    "subcategory": "publisher showcase",
+    "recurring": true,
+    "production_scale": 2,
+    "network": { "name": "YouTube", "is_streaming": true },
+    "description": "Nintendo's own video presentation format, premiered on YouTube and the Nintendo Today! app rather than staged for a live audience, and the way the company has announced its slate since 2011. A general Direct usually lands in February, June and September, with shorter game-specific and Partner Showcase editions in between; the June 2026 general Direct ran about 50 minutes and was followed by roughly 95 minutes of Nintendo Treehouse: Live gameplay.",
+    "sources": [
+      {
+        "url": "https://www.nintendo.com/us/nintendo-direct/archive/",
+        "publisher": "Nintendo",
+        "title": "Nintendo Direct - Archive",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.gamespot.com/articles/nintendo-direct-june-2026-start-time-how-to-watch-and-what-to-expect/",
+        "publisher": "GameSpot",
+        "title": "Nintendo Direct June 2026: Start Time, How To Watch, And What To Expect",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-06-09",
+        "show_date": "2026-06-09",
+        "sources": [
+          {
+            "url": "https://www.nintendo.com/us/nintendo-direct/6-9-2026/",
+            "publisher": "Nintendo",
+            "title": "Nintendo Direct 6.9.2026 + Nintendo Treehouse: Live | June 2026",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.gamespot.com/articles/nintendo-direct-june-2026-start-time-how-to-watch-and-what-to-expect/",
+            "publisher": "GameSpot",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PlayStation State of Play",
+    "slug": "playstation-state-of-play",
+    "category": "gaming",
+    "subcategory": "publisher showcase",
+    "recurring": true,
+    "production_scale": 2,
+    "network": { "name": "YouTube", "is_streaming": true },
+    "description": "Sony's PlayStation video programme, premiered on the official PlayStation YouTube and Twitch channels several times a year with no fixed calendar slot and trailed in advance on PlayStation.Blog. The June 2026 edition ran over 60 minutes and led with God of War Laufey and a Marvel's Wolverine gameplay look.",
+    "sources": [
+      {
+        "url": "https://www.playstation.com/en-us/state-of-play/",
+        "publisher": "PlayStation",
+        "title": "State of Play | PlayStation",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/State_of_Play_(video_program)",
+        "publisher": "Wikipedia",
+        "title": "State of Play (video program)",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-06-02",
+        "show_date": "2026-06-02",
+        "sources": [
+          {
+            "url": "https://blog.playstation.com/2026/05/20/state-of-play-returns-tuesday-june-2/",
+            "publisher": "PlayStation",
+            "title": "State of Play returns Tuesday, June 2",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.engadget.com/2185076/how-to-watch-playstation-state-of-play-june-2-2026/",
+            "publisher": "Engadget",
+            "title": "How to watch Sony's State of Play showcase on June 2 at 5PM ET",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Xbox Games Showcase",
+    "slug": "xbox-games-showcase",
+    "category": "gaming",
+    "subcategory": "publisher showcase",
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 3,
+    "network": { "name": "YouTube", "is_streaming": true },
+    "description": "Microsoft's annual June games presentation, the successor to its E3 briefing. Distributed across a wide platform list - YouTube, Twitch including a dedicated ASL channel, Facebook, Steam, Bilibili and, in the US, Amazon Live and Prime Video on Fire TV - and usually followed by a deep-dive Direct on one franchise. The 2026 show paired with a Gears of War: E-Day Direct.",
+    "sources": [
+      {
+        "url": "https://news.xbox.com/en-us/2026/03/30/xbox-games-showcase-2026-gears-of-war-e-day-direct/",
+        "publisher": "Xbox",
+        "title": "Xbox Games Showcase 2026 Followed by Gears of War: E-Day Direct Airs June 7",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.gamespot.com/articles/xbox-games-showcase-2026-start-time-how-to-watch-and-what-to-expect/",
+        "publisher": "GameSpot",
+        "title": "Xbox Games Showcase 2026: Start Time, How To Watch, And What To Expect",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-06-07",
+        "show_date": "2026-06-07",
+        "sources": [
+          {
+            "url": "https://news.xbox.com/en-us/2026/06/01/xbox-games-showcase-2026-gears-of-war-e-day-direct-how-to-watch/",
+            "publisher": "Xbox",
+            "title": "How to Watch the XBOX Games Showcase and Gears of War: E-Day Direct on Sunday",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.gamespot.com/articles/xbox-games-showcase-2026-start-time-how-to-watch-and-what-to-expect/",
+            "publisher": "GameSpot",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  }
+]
