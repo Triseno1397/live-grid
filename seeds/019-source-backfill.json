@@ -1058,5 +1058,247 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Primetime Emmy Awards",
+    "slug": "primetime-emmy-awards",
+    "category": "awards",
+    "sources": [
+      {
+        "url": "https://www.nbc.com/the-78th-annual-emmy-awards",
+        "publisher": "NBC",
+        "tier": "official",
+        "title": "The 78th Annual Emmy Awards",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.hollywoodreporter.com/tv/tv-news/emmy-awards-2026-date-nbc-1236429839/",
+        "publisher": "The Hollywood Reporter",
+        "tier": "trade",
+        "title": "NBC Sets Date for 2026 Emmy Awards",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://www.nbc.com/the-78th-annual-emmy-awards",
+            "publisher": "NBC",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.peacocktv.com/stream-event/emmy-awards",
+            "publisher": "Peacock",
+            "tier": "official",
+            "title": "Stream The Emmy Awards 2026 Online",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.hollywoodreporter.com/tv/tv-news/emmy-awards-2026-date-nbc-1236429839/",
+            "publisher": "The Hollywood Reporter",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MTV Video Music Awards",
+    "slug": "mtv-video-music-awards",
+    "category": "awards",
+    "sources": [
+      {
+        "url": "https://www.billboard.com/music/awards/2026-mtv-vmas-nickelodeon-kids-choice-awards-dates-1236223878/",
+        "publisher": "Billboard",
+        "tier": "trade",
+        "title": "2026 MTV VMAs & Nickelodeon Kids' Choice Awards Dates Announced",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.tvinsider.com/1258685/mtv-video-music-awards-2026-host-nominees-performers-vanguard/",
+        "publisher": "TV Insider",
+        "tier": "trade",
+        "title": "2026 Video Music Awards: Host, Nominees, Performers, Air Date",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://www.billboard.com/music/awards/2026-mtv-vmas-nickelodeon-kids-choice-awards-dates-1236223878/",
+            "publisher": "Billboard",
+            "tier": "trade",
+            "title": "2026 MTV VMAs & Nickelodeon Kids' Choice Awards Dates Announced",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://www.tvinsider.com/1258685/mtv-video-music-awards-2026-host-nominees-performers-vanguard/",
+            "publisher": "TV Insider",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rock & Roll Hall of Fame Induction Ceremony",
+    "slug": "rock-and-roll-hall-of-fame-induction",
+    "category": "awards",
+    "sources": [
+      {
+        "url": "https://rockhall.com/press-release/the-rock-roll-hall-of-fame-reveals-2026-inductees/",
+        "publisher": "Rock & Roll Hall of Fame",
+        "tier": "official",
+        "title": "The Rock & Roll Hall Of Fame Reveals 2026 Inductees",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://rockhall.com/press-release/the-rock-roll-hall-of-fame-reveals-2026-inductees/",
+            "publisher": "Rock & Roll Hall of Fame",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.peacocktheater.com/events/detail/rrhof111426",
+            "publisher": "Peacock Theater",
+            "tier": "official",
+            "title": "Rock & Roll Hall Of Fame Induction 2026",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Latin Grammy Awards",
+    "slug": "latin-grammy-awards",
+    "category": "awards",
+    "sources": [
+      {
+        "url": "https://www.latingrammy.com/en/news/the-latin-recording-academy-announces-new-eligibility-guidelines-for-the-27th-annual-latin-grammy-awards-set-to-take-place-on-nov-12/",
+        "publisher": "The Latin Recording Academy",
+        "tier": "official",
+        "title": "New Eligibility Guidelines For The 27th Annual Latin GRAMMY Awards, Set To Take Place On Nov. 12",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.univision.com/shows/latin-grammy",
+        "publisher": "Univision",
+        "tier": "official",
+        "title": "Latin GRAMMY 2026",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://www.latingrammy.com/en/news/the-latin-recording-academy-announces-new-eligibility-guidelines-for-the-27th-annual-latin-grammy-awards-set-to-take-place-on-nov-12/",
+            "publisher": "The Latin Recording Academy",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.univision.com/shows/latin-grammy",
+            "publisher": "Univision",
+            "tier": "official",
+            "field": "network",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nickelodeon Kids' Choice Awards",
+    "slug": "kids-choice-awards",
+    "category": "awards",
+    "sources": [
+      {
+        "url": "https://www.billboard.com/music/awards/2026-mtv-vmas-nickelodeon-kids-choice-awards-dates-1236223878/",
+        "publisher": "Billboard",
+        "tier": "trade",
+        "title": "2026 MTV VMAs & Nickelodeon Kids' Choice Awards Dates Announced",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://www.billboard.com/music/awards/2026-mtv-vmas-nickelodeon-kids-choice-awards-dates-1236223878/",
+            "publisher": "Billboard",
+            "tier": "trade",
+            "title": "2026 MTV VMAs & Nickelodeon Kids' Choice Awards Dates Announced",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Daytime Emmy Awards",
+    "slug": "daytime-emmy-awards",
+    "category": "awards",
+    "sources": [
+      {
+        "url": "https://variety.com/2026/tv/news/daytime-emmys-rule-changes-date-category-eliminated-2026-1236693065/",
+        "publisher": "Variety",
+        "tier": "trade",
+        "title": "Daytime Emmys Reveal Rule Changes, Eliminated Category, New Logo as Submissions Open for October Ceremony",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.tvinsider.com/1275973/daytime-emmys-2026-premiere-date-host-how-to-watch-nominees/",
+        "publisher": "TV Insider",
+        "tier": "trade",
+        "title": "Daytime Emmys 2026: Date, Host, Nominees, and More Details",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://variety.com/2026/tv/news/daytime-emmys-rule-changes-date-category-eliminated-2026-1236693065/",
+            "publisher": "Variety",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.tvinsider.com/1275973/daytime-emmys-2026-premiere-date-host-how-to-watch-nominees/",
+            "publisher": "TV Insider",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
   }
 ]

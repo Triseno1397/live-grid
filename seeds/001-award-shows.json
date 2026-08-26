@@ -4,7 +4,11 @@
     "slug": "academy-awards",
     "category": "awards",
     "subcategory": "film",
-    "network": { "name": "ABC", "is_streaming": false, "website": "https://abc.com" },
+    "network": {
+      "name": "ABC",
+      "is_streaming": false,
+      "website": "https://abc.com"
+    },
     "typical_month": 3,
     "recurring": true,
     "production_scale": 5,
@@ -15,8 +19,18 @@
         "status": "completed",
         "start_date": "2026-03-15",
         "show_date": "2026-03-15",
-        "city": { "name": "Los Angeles", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 34.0522, "lng": -118.2437 },
-        "venue": { "name": "Dolby Theatre", "address": "6801 Hollywood Blvd, Los Angeles, CA 90028" }
+        "city": {
+          "name": "Los Angeles",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 34.0522,
+          "lng": -118.2437
+        },
+        "venue": {
+          "name": "Dolby Theatre",
+          "address": "6801 Hollywood Blvd, Los Angeles, CA 90028"
+        }
       },
       {
         "year": 2027,
@@ -28,8 +42,14 @@
       }
     ],
     "viewership": [
-      { "year": 2025, "average_viewers": 19690000 },
-      { "year": 2026, "average_viewers": 17860000 }
+      {
+        "year": 2025,
+        "average_viewers": 19690000
+      },
+      {
+        "year": 2026,
+        "average_viewers": 17860000
+      }
     ]
   },
   {
@@ -37,8 +57,15 @@
     "slug": "grammy-awards",
     "category": "awards",
     "subcategory": "music",
-    "network": { "name": "CBS", "is_streaming": false, "website": "https://www.cbs.com" },
-    "production_company": { "name": "Fulwell 73", "website": "https://www.fulwell73.com" },
+    "network": {
+      "name": "CBS",
+      "is_streaming": false,
+      "website": "https://www.cbs.com"
+    },
+    "production_company": {
+      "name": "Fulwell 73",
+      "website": "https://www.fulwell73.com"
+    },
     "typical_month": 2,
     "recurring": true,
     "production_scale": 5,
@@ -51,14 +78,30 @@
         "show_date": "2026-02-01",
         "network": "CBS",
         "city": "Los Angeles",
-        "venue": { "name": "Crypto.com Arena", "address": "1111 S Figueroa St, Los Angeles, CA 90015" }
+        "venue": {
+          "name": "Crypto.com Arena",
+          "address": "1111 S Figueroa St, Los Angeles, CA 90015"
+        }
       },
-      { "year": 2027, "status": "rumored", "network": "ABC" }
+      {
+        "year": 2027,
+        "status": "rumored",
+        "network": "ABC"
+      }
     ],
     "viewership": [
-      { "year": 2024, "average_viewers": 16900000 },
-      { "year": 2025, "average_viewers": 15400000 },
-      { "year": 2026, "average_viewers": 14400000 }
+      {
+        "year": 2024,
+        "average_viewers": 16900000
+      },
+      {
+        "year": 2025,
+        "average_viewers": 15400000
+      },
+      {
+        "year": 2026,
+        "average_viewers": 14400000
+      }
     ]
   },
   {
@@ -66,7 +109,11 @@
     "slug": "primetime-emmy-awards",
     "category": "awards",
     "subcategory": "television",
-    "network": { "name": "NBC", "is_streaming": false, "website": "https://www.nbc.com" },
+    "network": {
+      "name": "NBC",
+      "is_streaming": false,
+      "website": "https://www.nbc.com"
+    },
     "typical_month": 9,
     "recurring": true,
     "production_scale": 5,
@@ -79,7 +126,10 @@
         "show_date": "2025-09-14",
         "network": "CBS",
         "city": "Los Angeles",
-        "venue": { "name": "Peacock Theater", "address": "777 Chick Hearn Ct, Los Angeles, CA 90015" }
+        "venue": {
+          "name": "Peacock Theater",
+          "address": "777 Chick Hearn Ct, Los Angeles, CA 90015"
+        }
       },
       {
         "year": 2026,
@@ -91,15 +141,25 @@
         "venue": "Peacock Theater"
       }
     ],
-    "viewership": [{ "year": 2025, "average_viewers": 7590000 }]
+    "viewership": [
+      {
+        "year": 2025,
+        "average_viewers": 7590000
+      }
+    ]
   },
   {
     "name": "Golden Globe Awards",
     "slug": "golden-globe-awards",
     "category": "awards",
     "subcategory": "film-television",
-    "network": { "name": "CBS", "is_streaming": false },
-    "production_company": { "name": "Dick Clark Productions" },
+    "network": {
+      "name": "CBS",
+      "is_streaming": false
+    },
+    "production_company": {
+      "name": "Dick Clark Productions"
+    },
     "typical_month": 1,
     "recurring": true,
     "production_scale": 5,
@@ -110,19 +170,40 @@
         "status": "completed",
         "start_date": "2026-01-11",
         "show_date": "2026-01-11",
-        "city": { "name": "Beverly Hills", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 34.0736, "lng": -118.4004 },
-        "venue": { "name": "The Beverly Hilton", "address": "9876 Wilshire Blvd, Beverly Hills, CA 90210" }
+        "city": {
+          "name": "Beverly Hills",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 34.0736,
+          "lng": -118.4004
+        },
+        "venue": {
+          "name": "The Beverly Hilton",
+          "address": "9876 Wilshire Blvd, Beverly Hills, CA 90210"
+        }
       },
-      { "year": 2027, "status": "rumored" }
+      {
+        "year": 2027,
+        "status": "rumored"
+      }
     ],
-    "viewership": [{ "year": 2026, "average_viewers": 8660000 }]
+    "viewership": [
+      {
+        "year": 2026,
+        "average_viewers": 8660000
+      }
+    ]
   },
   {
     "name": "Tony Awards",
     "slug": "tony-awards",
     "category": "awards",
     "subcategory": "theatre",
-    "network": { "name": "CBS", "is_streaming": false },
+    "network": {
+      "name": "CBS",
+      "is_streaming": false
+    },
     "typical_month": 6,
     "recurring": true,
     "production_scale": 4,
@@ -133,8 +214,18 @@
         "status": "completed",
         "start_date": "2026-06-07",
         "show_date": "2026-06-07",
-        "city": { "name": "New York", "state": "NY", "country": "USA", "timezone": "America/New_York", "lat": 40.7128, "lng": -74.006 },
-        "venue": { "name": "Radio City Music Hall", "address": "1260 6th Ave, New York, NY 10020" }
+        "city": {
+          "name": "New York",
+          "state": "NY",
+          "country": "USA",
+          "timezone": "America/New_York",
+          "lat": 40.7128,
+          "lng": -74.006
+        },
+        "venue": {
+          "name": "Radio City Music Hall",
+          "address": "1260 6th Ave, New York, NY 10020"
+        }
       }
     ]
   },
@@ -143,7 +234,10 @@
     "slug": "cma-awards",
     "category": "awards",
     "subcategory": "music",
-    "network": { "name": "ABC", "is_streaming": false },
+    "network": {
+      "name": "ABC",
+      "is_streaming": false
+    },
     "typical_month": 11,
     "recurring": true,
     "production_scale": 4,
@@ -154,19 +248,41 @@
         "status": "completed",
         "start_date": "2025-11-19",
         "show_date": "2025-11-19",
-        "city": { "name": "Nashville", "state": "TN", "country": "USA", "timezone": "America/Chicago", "lat": 36.1627, "lng": -86.7816 },
-        "venue": { "name": "Bridgestone Arena", "address": "501 Broadway, Nashville, TN 37203" }
+        "city": {
+          "name": "Nashville",
+          "state": "TN",
+          "country": "USA",
+          "timezone": "America/Chicago",
+          "lat": 36.1627,
+          "lng": -86.7816
+        },
+        "venue": {
+          "name": "Bridgestone Arena",
+          "address": "501 Broadway, Nashville, TN 37203"
+        }
       },
-      { "year": 2026, "status": "rumored", "city": "Nashville" }
+      {
+        "year": 2026,
+        "status": "rumored",
+        "city": "Nashville"
+      }
     ],
-    "viewership": [{ "year": 2025, "average_viewers": 6030000 }]
+    "viewership": [
+      {
+        "year": 2025,
+        "average_viewers": 6030000
+      }
+    ]
   },
   {
     "name": "Academy of Country Music Awards",
     "slug": "acm-awards",
     "category": "awards",
     "subcategory": "music",
-    "network": { "name": "Prime Video", "is_streaming": true },
+    "network": {
+      "name": "Prime Video",
+      "is_streaming": true
+    },
     "typical_month": 5,
     "recurring": true,
     "production_scale": 4,
@@ -177,8 +293,18 @@
         "status": "completed",
         "start_date": "2026-05-17",
         "show_date": "2026-05-17",
-        "city": { "name": "Las Vegas", "state": "NV", "country": "USA", "timezone": "America/Los_Angeles", "lat": 36.1699, "lng": -115.1398 },
-        "venue": { "name": "MGM Grand Garden Arena", "address": "3799 S Las Vegas Blvd, Las Vegas, NV 89109" }
+        "city": {
+          "name": "Las Vegas",
+          "state": "NV",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 36.1699,
+          "lng": -115.1398
+        },
+        "venue": {
+          "name": "MGM Grand Garden Arena",
+          "address": "3799 S Las Vegas Blvd, Las Vegas, NV 89109"
+        }
       }
     ]
   },
@@ -187,16 +313,24 @@
     "slug": "mtv-video-music-awards",
     "category": "awards",
     "subcategory": "music",
-    "network": { "name": "MTV", "is_streaming": false },
+    "network": {
+      "name": "MTV",
+      "is_streaming": false
+    },
     "typical_month": 9,
     "recurring": true,
     "production_scale": 4,
     "description": "The VMAs. Simulcast across MTV and CBS with live streaming on Paramount+. Returns to Los Angeles in 2026 for the first time since 2017.",
     "editions": [
-      { "year": 2025, "status": "completed", "start_date": "2025-09-07", "show_date": "2025-09-07" },
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-09-07",
+        "show_date": "2025-09-07"
+      },
       {
         "year": 2026,
-        "status": "confirmed",
+        "status": "announced",
         "start_date": "2026-09-27",
         "show_date": "2026-09-27",
         "city": "Los Angeles"
@@ -208,7 +342,10 @@
     "slug": "american-music-awards",
     "category": "awards",
     "subcategory": "music",
-    "network": { "name": "CBS", "is_streaming": false },
+    "network": {
+      "name": "CBS",
+      "is_streaming": false
+    },
     "typical_month": 5,
     "recurring": true,
     "production_scale": 4,
@@ -229,7 +366,10 @@
     "slug": "bet-awards",
     "category": "awards",
     "subcategory": "music",
-    "network": { "name": "BET", "is_streaming": false },
+    "network": {
+      "name": "BET",
+      "is_streaming": false
+    },
     "typical_month": 6,
     "recurring": true,
     "production_scale": 4,
@@ -250,7 +390,11 @@
     "slug": "actor-awards",
     "category": "awards",
     "subcategory": "film-television",
-    "network": { "name": "Netflix", "is_streaming": true, "website": "https://www.netflix.com" },
+    "network": {
+      "name": "Netflix",
+      "is_streaming": true,
+      "website": "https://www.netflix.com"
+    },
     "typical_month": 3,
     "recurring": true,
     "production_scale": 4,
@@ -262,7 +406,10 @@
         "start_date": "2026-03-01",
         "show_date": "2026-03-01",
         "city": "Los Angeles",
-        "venue": { "name": "Shrine Auditorium", "address": "665 W Jefferson Blvd, Los Angeles, CA 90007" }
+        "venue": {
+          "name": "Shrine Auditorium",
+          "address": "665 W Jefferson Blvd, Los Angeles, CA 90007"
+        }
       }
     ]
   },
@@ -271,7 +418,10 @@
     "slug": "critics-choice-awards",
     "category": "awards",
     "subcategory": "film-television",
-    "network": { "name": "E!", "is_streaming": false },
+    "network": {
+      "name": "E!",
+      "is_streaming": false
+    },
     "typical_month": 1,
     "recurring": true,
     "production_scale": 3,
@@ -282,8 +432,18 @@
         "status": "completed",
         "start_date": "2026-01-04",
         "show_date": "2026-01-04",
-        "city": { "name": "Santa Monica", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 34.0195, "lng": -118.4912 },
-        "venue": { "name": "Barker Hangar", "address": "3021 Airport Ave, Santa Monica, CA 90405" }
+        "city": {
+          "name": "Santa Monica",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 34.0195,
+          "lng": -118.4912
+        },
+        "venue": {
+          "name": "Barker Hangar",
+          "address": "3021 Airport Ave, Santa Monica, CA 90405"
+        }
       }
     ]
   },
@@ -292,7 +452,10 @@
     "slug": "espy-awards",
     "category": "awards",
     "subcategory": "sports",
-    "network": { "name": "ABC", "is_streaming": false },
+    "network": {
+      "name": "ABC",
+      "is_streaming": false
+    },
     "typical_month": 7,
     "recurring": true,
     "production_scale": 4,
@@ -304,7 +467,10 @@
         "start_date": "2026-07-15",
         "show_date": "2026-07-15",
         "city": "New York",
-        "venue": { "name": "David H. Koch Theater", "address": "20 Lincoln Center Plaza, New York, NY 10023" }
+        "venue": {
+          "name": "David H. Koch Theater",
+          "address": "20 Lincoln Center Plaza, New York, NY 10023"
+        }
       }
     ]
   },
@@ -313,7 +479,10 @@
     "slug": "nfl-honors",
     "category": "awards",
     "subcategory": "sports",
-    "network": { "name": "NBC", "is_streaming": false },
+    "network": {
+      "name": "NBC",
+      "is_streaming": false
+    },
     "typical_month": 2,
     "recurring": true,
     "production_scale": 4,
@@ -324,8 +493,18 @@
         "status": "completed",
         "start_date": "2026-02-05",
         "show_date": "2026-02-05",
-        "city": { "name": "San Francisco", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 37.7749, "lng": -122.4194 },
-        "venue": { "name": "Palace of Fine Arts", "address": "3601 Lyon St, San Francisco, CA 94123" }
+        "city": {
+          "name": "San Francisco",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 37.7749,
+          "lng": -122.4194
+        },
+        "venue": {
+          "name": "Palace of Fine Arts",
+          "address": "3601 Lyon St, San Francisco, CA 94123"
+        }
       }
     ]
   },
@@ -334,7 +513,10 @@
     "slug": "rock-and-roll-hall-of-fame-induction",
     "category": "awards",
     "subcategory": "music",
-    "network": { "name": "ABC", "is_streaming": false },
+    "network": {
+      "name": "ABC",
+      "is_streaming": false
+    },
     "typical_month": 11,
     "recurring": true,
     "production_scale": 4,
@@ -348,7 +530,10 @@
         "city": "Los Angeles",
         "venue": "Peacock Theater"
       },
-      { "year": 2027, "status": "rumored" }
+      {
+        "year": 2027,
+        "status": "rumored"
+      }
     ]
   },
   {
@@ -376,7 +561,10 @@
     "slug": "iheartradio-music-awards",
     "category": "awards",
     "subcategory": "music",
-    "network": { "name": "FOX", "is_streaming": false },
+    "network": {
+      "name": "FOX",
+      "is_streaming": false
+    },
     "typical_month": 3,
     "recurring": true,
     "production_scale": 3,
@@ -397,23 +585,39 @@
     "slug": "peoples-choice-awards",
     "category": "awards",
     "subcategory": "film-television",
-    "network": { "name": "E!", "is_streaming": false },
+    "network": {
+      "name": "E!",
+      "is_streaming": false
+    },
     "recurring": true,
     "production_scale": 3,
     "description": "Fan-voted awards. No ceremony was held in 2026; announced in May 2026 to return in 2027 on E!.",
-    "editions": [{ "year": 2027, "status": "rumored" }]
+    "editions": [
+      {
+        "year": 2027,
+        "status": "rumored"
+      }
+    ]
   },
   {
     "name": "Nickelodeon Kids' Choice Awards",
     "slug": "kids-choice-awards",
     "category": "awards",
     "subcategory": "children",
-    "network": { "name": "Nickelodeon", "is_streaming": false },
+    "network": {
+      "name": "Nickelodeon",
+      "is_streaming": false
+    },
     "recurring": true,
     "production_scale": 3,
     "description": "Fan-voted awards for kids. The 39th edition airs live on Nickelodeon and CBS in a domestic simulcast with other Paramount Global networks. Venue not yet announced.",
     "editions": [
-      { "year": 2026, "status": "confirmed", "start_date": "2026-11-14", "show_date": "2026-11-14" }
+      {
+        "year": 2026,
+        "status": "announced",
+        "start_date": "2026-11-14",
+        "show_date": "2026-11-14"
+      }
     ]
   },
   {
@@ -421,7 +625,10 @@
     "slug": "naacp-image-awards",
     "category": "awards",
     "subcategory": "film-television",
-    "network": { "name": "BET", "is_streaming": false },
+    "network": {
+      "name": "BET",
+      "is_streaming": false
+    },
     "typical_month": 2,
     "recurring": true,
     "production_scale": 3,
@@ -432,8 +639,18 @@
         "status": "completed",
         "start_date": "2026-02-28",
         "show_date": "2026-02-28",
-        "city": { "name": "Pasadena", "state": "CA", "country": "USA", "timezone": "America/Los_Angeles", "lat": 34.1478, "lng": -118.1445 },
-        "venue": { "name": "Pasadena Civic Auditorium", "address": "300 E Green St, Pasadena, CA 91101" }
+        "city": {
+          "name": "Pasadena",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 34.1478,
+          "lng": -118.1445
+        },
+        "venue": {
+          "name": "Pasadena Civic Auditorium",
+          "address": "300 E Green St, Pasadena, CA 91101"
+        }
       }
     ]
   },
@@ -442,7 +659,10 @@
     "slug": "bafta-film-awards",
     "category": "awards",
     "subcategory": "film",
-    "network": { "name": "BBC One", "is_streaming": false },
+    "network": {
+      "name": "BBC One",
+      "is_streaming": false
+    },
     "typical_month": 2,
     "recurring": true,
     "production_scale": 4,
@@ -453,8 +673,17 @@
         "status": "completed",
         "start_date": "2026-02-22",
         "show_date": "2026-02-22",
-        "city": { "name": "London", "country": "United Kingdom", "timezone": "Europe/London", "lat": 51.5074, "lng": -0.1278 },
-        "venue": { "name": "Royal Festival Hall", "address": "Southbank Centre, Belvedere Rd, London SE1 8XX" }
+        "city": {
+          "name": "London",
+          "country": "United Kingdom",
+          "timezone": "Europe/London",
+          "lat": 51.5074,
+          "lng": -0.1278
+        },
+        "venue": {
+          "name": "Royal Festival Hall",
+          "address": "Southbank Centre, Belvedere Rd, London SE1 8XX"
+        }
       }
     ]
   },
@@ -474,7 +703,10 @@
         "start_date": "2026-02-15",
         "show_date": "2026-02-15",
         "city": "Los Angeles",
-        "venue": { "name": "Hollywood Palladium", "address": "6215 Sunset Blvd, Los Angeles, CA 90028" }
+        "venue": {
+          "name": "Hollywood Palladium",
+          "address": "6215 Sunset Blvd, Los Angeles, CA 90028"
+        }
       }
     ]
   },
@@ -490,7 +722,7 @@
     "editions": [
       {
         "year": 2026,
-        "status": "confirmed",
+        "status": "announced",
         "start_date": "2026-10-30",
         "show_date": "2026-10-30",
         "city": "Los Angeles",
@@ -503,22 +735,38 @@
     "slug": "billboard-music-awards",
     "category": "awards",
     "subcategory": "music",
-    "network": { "name": "FOX", "is_streaming": false },
+    "network": {
+      "name": "FOX",
+      "is_streaming": false
+    },
     "typical_month": 12,
     "recurring": true,
     "production_scale": 3,
     "description": "Chart-based music awards. The 2024 edition aired on Fox and Amazon Fire TV. No 2025 or 2026 ceremony date has been confirmed.",
     "editions": [
-      { "year": 2024, "status": "completed", "start_date": "2024-12-12", "show_date": "2024-12-12" }
+      {
+        "year": 2024,
+        "status": "completed",
+        "start_date": "2024-12-12",
+        "show_date": "2024-12-12"
+      }
     ],
-    "viewership": [{ "year": 2024, "average_viewers": 1260000 }]
+    "viewership": [
+      {
+        "year": 2024,
+        "average_viewers": 1260000
+      }
+    ]
   },
   {
     "name": "CMT Music Awards",
     "slug": "cmt-music-awards",
     "category": "awards",
     "subcategory": "music",
-    "network": { "name": "CBS", "is_streaming": false },
+    "network": {
+      "name": "CBS",
+      "is_streaming": false
+    },
     "typical_month": 4,
     "recurring": true,
     "production_scale": 3,
