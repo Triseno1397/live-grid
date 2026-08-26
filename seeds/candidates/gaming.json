@@ -1,0 +1,1004 @@
+[
+  {
+    "qid": "Q3334740",
+    "label": "The International",
+    "description": "Dota 2 video game competition",
+    "sitelinks": 28,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "the-international",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2011",
+      "officialWebsite": "http://www.dota2.com/international/",
+      "venue": "Vancouver",
+      "city": "Metro Vancouver Regional District",
+      "country": "United States",
+      "coords": {
+        "lat": 49.260833,
+        "lng": -123.113889
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ti-logo-copy.png?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20International%202012.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_International_(esports)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3334740",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The International",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1326127",
+    "label": "ESL",
+    "description": "esport organization",
+    "sitelinks": 25,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "esl",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2000",
+      "officialWebsite": "http://www.esl.eu/",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/ESL%20Horizontal%20Logo%202019.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/ESL_(company)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1326127",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "ESL",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1256146",
+    "label": "DreamHack",
+    "description": "Swedish production company",
+    "sitelinks": 22,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "dreamhack",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1994",
+      "officialWebsite": "https://dreamhack.com/",
+      "venue": "Stockholm",
+      "city": "Stockholm Municipality",
+      "country": "Sweden",
+      "coords": {
+        "lat": 59.329444,
+        "lng": 18.068611
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/DreamHack%20logo.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/DreamHack"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1256146",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "DreamHack",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q12594341",
+    "label": "League of Legends World Championship",
+    "description": "esports tournament",
+    "sitelinks": 22,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "league-of-legends-world-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://lolesports.com/",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/League%20of%20Legends%20Season%202%20World%20Championship%20finals%20panorama%20%288095444017%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/League_of_Legends_World_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q12594341",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "League of Legends World Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q588487",
+    "label": "PAX",
+    "description": "recurring gaming festival in the U.S. and Australia",
+    "sitelinks": 20,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "pax",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2004",
+      "officialWebsite": "https://www.paxsite.com/",
+      "venue": "Seattle",
+      "city": "King County",
+      "country": "United States",
+      "coords": {
+        "lat": 47.605,
+        "lng": -122.33
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/PAX%20new%20logo%2C%20blue.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/PAX%20East%202012%20Expo%20Hall.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/PAX_(event)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q588487",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "PAX",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q30560738",
+    "label": "League of Legends EMEA Championship",
+    "description": "professional League of Legends esports league",
+    "sitelinks": 18,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "league-of-legends-emea-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2013",
+      "officialWebsite": "https://eu.lolesports.com/en",
+      "venue": "Berlin",
+      "city": "Germany",
+      "country": "Germany",
+      "coords": {
+        "lat": 52.516667,
+        "lng": 13.383333
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/League%20of%20Legends%20EMEA%20Championship.png?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/League%20of%20Legends%20EMEA%20Championship.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/League_of_Legends_EMEA_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q30560738",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "League of Legends EMEA Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1326196",
+    "label": "Esports World Convention",
+    "description": "competition",
+    "sitelinks": 17,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "esports-world-convention",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2003",
+      "officialWebsite": "http://www.eswc.com/",
+      "country": "France",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Finale%20Counter-Strike%20F%C3%A9minin%20sur%20la%20sc%C3%A8ne.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Esports_World_Convention"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1326196",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Esports World Convention",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1320732",
+    "label": "Major League Gaming",
+    "description": "professional esports organisation from Microsoft",
+    "sitelinks": 15,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "major-league-gaming",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2002",
+      "officialWebsite": "https://mlg.com/",
+      "country": "United States",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/MLG%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Major_League_Gaming"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1320732",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Major League Gaming",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q124246543",
+    "label": "Esports World Cup",
+    "description": "series of esports tournaments",
+    "sitelinks": 15,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "esports-world-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2023",
+      "officialWebsite": "https://esportsworldcup.com/ar",
+      "venue": "Riyadh",
+      "city": "Riyadh Province",
+      "country": "Saudi Arabia",
+      "coords": {
+        "lat": 24.65,
+        "lng": 46.71
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Esports%20World%20Cup%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Esports_World_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q124246543",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Esports World Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2122065",
+    "label": "QuakeCon",
+    "description": "video game convention",
+    "sitelinks": 15,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "quakecon",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1996",
+      "officialWebsite": "http://www.quakecon.org",
+      "venue": "Dallas",
+      "city": "Dallas County",
+      "country": "United States",
+      "coords": {
+        "lat": 32.779167,
+        "lng": -96.808889
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/QuakeCon%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/QuakeCon"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2122065",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "QuakeCon",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q12594338",
+    "label": "League of Legends Champions Korea",
+    "description": "professional video game competition",
+    "sitelinks": 12,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "league-of-legends-champions-korea",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2012",
+      "officialWebsite": "http://program.interest.me/ongamenet/lolchamps",
+      "country": "South Korea",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lolthechampions.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/League_of_Legends_Champions_Korea"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q12594338",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "League of Legends Champions Korea",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q28454335",
+    "label": "Overwatch League",
+    "description": "professional esports league for the video game Overwatch 2",
+    "sitelinks": 12,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "overwatch-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2016",
+      "officialWebsite": "https://overwatchleague.com",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Overwatch%20League%20wordmark-colour.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Overwatch_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q28454335",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Overwatch League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q550430",
+    "label": "Gen Con",
+    "description": "tabletop game convention in North America",
+    "sitelinks": 11,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "gen-con",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1968",
+      "officialWebsite": "http://www.gencon.com",
+      "venue": "Indianapolis",
+      "city": "Marion County",
+      "country": "United States",
+      "coords": {
+        "lat": 39.768611,
+        "lng": -86.158056
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gen%20Con%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Gen_Con"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q550430",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Gen Con",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q28954324",
+    "label": "PGL 2017 Krakow Major Championship",
+    "description": "Counter-Strike: Global Offensive Major championship",
+    "sitelinks": 11,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "pgl-2017-krakow-major-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "venueCapacity": 15030,
+      "city": "Kraków",
+      "country": "Poland",
+      "coords": {
+        "lat": 50.067472,
+        "lng": 19.991694
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/PGL_Major:_Krak%C3%B3w_2017",
+      "pastDate": "2017-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q28954324",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "PGL 2017 Krakow Major Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1147119",
+    "label": "Cyberathlete Professional League",
+    "description": "professional esports tournament organization specializing in computer and console video game competitions",
+    "sitelinks": 9,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "cyberathlete-professional-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1997",
+      "officialWebsite": "http://www.thecpl.com",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Cyberathlete_Professional_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1147119",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Cyberathlete Professional League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1391516",
+    "label": "Nintendo World Championships",
+    "description": "series of video game competitions",
+    "sitelinks": 9,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "nintendo-world-championships",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1990",
+      "officialWebsite": "http://nwc.nintendo.com/",
+      "country": "United States",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Nintendo_World_Championships"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1391516",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Nintendo World Championships",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q20647053",
+    "label": "Classic Tetris World Championship",
+    "description": "video game competition series",
+    "sitelinks": 9,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "classic-tetris-world-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2010",
+      "officialWebsite": "https://thectwc.com/",
+      "venue": "Portland",
+      "city": "Multnomah County",
+      "country": "United States",
+      "coords": {
+        "lat": 45.515,
+        "lng": -122.679167
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Classic%20Tetris%20World%20Championship%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Classic_Tetris_World_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q20647053",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Classic Tetris World Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q59156177",
+    "label": "Intel Extreme Masters Season XIII – World Championship Major",
+    "description": "international tournament in Counter-Strike: Global Offensive",
+    "sitelinks": 9,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "intel-extreme-masters-season-xiii-world-championship-major",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.intelextrememasters.com/season-13/katowice/",
+      "venue": "International Conference Centre",
+      "venueCapacity": 15000,
+      "city": "Katowice",
+      "coords": {
+        "lat": 50.26561,
+        "lng": 19.027261
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/IEM%20v2019.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/IEM_Katowice_Major_2019",
+      "pastDate": "2019-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q59156177",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Intel Extreme Masters Season XIII – World Championship Major",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q112567574",
+    "label": "Valorant Champions Tour",
+    "description": "professional esports league",
+    "sitelinks": 9,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "valorant-champions-tour",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Valorant_Champions_Tour"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q112567574",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Valorant Champions Tour",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q21793979",
+    "label": "MLG Major Championship: Columbus",
+    "description": "2016 video game tournament held in Columbus, Ohio, US",
+    "sitelinks": 8,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "mlg-major-championship-columbus",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "Columbus",
+      "city": "Fairfield County",
+      "country": "United States",
+      "coords": {
+        "lat": 39.962222,
+        "lng": -83.000556
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/MLG_Major_Championship:_Columbus",
+      "pastDate": "2016-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q21793979",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "MLG Major Championship: Columbus",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1061471",
+    "label": "Championship Gaming Series",
+    "description": "defunct esports league",
+    "sitelinks": 7,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "championship-gaming-series",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2007",
+      "country": "United States",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Championship_Gaming_Series"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1061471",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Championship Gaming Series",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3133053",
+    "label": "Tougeki – Super Battle Opera",
+    "description": "esport competition in Japan",
+    "sitelinks": 7,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "tougeki-super-battle-opera",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2003",
+      "officialWebsite": "http://www.tougeki.com/",
+      "country": "Japan",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Tougeki_%E2%80%93_Super_Battle_Opera"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3133053",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Tougeki – Super Battle Opera",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q11339103",
+    "label": "Pokémon World Championships",
+    "description": "Pokémon esports tournament",
+    "sitelinks": 7,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "pokemon-world-championships",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pok%C3%A9mon%20World%20Championships%202014.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_World_Championships"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q11339103",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Pokémon World Championships",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q16161280",
+    "label": "League of Legends: Season 3 World Championship",
+    "description": "third League of Legends World Championship, held in the United States",
+    "sitelinks": 7,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "league-of-legends-season-3-world-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Staples%20Center%20League%20of%20Legends%20Season%203%20Finals.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/League_of_Legends:_Season_3_World_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q16161280",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "League of Legends: Season 3 World Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q18620646",
+    "label": "ESL Pro League",
+    "description": "professional Counter-Strike: Global Offensive league",
+    "sitelinks": 7,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "esl-pro-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2015",
+      "officialWebsite": "http://pro.eslgaming.com/csgo/proleague",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/ESL%20Pro%20League%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/ESL_Pro_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q18620646",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "ESL Pro League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q25220279",
+    "label": "League of Legends: Season 2 World Championship",
+    "description": "second League of Legends World Championship, held in the United States",
+    "sitelinks": 7,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "league-of-legends-season-2-world-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "Los Angeles",
+      "city": "Los Angeles County",
+      "country": "United States",
+      "coords": {
+        "lat": 34.05223,
+        "lng": -118.24368
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/League%20of%20Legends%20Season%202%20World%20Championship%20finals%20panorama%20%288095444017%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/League_of_Legends:_Season_2_World_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q25220279",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "League of Legends: Season 2 World Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q29645413",
+    "label": "Kiev Major",
+    "description": "Dota 2 cybersport tournament",
+    "sitelinks": 7,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "kiev-major",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://web.archive.org/web/20171216204903/https://thekievmajor.com/",
+      "venue": "Kyiv",
+      "city": "Ukraine",
+      "coords": {
+        "lat": 50.45,
+        "lng": 30.523611
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kiev%20Major%202017.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Kiev_Major"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q29645413",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Kiev Major",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q66686075",
+    "label": "Fortnite World Cup",
+    "description": "annual esports competition based on the video game Fortnite",
+    "sitelinks": 7,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "fortnite-world-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "Arthur Ashe Stadium",
+      "venueCapacity": 22547,
+      "city": "Queens",
+      "coords": {
+        "lat": 40.749886,
+        "lng": -73.847033
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Fortnite_World_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q66686075",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Fortnite World Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q85744598",
+    "label": "BLAST Premier",
+    "description": "Counter-Strike: Global Offensive professional esports league",
+    "sitelinks": 7,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "blast-premier",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2020",
+      "officialWebsite": "https://blastpremier.com",
+      "country": "United States",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Blast_Premier"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q85744598",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "BLAST Premier",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q626294",
+    "label": "StarCraft II Proleague",
+    "description": "esport competition",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "starcraft-ii-proleague",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2003",
+      "officialWebsite": "http://e-sports.or.kr/proleague2015/",
+      "country": "South Korea",
+      "enWikipedia": "https://en.wikipedia.org/wiki/StarCraft_II_Proleague"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q626294",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "StarCraft II Proleague",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1114177",
+    "label": "Origins Game Fair",
+    "description": "annual gaming convention",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "origins-game-fair",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1975",
+      "officialWebsite": "http://www.originsgamefair.com",
+      "venue": "Greater Columbus Convention Center",
+      "city": "Columbus",
+      "country": "United States",
+      "coords": {
+        "lat": 39.9716,
+        "lng": -83.0005
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Origins_Game_Fair"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1114177",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Origins Game Fair",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q130374262",
+    "label": "GeoGuessr World Championship",
+    "description": "international esport tournament",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "geoguessr-world-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2023",
+      "officialWebsite": "https://www.geoguessr.com/world-championship",
+      "enWikipedia": "https://en.wikipedia.org/wiki/GeoGuessr_World_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q130374262",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "GeoGuessr World Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q131176600",
+    "label": "League of Legends Championship Pacific",
+    "description": "professional esports league",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "league-of-legends-championship-pacific",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2025",
+      "country": "Taiwan",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/League%20of%20Legends%20Championship%20Pacific%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/League_of_Legends_Championship_Pacific"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q131176600",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "League of Legends Championship Pacific",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q132067596",
+    "label": "Olympic Esports Games",
+    "description": "international multi-esport event",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "olympic-esports-games",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Olympic_Esports_Games"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q132067596",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Olympic Esports Games",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1094893",
+    "label": "ClanBase",
+    "description": null,
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "clanbase",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1998",
+      "officialWebsite": "http://clanbase.ggl.com"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1094893",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "ClanBase",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q4869946",
+    "label": "StarCraft II World Championship Series",
+    "description": "defunct professional esports circuit",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "starcraft-ii-world-championship-series",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2012",
+      "officialWebsite": "http://us.battle.net/bwc/en/tournaments/sc2/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/StarCraft_II_World_Championship_Series"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q4869946",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "StarCraft II World Championship Series",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q7039138",
+    "label": "Nintendo Campus Challenge",
+    "description": "series of video game competitions",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "nintendo-campus-challenge",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Nintendo_Campus_Challenge"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q7039138",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Nintendo Campus Challenge",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q7836711",
+    "label": "Treasure Master",
+    "description": "1991 video game",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "treasure-master",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Treasure_Master"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q7836711",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Treasure Master",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q20807692",
+    "label": "GT Academy",
+    "description": "Television programme",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "gt-academy",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.gran-turismo.com/us/academy/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/GT_Academy"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q20807692",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "GT Academy",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q55394466",
+    "label": "Rocket League Championship Series",
+    "description": "video game tournament series",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "rocket-league-championship-series",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://esports.rocketleague.com/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Rocket_League_Championship_Series"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q55394466",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Rocket League Championship Series",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q84089587",
+    "label": "Pacific Championship Series",
+    "description": "League of Legends esports league",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "pacific-championship-series",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2019",
+      "country": "Indonesia",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Pacific_Championship_Series"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q84089587",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Pacific Championship Series",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q108793135",
+    "label": "The International 10",
+    "description": "2021 esports tournament",
+    "sitelinks": 6,
+    "suggestedCategory": "gaming",
+    "suggestedSlug": "the-international-10",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.dota2.com/esports/ti10",
+      "venue": "Bucharest",
+      "city": "Romania",
+      "country": "Romania",
+      "coords": {
+        "lat": 44.413361,
+        "lng": 26.097778
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ti-logo-copy.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_International_2021",
+      "pastDate": "2021-10-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q108793135",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The International 10",
+      "retrieved_on": "2026-08-26"
+    }
+  }
+]

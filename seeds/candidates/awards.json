@@ -1,0 +1,220 @@
+[
+  {
+    "qid": "Q41254",
+    "label": "Grammy Awards",
+    "description": "American award for achievements in music",
+    "sitelinks": 109,
+    "suggestedCategory": "awards",
+    "suggestedSlug": "grammy-awards",
+    "alreadyInDb": true,
+    "claims": {
+      "inception": "1958",
+      "officialWebsite": "https://www.grammy.com",
+      "venue": "Los Angeles",
+      "city": "Los Angeles County",
+      "country": "United States",
+      "coords": {
+        "lat": 34.05223,
+        "lng": -118.24368
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2003%20Technical%20Grammy%20award.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Grammy_Awards"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q41254",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Grammy Awards",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q207601",
+    "label": "American Music Awards",
+    "description": "annual American music awards show",
+    "sitelinks": 49,
+    "suggestedCategory": "awards",
+    "suggestedSlug": "american-music-awards",
+    "alreadyInDb": true,
+    "claims": {
+      "inception": "1973",
+      "officialWebsite": "https://www.theamas.com",
+      "country": "United States",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/American%20Music%20Awards%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/American_Music_Awards"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q207601",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "American Music Awards",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q392565",
+    "label": "Billboard Music Awards",
+    "description": "Billboard music award music show",
+    "sitelinks": 39,
+    "suggestedCategory": "awards",
+    "suggestedSlug": "billboard-music-awards",
+    "alreadyInDb": true,
+    "claims": {
+      "inception": "1989",
+      "officialWebsite": "https://www.billboardmusicawards.com/",
+      "venue": "United States",
+      "country": "United States",
+      "coords": {
+        "lat": 39.828175,
+        "lng": -98.5795
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Billboard%20Music%20Awards%20logo.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Billboard_Music_Awards",
+      "pastDate": "2022-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q392565",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Billboard Music Awards",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q18642757",
+    "label": "The Game Awards",
+    "description": "annual video game awards ceremony",
+    "sitelinks": 34,
+    "suggestedCategory": "awards",
+    "suggestedSlug": "the-game-awards",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2014",
+      "officialWebsite": "https://thegameawards.com",
+      "venueCapacity": 7100,
+      "city": "Los Angeles",
+      "country": "United States",
+      "coords": {
+        "lat": 34.044444,
+        "lng": -118.2675
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Game%20Awards%20Logo%202024.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Game%20Awards.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Game_Awards"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q18642757",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Game Awards",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q795848",
+    "label": "BET Awards",
+    "description": "American award show",
+    "sitelinks": 24,
+    "suggestedCategory": "awards",
+    "suggestedSlug": "bet-awards",
+    "alreadyInDb": true,
+    "claims": {
+      "inception": "2001",
+      "officialWebsite": "http://www.bet.com/shows/bet-awards.html",
+      "venue": "United States",
+      "country": "United States",
+      "coords": {
+        "lat": 39.828175,
+        "lng": -98.5795
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/BET_Awards",
+      "pastDate": "2019-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q795848",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "BET Awards",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1665849",
+    "label": "D.I.C.E. Awards",
+    "description": "annual video game award show",
+    "sitelinks": 17,
+    "suggestedCategory": "awards",
+    "suggestedSlug": "d-i-c-e-awards",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1998",
+      "officialWebsite": "https://www.interactive.org",
+      "venue": "Las Vegas",
+      "city": "Clark County",
+      "country": "United States",
+      "coords": {
+        "lat": 36.167222,
+        "lng": -115.148611
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/D.I.C.E.%20Awards%20logo.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/D.I.C.E._Awards"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1665849",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "D.I.C.E. Awards",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q935015",
+    "label": "UEFA Golden Jubilee Poll",
+    "description": "online poll conducted in 2004 by UEFA",
+    "sitelinks": 16,
+    "suggestedCategory": "awards",
+    "suggestedSlug": "uefa-golden-jubilee-poll",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2004",
+      "enWikipedia": "https://en.wikipedia.org/wiki/UEFA_Golden_Jubilee_Poll"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q935015",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "UEFA Golden Jubilee Poll",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q111231965",
+    "label": "The Streamer Awards",
+    "description": "awards show dedicated to live streamers",
+    "sitelinks": 8,
+    "suggestedCategory": "awards",
+    "suggestedSlug": "the-streamer-awards",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2022",
+      "officialWebsite": "https://thestreamerawards.com",
+      "venue": "Pellissier Building and Wiltern Theatre",
+      "venueCapacity": 1200,
+      "city": "Los Angeles",
+      "country": "United States",
+      "coords": {
+        "lat": 34.061111,
+        "lng": -118.307778
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Streamer%20Awards%20wordmark%202024%20%28black%29.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Streamer_Awards"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q111231965",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Streamer Awards",
+      "retrieved_on": "2026-08-26"
+    }
+  }
+]

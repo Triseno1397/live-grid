@@ -1,0 +1,1511 @@
+[
+  {
+    "name": "Tudum: A Netflix Global Fan Event",
+    "slug": "tudum-global-fan-event",
+    "category": "streaming",
+    "subcategory": "fan event",
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Netflix", "is_streaming": true },
+    "production_company": { "name": "Netflix" },
+    "description": "Netflix's global fan showcase. Online-only from 2021 to 2023, it became a full arena production in 2025 — a live-streamed show from the Kia Forum with musical performances from Lady Gaga and Hanumankind, hosted by Sofia Carson, preceded by an N-shaped interactive red carpet with dedicated title stages. No 2026 edition has been announced.",
+    "sources": [
+      {
+        "url": "https://www.netflix.com/tudum/features/tudum-2025-the-live-event",
+        "publisher": "Netflix",
+        "title": "Netflix Tudum 2025: Here's a Recap of the Epic Live Event",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.mediaplaynews.com/netflix-brings-out-franchise-stars-for-tudum-2025-live-event-at-kia-forum-in-los-angeles/",
+        "publisher": "Media Play News",
+        "title": "Netflix Brings Out Franchise Stars for Tudum 2025 Live Event at Kia Forum",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Tudum",
+        "publisher": "Wikipedia",
+        "title": "Tudum",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-05-31",
+        "show_date": "2025-05-31",
+        "city": "Inglewood",
+        "venue": { "name": "Kia Forum" },
+        "sources": [
+          {
+            "url": "https://www.netflix.com/tudum/articles/tudum-2025-live-on-netflix",
+            "publisher": "Netflix",
+            "title": "Tudum the Event Will Stream Live on Netflix on May 31",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.mediaplaynews.com/netflix-brings-out-franchise-stars-for-tudum-2025-live-event-at-kia-forum-in-los-angeles/",
+            "publisher": "Media Play News",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WWE Raw on Netflix",
+    "slug": "wwe-raw-on-netflix",
+    "category": "streaming",
+    "subcategory": "wrestling",
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Netflix", "is_streaming": true },
+    "production_company": { "name": "WWE" },
+    "description": "WWE's Monday night flagship, live on Netflix every week since January 2025 under a ten-year deal. Each episode is a full arena television production from a different city, streamed at 8 p.m. ET rather than broadcast — the first time Raw left linear television since 1993.",
+    "sources": [
+      {
+        "url": "https://www.netflix.com/tudum/articles/how-to-watch-wwe-on-netflix",
+        "publisher": "Netflix",
+        "title": "Here's How to Watch WWE Raw Live on Netflix This Week",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cbssports.com/wwe/news/wwe-raw-moves-to-netflix-monday-night-brand-gets-long-term-partnership-with-streaming-giant-beginning-2025",
+        "publisher": "CBS Sports",
+        "title": "WWE Raw moves to Netflix in long-term partnership beginning 2025",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/WWE_Raw_premiere_on_Netflix",
+        "publisher": "Wikipedia",
+        "title": "WWE Raw premiere on Netflix",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-01-06",
+        "show_date": "2025-01-06",
+        "city": "Inglewood",
+        "venue": { "name": "Intuit Dome" },
+        "sources": [
+          {
+            "url": "https://www.wwe.com/shows/raw/article/raw-premiere-netflix-travis-scott-january-6-2025-0",
+            "publisher": "WWE",
+            "title": "WWE Monday Night Raw debuts on Netflix live from the Intuit Dome on January 6, 2025",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.postwrestling.com/2024/11/18/wwe-raw-on-netflix-premiere-to-emanate-from-intuit-dome-in-inglewood-california-on-1-6-travis-scott-appearing/",
+            "publisher": "POST Wrestling",
+            "title": "WWE Raw on Netflix premiere to emanate from Intuit Dome in Inglewood, California",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Netflix Live Boxing",
+    "slug": "netflix-live-boxing",
+    "category": "streaming",
+    "subcategory": "boxing",
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Netflix", "is_streaming": true },
+    "description": "Netflix's live boxing franchise — stadium-scale fight nights streamed worldwide at no extra charge rather than sold as pay-per-view. Canelo Álvarez against Terence Crawford filled Allegiant Stadium in 2025; Tyson Fury against Arslanbek Makhmudov in April 2026 was the first Netflix card staged in the UK.",
+    "sources": [
+      {
+        "url": "https://www.netflix.com/tudum/articles/tyson-fury-arslanbek-makhmudov-live-on-netflix",
+        "publisher": "Netflix",
+        "title": "Tyson Fury Defeats Arslanbek Makhmudov via Decision — Results for the Full Card",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.espn.com/boxing/story/_/id/46274888/terence-crawford-win-vs-canelo-alvarez-drew-41-million-viewers-netflix-says",
+        "publisher": "ESPN",
+        "title": "Canelo-Crawford drew over 41 million viewers, Netflix says",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Tyson_Fury_vs._Arslanbek_Makhmudov",
+        "publisher": "Wikipedia",
+        "title": "Tyson Fury vs. Arslanbek Makhmudov",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-09-13",
+        "show_date": "2025-09-13",
+        "city": "Las Vegas",
+        "venue": { "name": "Allegiant Stadium" },
+        "sources": [
+          {
+            "url": "https://www.espn.com/boxing/story/_/id/46274888/terence-crawford-win-vs-canelo-alvarez-drew-41-million-viewers-netflix-says",
+            "publisher": "ESPN",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.thewrap.com/netflix-terence-crawford-saul-canelo-alvarez-fight-viewership-ratings/",
+            "publisher": "TheWrap",
+            "title": "Netflix's Canelo vs. Crawford Fight Scores 41.4 Million Viewers Over Opening Weekend",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-04-11",
+        "show_date": "2026-04-11",
+        "city": "London",
+        "venue": { "name": "Tottenham Hotspur Stadium" },
+        "sources": [
+          {
+            "url": "https://www.netflix.com/tudum/articles/tyson-fury-arslanbek-makhmudov-live-on-netflix",
+            "publisher": "Netflix",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Tyson_Fury_vs._Arslanbek_Makhmudov",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2025,
+        "average_viewers": 41400000,
+        "sources": [
+          {
+            "url": "https://www.espn.com/boxing/story/_/id/46274888/terence-crawford-win-vs-canelo-alvarez-drew-41-million-viewers-netflix-says",
+            "publisher": "ESPN",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.thewrap.com/netflix-terence-crawford-saul-canelo-alvarez-fight-viewership-ratings/",
+            "publisher": "TheWrap",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Netflix Is a Joke Fest",
+    "slug": "netflix-is-a-joke-fest",
+    "category": "streaming",
+    "subcategory": "comedy festival",
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Netflix", "is_streaming": true },
+    "production_company": { "name": "Live Nation" },
+    "description": "Netflix's week-long comedy festival across Los Angeles, produced with Live Nation. The 2026 edition ran more than 350 events at venues from the Hollywood Bowl and the Greek Theatre to the Comedy Store, and supplies the live specials Netflix streams during the week.",
+    "sources": [
+      {
+        "url": "https://www.netflixisajokefest.com/schedule",
+        "publisher": "Netflix Is a Joke Fest",
+        "title": "Netflix Is A Joke Festival 2026 — Schedule",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://lamag.com/comedy/netflix-is-a-joke-festival-returns/",
+        "publisher": "Los Angeles Magazine",
+        "title": "Netflix is a Joke Festival 2026: Dates, Lineup, Tickets",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Netflix_Is_a_Joke_Festival",
+        "publisher": "Wikipedia",
+        "title": "Netflix Is a Joke Festival",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-05-04",
+        "end_date": "2026-05-10",
+        "city": "Los Angeles",
+        "sources": [
+          {
+            "url": "https://www.netflixisajokefest.com/schedule",
+            "publisher": "Netflix Is a Joke Fest",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.netflix.com/tudum/articles/netflix-is-a-joke-fest-2026-los-angeles-lineup-dates-tickets",
+            "publisher": "Netflix",
+            "title": "Netflix Is a Joke Fest 2026 Is Underway: Guide to the Week's Biggest Shows",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://lamag.com/comedy/netflix-is-a-joke-festival-returns/",
+            "publisher": "Los Angeles Magazine",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Netflix Live Roast",
+    "slug": "netflix-live-roast",
+    "category": "streaming",
+    "subcategory": "live roast",
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Netflix", "is_streaming": true },
+    "description": "Netflix's live roast special, staged at the Kia Forum on the closing night of Netflix Is a Joke Fest and streamed uncut. \"The Greatest Roast of All Time: Tom Brady\" in 2024 was Netflix's first live comedy special and ran three hours; Shane Gillis hosted the roast of Kevin Hart in 2026.",
+    "sources": [
+      {
+        "url": "https://www.netflix.com/tudum/features/the-roast-of-kevin-hart-live-on-netflix",
+        "publisher": "Netflix",
+        "title": "The Roast of Kevin Hart Recap",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://deadline.com/2026/03/kevin-hart-netflix-roast-shane-gillis-hosting-1236761040/",
+        "publisher": "Deadline",
+        "title": "Kevin Hart To Take The Hot Seat At Netflix Is A Joke Fest Roast Hosted By Shane Gillis",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Roast_of_Tom_Brady",
+        "publisher": "Wikipedia",
+        "title": "The Roast of Tom Brady",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2024,
+        "status": "completed",
+        "start_date": "2024-05-05",
+        "show_date": "2024-05-05",
+        "city": "Inglewood",
+        "venue": { "name": "Kia Forum" },
+        "sources": [
+          {
+            "url": "https://www.netflix.com/tudum/articles/greatest-roast-of-all-time-tom-brady-live",
+            "publisher": "Netflix",
+            "title": "The Greatest Roast of All Time: Tom Brady Live Comedy Special",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Roast_of_Tom_Brady",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-05-10",
+        "show_date": "2026-05-10",
+        "city": "Inglewood",
+        "venue": { "name": "Kia Forum" },
+        "sources": [
+          {
+            "url": "https://www.netflixisajokefest.com/shows/the-roast-of-kevin-hart-hosted-by-shane-gillis",
+            "publisher": "Netflix Is a Joke Fest",
+            "title": "The Roast of Kevin Hart Hosted by Shane Gillis",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.forbes.com/sites/monicamercuri/2026/05/10/the-roast-of-kevin-hart-airs-tonight-on-netflix-start-time-and-how-to-watch/",
+            "publisher": "Forbes",
+            "title": "'The Roast Of Kevin Hart' Airs Tonight On Netflix: Start Time And How To Watch",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Everybody's Live with John Mulaney",
+    "slug": "everybodys-live-with-john-mulaney",
+    "category": "streaming",
+    "subcategory": "live talk show",
+    "recurring": false,
+    "production_scale": 2,
+    "network": { "name": "Netflix", "is_streaming": true },
+    "description": "Netflix's weekly live variety talk show, streamed from Los Angeles with viewer call-ins and no edit pass. Twelve episodes ran from March to May 2025 under a two-season order; Netflix has since said a second season is not in the works.",
+    "sources": [
+      {
+        "url": "https://www.netflix.com/tudum/articles/john-mulaney-live-variety-talk-show",
+        "publisher": "Netflix",
+        "title": "John Mulaney Set to Fight Teens on 'Everybody's Live' Season Finale",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://latenighter.com/news/john-mulaney-everybodys-live-season-2-status-netflix/",
+        "publisher": "LateNighter",
+        "title": "John Mulaney's Everybody's Live Has Officially Stalled at Netflix",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Everybody%27s_Live_with_John_Mulaney",
+        "publisher": "Wikipedia",
+        "title": "Everybody's Live with John Mulaney",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-03-12",
+        "end_date": "2025-05-28",
+        "city": "Los Angeles",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Everybody%27s_Live_with_John_Mulaney",
+            "publisher": "Wikipedia",
+            "tier": "reference",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://latenighter.com/news/john-mulaney-everybodys-live-season-2-status-netflix/",
+            "publisher": "LateNighter",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MLB on Netflix",
+    "slug": "mlb-on-netflix",
+    "category": "streaming",
+    "subcategory": "sports package",
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Netflix", "is_streaming": true },
+    "production_company": { "name": "MLB Network" },
+    "description": "Netflix's annual MLB event package under a three-year agreement that began in 2026 — an Opening Night game, the T-Mobile Home Run Derby and one special-event game a year. In 2026 that was Yankees at Giants on 25 March, the Home Run Derby at Citizens Bank Park on 13 July and MLB at Field of Dreams in Dyersville, Iowa on 13 August. MLB Network's production team builds the shows in partnership with Netflix.",
+    "sources": [
+      {
+        "url": "https://www.mlb.com/press-release/press-release-mlb-forms-new-three-year-media-rights-agreements-with-espn-nbcuniversal-and-netflix",
+        "publisher": "MLB",
+        "title": "MLB forms new three-year media rights agreements with ESPN, NBCUniversal and Netflix",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.netflix.com/tudum/articles/mlb-netflix-opening-day-home-run-derby-field-of-dreams",
+        "publisher": "Netflix",
+        "title": "MLB is Coming to Netflix: Opening Night, the Home Run Derby, and More",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cbssports.com/mlb/news/mlb-national-tv-broadcast-nbc-espn-netflix-home-run-derby-sunday-night-baseball-opening-night-field-of-dreams",
+        "publisher": "CBS Sports",
+        "title": "MLB finalizes new national TV broadcast deals",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-03-25",
+        "end_date": "2026-08-13",
+        "sources": [
+          {
+            "url": "https://www.mlb.com/press-release/press-release-mlb-forms-new-three-year-media-rights-agreements-with-espn-nbcuniversal-and-netflix",
+            "publisher": "MLB",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://sports.yahoo.com/articles/why-home-run-derby-only-084001411.html",
+            "publisher": "Yahoo Sports",
+            "title": "Why is the Home Run Derby only on Netflix?",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FIFA Women's World Cup on Netflix",
+    "slug": "fifa-womens-world-cup-on-netflix",
+    "category": "streaming",
+    "subcategory": "tournament",
+    "typical_month": 6,
+    "recurring": true,
+    "production_scale": 5,
+    "network": { "name": "Netflix", "is_streaming": true },
+    "description": "Netflix holds exclusive United States rights to the FIFA Women's World Cup in 2027 and 2031 — the first competition it has acquired in full. Every match of Brazil 2027 streams live with dual English- and Spanish-language telecasts and Netflix-produced studio coverage.",
+    "sources": [
+      {
+        "url": "https://inside.fifa.com/tournament-organisation/commercial/media-releases/fifa-netflix-historic-broadcast-deal-2027-2031-womens-world-cup",
+        "publisher": "FIFA",
+        "title": "FIFA and Netflix sign historic broadcast deal for 2027 and 2031 editions of FIFA Women's World Cup",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2024/tv/news/netflix-fifa-womens-world-cup-streaming-1236256174/",
+        "publisher": "Variety",
+        "title": "Netflix Scores FIFA Women's World Cup Exclusive U.S. Rights for 2027 and 2031",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.sportsvideo.org/2026/01/29/netflix-teases-coverage-plans-for-fifa-womens-world-cup-2027/",
+        "publisher": "Sports Video Group",
+        "title": "Netflix Teases Coverage Plans for FIFA Women's World Cup 2027",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-06-24",
+        "end_date": "2027-07-25",
+        "sources": [
+          {
+            "url": "https://www.fifa.com/en/tournaments/womens/womensworldcup/brazil-2027/articles/match-schedule-results-fixtures-teams-stadiums",
+            "publisher": "FIFA",
+            "title": "FIFA Women's World Cup Brazil 2027 Match Schedule",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.netflix.com/tudum/articles/womens-world-cup-netflix",
+            "publisher": "Netflix",
+            "title": "When Does the FIFA Women's World Cup 2027 Start? Dates, Teams and How to Watch on Netflix",
+            "tier": "official",
+            "field": "network",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://justwomenssports.com/reads/2027-womens-world-cup-match-schedule-brazil/",
+            "publisher": "Just Women's Sports",
+            "title": "Women's World Cup 2027: FIFA Drops Schedule Dates, Host Cities & Venues",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NFL Melbourne Game",
+    "slug": "nfl-melbourne-game",
+    "category": "streaming",
+    "subcategory": "single game",
+    "typical_month": 9,
+    "recurring": false,
+    "production_scale": 4,
+    "network": { "name": "Netflix", "is_streaming": true },
+    "description": "The NFL's first regular-season game in Australia — Rams against 49ers from the Melbourne Cricket Ground — streamed worldwide on Netflix. Local kickoff is Friday 11 September at 10:35 a.m. AEST, which is Thursday 10 September at 8:35 p.m. ET, with a Netflix-produced pregame, halftime and postgame studio show around it.",
+    "sources": [
+      {
+        "url": "https://www.netflix.com/tudum/articles/nfl-games-on-netflix",
+        "publisher": "Netflix",
+        "title": "NFL on Netflix 2026 Schedule: Australia Game, Thanksgiving Eve, Christmas, Week 18",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.mediaplaynews.com/netflix-sets-on-air-team-for-first-ever-regular-season-nfl-game-in-australia-on-sept-10/",
+        "publisher": "Media Play News",
+        "title": "Netflix Sets On-Air Team for First-Ever Regular Season NFL Game in Australia",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-11",
+        "show_date": "2026-09-11",
+        "city": {
+          "name": "Melbourne",
+          "state": "Victoria",
+          "country": "Australia",
+          "timezone": "Australia/Melbourne",
+          "lat": -37.8136,
+          "lng": 144.9631
+        },
+        "venue": { "name": "Melbourne Cricket Ground" },
+        "sources": [
+          {
+            "url": "https://www.netflix.com/tudum/articles/nfl-melbourne-game-2026-announcers",
+            "publisher": "Netflix",
+            "title": "NFL Melbourne Game Announcers: 2026 Broadcast Team",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.netflix.com/tudum/articles/nfl-games-on-netflix",
+            "publisher": "Netflix",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.thebiglead.com/netflix-will-air-nfl-2026-season-opener-first-game-ever-played-in-australia/",
+            "publisher": "The Big Lead",
+            "title": "Netflix Will Air NFL 2026 Season Opener, First Game Ever Played in Australia",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MLS on Apple TV",
+    "slug": "mls-on-apple-tv",
+    "category": "streaming",
+    "subcategory": "sports package",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Apple TV", "is_streaming": true },
+    "description": "Every Major League Soccer match, produced by Apple's live sports group since 2023 and folded into the base Apple TV subscription from 2026 when the standalone MLS Season Pass was retired. The package carries its own whip-around studio show, MLS 360, a featured Walmart Saturday Showdown match with an enhanced production, and bespoke English and Spanish graphics.",
+    "sources": [
+      {
+        "url": "https://www.apple.com/newsroom/2026/02/major-league-soccer-kicks-off-2026-season-on-apple-tv/",
+        "publisher": "Apple",
+        "title": "Major League Soccer kicks off 2026 season on Apple TV",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.macrumors.com/2026/02/19/major-league-soccer-2026-season-start/",
+        "publisher": "MacRumors",
+        "title": "MLS 2026 Season Begins February 21 on Apple TV With Free Access for Subscribers",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.forbes.com/sites/ianquillen/2026/02/12/as-mls-begins-year-4-on-apple-tv-heres-whats-new-in-2026/",
+        "publisher": "Forbes",
+        "title": "As MLS Begins Year 4 On Apple TV, Here's What's New In 2026",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-02-21",
+        "end_date": "2026-12-18",
+        "sources": [
+          {
+            "url": "https://www.apple.com/newsroom/2026/02/major-league-soccer-kicks-off-2026-season-on-apple-tv/",
+            "publisher": "Apple",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.mlssoccer.com/news/major-league-soccer-announces-audi-2026-mls-cup-playoffs-schedule",
+            "publisher": "Major League Soccer",
+            "title": "Major League Soccer Announces Audi 2026 MLS Cup Playoffs Schedule",
+            "tier": "official",
+            "field": "end_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.macrumors.com/2026/02/19/major-league-soccer-2026-season-start/",
+            "publisher": "MacRumors",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Friday Night Baseball",
+    "slug": "friday-night-baseball",
+    "category": "streaming",
+    "subcategory": "sports package",
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 3,
+    "network": { "name": "Apple TV", "is_streaming": true },
+    "production_company": { "name": "MLB Network" },
+    "description": "Apple TV's weekly MLB doubleheader, streamed to 60 countries with no local blackouts. The fifth season opened on 27 March 2026 and runs 25 weeks. MLB Network's production team works with Apple's live sports group, and iPhone is integrated into the camera package for selected games.",
+    "sources": [
+      {
+        "url": "https://www.apple.com/newsroom/2026/03/friday-night-baseball-returns-to-apple-tv-on-march-27-for-its-fifth-season/",
+        "publisher": "Apple",
+        "title": "\"Friday Night Baseball\" returns to Apple TV on March 27 for its fifth season",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://sports.yahoo.com/articles/mlb-apple-tv-schedule-2026-110001166.html",
+        "publisher": "Yahoo Sports",
+        "title": "MLB Apple TV schedule 2026: Dates, times and teams for every 'Friday Night Baseball' live stream",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Friday_Night_Baseball",
+        "publisher": "Wikipedia",
+        "title": "Friday Night Baseball",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-03-27",
+        "sources": [
+          {
+            "url": "https://www.apple.com/newsroom/2026/03/friday-night-baseball-returns-to-apple-tv-on-march-27-for-its-fifth-season/",
+            "publisher": "Apple",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.apple.com/newsroom/2026/08/apple-mlb-announce-september-friday-night-baseball-schedule/",
+            "publisher": "Apple",
+            "title": "Apple, MLB announce September \"Friday Night Baseball\" schedule",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://sports.yahoo.com/articles/mlb-apple-tv-schedule-2026-110001166.html",
+            "publisher": "Yahoo Sports",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Formula 1 on Apple TV",
+    "slug": "formula-1-on-apple-tv",
+    "category": "streaming",
+    "subcategory": "sports package",
+    "typical_month": 3,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Apple TV", "is_streaming": true },
+    "description": "Apple TV became Formula 1's exclusive United States broadcaster in 2026 under a five-year deal running through 2030, carrying every practice, qualifying, sprint and grand prix, with selected races and all practice sessions free in the Apple TV app. The 2026 season opened with the Australian Grand Prix on 7 March.",
+    "sources": [
+      {
+        "url": "https://www.apple.com/newsroom/2025/10/apple-is-the-exclusive-new-broadcast-partner-for-formula-1-in-the-us/",
+        "publisher": "Apple",
+        "title": "Apple is the exclusive new broadcast partner for Formula 1 in the US",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.espn.com/f1/story/_/id/46596025/formula-1-announces-new-apple-tv-us-broadcast-deal",
+        "publisher": "ESPN",
+        "title": "Formula 1 announces new Apple TV U.S. broadcast deal",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.motorsport.com/f1/news/what-happens-to-f1-tv-answers-questions-apple-tv-deal/10768316/",
+        "publisher": "Motorsport.com",
+        "title": "What happens to F1 TV, and answers to other questions on Apple's US deal",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-03-07",
+        "end_date": "2026-12-06",
+        "sources": [
+          {
+            "url": "https://www.apple.com/newsroom/2026/03/formula-1-begins-this-weekend-exclusively-on-apple-tv-in-the-us/",
+            "publisher": "Apple",
+            "title": "Formula 1 begins this weekend, exclusively on Apple TV in the U.S.",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://sports.yahoo.com/f1/article/2026-f1-season-how-to-watch-full-schedule-where-to-stream-formula-1-races-and-more-125525416.html",
+            "publisher": "Yahoo Sports",
+            "title": "2026 F1 season: How to watch the next grand prix, full schedule, where to stream",
+            "tier": "trade",
+            "field": "end_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Thursday Night Football",
+    "slug": "thursday-night-football",
+    "category": "streaming",
+    "subcategory": "sports package",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Prime Video", "is_streaming": true },
+    "description": "Prime Video's exclusive Thursday night NFL package, in its fifth season in 2026 with 16 regular-season games plus holiday windows on Black Friday, Christmas Eve and New Year's Eve. Al Michaels and Kirk Herbstreit call the main broadcast; TNF Tonight opens each week at 7 p.m. ET ahead of an 8:15 kickoff.",
+    "sources": [
+      {
+        "url": "https://www.aboutamazon.com/news/entertainment/thursday-night-football-schedule-prime-video",
+        "publisher": "Amazon",
+        "title": "Thursday Night Football 2026 schedule: How to watch on Prime Video",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-prime-video-unveils-its-16-game-regular-season-schedule",
+        "publisher": "NBC Sports",
+        "title": "Thursday Night Football: Prime Video unveils its 16-game regular-season schedule",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-17",
+        "end_date": "2026-12-31",
+        "sources": [
+          {
+            "url": "https://www.aboutamazon.com/news/entertainment/thursday-night-football-schedule-prime-video",
+            "publisher": "Amazon",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://sports.yahoo.com/articles/2026-thursday-night-football-full-172506126.html",
+            "publisher": "Yahoo Sports",
+            "title": "2026 Thursday Night Football full schedule",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Black Friday Football",
+    "slug": "black-friday-football",
+    "category": "streaming",
+    "subcategory": "single game",
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Prime Video", "is_streaming": true },
+    "description": "Prime Video's Friday-after-Thanksgiving NFL game, free to all viewers whether or not they hold a Prime membership. The 2026 edition, its fourth, is Broncos at Steelers with a 3 p.m. ET kickoff and a pregame show from 1:30 p.m. ET.",
+    "sources": [
+      {
+        "url": "https://www.aboutamazon.com/news/entertainment/thursday-night-football-schedule-prime-video",
+        "publisher": "Amazon",
+        "title": "Thursday Night Football 2026 schedule: How to watch on Prime Video",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-prime-video-unveils-its-16-game-regular-season-schedule",
+        "publisher": "NBC Sports",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-11-27",
+        "show_date": "2026-11-27",
+        "city": {
+          "name": "Pittsburgh",
+          "state": "PA",
+          "country": "USA",
+          "timezone": "America/New_York",
+          "lat": 40.4406,
+          "lng": -79.9959
+        },
+        "sources": [
+          {
+            "url": "https://www.aboutamazon.com/news/entertainment/thursday-night-football-schedule-prime-video",
+            "publisher": "Amazon",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://sports.yahoo.com/articles/2026-thursday-night-football-full-172506126.html",
+            "publisher": "Yahoo Sports",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NBA on Prime",
+    "slug": "nba-on-prime",
+    "category": "streaming",
+    "subcategory": "sports package",
+    "typical_month": 10,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Prime Video", "is_streaming": true },
+    "description": "Prime Video's NBA package — 67 regular-season games in 2026-27, the Emirates NBA Cup championship, all six Play-In Tournament games, selected first- and second-round playoff games and, for the first time, an exclusive Eastern Conference Finals. Wraparound shows NBA on Prime Pregame, The Half and NBA Nightcap originate from Amazon MGM Studios in Culver City, and Prime Vision offers an above-the-rim alternate feed.",
+    "sources": [
+      {
+        "url": "https://www.aboutamazon.com/news/entertainment/stream-nba-prime-video",
+        "publisher": "Amazon",
+        "title": "How to watch the 2026-27 NBA season on Prime Video",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nba.com/news/every-nba-game-on-prime-video-in-2026-27",
+        "publisher": "NBA",
+        "title": "Every NBA game on Prime Video in 2026-27",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.sportsvideo.org/2026/08/13/espn-abc-nbc-peacock-prime-video-set-national-slates-for-year-2-of-nba-rights-deal/",
+        "publisher": "Sports Video Group",
+        "title": "ESPN/ABC, NBC/Peacock, Prime Video Set National Slates for Year 2 of NBA Rights Deal",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-10-23",
+        "sources": [
+          {
+            "url": "https://www.aboutamazon.com/news/entertainment/stream-nba-prime-video",
+            "publisher": "Amazon",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.nba.com/news/hinkle-fieldhouse-to-host-emirates-nba-cup-2026-championship",
+            "publisher": "NBA",
+            "title": "Hinkle Fieldhouse to host Emirates NBA Cup 2026 Championship",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.sportsvideo.org/2026/08/13/espn-abc-nbc-peacock-prime-video-set-national-slates-for-year-2-of-nba-rights-deal/",
+            "publisher": "Sports Video Group",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NASCAR on Prime",
+    "slug": "nascar-on-prime",
+    "category": "streaming",
+    "subcategory": "sports package",
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 3,
+    "network": { "name": "Prime Video", "is_streaming": true },
+    "description": "Prime Video's five-race NASCAR Cup Series window each May and June, plus practice and qualifying through the first half of the season. The 2026 run opened with the Coca-Cola 600 at Charlotte and closed with the sport's first race at a military base, Naval Base Coronado in San Diego, covered with more than 70 cameras in native 1080p HDR.",
+    "sources": [
+      {
+        "url": "https://www.aboutamazon.com/news/entertainment/nascar-cup-series-race-prime-video",
+        "publisher": "Amazon",
+        "title": "NASCAR 2026 schedule: How to watch on Prime Video",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nascar.com/news-media/2026/01/28/how-to-watch-nascar-races-on-amazon-prime-video/",
+        "publisher": "NASCAR",
+        "title": "How to watch NASCAR races on Amazon Prime Video",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/NASCAR_on_Prime_Video",
+        "publisher": "Wikipedia",
+        "title": "NASCAR on Prime Video",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-05-24",
+        "end_date": "2026-06-21",
+        "sources": [
+          {
+            "url": "https://www.aboutamazon.com/news/entertainment/nascar-cup-series-race-prime-video",
+            "publisher": "Amazon",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.nascar.com/news-media/2026/01/28/how-to-watch-nascar-races-on-amazon-prime-video/",
+            "publisher": "NASCAR",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NFL Wild Card Game on Prime Video",
+    "slug": "nfl-wild-card-game-on-prime-video",
+    "category": "streaming",
+    "subcategory": "single game",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "Prime Video", "is_streaming": true },
+    "description": "Amazon's exclusive NFL playoff game, held under its rights deal through the 2027 postseason. It is not carried on national broadcast television outside the two competing markets, which makes it the only postseason game on the platform each year.",
+    "sources": [
+      {
+        "url": "https://www.aboutamazon.com/news/entertainment/thursday-night-football-schedule-prime-video",
+        "publisher": "Amazon",
+        "title": "Thursday Night Football 2026 schedule: How to watch on Prime Video",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://awfulannouncing.com/amazon/amazon-prime-video-keeping-wild-card-game.html",
+        "publisher": "Awful Announcing",
+        "title": "Amazon Prime Video keeping NFL Wild Card game in 2026, 2027",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.sportsmediawatch.com/2025/02/amazon-streaming-nfl-wild-card-game-two-more-seasons/",
+        "publisher": "Sports Media Watch",
+        "title": "Amazon gets Wild Card Game through end of its NFL rights deal",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "sources": [
+          {
+            "url": "https://www.aboutamazon.com/news/entertainment/thursday-night-football-schedule-prime-video",
+            "publisher": "Amazon",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://awfulannouncing.com/amazon/amazon-prime-video-keeping-wild-card-game.html",
+            "publisher": "Awful Announcing",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Peacock NBA Monday",
+    "slug": "peacock-nba-monday",
+    "category": "streaming",
+    "subcategory": "sports package",
+    "typical_month": 10,
+    "recurring": true,
+    "production_scale": 3,
+    "network": { "name": "Peacock", "is_streaming": true },
+    "description": "NBC Sports' Monday-night NBA window, presented on Peacock and NBCSN rather than the broadcast network — up to two games a week from late October through early April, each led in by a 30-minute studio show and shot in the \"On the Bench\" production format.",
+    "sources": [
+      {
+        "url": "https://www.nbcuniversal.com/article/nbc-sports-announces-its-complete-2026-27-nba-regular-season-schedule-featuring-100-games-across-nbc",
+        "publisher": "NBCUniversal",
+        "title": "NBC Sports Announces Its Complete 2026-27 NBA Regular-Season Schedule",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nba.com/news/every-nba-game-on-nbc-and-peacock-in-2026-27",
+        "publisher": "NBA",
+        "title": "Every NBA game on NBC, Peacock and NBCSN in 2026-27",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.sportsvideo.org/2026/08/13/espn-abc-nbc-peacock-prime-video-set-national-slates-for-year-2-of-nba-rights-deal/",
+        "publisher": "Sports Video Group",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-10-26",
+        "end_date": "2027-04-05",
+        "sources": [
+          {
+            "url": "https://www.nbcuniversal.com/article/nbc-sports-announces-its-complete-2026-27-nba-regular-season-schedule-featuring-100-games-across-nbc",
+            "publisher": "NBCUniversal",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.nbcsports.com/pressbox/press-releases/nbc-sports-announces-its-complete-2026-27-nba-regular-season-schedule-featuring-100-games-across-nbc-peacock-and-nbcsn",
+            "publisher": "NBC Sports",
+            "title": "NBC Sports announces its complete 2026-27 NBA regular-season schedule",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gold Zone",
+    "slug": "gold-zone",
+    "category": "streaming",
+    "subcategory": "whiparound show",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 3,
+    "network": { "name": "Peacock", "is_streaming": true },
+    "description": "NBC Olympics' whip-around show — one continuous live programme that cuts between venues as medals are decided, streamed on Peacock and NBCSN rather than the broadcast network. Scott Hanson, Andrew Siciliano, Jac Collinsworth and Matt Iseman anchored the first Winter Games edition across all 116 medal events at Milan Cortina 2026, with Ashley Wagner as the show's first analyst.",
+    "sources": [
+      {
+        "url": "https://www.nbcuniversal.com/article/gold-zone-team-reunites-milan-cortina-2026-olympic-winter-games",
+        "publisher": "NBCUniversal",
+        "title": "\"Gold Zone\" Team Reunites For The Milan Cortina 2026 Olympic Winter Games",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.hollywoodreporter.com/tv/tv-news/nbc-2026-winter-olympics-gold-zone-peacock-scott-hanson-1236223806/",
+        "publisher": "The Hollywood Reporter",
+        "title": "2026 Winter Olympics Gold Zone on Peacock with Scott Hanson Set",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-06",
+        "end_date": "2026-02-22",
+        "city": {
+          "name": "Milan",
+          "country": "Italy",
+          "timezone": "Europe/Rome",
+          "lat": 45.4642,
+          "lng": 9.19
+        },
+        "sources": [
+          {
+            "url": "https://www.nbcuniversal.com/article/gold-zone-team-reunites-milan-cortina-2026-olympic-winter-games",
+            "publisher": "NBCUniversal",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.nbcsports.com/pressbox/press-releases/scott-hanson-returns-to-host-gold-zone-for-2026-milan-cortina-olympic-winter-games-on-peacock",
+            "publisher": "NBC Sports",
+            "title": "Scott Hanson returns to host Gold Zone for 2026 Milan Cortina Olympic Winter Games on Peacock",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Premier League on Peacock",
+    "slug": "premier-league-on-peacock",
+    "category": "streaming",
+    "subcategory": "sports package",
+    "typical_month": 8,
+    "recurring": true,
+    "production_scale": 3,
+    "network": { "name": "Peacock", "is_streaming": true },
+    "description": "The Premier League matches NBC Sports carries only on Peacock — around 175 a season, more than any single channel — alongside simulcasts of the network games, full replays and studio programming. The 2026-27 season opened on 21 August 2026 and runs to 30 May 2027, with multiview added for the first time.",
+    "sources": [
+      {
+        "url": "https://www.peacocktv.com/sports/premier-league",
+        "publisher": "Peacock",
+        "title": "Premier League | Streaming on Peacock",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nbcuniversal.com/article/2026-27-premier-league-season-kicks-one-month-across-platforms-nbcuniversal-nbc-sports-studio-team",
+        "publisher": "NBCUniversal",
+        "title": "The 2026-27 Premier League Season Kicks Off in One Month Across Platforms of NBCUniversal",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released",
+        "publisher": "NBC Sports",
+        "title": "Premier League schedule for 2026-27 season: Dates, how to watch live",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-08-21",
+        "end_date": "2027-05-30",
+        "sources": [
+          {
+            "url": "https://www.peacocktv.com/blog/premier-league-2026-2027-peacock-schedule-dates-matches",
+            "publisher": "Peacock",
+            "title": "Premier League 2026-2027 on Peacock Schedule: Dates, Matches, How to Stream",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released",
+            "publisher": "NBC Sports",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NFL on YouTube",
+    "slug": "nfl-on-youtube",
+    "category": "streaming",
+    "subcategory": "single game",
+    "typical_month": 9,
+    "recurring": false,
+    "production_scale": 4,
+    "network": { "name": "YouTube", "is_streaming": true },
+    "description": "YouTube's exclusive NFL game — Chiefs against Chargers from Corinthians Arena in São Paulo on the opening Friday of the 2025 season, the first NFL game streamed live and free in its entirety on the platform worldwide, with Karol G at halftime. No further exclusive YouTube game has been confirmed.",
+    "sources": [
+      {
+        "url": "https://www.nfl.com/news/2025-nfl-schedule-release-chiefs-chargers-week-1-sao-paulo-brazil-youtube",
+        "publisher": "NFL",
+        "title": "2025 NFL schedule release: Chargers to face Chiefs in Week 1 game in Brazil",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://blog.youtube/news-and-events/chiefs-vs-chargers-recap/",
+        "publisher": "YouTube",
+        "title": "A record-breaking debut for the NFL on YouTube",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.espn.com/nfl/story/_/id/45130120/youtube-stream-week-1-nfl-brazil-game-free",
+        "publisher": "ESPN",
+        "title": "YouTube will stream Week 1 NFL Brazil game for free",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-09-05",
+        "show_date": "2025-09-05",
+        "city": {
+          "name": "São Paulo",
+          "country": "Brazil",
+          "timezone": "America/Sao_Paulo",
+          "lat": -23.5505,
+          "lng": -46.6333
+        },
+        "venue": { "name": "Corinthians Arena" },
+        "sources": [
+          {
+            "url": "https://media.nfl.com/news-and-releases/corporate-communications/2025-nfl-kickoff-weekend-presented-by-youtube-tv-opens-season-wi",
+            "publisher": "NFL",
+            "title": "2025 NFL Kickoff Weekend Opens Season with Return to Brazil",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.espn.com/nfl/story/_/id/45130120/youtube-stream-week-1-nfl-brazil-game-free",
+            "publisher": "ESPN",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "viewership": [
+      {
+        "year": 2025,
+        "average_viewers": 19700000,
+        "sources": [
+          {
+            "url": "https://www.thewrap.com/youtube-nielsen-update-nfl-brazil-game-numbers/",
+            "publisher": "TheWrap",
+            "title": "YouTube and Nielsen Update NFL Game Numbers to 19.7 Million Global Viewers",
+            "tier": "trade",
+            "field": "average_viewers",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Coachella Livestream",
+    "slug": "coachella-livestream",
+    "category": "streaming",
+    "subcategory": "festival livestream",
+    "typical_month": 4,
+    "recurring": true,
+    "production_scale": 4,
+    "network": { "name": "YouTube", "is_streaming": true },
+    "description": "YouTube's free livestream of the Coachella Valley Music and Arts Festival, produced across seven stages over two weekends with a four-stage multiview. For 2026 the Coachella Stage, Outdoor Theatre and Sahara streamed in 4K for the first time, and the Quasar stage carried a vertical feed shot on Pixel.",
+    "sources": [
+      {
+        "url": "https://blog.youtube/news-and-events/watch-coachella-livestream-youtube/",
+        "publisher": "YouTube",
+        "title": "How to watch the Coachella 2026 livestream on YouTube",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.coachella.com/youtube-livestream",
+        "publisher": "Coachella",
+        "title": "YouTube Livestream",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/music/news/streaming-coachella-2026-guide-youtube-channels-set-times-1236713032/",
+        "publisher": "Variety",
+        "title": "Livestreaming Coachella 2026: A Complete Guide to the YouTube Schedule for Weekend 2",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-04-10",
+        "end_date": "2026-04-19",
+        "city": {
+          "name": "Indio",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 33.7206,
+          "lng": -116.2156
+        },
+        "venue": { "name": "Empire Polo Club" },
+        "sources": [
+          {
+            "url": "https://blog.youtube/news-and-events/coachella-livestream-schedule-weekend-one-2026/",
+            "publisher": "YouTube",
+            "title": "Coachella 2026 Weekend 1 Livestream Schedule",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Coachella_2026",
+            "publisher": "Wikipedia",
+            "title": "Coachella 2026",
+            "tier": "reference",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TwitchCon",
+    "slug": "twitchcon",
+    "category": "streaming",
+    "subcategory": "creator convention",
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 3,
+    "network": { "name": "Twitch", "is_streaming": true },
+    "description": "Twitch's annual creator convention, built around the Glitch Theatre main stage, Twitch Rivals competitions, community meet-ups and cosplay showcases, with the stage programme streamed on Twitch itself. The 2026 North American edition runs 13-15 November at the San Diego Convention Center.",
+    "sources": [
+      {
+        "url": "https://www.twitchcon.com/san-diego-2026/",
+        "publisher": "TwitchCon",
+        "title": "TwitchCon San Diego 2026 | November 13-15, 2026",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/TwitchCon",
+        "publisher": "Wikipedia",
+        "title": "TwitchCon",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-11-13",
+        "end_date": "2026-11-15",
+        "city": {
+          "name": "San Diego",
+          "state": "CA",
+          "country": "USA",
+          "timezone": "America/Los_Angeles",
+          "lat": 32.7157,
+          "lng": -117.1611
+        },
+        "venue": { "name": "San Diego Convention Center" },
+        "sources": [
+          {
+            "url": "https://www.twitchcon.com/san-diego-2026/",
+            "publisher": "TwitchCon",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.pocketgamer.biz/events/twitchcon-san-diego-2026/",
+            "publisher": "PocketGamer.biz",
+            "title": "TwitchCon San Diego 2026",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  }
+]

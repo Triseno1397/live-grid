@@ -10,7 +10,7 @@ export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "14.15"
+    PostgrestVersion: "14.17"
   }
   graphql_public: {
     Tables: {
@@ -265,6 +265,81 @@ export type Database = {
           },
           {
             foreignKeyName: "editions_venue_id_fkey"
+            columns: ["venue_id"]
+            isOneToOne: false
+            referencedRelation: "venues"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      external_ids: {
+        Row: {
+          city_id: string | null
+          company_id: string | null
+          created_at: string
+          external_id: string
+          id: string
+          network_id: string | null
+          production_id: string | null
+          retrieved_on: string
+          source: string
+          venue_id: string | null
+        }
+        Insert: {
+          city_id?: string | null
+          company_id?: string | null
+          created_at?: string
+          external_id: string
+          id?: string
+          network_id?: string | null
+          production_id?: string | null
+          retrieved_on: string
+          source: string
+          venue_id?: string | null
+        }
+        Update: {
+          city_id?: string | null
+          company_id?: string | null
+          created_at?: string
+          external_id?: string
+          id?: string
+          network_id?: string | null
+          production_id?: string | null
+          retrieved_on?: string
+          source?: string
+          venue_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "external_ids_city_id_fkey"
+            columns: ["city_id"]
+            isOneToOne: false
+            referencedRelation: "cities"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "external_ids_company_id_fkey"
+            columns: ["company_id"]
+            isOneToOne: false
+            referencedRelation: "companies"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "external_ids_network_id_fkey"
+            columns: ["network_id"]
+            isOneToOne: false
+            referencedRelation: "networks"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "external_ids_production_id_fkey"
+            columns: ["production_id"]
+            isOneToOne: false
+            referencedRelation: "productions"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "external_ids_venue_id_fkey"
             columns: ["venue_id"]
             isOneToOne: false
             referencedRelation: "venues"

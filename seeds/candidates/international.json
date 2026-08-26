@@ -1,0 +1,2018 @@
+[
+  {
+    "qid": "Q42369",
+    "label": "Cannes Film Festival",
+    "description": "annual film festival held in Cannes, France",
+    "sitelinks": 113,
+    "suggestedCategory": "international",
+    "suggestedSlug": "cannes-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1946",
+      "officialWebsite": "https://www.festival-cannes.com",
+      "venue": "Cannes",
+      "city": "canton of Mandelieu-Cannes-Ouest",
+      "country": "France",
+      "coords": {
+        "lat": 43.5525,
+        "lng": 7.021389
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Palme%20d%27Or%20gold%20silhouette.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/70%20eme%20Festival%20du%20film%20Cannes.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Cannes_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q42369",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Cannes Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q130871",
+    "label": "Berlin International Film Festival",
+    "description": "annual film festival held in Berlin, Germany",
+    "sitelinks": 84,
+    "suggestedCategory": "international",
+    "suggestedSlug": "berlin-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1951",
+      "officialWebsite": "https://www.berlinale.de/",
+      "venue": "Berlin",
+      "city": "Germany",
+      "country": "Germany",
+      "coords": {
+        "lat": 52.516667,
+        "lng": 13.383333
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden%20Bear%20Logo.png?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Berlinale2007.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Berlin_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q130871",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Berlin International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q49024",
+    "label": "Venice Film Festival",
+    "description": "annual film festival held in Venice, Italy",
+    "sitelinks": 82,
+    "suggestedCategory": "international",
+    "suggestedSlug": "venice-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1932",
+      "officialWebsite": "https://www.labiennale.org/en/cinema/",
+      "venue": "Lido di Venezia",
+      "city": "Venice",
+      "country": "Italy",
+      "coords": {
+        "lat": 45.383333,
+        "lng": 12.35
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion%20of%20Venice.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mostra%20Internazionale%20d%E2%80%99Arte%20Cinematografica%20%28Venezia%29%20%284979198162%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Venice_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q49024",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Venice Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q161376",
+    "label": "Miss Universe",
+    "description": "annual international beauty pageant competition (1952–)",
+    "sitelinks": 81,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-universe",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1952",
+      "officialWebsite": "https://www.missuniverse.com",
+      "country": "United States",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Miss%20Universe%20Logotype.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_Universe"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q161376",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss Universe",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q173402",
+    "label": "Miss World",
+    "description": "beauty contest",
+    "sitelinks": 73,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-world",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1951",
+      "officialWebsite": "https://www.missworld.com/",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Miss%20World%2008%20winner%20Ksenia%20Sukhinova.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_World"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q173402",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss World",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q15669738",
+    "label": "Miss Grand International",
+    "description": "international beauty pageant franchised based in Thailand",
+    "sitelinks": 69,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-grand-international",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2013",
+      "officialWebsite": "https://missgrandinternational.com",
+      "country": "Thailand",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_Grand_International"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q15669738",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss Grand International",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q390018",
+    "label": "Toronto International Film Festival",
+    "description": "annual film festival held in Toronto, Canada",
+    "sitelinks": 61,
+    "suggestedCategory": "international",
+    "suggestedSlug": "toronto-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1976",
+      "officialWebsite": "https://www.tiff.net/",
+      "venue": "TIFF Lightbox",
+      "city": "Toronto",
+      "country": "Canada",
+      "coords": {
+        "lat": 43.646835,
+        "lng": -79.390221
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Toronto%20International%20Film%20Festival%20logo.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lightbox%202010-09-11%20I.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Toronto_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q390018",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Toronto International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q205751",
+    "label": "Venice Biennale",
+    "description": "biennial art exhibit in Venice, Italy",
+    "sitelinks": 53,
+    "suggestedCategory": "international",
+    "suggestedSlug": "venice-biennale",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1895",
+      "officialWebsite": "http://www.labiennale.org/en/",
+      "venue": "Ca' Giustinian",
+      "city": "Venice",
+      "country": "Italy",
+      "coords": {
+        "lat": 45.432315,
+        "lng": 12.336539
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Biennale.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Biennale%20di%20Venezia%202019.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Venice_Biennale"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q205751",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Venice Biennale",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q37049",
+    "label": "Filmfare Awards",
+    "description": "annual film awards in India",
+    "sitelinks": 49,
+    "suggestedCategory": "international",
+    "suggestedSlug": "filmfare-awards",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.filmfare.com/awards/",
+      "country": "India",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Saif%20%26%20Kareena.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Filmfare_Awards"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q37049",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Filmfare Awards",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q749235",
+    "label": "Moscow International Film Festival",
+    "description": "annual film festival held in Moscow, Russia",
+    "sitelinks": 46,
+    "suggestedCategory": "international",
+    "suggestedSlug": "moscow-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1935",
+      "officialWebsite": "https://fest.moscowfilmfestival.ru/",
+      "venue": "Moscow",
+      "city": "Russia",
+      "country": "Russia",
+      "coords": {
+        "lat": 55.750556,
+        "lng": 37.6175
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pushkinsky%20Cinema%2000.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Moscow_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q749235",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Moscow International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q238317",
+    "label": "Miss Earth",
+    "description": "Annual environmental-themed beauty contest",
+    "sitelinks": 45,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-earth",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2001",
+      "officialWebsite": "http://www.missearth.tv/",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/MissEarth2007.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_Earth"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q238317",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss Earth",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q502053",
+    "label": "Locarno Film Festival",
+    "description": "annual film festival in Locarno, Switzerland",
+    "sitelinks": 44,
+    "suggestedCategory": "international",
+    "suggestedSlug": "locarno-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1946",
+      "officialWebsite": "https://www.locarnofestival.ch",
+      "venue": "Locarno",
+      "city": "Locarno Subdistrict",
+      "country": "Switzerland",
+      "coords": {
+        "lat": 46.166389,
+        "lng": 8.799722
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza%20Grande%20Locarno.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Locarno_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q502053",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Locarno Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q475660",
+    "label": "Miss International",
+    "description": "beauty contest",
+    "sitelinks": 43,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-international",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1960",
+      "officialWebsite": "https://www.miss-international.org/",
+      "country": "internationality",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_International"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q475660",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss International",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q332869",
+    "label": "Karlovy Vary International Film Festival",
+    "description": "annual film festival held in Karlovy Vary, Czech Republic",
+    "sitelinks": 42,
+    "suggestedCategory": "international",
+    "suggestedSlug": "karlovy-vary-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1946",
+      "officialWebsite": "https://www.kviff.com/",
+      "venue": "Mariánské Lázně",
+      "city": "Mariánské Lázně",
+      "country": "Czech Republic",
+      "coords": {
+        "lat": 49.964704,
+        "lng": 12.70125
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/KVIFF%202024%20logo.png?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%C2%AB%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D0%B2%D1%80%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BA%D0%B0%C2%BB%2046-%D0%B3%D0%BE%20%D1%84%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D1%8F%20%D0%B2%20%D0%9A%D0%B0%D1%80%D0%BB%D0%BE%D0%B2%D1%8B%D1%85%20%D0%92%D0%B0%D1%80%D0%B0%D1%85%20%282011%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Karlovy_Vary_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q332869",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Karlovy Vary International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q622423",
+    "label": "San Sebastián International Film Festival",
+    "description": "annual film festival held in Donostia-San Sebastián, Spain",
+    "sitelinks": 40,
+    "suggestedCategory": "international",
+    "suggestedSlug": "san-sebastian-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1953",
+      "officialWebsite": "https://www.sansebastianfestival.com/home/2/in",
+      "venue": "San Sebastián",
+      "city": "Donostialdea",
+      "country": "Spain",
+      "coords": {
+        "lat": 43.32,
+        "lng": -1.98
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/San%20Sebastian%20Kursaal%20Festival.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/San_Sebasti%C3%A1n_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q622423",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "San Sebastián International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q728711",
+    "label": "Playboy Playmate",
+    "description": "female model featured in a centerfold of Playboy magazine",
+    "sitelinks": 34,
+    "suggestedCategory": "international",
+    "suggestedSlug": "playboy-playmate",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.playboyplus.com/category/playmates",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Photokina%202010%20model%20playmates.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Playboy_Playmate"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q728711",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Playboy Playmate",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q402873",
+    "label": "International Film Festival of India",
+    "description": "annual international film festival in India",
+    "sitelinks": 33,
+    "suggestedCategory": "international",
+    "suggestedSlug": "international-film-festival-of-india",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1952",
+      "officialWebsite": "https://iffigoa.org/",
+      "venue": "Goa",
+      "city": "India",
+      "country": "India",
+      "coords": {
+        "lat": 15.401944,
+        "lng": 74.043333
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Shreya%20Ghoshal%20at%2054th%20IFFI.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/International_Film_Festival_of_India"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q402873",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "International Film Festival of India",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1408677",
+    "label": "Annecy International Animation Film Festival",
+    "description": "annual film festival held in Annecy, France",
+    "sitelinks": 32,
+    "suggestedCategory": "international",
+    "suggestedSlug": "annecy-international-animation-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1960",
+      "officialWebsite": "https://www.annecy.org/",
+      "venue": "Annecy",
+      "city": "arrondissement of Annecy",
+      "country": "France",
+      "coords": {
+        "lat": 45.899167,
+        "lng": 6.129444
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Festival%20international%20du%20film%20d%27animation%20d%27Annecy.png?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ecrangeant.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Annecy_International_Animation_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1408677",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Annecy International Animation Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1043431",
+    "label": "Tokyo International Film Festival",
+    "description": "international film festival held annually in Tokyo, Japan",
+    "sitelinks": 31,
+    "suggestedCategory": "international",
+    "suggestedSlug": "tokyo-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1985",
+      "officialWebsite": "https://www.tiff-jp.net/",
+      "venue": "Tokyo",
+      "city": "Japan",
+      "country": "Japan",
+      "coords": {
+        "lat": 35.689444,
+        "lng": 139.691667
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Day%20bfefore%20Tokyo%20International%20Film%20festival%2C%20at%20EX%20Theater%20Roppongi.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Tokyo_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1043431",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Tokyo International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1323689",
+    "label": "BFI London Film Festival",
+    "description": "annual film festival held in London, United Kingdom",
+    "sitelinks": 30,
+    "suggestedCategory": "international",
+    "suggestedSlug": "bfi-london-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1956",
+      "officialWebsite": "https://www.bfi.org.uk/",
+      "venue": "London",
+      "city": "Greater London",
+      "country": "United Kingdom",
+      "coords": {
+        "lat": 51.507222,
+        "lng": -0.1275
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20cast%20and%20crew%20of%20%27Breathe%27%20at%20London%20Film%20Festival%20%2836791632254%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/BFI_London_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1323689",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "BFI London Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q167737",
+    "label": "Mister World",
+    "description": "male beauty contest",
+    "sitelinks": 29,
+    "suggestedCategory": "international",
+    "suggestedSlug": "mister-world",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1996",
+      "officialWebsite": "http://www.mrworld.tv/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Mister_World"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q167737",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Mister World",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q935127",
+    "label": "Sarajevo Film Festival",
+    "description": "annual film festival held in Sarajevo, Bosnia and Herzegovina",
+    "sitelinks": 29,
+    "suggestedCategory": "international",
+    "suggestedSlug": "sarajevo-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1995",
+      "officialWebsite": "http://www.sff.ba/",
+      "venue": "Sarajevo",
+      "city": "Sarajevo Canton",
+      "country": "Bosnia and Herzegovina",
+      "coords": {
+        "lat": 43.856389,
+        "lng": 18.413056
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarajevo%20Film%20Festival%20%28Collage%29.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Sarajevo_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q935127",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Sarajevo Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q845751",
+    "label": "Miss Europe",
+    "description": "beauty contest",
+    "sitelinks": 28,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-europe",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1927",
+      "officialWebsite": "http://misseurope.eu/",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Miss%20Europa%20verkiezingen%20op%20Canarische%20Eilanden%20met%20o.a%20de%20Nederlandse%20vertegen%E2%80%A6%2C%20Bestanddeelnr%20927-1482.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_Europe"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q845751",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss Europe",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1025968",
+    "label": "Cairo International Film Festival",
+    "description": "annual film festival held in Cairo, Egypt",
+    "sitelinks": 28,
+    "suggestedCategory": "international",
+    "suggestedSlug": "cairo-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1976",
+      "officialWebsite": "https://www.ciff.org.eg/",
+      "venue": "Cairo Opera House",
+      "city": "Giza Governorate",
+      "country": "Egypt",
+      "coords": {
+        "lat": 30.04245,
+        "lng": 31.223531
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cairo%20opera%20house.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Cairo_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1025968",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Cairo International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q482633",
+    "label": "Busan International Film Festival",
+    "description": "annual film festival held in Busan, South Korea",
+    "sitelinks": 28,
+    "suggestedCategory": "international",
+    "suggestedSlug": "busan-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1996",
+      "officialWebsite": "http://www.biff.kr/",
+      "venue": "Busan Cinema Center",
+      "city": "U-dong",
+      "country": "South Korea",
+      "coords": {
+        "lat": 35.171164,
+        "lng": 129.127189
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Biff%20logo.jpg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Opening%20ceremony.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Busan_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q482633",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Busan International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2014576",
+    "label": "Femina Miss India",
+    "description": "Indian beauty pageant",
+    "sitelinks": 27,
+    "suggestedCategory": "international",
+    "suggestedSlug": "femina-miss-india",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1952",
+      "officialWebsite": "https://www.femina.in/beauty-pageants/",
+      "country": "India",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fmi%202008.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Femina_Miss_India"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2014576",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Femina Miss India",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1187807",
+    "label": "Miss France",
+    "description": "national beauty pageant in France, started in 1920",
+    "sitelinks": 26,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-france",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1920",
+      "officialWebsite": "https://www.miss-france.fr",
+      "broadcaster": "TF1",
+      "country": "France",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_France"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1187807",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss France",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1202380",
+    "label": "Panafrican Film and Television Festival of Ouagadougou",
+    "description": "annual film festival held in Ouagadougou, Burkina Faso",
+    "sitelinks": 26,
+    "suggestedCategory": "international",
+    "suggestedSlug": "panafrican-film-and-television-festival-of-ouagadougou",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1969",
+      "officialWebsite": "https://fespaco.bf/",
+      "venue": "Ouagadougou",
+      "city": "Ouagadougou Department",
+      "country": "Burkina Faso",
+      "coords": {
+        "lat": 12.368611,
+        "lng": -1.5275
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20du%20FESPACO.jpg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Siege%20FESPACO%20Ouaga.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Panafrican_Film_and_Television_Festival_of_Ouagadougou"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1202380",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Panafrican Film and Television Festival of Ouagadougou",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q975945",
+    "label": "Sitges Film Festival",
+    "description": "annual film festival held in Sitges, Spain",
+    "sitelinks": 26,
+    "suggestedCategory": "international",
+    "suggestedSlug": "sitges-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1967",
+      "officialWebsite": "https://sitgesfilmfestival.com/",
+      "venue": "Sitges",
+      "city": "Garraf",
+      "country": "Spain",
+      "coords": {
+        "lat": 41.233889,
+        "lng": 1.804167
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Festival%20Sitges-2008.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Sitges_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q975945",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Sitges Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q326220",
+    "label": "Montreal World Film Festival",
+    "description": "annual film festival held in Montreal, Canada",
+    "sitelinks": 26,
+    "suggestedCategory": "international",
+    "suggestedSlug": "montreal-world-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1977",
+      "officialWebsite": "https://www.ffm-montreal.org/",
+      "venue": "Montreal",
+      "city": "Urban agglomeration of Montreal",
+      "country": "Canada",
+      "coords": {
+        "lat": 45.503343,
+        "lng": -73.586841
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Montreal_World_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q326220",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Montreal World Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q477369",
+    "label": "Shanghai International Film Festival",
+    "description": "annual film festival held in Shanghai, China",
+    "sitelinks": 26,
+    "suggestedCategory": "international",
+    "suggestedSlug": "shanghai-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1993",
+      "officialWebsite": "http://www.siff.com/",
+      "venue": "Shanghai",
+      "city": "People's Republic of China",
+      "country": "People's Republic of China",
+      "coords": {
+        "lat": 31.2325,
+        "lng": 121.469167
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sebastian%20Bieniek%20Pressekonferenz%2010th%20Shanghai%20International%20Film%20Festival%202007.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Shanghai_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q477369",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Shanghai International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1666554",
+    "label": "International Film Festival Rotterdam",
+    "description": "annual film festival held in the Netherlands",
+    "sitelinks": 25,
+    "suggestedCategory": "international",
+    "suggestedSlug": "international-film-festival-rotterdam",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://iffr.com/",
+      "venue": "Rotterdam",
+      "city": "Rotterdam",
+      "country": "Netherlands",
+      "coords": {
+        "lat": 51.92,
+        "lng": 4.48
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/International%20Film%20Festival%20Rotterdam%20logo.jpg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/See%20you%20next%20year%2C%20Filmfestival%20friends%21%20%283229070579%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/International_Film_Festival_Rotterdam"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1666554",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "International Film Festival Rotterdam",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1666659",
+    "label": "International Istanbul Film Festival",
+    "description": "annual film festival held in Istanbul, Turkey",
+    "sitelinks": 25,
+    "suggestedCategory": "international",
+    "suggestedSlug": "international-istanbul-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1982",
+      "officialWebsite": "http://film.iksv.org/",
+      "venue": "Istanbul",
+      "city": "Istanbul Province",
+      "country": "Turkey",
+      "coords": {
+        "lat": 41.01,
+        "lng": 28.960278
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/International_Istanbul_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1666659",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "International Istanbul Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1189350",
+    "label": "Miss Italia",
+    "description": "Italian beauty contest",
+    "sitelinks": 24,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-italia",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1946",
+      "officialWebsite": "http://www.missitalia.it",
+      "country": "Italy",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Missitalia1971.4.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_Italia"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1189350",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss Italia",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1578899",
+    "label": "Warsaw International Film Festival",
+    "description": "annual film festival held in Warsaw, Poland",
+    "sitelinks": 23,
+    "suggestedCategory": "international",
+    "suggestedSlug": "warsaw-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1985",
+      "officialWebsite": "http://www.wff.pl",
+      "venue": "Warsaw",
+      "city": "Masovian Voivodeship",
+      "country": "Poland",
+      "coords": {
+        "lat": 52.23,
+        "lng": 21.011111
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Warsaw%20film%20festival.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Warsaw_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1578899",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Warsaw International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q949173",
+    "label": "Mar del Plata Film Festival",
+    "description": "annual film festival in Mar del Plata, Argentina",
+    "sitelinks": 23,
+    "suggestedCategory": "international",
+    "suggestedSlug": "mar-del-plata-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1954",
+      "officialWebsite": "http://www.mardelplatafilmfest.com/",
+      "venue": "Mar del Plata",
+      "city": "General Pueyrredón Partido",
+      "country": "Argentina",
+      "coords": {
+        "lat": -38,
+        "lng": -57.55
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mar%20del%20Plata%20panor%C3%A1mica.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Mar_del_Plata_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q949173",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Mar del Plata Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1149219",
+    "label": "Miss Russia",
+    "description": "National beauty pageant competition in Russia",
+    "sitelinks": 23,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-russia",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1993",
+      "officialWebsite": "https://www.missrussia.ru/",
+      "country": "Russia",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Final%20Miss%20Russia%202010.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_Russia"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1149219",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss Russia",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3070476",
+    "label": "International Antalya Film Festival",
+    "description": "annual film festival held in Antalya, Turkey",
+    "sitelinks": 23,
+    "suggestedCategory": "international",
+    "suggestedSlug": "international-antalya-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1963",
+      "officialWebsite": "http://www.antalyaff.com/",
+      "venue": "Antalya",
+      "city": "Antalya Province",
+      "country": "Turkey",
+      "coords": {
+        "lat": 36.90812,
+        "lng": 30.69556
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Antalya_Golden_Orange_Film_Festival",
+      "pastDate": "1964-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3070476",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "International Antalya Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q39336",
+    "label": "Rome Film Festival",
+    "description": "film festival that takes place in Rome, Italy",
+    "sitelinks": 22,
+    "suggestedCategory": "international",
+    "suggestedSlug": "rome-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2006",
+      "officialWebsite": "http://www.romacinemafest.it/",
+      "venue": "Rome",
+      "city": "Metropolitan City of Rome",
+      "country": "Italy",
+      "coords": {
+        "lat": 41.893056,
+        "lng": 12.482778
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Rome_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q39336",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Rome Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1284745",
+    "label": "Edinburgh International Film Festival",
+    "description": "annual film festival held in Edinburgh, Scotland",
+    "sitelinks": 22,
+    "suggestedCategory": "international",
+    "suggestedSlug": "edinburgh-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1947",
+      "officialWebsite": "http://www.edfilmfest.org.uk/",
+      "venue": "Edinburgh",
+      "city": "City of Edinburgh",
+      "country": "United Kingdom",
+      "coords": {
+        "lat": 55.953333,
+        "lng": -3.189167
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Edinburgh%20Film%20House%20-%20geograph.org.uk%20-%201321613.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Edinburgh_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1284745",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Edinburgh International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1262315",
+    "label": "Pula Film Festival",
+    "description": "annual film festival held in Pula, Croatia (1954–)",
+    "sitelinks": 22,
+    "suggestedCategory": "international",
+    "suggestedSlug": "pula-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1954",
+      "officialWebsite": "http://www.pulafilmfestival.hr/",
+      "venue": "Pula",
+      "city": "Istria County",
+      "country": "Croatia",
+      "coords": {
+        "lat": 44.870278,
+        "lng": 13.845556
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Croat%20fg171.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Pula_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1262315",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Pula Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2705954",
+    "label": "Miss Supranational",
+    "description": "international beauty pageant",
+    "sitelinks": 22,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-supranational",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2009",
+      "officialWebsite": "http://www.misssupranational.com/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_and_Mister_Supranational"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2705954",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss Supranational",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q141108",
+    "label": "Fajr International Film Festival",
+    "description": "annual film festival held in Tehran, Iran",
+    "sitelinks": 21,
+    "suggestedCategory": "international",
+    "suggestedSlug": "fajr-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1982",
+      "officialWebsite": "https://www.fajrfilmfestival.com/",
+      "venue": "Tehran",
+      "city": "Central District",
+      "country": "Iran",
+      "coords": {
+        "lat": 35.688889,
+        "lng": 51.389722
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fajr%20Film%20Festival%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Fajr_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q141108",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Fajr International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q158428",
+    "label": "Stockholm International Film Festival",
+    "description": "annual film festival held in Stockholm, Sweden",
+    "sitelinks": 21,
+    "suggestedCategory": "international",
+    "suggestedSlug": "stockholm-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1990",
+      "officialWebsite": "http://www.stockholmfilmfestival.se",
+      "venue": "Stockholm",
+      "city": "Stockholm Municipality",
+      "country": "Sweden",
+      "coords": {
+        "lat": 59.329444,
+        "lng": 18.068611
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Filmfestival%202009a.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Stockholm_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q158428",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Stockholm International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q617729",
+    "label": "Jerusalem Film Festival",
+    "description": "film festival",
+    "sitelinks": 21,
+    "suggestedCategory": "international",
+    "suggestedSlug": "jerusalem-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1984",
+      "officialWebsite": "http://www.jff.org.il",
+      "venue": "Jerusalem",
+      "city": "Quds Governorate",
+      "country": "Israel",
+      "coords": {
+        "lat": 31.776679,
+        "lng": 35.234156
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-film-festival.png?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Filmfestival2009.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Jerusalem_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q617729",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Jerusalem Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1807073",
+    "label": "Molodist Kyiv International Film Festival",
+    "description": "annual film festival held in Kyiv, Ukraine",
+    "sitelinks": 21,
+    "suggestedCategory": "international",
+    "suggestedSlug": "molodist-kyiv-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1970",
+      "officialWebsite": "http://www.molodist.com/",
+      "venue": "Kyiv",
+      "city": "Ukraine",
+      "country": "Ukraine",
+      "coords": {
+        "lat": 50.45,
+        "lng": 30.523611
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Kyiv_International_Film_Festival_%22Molodist%22"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1807073",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Molodist Kyiv International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q4331458",
+    "label": "Odesa International Film Festival",
+    "description": "annual film festival held in Odesa, Ukraine",
+    "sitelinks": 20,
+    "suggestedCategory": "international",
+    "suggestedSlug": "odesa-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2010",
+      "officialWebsite": "http://www.oiff.com.ua/",
+      "venue": "Odesa",
+      "city": "Odesa Urban Hromada",
+      "country": "Ukraine",
+      "coords": {
+        "lat": 46.47747,
+        "lng": 30.73262
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/OdFestival%20priz.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Odesa_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q4331458",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Odesa International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1666506",
+    "label": "International Documentary Film Festival Amsterdam",
+    "description": "film festival",
+    "sitelinks": 20,
+    "suggestedCategory": "international",
+    "suggestedSlug": "international-documentary-film-festival-amsterdam",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1988",
+      "officialWebsite": "http://www.idfa.nl",
+      "venue": "Amsterdam",
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "coords": {
+        "lat": 52.366667,
+        "lng": 4.883333
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/IDFA%20logo%20RGB%20black.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/International_Documentary_Film_Festival_Amsterdam"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1666506",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "International Documentary Film Festival Amsterdam",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2093235",
+    "label": "Miss International Queen",
+    "description": "beauty pageant for transgender women",
+    "sitelinks": 20,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-international-queen",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2004",
+      "officialWebsite": "http://www.missinternationalqueen.com/",
+      "country": "Thailand",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_International_Queen"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2093235",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss International Queen",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3046725",
+    "label": "Tallinn Black Nights Film Festival",
+    "description": "film festival taken place in Tallinn, Estonia",
+    "sitelinks": 20,
+    "suggestedCategory": "international",
+    "suggestedSlug": "tallinn-black-nights-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1997",
+      "officialWebsite": "https://poff.ee/",
+      "venue": "Tallinn",
+      "city": "Tallinn",
+      "country": "Estonia",
+      "coords": {
+        "lat": 59.437222,
+        "lng": 24.745
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Tallinn_Black_Nights_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3046725",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Tallinn Black Nights Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q241257",
+    "label": "Japan Record Awards",
+    "description": "Japanese music award",
+    "sitelinks": 19,
+    "suggestedCategory": "international",
+    "suggestedSlug": "japan-record-awards",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1959",
+      "officialWebsite": "https://www.jacompa.or.jp/record/",
+      "broadcaster": "TBS Television",
+      "venue": "New National Theatre Tokyo",
+      "venueCapacity": 14471,
+      "city": "Honmachi",
+      "country": "Japan",
+      "coords": {
+        "lat": 35.6825,
+        "lng": 139.685556
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Japan%20Record%20Awards.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Japan_Record_Awards"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q241257",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Japan Record Awards",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q609508",
+    "label": "Vienna International Film Festival",
+    "description": "annual film festival held in Vienna, Austria",
+    "sitelinks": 19,
+    "suggestedCategory": "international",
+    "suggestedSlug": "vienna-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1960",
+      "officialWebsite": "http://www.viennale.at/",
+      "venue": "Vienna",
+      "city": "Austria",
+      "country": "Austria",
+      "coords": {
+        "lat": 48.208333,
+        "lng": 16.3725
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Viennale%20logo.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Urania-Eingang.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Vienna_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q609508",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Vienna International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1661095",
+    "label": "Independent Games Festival",
+    "description": "annual video games festival",
+    "sitelinks": 19,
+    "suggestedCategory": "international",
+    "suggestedSlug": "independent-games-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1999",
+      "officialWebsite": "http://www.igf.com/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Independent_Games_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1661095",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Independent Games Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1325279",
+    "label": "Fantasporto",
+    "description": "Fantastic Film Festival in Porto",
+    "sitelinks": 19,
+    "suggestedCategory": "international",
+    "suggestedSlug": "fantasporto",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1981",
+      "officialWebsite": "http://www.fantasporto.com/",
+      "venue": "Porto",
+      "city": "Metropolitan Area of Porto",
+      "country": "Portugal",
+      "coords": {
+        "lat": 41.15,
+        "lng": -8.610833
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Fantasporto"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1325279",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Fantasporto",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3070717",
+    "label": "International Film Festival of Marrakech",
+    "description": "annual film festival held in Marrakech, Morocco",
+    "sitelinks": 19,
+    "suggestedCategory": "international",
+    "suggestedSlug": "international-film-festival-of-marrakech",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2001",
+      "officialWebsite": "https://marrakech-festival.com/",
+      "venue": "Marrakech",
+      "city": "Marrakesh Prefecture",
+      "country": "Morocco",
+      "coords": {
+        "lat": 31.62947,
+        "lng": -7.98108
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Marrakech%20International%20Film%20Festival%20Logo.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Marrakech_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3070717",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "International Film Festival of Marrakech",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q253755",
+    "label": "Miss Venezuela",
+    "description": "Venezuela beauty pageant",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-venezuela",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1952",
+      "officialWebsite": "http://www.missvenezuela.com/",
+      "country": "Venezuela",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Miss_Venezuela"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q253755",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss Venezuela",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q612421",
+    "label": "Mister International (Thailand)",
+    "description": "international male beauty pageant that the Mister International Organization runs since 2006",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "mister-international-thailand",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2006",
+      "officialWebsite": "https://www.misterinternational.org/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Mister_International_(Thailand)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q612421",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Mister International (Thailand)",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1559713",
+    "label": "Gothenburg Film Festival",
+    "description": "annual film festival held in Gothenburg, Sweden",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "gothenburg-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1979",
+      "officialWebsite": "https://goteborgfilmfestival.se/",
+      "venue": "Gothenburg",
+      "city": "Mölndal Municipality",
+      "country": "Sweden",
+      "coords": {
+        "lat": 57.7075,
+        "lng": 11.9675
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Draken%2C%20Cinema-04%20fragment.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Gothenburg_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1559713",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Gothenburg Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1576451",
+    "label": "Thessaloniki International Film Festival",
+    "description": "annual film festival held in Thessaloniki, Greece",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "thessaloniki-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1960",
+      "officialWebsite": "http://www.filmfestival.gr/",
+      "venue": "Thessaloniki",
+      "city": "Thessaloniki Municipality",
+      "country": "Greece",
+      "coords": {
+        "lat": 40.640278,
+        "lng": 22.935556
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Collage%20of%20Thessaloniki%20International%20Film%20Festival%20Stills.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Thessaloniki_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1576451",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Thessaloniki International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2005904",
+    "label": "Vancouver International Film Festival",
+    "description": "annual film festival held",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "vancouver-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1982",
+      "officialWebsite": "http://www.viff.org/",
+      "venue": "Vancouver",
+      "city": "Metro Vancouver Regional District",
+      "country": "Canada",
+      "coords": {
+        "lat": 49.260833,
+        "lng": -123.113889
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/2017%20Vancouver%20International%20Film%20Festival%20Logo.jpg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Van-intl-film-ctr.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Vancouver_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2005904",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Vancouver International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q838403",
+    "label": "Directors' Fortnight",
+    "description": "independent section held in parallel to the Cannes Film Festival",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "directors-fortnight",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1969",
+      "officialWebsite": "https://www.quinzaine-cineastes.fr/",
+      "venue": "Cannes",
+      "city": "canton of Mandelieu-Cannes-Ouest",
+      "country": "France",
+      "coords": {
+        "lat": 43.5525,
+        "lng": 7.021389
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rencontre%20Jia%20Zhangke-6.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Directors%27_Fortnight"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q838403",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Directors' Fortnight",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q921142",
+    "label": "Manhunt International",
+    "description": "male beauty contest",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "manhunt-international",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1993",
+      "officialWebsite": "http://www.manhunt.com.sg/newdesign/index.php",
+      "country": "Singapore",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kevin%20Dasom%2C%20Mister%20Supranational%20Thailand%202018.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Manhunt_International"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q921142",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Manhunt International",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2268939",
+    "label": "Valladolid International Film Festival",
+    "description": "annual film festival held in Valladolid, Spain",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "valladolid-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1956",
+      "officialWebsite": "http://www.seminci.es/",
+      "venue": "Teatro Calderón",
+      "venueCapacity": 1141,
+      "city": "Valladolid",
+      "country": "Spain",
+      "coords": {
+        "lat": 41.6542,
+        "lng": -4.72472
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Claqueta%20de%20la%20Seminci%202007.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Valladolid_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2268939",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Valladolid International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3066295",
+    "label": "Fantasia International Film Festival",
+    "description": "Canadian film festival",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "fantasia-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1996",
+      "officialWebsite": "http://www.fantasiafestival.com",
+      "venue": "Montreal",
+      "city": "Urban agglomeration of Montreal",
+      "country": "Canada",
+      "coords": {
+        "lat": 45.503343,
+        "lng": -73.586841
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fantasia%20Logo-2024-full.png?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Montreal%20050.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Fantasia_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3066295",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Fantasia International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3070706",
+    "label": "Dubai International Film Festival",
+    "description": "film festival in UAE, founded 2004",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "dubai-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2004",
+      "officialWebsite": "https://dubaifilmfest.com/",
+      "venue": "Dubai",
+      "city": "Emirate of Dubai",
+      "country": "United Arab Emirates",
+      "coords": {
+        "lat": 25.269722,
+        "lng": 55.309444
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Dubai_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3070706",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Dubai International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3269994",
+    "label": "Animafest Zagreb",
+    "description": "world festival of animated film",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "animafest-zagreb",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1972",
+      "officialWebsite": "http://www.animafest.hr/",
+      "venue": "Zagreb",
+      "city": "Croatia",
+      "country": "Croatia",
+      "coords": {
+        "lat": 45.813056,
+        "lng": 15.977222
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Animafest_Zagreb"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3269994",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Animafest Zagreb",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q968354",
+    "label": "Miss Intercontinental",
+    "description": "List of Miss Intercontinental winners (1971–present)",
+    "sitelinks": 18,
+    "suggestedCategory": "international",
+    "suggestedSlug": "miss-intercontinental",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1971",
+      "officialWebsite": "http://missintercontinental.de/"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q968354",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Miss Intercontinental",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q62027142",
+    "label": "Mawjoudin Queer Film Festival",
+    "description": "annual festival held in Tunis, Tunisia",
+    "sitelinks": 17,
+    "suggestedCategory": "international",
+    "suggestedSlug": "mawjoudin-queer-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2018",
+      "officialWebsite": "https://www.mawjoudin.org/fr/mqff/",
+      "venue": "Tunis",
+      "city": "Tunis Governorate",
+      "country": "Tunisia",
+      "coords": {
+        "lat": 36.800833,
+        "lng": 10.18
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20of%20Mawjoudin%20Queer%20Film%20Festival%2001.png?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20of%20Mawjoudin%20Queer%20Film%20Festival%2001.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Mawjoudin_Queer_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q62027142",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Mawjoudin Queer Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q543565",
+    "label": "Munich International Film Festival",
+    "description": "annual film festival held in Munich, Germany",
+    "sitelinks": 17,
+    "suggestedCategory": "international",
+    "suggestedSlug": "munich-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1983",
+      "officialWebsite": "https://www.filmfest-muenchen.de/",
+      "venue": "Munich",
+      "city": "Upper Bavaria",
+      "country": "Germany",
+      "coords": {
+        "lat": 48.1375,
+        "lng": 11.575
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Weltpremiere%20%22Die%20H%C3%A4nde%20meiner%20Mutter%22%20auf%20dem%20Filmfest%20M%C3%BCnchen%202016.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Filmfest_M%C3%BCnchen"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q543565",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Munich International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q647768",
+    "label": "Norwegian International Film Festival",
+    "description": "annual film festival held in Haugesund, Norway",
+    "sitelinks": 17,
+    "suggestedCategory": "international",
+    "suggestedSlug": "norwegian-international-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1973",
+      "officialWebsite": "https://www.filmfestivalen.no/",
+      "venue": "Haugesund Municipality",
+      "city": "Rogaland",
+      "country": "Norway",
+      "coords": {
+        "lat": 59.41015,
+        "lng": 5.27551
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegian%20International%20Film%20Festival%20logo.png?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Norwegian%20International%20Film%20Festival%20-%20Red%20Carpet.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Norwegian_International_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q647768",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Norwegian International Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1427084",
+    "label": "Film Fest Gent",
+    "description": "annual film festival in Ghent, Belgium",
+    "sitelinks": 17,
+    "suggestedCategory": "international",
+    "suggestedSlug": "film-fest-gent",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1974",
+      "officialWebsite": "https://www.filmfestival.be/",
+      "venue": "Ghent",
+      "city": "Arrondissement of Ghent",
+      "country": "Belgium",
+      "coords": {
+        "lat": 51.053611,
+        "lng": 3.725278
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Film%20Fest%20Gent%20logo.jpg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Filmfestgent2014.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Film_Fest_Gent"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1427084",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Film Fest Gent",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1249934",
+    "label": "Monte-Carlo Television Festival",
+    "description": "annual festival held in Montecarlo",
+    "sitelinks": 17,
+    "suggestedCategory": "international",
+    "suggestedSlug": "monte-carlo-television-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1961",
+      "officialWebsite": "http://www.tvfestival.com",
+      "venue": "Monte Carlo",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "coords": {
+        "lat": 43.738942,
+        "lng": 7.425237
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Salle%20des%20Pinces.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Monte-Carlo_Television_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1249934",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Monte-Carlo Television Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1408657",
+    "label": "Deauville American Film Festival",
+    "description": "film festival in Deauville, Normandy, France",
+    "sitelinks": 17,
+    "suggestedCategory": "international",
+    "suggestedSlug": "deauville-american-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1975",
+      "officialWebsite": "https://www.festival-deauville.com/",
+      "venue": "Deauville",
+      "city": "canton of Trouville-sur-Mer",
+      "country": "France",
+      "coords": {
+        "lat": 49.359167,
+        "lng": 0.074444
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bech%20Deauville%20IMG%203907aa.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Deauville_American_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1408657",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Deauville American Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2545738",
+    "label": "Carthage Film Festival",
+    "description": "annual festival held in Tunis, Tunisia",
+    "sitelinks": 17,
+    "suggestedCategory": "international",
+    "suggestedSlug": "carthage-film-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1966",
+      "officialWebsite": "http://www.jcctunisie.org/",
+      "venue": "Tunis",
+      "city": "Tunis Governorate",
+      "country": "Tunisia",
+      "coords": {
+        "lat": 36.800833,
+        "lng": 10.18
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/JCC%202018%20opening%20ceremony%2032.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Carthage_Film_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2545738",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Carthage Film Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  }
+]

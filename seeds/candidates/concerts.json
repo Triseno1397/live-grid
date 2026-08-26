@@ -1,0 +1,2038 @@
+[
+  {
+    "qid": "Q10259",
+    "label": "Holii",
+    "description": "Hindu spring festival of colors",
+    "sitelinks": 88,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "holii",
+    "alreadyInDb": false,
+    "claims": {
+      "country": "Netherlands",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Holi%20Celebration%20Huranga.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Holi"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q10259",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Holii",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q206959",
+    "label": "Sanremo Music Festival",
+    "description": "popular Italian song contest",
+    "sitelinks": 56,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "sanremo-music-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1951",
+      "officialWebsite": "https://www.rai.it/programmi/sanremo/",
+      "broadcaster": "Rai 1",
+      "venue": "Sanremo",
+      "city": "Province of Imperia",
+      "coords": {
+        "lat": 43.8175,
+        "lng": 7.775
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Esterno%20del%20teatro%20Ariston%20Festival%20di%20Sanremo%202026.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Sanremo_Music_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q206959",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Sanremo Music Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q309066",
+    "label": "Glastonbury Festival",
+    "description": "performing arts festival in Somerset, England",
+    "sitelinks": 44,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "glastonbury-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1970",
+      "officialWebsite": "http://www.glastonburyfestivals.co.uk",
+      "venue": "Pilton",
+      "city": "Somerset",
+      "country": "United Kingdom",
+      "coords": {
+        "lat": 51.1663,
+        "lng": -2.587
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Glastonbury%20Tribute.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Glastonbury_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q309066",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Glastonbury Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q889872",
+    "label": "Coachella Valley Music and Arts Festival",
+    "description": "annual music and arts festival held in April in Indio, California, United States",
+    "sitelinks": 44,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "coachella-valley-music-and-arts-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1999",
+      "officialWebsite": "https://www.coachella.com/",
+      "venue": "Empire Polo Club",
+      "city": "Indio",
+      "country": "United States",
+      "coords": {
+        "lat": 33.679811,
+        "lng": -116.237256
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Coachella%20Valley%20Music%20and%20Arts%20Festival%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Coachella"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q889872",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Coachella Valley Music and Arts Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q153998",
+    "label": "Love Parade",
+    "description": "Technoparade in Berlin",
+    "sitelinks": 39,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "love-parade",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1989",
+      "officialWebsite": "http://www.loveparade.net",
+      "venue": "Berlin",
+      "city": "Germany",
+      "country": "Germany",
+      "coords": {
+        "lat": 52.516667,
+        "lng": 13.383333
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Berlino%20Love%20Parade%201998.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Love_Parade"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q153998",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Love Parade",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q606649",
+    "label": "Tomorrowland",
+    "description": "Belgian annual electronic dance music festival held in Boom, Antwerp",
+    "sitelinks": 39,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "tomorrowland",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2005",
+      "officialWebsite": "https://www.tomorrowland.com",
+      "venue": "De Schorre",
+      "city": "Boom",
+      "country": "Belgium",
+      "coords": {
+        "lat": 51.0887,
+        "lng": 4.37953
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Tomorrowland_(festival)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q606649",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Tomorrowland",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q157596",
+    "label": "Bayreuth Festival",
+    "description": "annual music festival of Wagner operas",
+    "sitelinks": 38,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "bayreuth-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1876",
+      "officialWebsite": "https://www.bayreuther-festspiele.de/",
+      "venue": "Bayreuth Festival Theatre",
+      "venueCapacity": 1974,
+      "city": "Bayreuth",
+      "country": "Germany",
+      "coords": {
+        "lat": 49.96,
+        "lng": 11.579722
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bayreuther%20Festspiele%20Logo.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bayr%20Festspielhaus%201995%20Frontansicht.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Bayreuth_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q157596",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Bayreuth Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q889643",
+    "label": "Lollapalooza",
+    "description": "music festival in the United States",
+    "sitelinks": 37,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "lollapalooza",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1991",
+      "officialWebsite": "https://www.lollapalooza.com",
+      "venue": "Grant Park",
+      "city": "Chicago",
+      "country": "United States",
+      "coords": {
+        "lat": 41.876111,
+        "lng": -87.618889
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lollapalooza%20logo.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lollapalooza%202015.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Lollapalooza"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q889643",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Lollapalooza",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q157845",
+    "label": "Wacken Open Air",
+    "description": "open-air metal music festival in Germany",
+    "sitelinks": 36,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "wacken-open-air",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1990",
+      "officialWebsite": "https://www.wacken.com/",
+      "country": "Germany",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/WackenOpenAir.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Wacken_Open_Air"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q157845",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Wacken Open Air",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q15089348",
+    "label": "Turkvision Song Contest",
+    "description": "annual Turkic-language song contest",
+    "sitelinks": 34,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "turkvision-song-contest",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.turkvizyon.tv/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Turkvision_Song_Contest"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q15089348",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Turkvision Song Contest",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q256443",
+    "label": "Salzburg Festival",
+    "description": "music festival",
+    "sitelinks": 32,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "salzburg-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1920",
+      "officialWebsite": "https://www.salzburgerfestspiele.at/",
+      "country": "Austria",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Salzburger%20Festspiele%202012%20-%20Jedermann.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Salzburg_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q256443",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Salzburg Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q959755",
+    "label": "South by Southwest",
+    "description": "annual festival held in Austin, USA",
+    "sitelinks": 32,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "south-by-southwest",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1987",
+      "officialWebsite": "https://www.sxsw.com/",
+      "venue": "Austin",
+      "city": "Travis County",
+      "country": "United States",
+      "coords": {
+        "lat": 30.3,
+        "lng": -97.733333
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/SXSW%20Stack%20logo.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sixth%20Street%20SXSW%202013-025426539592444897.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/South_by_Southwest"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q959755",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "South by Southwest",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1030987",
+    "label": "Intervision Song Contest",
+    "description": "an international song contest consisting of both Post-Soviet states and members of the Shanghai Cooperation Organisation",
+    "sitelinks": 31,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "intervision-song-contest",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1965",
+      "officialWebsite": "https://intervision.world/",
+      "country": "Poland",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Intervision_Song_Contest"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1030987",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Intervision Song Contest",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q914820",
+    "label": "Sziget Festival",
+    "description": "music and cultural festival in Budapest, Hungary",
+    "sitelinks": 30,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "sziget-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1993",
+      "officialWebsite": "http://szigetfestival.com/",
+      "venue": "Óbuda Island",
+      "city": "Budapest District III",
+      "country": "Hungary",
+      "coords": {
+        "lat": 47.550353,
+        "lng": 19.05364
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sziget%20logo%202005.jpg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sziget%20Magyar%20Dal.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Sziget_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q914820",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Sziget Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q493819",
+    "label": "Roskilde Festival",
+    "description": "Annual music festival in Roskilde, Denmark",
+    "sitelinks": 29,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "roskilde-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1971",
+      "officialWebsite": "http://roskilde-festival.dk/",
+      "venue": "Dyrskueplads Roskilde",
+      "city": "Roskilde Municipality",
+      "country": "Denmark",
+      "coords": {
+        "lat": 55.621957,
+        "lng": 12.077064
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Roskilde%20Festival%20-%20Orange%20Stage%20-%20Bruce%20Springsteen.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Roskilde_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q493819",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Roskilde Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1046677",
+    "label": "BBC Proms",
+    "description": "eight-week summer season of daily orchestral classical music concerts",
+    "sitelinks": 29,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "bbc-proms",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1895",
+      "officialWebsite": "https://www.bbc.co.uk/proms",
+      "country": "United Kingdom",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/BBC%20Proms%20logo%20%282022%29.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal%20Albert%20Hall%2C%20BBC%20Proms%202017.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/BBC_Proms"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1046677",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "BBC Proms",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q669118",
+    "label": "Montreux Jazz Festival",
+    "description": "music festival in Switzerland, held annually in early July in Montreux on the Lake Geneva shoreline",
+    "sitelinks": 28,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "montreux-jazz-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1967",
+      "officialWebsite": "http://www.montreuxjazzfestival.com",
+      "venue": "Montreux",
+      "city": "Riviera-Pays-d'Enhaut District",
+      "country": "Switzerland",
+      "coords": {
+        "lat": 46.435,
+        "lng": 6.9125
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Montreux%20Jazz%20Festival%20logo%2C%202022%20%28cropped%29.jpg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Audioslave%202005.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Montreux_Jazz_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q669118",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Montreux Jazz Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q160109",
+    "label": "Rock am Ring",
+    "description": "pair of annual music festivals in Germany",
+    "sitelinks": 27,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "rock-am-ring",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1985",
+      "officialWebsite": "http://www.rock-am-ring.com/",
+      "venue": "Nürburgring",
+      "city": "Adenau",
+      "country": "Germany",
+      "coords": {
+        "lat": 50.335556,
+        "lng": 6.9475
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock%20am%20Ring%20Logo%202022.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Prodigy-rock-am-ring-2009.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Rock_am_Ring_and_Rock_im_Park"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q160109",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Rock am Ring",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q483271",
+    "label": "MAMA Awards",
+    "description": "South Korean music awards ceremony",
+    "sitelinks": 27,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "mama-awards",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1999",
+      "officialWebsite": "https://www.mwave.me/en/mama/about",
+      "country": "South Korea",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mnet%20Asian%20Music%20Awards%20Logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/MAMA_Awards"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q483271",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "MAMA Awards",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q4220114",
+    "label": "Kyiv Music Fest",
+    "description": "annual international music festival in Kyiv, Ukraine",
+    "sitelinks": 26,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "kyiv-music-fest",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1990",
+      "officialWebsite": "http://kmf.karabits.com/",
+      "country": "Ukraine",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kiev%20Opera.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Kyiv_Music_Fest"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q4220114",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Kyiv Music Fest",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q722072",
+    "label": "Ozzfest",
+    "description": "former music festival",
+    "sitelinks": 26,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "ozzfest",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1996",
+      "officialWebsite": "http://www.ozzfest.com",
+      "country": "Japan",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Phil%20Anselmo.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Ozzfest"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q722072",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Ozzfest",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q957459",
+    "label": "Ultra Music Festival",
+    "description": "electronic music festival",
+    "sitelinks": 26,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "ultra-music-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1998",
+      "officialWebsite": "https://ultramusicfestival.com/",
+      "country": "United States",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20of%20Ultra%20Music%20Festival.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Ultra_Music_Festival",
+      "pastDate": "1999-03-13"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q957459",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Ultra Music Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1133749",
+    "label": "Rock in Rio",
+    "description": "Brazilian music festival",
+    "sitelinks": 26,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "rock-in-rio",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1985",
+      "officialWebsite": "http://rockinrio.com/",
+      "venue": "Rio de Janeiro",
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "coords": {
+        "lat": -22.911111,
+        "lng": -43.205556
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock%20in%20Rio%20-%20Madrid%202012.jpg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock%20in%20Rio%20-%20Madrid%202012.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Rock_in_Rio"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1133749",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Rock in Rio",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1638749",
+    "label": "Sopot International Song Festival",
+    "description": "music festival in Sopot, Poland",
+    "sitelinks": 26,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "sopot-international-song-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1961",
+      "officialWebsite": "http://www.topofthetop.pl/",
+      "venue": "Sopot",
+      "city": "Pomeranian Voivodeship",
+      "country": "Poland",
+      "coords": {
+        "lat": 54.44185,
+        "lng": 18.54782
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Inna-sopot.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Sopot_International_Song_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1638749",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Sopot International Song Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1032197",
+    "label": "Exit",
+    "description": "summer music festival in Novi Sad, Serbia",
+    "sitelinks": 25,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "exit",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2000",
+      "officialWebsite": "https://www.exitfest.org/",
+      "venue": "Petrovaradin Fortress",
+      "city": "Petrovaradin",
+      "country": "Serbia",
+      "coords": {
+        "lat": 45.2525,
+        "lng": 19.8625
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Exit%20logo.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Exit%20festival%2C%202021.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Exit_(festival)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1032197",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Exit",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3070895",
+    "label": "ABU Song Festival",
+    "description": "two song festivals organised by the Asia-Pacific Broadcasting Union",
+    "sitelinks": 25,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "abu-song-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "http://www.asiavision.tv/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/ABU_Song_Festivals"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3070895",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "ABU Song Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q722902",
+    "label": "Slavianski Bazaar in Vitebsk",
+    "description": "annual music festival in Vitebsk, Belarus",
+    "sitelinks": 24,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "slavianski-bazaar-in-vitebsk",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1992",
+      "officialWebsite": "https://fest-sbv.gck.by/",
+      "venue": "Vitebsk",
+      "city": "Vitebsk Region",
+      "country": "Belarus",
+      "coords": {
+        "lat": 55.183333,
+        "lng": 30.166667
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/RIAN%20archive%20411183%2018th%20International%20Art%20Festival%20Slavyansky%20Bazar%20opens%20in%20Vitebsk.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Slavianski_Bazaar_in_Vitebsk"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q722902",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Slavianski Bazaar in Vitebsk",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q971625",
+    "label": "Warped Tour",
+    "description": "annual traveling rock music festival",
+    "sitelinks": 24,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "warped-tour",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1995",
+      "officialWebsite": "http://www.vanswarpedtour.com",
+      "country": "United States",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vans%20Warped%20Tour%20Logo.png?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/HPIM3139.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Warped_Tour"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q971625",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Warped Tour",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q188374",
+    "label": "Festivali i Këngës",
+    "description": "Albanian song contest, organised by the Albanian national broadcaster Radio Televizioni Shqiptar (RTSH)",
+    "sitelinks": 23,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "festivali-i-kenges",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1962",
+      "officialWebsite": "http://www.festivali-rtsh.al/",
+      "broadcaster": "Albanian Radio Television",
+      "venue": "Palace of Congresses",
+      "venueCapacity": 2100,
+      "city": "Tirana municipality",
+      "country": "Albania",
+      "coords": {
+        "lat": 41.319226,
+        "lng": 19.822026
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Festivali.11.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Festivali_i_K%C3%ABng%C3%ABs"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q188374",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Festivali i Këngës",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q944603",
+    "label": "Isle of Wight Festival",
+    "description": "British music festival which takes place annually on the Isle of Wight in Newport, England",
+    "sitelinks": 23,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "isle-of-wight-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1968",
+      "officialWebsite": "https://isleofwightfestival.com/",
+      "venue": "Seaclose Park",
+      "city": "Newport and Carisbrooke",
+      "country": "United Kingdom",
+      "coords": {
+        "lat": 50.708,
+        "lng": -1.28645
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/1970-Isle%20of%20Wight%20Festival-%205.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Isle_of_Wight_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q944603",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Isle of Wight Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q945758",
+    "label": "Pol'and'Rock Festival",
+    "description": "rock music festival in Poland",
+    "sitelinks": 23,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "polandrock-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1995",
+      "officialWebsite": "https://en.polandrockfestival.pl/",
+      "city": "Czaplinek",
+      "country": "Poland",
+      "coords": {
+        "lat": 53.5198,
+        "lng": 16.2835
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2017%20Woodstock%20005.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Pol%27and%27Rock_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q945758",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Pol'and'Rock Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q18544",
+    "label": "Download Festival",
+    "description": "Rock festival",
+    "sitelinks": 22,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "download-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2003",
+      "officialWebsite": "http://www.downloadfestival.co.uk",
+      "city": "Castle Donington",
+      "country": "United Kingdom",
+      "coords": {
+        "lat": 52.829167,
+        "lng": -1.375
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Download-Festival-Logo.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/DownloadFestival2007.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Download_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q18544",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Download Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q506080",
+    "label": "Liet International",
+    "description": "international music competition",
+    "sitelinks": 22,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "liet-international",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2002",
+      "officialWebsite": "https://liet-international.com/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Liet_International"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q506080",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Liet International",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q247500",
+    "label": "Hellfest",
+    "description": "heavy metal music festival held in France",
+    "sitelinks": 21,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "hellfest",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2006",
+      "officialWebsite": "http://www.hellfest.fr/",
+      "venue": "France",
+      "country": "France",
+      "coords": {
+        "lat": 47,
+        "lng": 2
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hellfest%202022%20depuis%20la%20grande%20roue%20-%2020220625%20193649.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Hellfest"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q247500",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Hellfest",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q143085",
+    "label": "Zecchino d'Oro",
+    "description": "music festival",
+    "sitelinks": 21,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "zecchino-doro",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "http://www.zecchinodoro.org/",
+      "broadcaster": "Rai 1",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Zecchino_d%27Oro"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q143085",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Zecchino d'Oro",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q434319",
+    "label": "Altamont Free Concert",
+    "description": "1969 musical festival by the Rolling Stones",
+    "sitelinks": 21,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "altamont-free-concert",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1969",
+      "venue": "Altamont Raceway Park",
+      "city": "California",
+      "country": "United States",
+      "coords": {
+        "lat": 37.738,
+        "lng": -121.563
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rolling%20Stones%20at%20Altamont%201969.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Altamont_Free_Concert",
+      "pastDate": "1969-12-06"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q434319",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Altamont Free Concert",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q30965709",
+    "label": "Vidbir",
+    "description": "Ukrainian musical competition",
+    "sitelinks": 21,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "vidbir",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2016",
+      "officialWebsite": "http://eurovision.ua/",
+      "broadcaster": "STB",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Vidbir"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q30965709",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Vidbir",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q862844",
+    "label": "Beigang International Music Festival",
+    "description": "Chinese music festival",
+    "sitelinks": 21,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "beigang-international-music-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2006",
+      "country": "Taiwan",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/BIMF2006%20County%20Governor%20Su%20Ji-Feng.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Beigang_International_Music_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q862844",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Beigang International Music Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1137962",
+    "label": "Reading and Leeds Festivals",
+    "description": "pair of annual music festivals in England",
+    "sitelinks": 21,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "reading-and-leeds-festivals",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1971",
+      "officialWebsite": "http://www.readingfestival.com/",
+      "country": "United Kingdom",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Reading%20and%20Leeds%2006%20and%2007.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Reading_and_Leeds_Festivals"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1137962",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Reading and Leeds Festivals",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q56367942",
+    "label": "LvivMozArt",
+    "description": "classical music festival in Ukraine",
+    "sitelinks": 20,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "lvivmozart",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2017",
+      "officialWebsite": "http://lvivmozart.com",
+      "venue": "Brody",
+      "city": "Brody urban hromada",
+      "country": "Ukraine",
+      "coords": {
+        "lat": 50.078056,
+        "lng": 25.154167
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lviv%20Opera%20House%20%289%29.jpg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lviv%20Opera%20House%20%289%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/LvivMozArt"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q56367942",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "LvivMozArt",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q829363",
+    "label": "Edinburgh Festival",
+    "description": "arts and cultural festivals in Edinburgh, Scotland during the summer",
+    "sitelinks": 20,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "edinburgh-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "Edinburgh",
+      "city": "City of Edinburgh",
+      "country": "United Kingdom",
+      "coords": {
+        "lat": 55.953333,
+        "lng": -3.189167
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/EdimburgoFestival.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/List_of_Edinburgh_festivals"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q829363",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Edinburgh Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1151125",
+    "label": "Pinkpop Festival",
+    "description": "Dutch annual music festival",
+    "sitelinks": 20,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "pinkpop-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1970",
+      "officialWebsite": "http://www.pinkpop.nl/",
+      "venue": "Megaland",
+      "city": "Landgraaf",
+      "country": "Netherlands",
+      "coords": {
+        "lat": 50.881667,
+        "lng": 6.024167
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pinpop%202010.jpeg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Pinkpop_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1151125",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Pinkpop Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q203348",
+    "label": "Glyndebourne Festival Opera",
+    "description": "English opera festival",
+    "sitelinks": 19,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "glyndebourne-festival-opera",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1934",
+      "officialWebsite": "http://www.glyndebourne.com/",
+      "venue": "Glyndebourne",
+      "city": "Glynde",
+      "country": "United Kingdom",
+      "coords": {
+        "lat": 50.877709,
+        "lng": 0.063508
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Glyndebourne%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Glyndebourne_Festival_Opera"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q203348",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Glyndebourne Festival Opera",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q577042",
+    "label": "Newport Jazz Festival",
+    "description": "music festival in Newport, Rhode Island, US",
+    "sitelinks": 19,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "newport-jazz-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1954",
+      "officialWebsite": "http://www.newportjazzfest.net",
+      "country": "United States",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/McCoyTynerandRaviColtrane.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Newport_Jazz_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q577042",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Newport Jazz Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q686960",
+    "label": "Schubertiade",
+    "description": "music festival",
+    "sitelinks": 19,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "schubertiade",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.schubertiade.at/",
+      "country": "Austria",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Moritz%20von%20Schwind%20Schubertiade.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Schubertiade"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q686960",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Schubertiade",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q694891",
+    "label": "Bregenzer Festspiele",
+    "description": "music festival",
+    "sitelinks": 19,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "bregenzer-festspiele",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "http://bregenzerfestspiele.com",
+      "country": "Austria",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carmen%20Festspiele%20Bregenz%202017%20by%20Olaf%20Kosinsky-17.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Bregenzer_Festspiele"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q694891",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Bregenzer Festspiele",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q697882",
+    "label": "Sensation",
+    "description": "electronical dance event",
+    "sitelinks": 19,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "sensation",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2000",
+      "officialWebsite": "http://www.sensation.com/",
+      "country": "United States",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sensation%20Denmark%202010.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Sensation_(event)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q697882",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Sensation",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1776937",
+    "label": "Prague Spring International Music Festival",
+    "description": "international music festival",
+    "sitelinks": 19,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "prague-spring-international-music-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1946",
+      "officialWebsite": "http://www.festival.cz/",
+      "venue": "Prague",
+      "city": "Czech Republic",
+      "country": "Czech Republic",
+      "coords": {
+        "lat": 50.0875,
+        "lng": 14.421389
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Prague%20Municipal%20Smetana%20Hall.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Prague_Spring_International_Music_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1776937",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Prague Spring International Music Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2304946",
+    "label": "New Wave",
+    "description": "international contest for young performers of popular music",
+    "sitelinks": 18,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "new-wave",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2002",
+      "officialWebsite": "http://newwavecontest.ru/",
+      "venue": "Sochi",
+      "city": "Resort Town of Sochi",
+      "country": "Latvia",
+      "coords": {
+        "lat": 43.585278,
+        "lng": 39.720278
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/New_Wave_(competition)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2304946",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "New Wave",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2439480",
+    "label": "Primavera Sound",
+    "description": "music festival in Barcelona, Spain",
+    "sitelinks": 18,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "primavera-sound",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2001",
+      "officialWebsite": "http://www.primaverasound.com/",
+      "venue": "Porto",
+      "city": "Metropolitan Area of Porto",
+      "country": "Spain",
+      "coords": {
+        "lat": 41.15,
+        "lng": -8.610833
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/LogoPrimaveraSound.png?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portishead%20%40%20Primavera%20Sound%205.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Primavera_Sound"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2439480",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Primavera Sound",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q108743617",
+    "label": "Benidorm Fest",
+    "description": "song festival organized in Spain",
+    "sitelinks": 18,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "benidorm-fest",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2022",
+      "officialWebsite": "https://www.rtve.es/television/eurovision/benidorm-fest/",
+      "broadcaster": "TVE Internacional",
+      "venue": "Benidorm",
+      "city": "Marina Baixa",
+      "coords": {
+        "lat": 38.534167,
+        "lng": -0.131389
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Benidorm%20Fest%202026.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Benidorm_Fest"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q108743617",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Benidorm Fest",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q749420",
+    "label": "Monsters of Rock",
+    "description": "concert tour",
+    "sitelinks": 18,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "monsters-of-rock",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1980",
+      "officialWebsite": "https://www.themonstersofrock.com/",
+      "country": "United Kingdom",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Monsters_of_Rock"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q749420",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Monsters of Rock",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2000831",
+    "label": "North Sea Jazz Festival",
+    "description": "Annual music festival in the Netherlands",
+    "sitelinks": 18,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "north-sea-jazz-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1976",
+      "officialWebsite": "http://www.northseajazz.com",
+      "country": "Netherlands",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dutch%20Swing%20College%20Band%20photo.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/North_Sea_Jazz_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2000831",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "North Sea Jazz Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q4512017",
+    "label": "Chervona Ruta",
+    "description": "Ukrainian festival of contemporary song and popular music",
+    "sitelinks": 18,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "chervona-ruta",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1989",
+      "officialWebsite": "https://rutafest.art/",
+      "venue": "Zaporizhzhia",
+      "city": "Zaporizhzhia urban hromada",
+      "country": "Ukraine",
+      "coords": {
+        "lat": 47.85,
+        "lng": 35.1175
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Chervona%20Ruta.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Chervona_Ruta_(festival)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q4512017",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Chervona Ruta",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q614639",
+    "label": "Montreal International Jazz Festival",
+    "description": "music festival",
+    "sitelinks": 17,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "montreal-international-jazz-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1980",
+      "officialWebsite": "https://montrealjazzfest.com/",
+      "venue": "Montreal",
+      "city": "Urban agglomeration of Montreal",
+      "country": "Canada",
+      "coords": {
+        "lat": 45.503343,
+        "lng": -73.586841
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Festival%20International%20de%20Jazz%20de%20Montr%C3%A9al%202.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Montreal_International_Jazz_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q614639",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Montreal International Jazz Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1473844",
+    "label": "Tuska Open Air Metal Festival",
+    "description": "Finnish heavy metal music festival",
+    "sitelinks": 17,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "tuska-open-air-metal-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1998",
+      "officialWebsite": "https://www.tuska.fi/",
+      "venue": "Suvilahti",
+      "city": "Helsinki",
+      "country": "Finland",
+      "coords": {
+        "lat": 60.186389,
+        "lng": 24.972222
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sonata%20Arctica%20Tuska%202006.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Tuska_Open_Air_Metal_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1473844",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Tuska Open Air Metal Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q585056",
+    "label": "World of Music, Arts and Dance",
+    "description": "international art festival",
+    "sitelinks": 16,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "world-of-music-arts-and-dance",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1980",
+      "officialWebsite": "http://womad.org/",
+      "country": "Spain",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/WOMAD%20Charlton%20Park%202008.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/World_of_Music,_Arts_and_Dance"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q585056",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World of Music, Arts and Dance",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q695820",
+    "label": "M'era Luna Festival",
+    "description": "music festival in Hildesheim, Germany",
+    "sitelinks": 16,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "mera-luna-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2000",
+      "officialWebsite": "https://meraluna.de/",
+      "venue": "Hildesheim airfield",
+      "city": "Hildesheim",
+      "country": "Germany",
+      "coords": {
+        "lat": 52.179833,
+        "lng": 9.945667
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Edvm-13-06-2005.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/M%27era_Luna_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q695820",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "M'era Luna Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q836514",
+    "label": "Wave-Gotik-Treffen",
+    "description": "darkwave music festival in Leipzig, Germany",
+    "sitelinks": 16,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "wave-gotik-treffen",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1992",
+      "officialWebsite": "http://www.wave-gotik-treffen.de/",
+      "venue": "Leipzig",
+      "city": "Saxony",
+      "country": "Germany",
+      "coords": {
+        "lat": 51.340632,
+        "lng": 12.374733
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2013%20WGT%2003%20Letzte%20Instanz.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Wave-Gotik-Treffen"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q836514",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Wave-Gotik-Treffen",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3789908",
+    "label": "Apple Music Festival",
+    "description": "music concert series held by Apple, Inc.",
+    "sitelinks": 16,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "apple-music-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2007",
+      "officialWebsite": "http://www.applemusicfestival.com/",
+      "country": "United Kingdom",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Roundhouse.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Apple_Music_Festival",
+      "pastDate": "2013-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3789908",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Apple Music Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q7897647",
+    "label": "Kazantip",
+    "description": "music festival in Crimea",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "kazantip",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1992",
+      "officialWebsite": "http://www.kazantip-republic.com/",
+      "venue": "Popivka",
+      "city": "Republic of Crimea",
+      "coords": {
+        "lat": 45.2975,
+        "lng": 33.0375
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/KaZantip%20yellow%20box.jpg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/KaZantip%20at%20night%2C%202006.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/KaZantip"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q7897647",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Kazantip",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q385333",
+    "label": "Qlimax",
+    "description": "music festival",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "qlimax",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2000",
+      "officialWebsite": "https://www.q-dance.com/en/events/qlimax/",
+      "venue": "GelreDome",
+      "venueCapacity": 41000,
+      "city": "Arnhem",
+      "country": "Netherlands",
+      "coords": {
+        "lat": 51.9625,
+        "lng": 5.893056
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Qlimax%202008-11-22.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Qlimax"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q385333",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Qlimax",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q493324",
+    "label": "Riddu Riđđu",
+    "description": "annual Sami music and culture festival held in Norway",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "riddu-ri-u",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1991",
+      "officialWebsite": "https://riddu.no/en",
+      "venue": "Riddu-riđđu-gieddi",
+      "city": "Kåfjord Municipality",
+      "country": "Norway",
+      "coords": {
+        "lat": 69.5263,
+        "lng": 20.53081
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Riddu%20Ri%C4%91%C4%91u%202019%20Foto%20%C3%98rjan%20Marakatt%20Bertelsen%20%2850140111558%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Riddu_Ri%C4%91%C4%91u"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q493324",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Riddu Riđđu",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1463857",
+    "label": "Sonisphere Festival",
+    "description": "music festival",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "sonisphere-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2009",
+      "officialWebsite": "http://www.sonispherefestivals.com",
+      "country": "Netherlands",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sonisphere%20Main%20Stage.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Sonisphere_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1463857",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Sonisphere Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1513769",
+    "label": "Sónar",
+    "description": "music festival in Barcelona, Spain",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "sonar",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1994",
+      "officialWebsite": "https://sonar.es/",
+      "country": "Spain",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B3nar%20by%20Day%202016.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/S%C3%B3nar"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1513769",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Sónar",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1711944",
+    "label": "Warsaw Autumn",
+    "description": "International Festival of Contemporary Music",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "warsaw-autumn",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1956",
+      "officialWebsite": "http://warszawska-jesien.art.pl/",
+      "venue": "Warsaw",
+      "city": "Masovian Voivodeship",
+      "country": "Poland",
+      "coords": {
+        "lat": 52.23,
+        "lng": 21.011111
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pkin%20082005.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Warsaw_Autumn"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1711944",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Warsaw Autumn",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q917300",
+    "label": "Savonlinna Opera Festival",
+    "description": "annual music festival in Savonlinna, Finland",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "savonlinna-opera-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1967",
+      "officialWebsite": "http://www.operafestival.fi/",
+      "venue": "Olavinlinna Castle",
+      "city": "Savonlinna",
+      "country": "Finland",
+      "coords": {
+        "lat": 61.863713,
+        "lng": 28.901238
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Olavinlinna2.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Savonlinna_Opera_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q917300",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Savonlinna Opera Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q954628",
+    "label": "Maggio Musicale Fiorentino",
+    "description": "music festival",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "maggio-musicale-fiorentino",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1933",
+      "officialWebsite": "http://www.operadifirenze.it",
+      "country": "Italy",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lia-dell%27ara-aurel-milloss-maggio-musicale-fiorentino.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Maggio_Musicale_Fiorentino"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q954628",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Maggio Musicale Fiorentino",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1284748",
+    "label": "Royal Edinburgh Military Tattoo",
+    "description": "annual festival of military tattoos",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "royal-edinburgh-military-tattoo",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1950",
+      "officialWebsite": "https://www.edintattoo.co.uk/",
+      "venue": "Edinburgh",
+      "city": "City of Edinburgh",
+      "country": "United Kingdom",
+      "coords": {
+        "lat": 55.953333,
+        "lng": -3.189167
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Edinburgh%20Tattoo%202010%20%284946272332%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Royal_Edinburgh_Military_Tattoo"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1284748",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Royal Edinburgh Military Tattoo",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1396782",
+    "label": "Farm Aid",
+    "description": "music festival",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "farm-aid",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1985",
+      "officialWebsite": "http://www.farmaid.org/",
+      "country": "United States",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Farm%20Aid%202011%20-%20Dave%20Matthews%20and%20Tim%20Reynolds%20-%20Livestrong%20Sporting%20Park%20KCK.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Farm_Aid"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1396782",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Farm Aid",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1408678",
+    "label": "Jarocin Festival",
+    "description": "rock music festival in Jarocin, Poland, with roots dating back to 1970",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "jarocin-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1970",
+      "officialWebsite": "https://jarocinfestiwal.pl",
+      "venue": "Jarocin",
+      "city": "Gmina Jarocin",
+      "country": "Poland",
+      "coords": {
+        "lat": 51.966667,
+        "lng": 17.5
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Publiczno%C5%9B%C4%87%20na%20ma%C5%82ej%20scenie%20Festiwalu%20w%20Jarocinie..jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Jarocin_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1408678",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Jarocin Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2322517",
+    "label": "Festival Interceltique de Lorient",
+    "description": "music festival in France",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "festival-interceltique-de-lorient",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1970",
+      "officialWebsite": "http://www.festival-interceltique.bzh",
+      "country": "France",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/FIL2009-010%20KevrennAlre.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Festival_Interceltique_de_Lorient"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2322517",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Festival Interceltique de Lorient",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2481548",
+    "label": "Viña del Mar International Song Festival",
+    "description": "music festival in Viña del Mar, Chile",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "vina-del-mar-international-song-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1960",
+      "officialWebsite": "https://elfestival.tv",
+      "country": "Chile",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Escenario%20de%20Vi%C3%B1a%202019%20%2820190224%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Vi%C3%B1a_del_Mar_International_Song_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2481548",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Viña del Mar International Song Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3813215",
+    "label": "KCON",
+    "description": "music festival",
+    "sitelinks": 15,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "kcon",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2012",
+      "officialWebsite": "http://www.kconusa.com",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/KCON%202012.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/KCON"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3813215",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "KCON",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q654566",
+    "label": "Newport Folk Festival",
+    "description": "music festival",
+    "sitelinks": 14,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "newport-folk-festival",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1959",
+      "officialWebsite": "http://www.newportfolk.org/",
+      "country": "United States",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/My%20Morning%20Jacket%2C%202015.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Newport_Folk_Festival"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q654566",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Newport Folk Festival",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2278025",
+    "label": "Festival Puccini",
+    "description": "Annual summer opera festival held in July and August to present the operas of the famous Italian composer Giacomo Puccini, held in Torre del Lago, Italy",
+    "sitelinks": 14,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "festival-puccini",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1930",
+      "officialWebsite": "https://www.puccinifestival.it",
+      "country": "Italy",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gran-teatro-Torre-del-Lago-puccini1.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Festival_Puccini"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2278025",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Festival Puccini",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2303502",
+    "label": "World Music Expo",
+    "description": "international networking platform for the world music industry",
+    "sitelinks": 14,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "world-music-expo",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.womex.com",
+      "country": "Germany",
+      "enWikipedia": "https://en.wikipedia.org/wiki/WOMEX"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2303502",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World Music Expo",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2745177",
+    "label": "National Eisteddfod of Wales",
+    "description": "annual festival of Welsh-language culture",
+    "sitelinks": 14,
+    "suggestedCategory": "concerts",
+    "suggestedSlug": "national-eisteddfod-of-wales",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://eisteddfod.cymru",
+      "country": "United Kingdom",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eisteddfod%20Genedlaethol%20Cymru%20Ll%C5%B7n%20ac%20Eifionydd%202023%20o%27r%20awyr%2015.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/National_Eisteddfod_of_Wales"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2745177",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "National Eisteddfod of Wales",
+      "retrieved_on": "2026-08-26"
+    }
+  }
+]

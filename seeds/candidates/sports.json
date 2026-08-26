@@ -1,0 +1,1744 @@
+[
+  {
+    "qid": "Q178750",
+    "label": "Copa América",
+    "description": "South American association football tournament for men's national teams",
+    "sitelinks": 78,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "copa-america",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1916",
+      "officialWebsite": "https://copaamerica.com/",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Copa%20America%20wordmark.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Copa%20america%20trofeo.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q178750",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Copa América",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q576136",
+    "label": "Copa América",
+    "description": "2016 edition of the Copa América association football competition",
+    "sitelinks": 53,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "copa-america",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "http://www.ca2016.com/",
+      "venue": "Santa Clara",
+      "city": "Santa Clara County",
+      "country": "United States",
+      "coords": {
+        "lat": 37.35,
+        "lng": -121.966667
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Copa%20Am%C3%A9rica%20Centenario%20%E2%80%93%20Text%20logo.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Copa%20America%20100%20Trophy.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario",
+      "pastDate": "2016-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q576136",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Copa América",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q206984",
+    "label": "Billie Jean King Cup",
+    "description": "international team competition in women's tennis",
+    "sitelinks": 48,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "billie-jean-king-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1963",
+      "officialWebsite": "https://www.billiejeankingcup.com",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Billie%20Jean%20King%20Cup%20Logo.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fed%20Cup%20Trophy.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Billie_Jean_King_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q206984",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Billie Jean King Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q211872",
+    "label": "Stanley Cup",
+    "description": "championship trophy awarded annually in the National Hockey League",
+    "sitelinks": 48,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "stanley-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1893",
+      "officialWebsite": "http://www.nhl.com/ice/page.htm?id=25426",
+      "country": "Canada",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Stanley%20Cup%2C%202015.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Stanley_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q211872",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Stanley Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3118005",
+    "label": "European Men's Handball Championship",
+    "description": "international handball competition in Europe for men's national teams",
+    "sitelinks": 43,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "european-mens-handball-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1994",
+      "officialWebsite": "https://www.ehf-euro.com/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/European_Men%27s_Handball_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3118005",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "European Men's Handball Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q850292",
+    "label": "Grand Prix motorcycle racing",
+    "description": "premier championship of motorcycle road racing",
+    "sitelinks": 43,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "grand-prix-motorcycle-racing",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1949",
+      "officialWebsite": "http://www.motogp.com",
+      "broadcaster": "NHK BS1",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/MotoGP%20logo%20%282024%29.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marc%20M%C3%A1rquez%20leading%20the%20pack%20during%20the%202025%20Aragon%20motorcycle%20Grand%20Prix%20%28cropped%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Grand_Prix_motorcycle_racing"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q850292",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Grand Prix motorcycle racing",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q271725",
+    "label": "Mr. Olympia",
+    "description": "recurring sporting event",
+    "sitelinks": 41,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "mr-olympia",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "http://www.mrolympia.com",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramon%20Dino%20shows%20his%20Mr.%20Olympia%20trophy%20%282025%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Mr._Olympia"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q271725",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Mr. Olympia",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q291808",
+    "label": "AFC Champions League Two",
+    "description": "Annual second tier asian club football competition",
+    "sitelinks": 39,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "afc-champions-league-two",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2004",
+      "officialWebsite": "http://www.the-afc.com/competition/afc-cup",
+      "enWikipedia": "https://en.wikipedia.org/wiki/AFC_Champions_League_Two"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q291808",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "AFC Champions League Two",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q456092",
+    "label": "EuroCup Basketball",
+    "description": "international men's basketball club tournament in Europe",
+    "sitelinks": 38,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "eurocup-basketball",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2002",
+      "officialWebsite": "https://www.euroleaguebasketball.net/eurocup",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eurocup%20Basketball.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/EuroCup_Basketball"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q456092",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "EuroCup Basketball",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q309168",
+    "label": "European Women's Handball Championship",
+    "description": "international handball competition in Europe for women's national teams",
+    "sitelinks": 38,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "european-womens-handball-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1994",
+      "officialWebsite": "https://www.ehf-euro.com",
+      "enWikipedia": "https://en.wikipedia.org/wiki/European_Women%27s_Handball_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q309168",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "European Women's Handball Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q646317",
+    "label": "Biathlon World Championships",
+    "description": "international biathlon competitions",
+    "sitelinks": 36,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "biathlon-world-championships",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1958",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Biathlon_World_Championships"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q646317",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Biathlon World Championships",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q832052",
+    "label": "IndyCar Series",
+    "description": "auto racing series held in North America",
+    "sitelinks": 36,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "indycar-series",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1996",
+      "officialWebsite": "https://www.indycar.com/",
+      "country": "Canada",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/IndyCar%20Series%20textlogo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/IndyCar_Series"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q832052",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "IndyCar Series",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q512129",
+    "label": "European Aquatics Championships",
+    "description": "European championships in swimming",
+    "sitelinks": 35,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "european-aquatics-championships",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1926",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/European%20Aquatics%20flag%202024.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/European_Aquatics_Championships"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q512129",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "European Aquatics Championships",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q167170",
+    "label": "multi-sport event",
+    "description": "organized sporting event involving multiple sports",
+    "sitelinks": 34,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "multi-sport-event",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Multi-sport_event"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q167170",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "multi-sport event",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q943691",
+    "label": "FIS Alpine World Ski Championships",
+    "description": "international alpine skiing event",
+    "sitelinks": 33,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "fis-alpine-world-ski-championships",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1931",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/FIS%20Medals.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kandahar%20wm%2001.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/FIS_Alpine_World_Ski_Championships"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q943691",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "FIS Alpine World Ski Championships",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q300098",
+    "label": "CEV Champions League",
+    "description": "volleyball competition for men",
+    "sitelinks": 32,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "cev-champions-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1960",
+      "officialWebsite": "https://championsleague.cev.eu/en/men/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/CEV_Champions_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q300098",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "CEV Champions League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q27897176",
+    "label": "luge at the 2018 Winter Olympics",
+    "description": "luge events at the Olympics",
+    "sitelinks": 32,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "luge-at-the-2018-winter-olympics",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "Alpensia Sliding Centre",
+      "venueCapacity": 7000,
+      "city": "Daegwallyeong-myeon",
+      "coords": {
+        "lat": 37.653714,
+        "lng": 128.681389
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lugers%20Taylor%20Morris%20and%20Matthew%20Mortenson%2028423252.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Luge_at_the_2018_Winter_Olympics",
+      "pastDate": "2018-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q27897176",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "luge at the 2018 Winter Olympics",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q27897177",
+    "label": "Nordic combined at the 2018 Winter Olympics",
+    "description": "2018 edition of the Nordic combined skiing competitions during the Olympic Winter Games",
+    "sitelinks": 32,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "nordic-combined-at-the-2018-winter-olympics",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "Alpensia Cross-Country Centre",
+      "city": "Daegwallyeong-myeon",
+      "coords": {
+        "lat": 37.664,
+        "lng": 128.685
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/Nordic_combined_at_the_2018_Winter_Olympics",
+      "pastDate": "2018-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q27897177",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Nordic combined at the 2018 Winter Olympics",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q834536",
+    "label": "Eastern Conference",
+    "description": "one of two conferences in the National Hockey League (NHL)",
+    "sitelinks": 32,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "eastern-conference",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1974",
+      "country": "United States",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Eastern_Conference_(NHL)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q834536",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Eastern Conference",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q862567",
+    "label": "ASEAN Championship",
+    "description": "football tournament",
+    "sitelinks": 32,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "asean-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1996",
+      "officialWebsite": "https://www.affsuzukicup.com/",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2024%20ASEAN%20United%20FC%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/ASEAN_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q862567",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "ASEAN Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2468836",
+    "label": "FIVB Women's Volleyball World Championship",
+    "description": "women's national teams volleyball tournament",
+    "sitelinks": 31,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "fivb-womens-volleyball-world-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1952",
+      "officialWebsite": "https://en.volleyballworld.com/volleyball/competitions/women-world-championship/",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mondiali%20di%20pallavolo%202014%20%2815599043196%29%20%282%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/FIVB_Women%27s_Volleyball_World_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2468836",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "FIVB Women's Volleyball World Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q27897175",
+    "label": "freestyle skiing at the 2018 Winter Olympics",
+    "description": "2018 edition of the figure skating competitions during the Olympic Winter Games",
+    "sitelinks": 31,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "freestyle-skiing-at-the-2018-winter-olympics",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "Bokwang Phoenix Park",
+      "city": "Pyeongchang County",
+      "coords": {
+        "lat": 37.579894,
+        "lng": 128.320203
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/2018%20PyeongChang%20Ski%20Cross%20Podium.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Freestyle_skiing_at_the_2018_Winter_Olympics",
+      "pastDate": "2018-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q27897175",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "freestyle skiing at the 2018 Winter Olympics",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1329578",
+    "label": "UCI ProTour",
+    "description": "cycling competition under the Union Cycliste Internationale",
+    "sitelinks": 31,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "uci-protour",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2005",
+      "officialWebsite": "http://www.uciprotour.com",
+      "enWikipedia": "https://en.wikipedia.org/wiki/UCI_ProTour"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1329578",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "UCI ProTour",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q834840",
+    "label": "EHF European League",
+    "description": "European handball cup competition",
+    "sitelinks": 30,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "ehf-european-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1981",
+      "officialWebsite": "https://ehfel.eurohandball.com/",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/EHF%20European%20League%20Logo.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/EHF%20Cup%2001.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/EHF_European_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q834840",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "EHF European League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q291642",
+    "label": "AFC Challenge Cup",
+    "description": "football tournament",
+    "sitelinks": 28,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "afc-challenge-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2006",
+      "officialWebsite": "http://www.the-afc.com/competition/afc-challenge-cup",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Asian%20Football%20Confederation%20member%20associations%20map.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/AFC_Challenge_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q291642",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "AFC Challenge Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q386362",
+    "label": "African Nations Championship",
+    "description": "African national team football tournament for homegrown players",
+    "sitelinks": 28,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "african-nations-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2009",
+      "officialWebsite": "https://www.cafonline.com/total-african-nations-championship/",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Confederation%20of%20African%20Football%20member%20associations%20map.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/African_Nations_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q386362",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "African Nations Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q20749438",
+    "label": "FIBA Europe Cup",
+    "description": "European basketball competition",
+    "sitelinks": 28,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "fiba-europe-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2015",
+      "officialWebsite": "https://www.fiba.basketball/en/history/212-fiba-mens-european-club-competitions-tier-2",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sigle%20FIBA%20Europe%20Cup.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/FIBA_Europe_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q20749438",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "FIBA Europe Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q913635",
+    "label": "FIBA Korać Cup",
+    "description": "international basketball tournament in Europe between the 1971/1972-2001/2002 seasons",
+    "sitelinks": 28,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "fiba-korac-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1971",
+      "officialWebsite": "https://www.fibaeurope.com/cid_y3euzq1aHcoWbgMxmWrwT2.html",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Korac%20Cup%20cropped.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/FIBA_Kora%C4%87_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q913635",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "FIBA Korać Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1476938",
+    "label": "OFC Women's Nations Cup",
+    "description": "football tournament of Oceania",
+    "sitelinks": 28,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "ofc-womens-nations-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1983",
+      "officialWebsite": "https://www.oceaniafootball.com/competition/ofc-womens-nations-cup-2022/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/OFC_Women%27s_Nations_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1476938",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "OFC Women's Nations Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q767127",
+    "label": "FIBA Saporta Cup",
+    "description": "international men's basketball club tournament in Europe between the seasons of 1966/1967-2001/2002",
+    "sitelinks": 27,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "fiba-saporta-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1966",
+      "officialWebsite": "https://www.fibaeurope.com/cid_-AhuWPzWIJMJXlfIN0CXK0.html",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Copa%20Saporta.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/FIBA_Saporta_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q767127",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "FIBA Saporta Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q819961",
+    "label": "World Series of Poker",
+    "description": "series of poker tournaments, held annually",
+    "sitelinks": 27,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "world-series-of-poker",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1970",
+      "officialWebsite": "https://www.wsop.com/",
+      "venue": "Rio All-Suite Hotel and Casino",
+      "city": "Las Vegas",
+      "country": "United States",
+      "coords": {
+        "lat": 36.1175,
+        "lng": -115.188056
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/World%20Series%20of%20Poker%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/World_Series_of_Poker"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q819961",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World Series of Poker",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q837680",
+    "label": "FINA Water Polo World League",
+    "description": "international water polo league organized by FINA",
+    "sitelinks": 27,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "fina-water-polo-world-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2002",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/FinaMen%27sWorldLeague2011IMG%200015%2003.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/FINA_Water_Polo_World_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q837680",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "FINA Water Polo World League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q246747",
+    "label": "World Amateur Boxing Championships",
+    "description": "world championship",
+    "sitelinks": 26,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "world-amateur-boxing-championships",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1974",
+      "enWikipedia": "https://en.wikipedia.org/wiki/IBA_Men%27s_World_Boxing_Championships"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q246747",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World Amateur Boxing Championships",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1138826",
+    "label": "Asian Athletics Championships",
+    "description": "international athletics tournament",
+    "sitelinks": 26,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "asian-athletics-championships",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1973",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Asian_Athletics_Championships"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1138826",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Asian Athletics Championships",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2107281",
+    "label": "WWE NXT Championship",
+    "description": "championship created and promoted by the American professional wrestling promotion WWE",
+    "sitelinks": 25,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "wwe-nxt-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Johnny%20Gargano%20NXT%20Champion%20%28cropped%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/NXT_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2107281",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "WWE NXT Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q652498",
+    "label": "EHF Women's Champions League",
+    "description": "international women's team handball competition in Europe",
+    "sitelinks": 25,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "ehf-womens-champions-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1961",
+      "officialWebsite": "https://ehfcl.eurohandball.com/women/",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Women%27s%20EHF%20Champions%20League%20Logo%202020.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/EHF_Women%27s_Champions_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q652498",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "EHF Women's Champions League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q911142",
+    "label": "European Short Course Swimming Championships",
+    "description": "international short-course swimming competitions",
+    "sitelinks": 25,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "european-short-course-swimming-championships",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1996",
+      "officialWebsite": "http://www.len.eu/?p=18446",
+      "enWikipedia": "https://en.wikipedia.org/wiki/European_Short_Course_Swimming_Championships"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q911142",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "European Short Course Swimming Championships",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1057466",
+    "label": "TNA World Heavyweight Championship",
+    "description": "championship created and promoted by the American professional wrestling promotion Impact Wrestling",
+    "sitelinks": 25,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "tna-world-heavyweight-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Brian%20Cage%20Impact%20Champion.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/TNA_World_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1057466",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "TNA World Heavyweight Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1057833",
+    "label": "World Tag Team Championship",
+    "description": "former championship created and promoted by the American professional wrestling promotion WWE",
+    "sitelinks": 25,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "world-tag-team-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Punk%20Tag%20Champ.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/World_Tag_Team_Championship_(WWE,_1971%E2%80%932010)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1057833",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World Tag Team Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1070895",
+    "label": "World Chess Championship 1886",
+    "description": "first chess championship, held in the United States",
+    "sitelinks": 25,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "world-chess-championship-1886",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "St. Louis",
+      "city": "Missouri",
+      "country": "United States",
+      "coords": {
+        "lat": 38.626389,
+        "lng": -90.199444
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/World_Chess_Championship_1886",
+      "pastDate": "1886-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1070895",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World Chess Championship 1886",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1467808",
+    "label": "European Volleyball League",
+    "description": "international volleyball competition for national teams (men)",
+    "sitelinks": 25,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "european-volleyball-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2004",
+      "officialWebsite": "https://www.cev.eu/national-team/european-league/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Men%27s_European_Volleyball_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1467808",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "European Volleyball League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q682675",
+    "label": "EHF European Cup",
+    "description": "European handball cup competition",
+    "sitelinks": 24,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "ehf-european-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1993",
+      "officialWebsite": "https://ehfec.eurohandball.com/",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Troph%C3%A9e%20de%20la%20coupe%20challenge%202013-2014.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/EHF_European_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q682675",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "EHF European Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q727164",
+    "label": "IAAF Golden League",
+    "description": "former athletics league",
+    "sitelinks": 24,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "iaaf-golden-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1998",
+      "enWikipedia": "https://en.wikipedia.org/wiki/IAAF_Golden_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q727164",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "IAAF Golden League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q510242",
+    "label": "West Asian Football Federation Championship",
+    "description": "West Asian association football tournament for men's national teams",
+    "sitelinks": 23,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "west-asian-football-federation-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2000",
+      "officialWebsite": "http://www.the-waff.com/",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/WAFF%20members-ar.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/WAFF_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q510242",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "West Asian Football Federation Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1767299",
+    "label": "EuroCup Women",
+    "description": "basketball league",
+    "sitelinks": 23,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "eurocup-women",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2002",
+      "officialWebsite": "https://www.fiba.basketball/en/events/eurocup-women-24-25",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/London%20Lions%20vs.%20Besiktas%20%282024%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/EuroCup_Women"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1767299",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "EuroCup Women",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q13490868",
+    "label": "NXT Women's Championship",
+    "description": "women wrestling championship at WWE",
+    "sitelinks": 23,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "nxt-womens-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.wwe.com/titlehistory/nxt-womens-championship",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Shayna%20Baszler%20NXT%20Women%27s%20Champion.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/NXT_Women%27s_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q13490868",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "NXT Women's Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q666074",
+    "label": "ECW World Heavyweight Championship",
+    "description": "former championship created by Extreme Championship Wrestling and later promoted by the American professional wrestling promotion WWE",
+    "sitelinks": 23,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "ecw-world-heavyweight-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/ECW%20Championship.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/ECW_World_Heavyweight_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q666074",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "ECW World Heavyweight Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q779109",
+    "label": "GP2 Asia Series",
+    "description": "former Single-Seater Racing Championship",
+    "sitelinks": 23,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "gp2-asia-series",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2008",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gp2-asia-series.gif?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/GP2_Asia_Series"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q779109",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "GP2 Asia Series",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q840399",
+    "label": "Champ Car",
+    "description": "defunct North American open wheel auto racing organization",
+    "sitelinks": 23,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "champ-car",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1979",
+      "officialWebsite": "http://www.champcarworldseries.com/",
+      "country": "United States",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Champ%20Car%20simplified%20logo%20%282003-2008%29.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/ChampCar%202007%20Wilson%20Baumgartner.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Championship_Auto_Racing_Teams"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q840399",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Champ Car",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1334462",
+    "label": "Asian Volleyball Championship",
+    "description": "indoor volleyball competition for men's national teams",
+    "sitelinks": 23,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "asian-volleyball-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1975",
+      "officialWebsite": "https://asianvolleyball.net/new/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/AVC_Men%27s_Volleyball_Continental_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1334462",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Asian Volleyball Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3867112",
+    "label": "NXT Tag Team Championship",
+    "description": "championship created and promoted by the American professional wrestling promotion WWE",
+    "sitelinks": 23,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "nxt-tag-team-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.wwe.com/titlehistory/nxt-tag-team-championship",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyle%20O%27Reilly%20NXT%20Tag%20Champions%20%28cropped%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/NXT_Tag_Team_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3867112",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "NXT Tag Team Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q25468075",
+    "label": "World Heavyweight Championship",
+    "description": "championship wrestling",
+    "sitelinks": 23,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "world-heavyweight-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/World_Heavyweight_Championship_(WWE)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q25468075",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World Heavyweight Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q41888509",
+    "label": "FIVB Volleyball Men's Nations League",
+    "description": "international men's volleyball competition for national teams",
+    "sitelinks": 23,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "fivb-volleyball-mens-nations-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2018",
+      "officialWebsite": "https://en.volleyballworld.com/volleyball/competitions/volleyball-nations-league",
+      "enWikipedia": "https://en.wikipedia.org/wiki/FIVB_Men%27s_Volleyball_Nations_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q41888509",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "FIVB Volleyball Men's Nations League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1256239",
+    "label": "Asian Wrestling Championships",
+    "description": "wrestling Asian championship",
+    "sitelinks": 22,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "asian-wrestling-championships",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1979",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Asian_Wrestling_Championships"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1256239",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Asian Wrestling Championships",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2366460",
+    "label": "CEV Women's Champions League",
+    "description": "top official competition for women's volleyball clubs of Europe",
+    "sitelinks": 22,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "cev-womens-champions-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1961",
+      "officialWebsite": "https://championsleague.cev.eu/en/women/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/CEV_Women%27s_Champions_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2366460",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "CEV Women's Champions League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q15977608",
+    "label": "ConIFA World Football Cup",
+    "description": "football tournament",
+    "sitelinks": 22,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "conifa-world-football-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2014",
+      "enWikipedia": "https://en.wikipedia.org/wiki/CONIFA_World_Football_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q15977608",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "ConIFA World Football Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q42344325",
+    "label": "FIVB Volleyball Women's Nations League",
+    "description": "international women's volleyball competition for national teams",
+    "sitelinks": 22,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "fivb-volleyball-womens-nations-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2018",
+      "officialWebsite": "https://en.volleyballworld.com/volleyball/competitions/volleyball-nations-league",
+      "enWikipedia": "https://en.wikipedia.org/wiki/FIVB_Women%27s_Volleyball_Nations_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q42344325",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "FIVB Volleyball Women's Nations League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q64144840",
+    "label": "AEW World Championship",
+    "description": "Wrestling Championship from the All Elite Wrestling promotion",
+    "sitelinks": 22,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "aew-world-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2019",
+      "officialWebsite": "https://www.allelitewrestling.com/aew-world-championship-history",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/WMC%20AEWOMEGA-CHAMP.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/AEW_World_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q64144840",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "AEW World Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q255787",
+    "label": "OFC U-20 Championship",
+    "description": "football tournament",
+    "sitelinks": 21,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "ofc-u-20-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1974",
+      "officialWebsite": "http://www.oceaniafootball.com/ofc/",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/OFC%20orthographic%20projection%20Mapa%20OFC.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/OFC_U-19_Men%27s_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q255787",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "OFC U-20 Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q267299",
+    "label": "World Chess Championship 1894",
+    "description": "chess match between Wilheilm Steinitz and Emanuel Lasker",
+    "sitelinks": 21,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "world-chess-championship-1894",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "New York City",
+      "city": "New York",
+      "country": "Canada",
+      "coords": {
+        "lat": 40.712778,
+        "lng": -74.006111
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/World_Chess_Championship_1894",
+      "pastDate": "1894-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q267299",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World Chess Championship 1894",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1066467",
+    "label": "WCW World Heavyweight Championship",
+    "description": "former championship created by World Championship Wrestling and promoted by the American professional wrestling promotion World Wrestling Federation",
+    "sitelinks": 21,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "wcw-world-heavyweight-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1991",
+      "enWikipedia": "https://en.wikipedia.org/wiki/WCW_World_Heavyweight_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1066467",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "WCW World Heavyweight Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1148769",
+    "label": "UEFA Euro 2008 qualifying Group F",
+    "description": null,
+    "sitelinks": 21,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "uefa-euro-2008-qualifying-group-f",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/UEFA_Euro_2008_qualifying_Group_F",
+      "pastDate": "2008-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1148769",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "UEFA Euro 2008 qualifying Group F",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q736368",
+    "label": "Afro-Asian Cup of Nations",
+    "description": "football tournament",
+    "sitelinks": 21,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "afro-asian-cup-of-nations",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1978",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Afro-Asian_Cup_of_Nations"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q736368",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Afro-Asian Cup of Nations",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q737125",
+    "label": "Red Bull Air Race World Championship",
+    "description": "air racing world tournament",
+    "sitelinks": 21,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "red-bull-air-race-world-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2003",
+      "officialWebsite": "http://www.redbullairrace.com/",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/RedBullAirRacePylonLogo.jpg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Red%20Bull%20Air%20Race%20Chambliss%202.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Red_Bull_Air_Race_World_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q737125",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Red Bull Air Race World Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1807294",
+    "label": "World Chess Championship 1891",
+    "description": "chess match between Wilheilm Steinitz and Isidor Gunsberg",
+    "sitelinks": 21,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "world-chess-championship-1891",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "New York City",
+      "city": "New York",
+      "country": "United States",
+      "coords": {
+        "lat": 40.712778,
+        "lng": -74.006111
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/World_Chess_Championship_1890%E2%80%931891",
+      "pastDate": "1890-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1807294",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World Chess Championship 1891",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q60624752",
+    "label": "WWE Women's Tag Team Championship",
+    "description": "Article about the WWE Women's Tag Team Championship",
+    "sitelinks": 21,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "wwe-womens-tag-team-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.wwe.com/classics/titlehistory/wwe-womens-tag-team-championship",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Kabuki%20Warriors%20Champions%2002.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/WWE_Women%27s_Tag_Team_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q60624752",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "WWE Women's Tag Team Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q202324",
+    "label": "FIBA EuroCup Challenge",
+    "description": "club basketball tournament in Europe",
+    "sitelinks": 20,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "fiba-eurocup-challenge",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2002",
+      "officialWebsite": "https://www.fiba.basketball/en/history/212-fiba-mens-european-club-competitions-tier-2",
+      "enWikipedia": "https://en.wikipedia.org/wiki/FIBA_EuroCup_Challenge"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q202324",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "FIBA EuroCup Challenge",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q732052",
+    "label": "CCCF Championship",
+    "description": "football tournament",
+    "sitelinks": 20,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "cccf-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1910",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Copa%20CCCF%20trophy.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/CCCF_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q732052",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "CCCF Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q962460",
+    "label": "Women's EHF European League",
+    "description": "European handball cup competition",
+    "sitelinks": 20,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "womens-ehf-european-league",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1981",
+      "officialWebsite": "https://www.eurohandball.com/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/EHF_Women%27s_European_League"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q962460",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Women's EHF European League",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1148730",
+    "label": "UEFA Euro 2008 qualifying Group G",
+    "description": "football tournament qualifying stage",
+    "sitelinks": 20,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "uefa-euro-2008-qualifying-group-g",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/UEFA_Euro_2008_qualifying_Group_G",
+      "pastDate": "2008-01-01"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1148730",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "UEFA Euro 2008 qualifying Group G",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1206434",
+    "label": "Hockey Asia Cup",
+    "description": "international field hockey tournament run by the Asian Hockey Federation",
+    "sitelinks": 20,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "hockey-asia-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1982",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Men%27s_Hockey_Asia_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1206434",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Hockey Asia Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q766067",
+    "label": "hour record",
+    "description": "record for the longest distance cycled in one hour on a bicycle",
+    "sitelinks": 20,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "hour-record",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Hour_record"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q766067",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "hour record",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q959841",
+    "label": "Schneider Trophy",
+    "description": "air racing event held annually for seaplanes",
+    "sitelinks": 20,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "schneider-trophy",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1911",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Preparation%20of%20Supermarine%20S.4%20for%20take-off%20at%20Baltimore.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Schneider_Trophy"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q959841",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Schneider Trophy",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q686556",
+    "label": "Coppa delle Alpi",
+    "description": "football tournament",
+    "sitelinks": 19,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "coppa-delle-alpi",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1960",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Cup_of_the_Alps"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q686556",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Coppa delle Alpi",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q943274",
+    "label": "World Climbing Championship",
+    "description": "biennial competition climbing event",
+    "sitelinks": 19,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "world-climbing-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1991",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Climbing%20World%20Championships%202018%20Lead%20Final%2001.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/World_Climbing_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q943274",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World Climbing Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1343487",
+    "label": "Formula BMW",
+    "description": "former Single-Seater Racing Championship",
+    "sitelinks": 19,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "formula-bmw",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nico%20Rosberg%20Formel%20BMW%28ThKraft%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Formula_BMW"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1343487",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Formula BMW",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1517550",
+    "label": "UCI Women's Road World Cup",
+    "description": "women's road cycling series",
+    "sitelinks": 19,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "uci-womens-road-world-cup",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1998",
+      "officialWebsite": "http://www.uci.ch/includes/asp/getTarget.asp?type=p&id=MTYzNDM",
+      "enWikipedia": "https://en.wikipedia.org/wiki/UCI_Women%27s_Road_World_Cup"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1517550",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "UCI Women's Road World Cup",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1630626",
+    "label": "European Team Championships",
+    "description": "athletics competition",
+    "sitelinks": 19,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "european-team-championships",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2009",
+      "enWikipedia": "https://en.wikipedia.org/wiki/European_Athletics_Team_Championships"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1630626",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "European Team Championships",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2002757",
+    "label": "World Race Walking Team Championships",
+    "description": "racewalking event",
+    "sitelinks": 19,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "world-race-walking-team-championships",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1961",
+      "officialWebsite": "https://www.worldathletics.org/competitions/world-athletics-race-walking-team-championshi/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/World_Athletics_Race_Walking_Team_Championships"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2002757",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World Race Walking Team Championships",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2038419",
+    "label": "South American Volleyball Championship",
+    "description": "volleyball tournament for national teams of South America",
+    "sitelinks": 19,
+    "suggestedCategory": "sports",
+    "suggestedSlug": "south-american-volleyball-championship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1951",
+      "officialWebsite": "http://www.voleysur.org/v2/index.asp",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Men%27s_South_American_Volleyball_Championship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2038419",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "South American Volleyball Championship",
+      "retrieved_on": "2026-08-26"
+    }
+  }
+]

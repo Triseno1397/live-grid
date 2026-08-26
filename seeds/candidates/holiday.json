@@ -1,0 +1,1673 @@
+[
+  {
+    "qid": "Q1128871",
+    "label": "March on Washington for Jobs and Freedom",
+    "description": "1963 demonstration of the civil rights movement",
+    "sitelinks": 38,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "march-on-washington-for-jobs-and-freedom",
+    "alreadyInDb": false,
+    "claims": {
+      "country": "United States",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/IhaveadreamMarines.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/March_on_Washington",
+      "pastDate": "1963-08-28"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1128871",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "March on Washington for Jobs and Freedom",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1255251",
+    "label": "EuroPride",
+    "description": "annual pan-European parade that celebrates LGBT+ people",
+    "sitelinks": 35,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "europride",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1992",
+      "officialWebsite": "https://www.europride.com/en/",
+      "venue": "Europe",
+      "coords": {
+        "lat": 53.5,
+        "lng": 15.5
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/EuroPride%202010%20Warsaw%20Poland%2023.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/EuroPride"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1255251",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "EuroPride",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q106729096",
+    "label": "The Guardians of the Galaxy Holiday Special",
+    "description": "Marvel Studios television special",
+    "sitelinks": 35,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-guardians-of-the-galaxy-holiday-special",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.marvel.com/tv-shows/guardians-of-the-galaxy-holiday-special/1",
+      "broadcaster": "Disney+",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Guardians%20of%20the%20Galaxy%20Holiday%20Special%20Logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Guardians_of_the_Galaxy_Holiday_Special"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q106729096",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Guardians of the Galaxy Holiday Special",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q111426635",
+    "label": "Werewolf by Night",
+    "description": "2022 superhero television special produced by Marvel Studios",
+    "sitelinks": 29,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "werewolf-by-night",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.marvel.com/tv-shows/werewolf-by-night/1",
+      "broadcaster": "Disney+",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Werewolf%20By%20Night%20Logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Werewolf_by_Night_(TV_special)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q111426635",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Werewolf by Night",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q110207138",
+    "label": "Harry Potter 20th Anniversary: Return to Hogwarts",
+    "description": "reunion special of Harry Potter",
+    "sitelinks": 27,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "harry-potter-20th-anniversary-return-to-hogwarts",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "RTS 1",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Harry_Potter_20th_Anniversary:_Return_to_Hogwarts"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q110207138",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Harry Potter 20th Anniversary: Return to Hogwarts",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q106639064",
+    "label": "Friends: The Reunion",
+    "description": "2021 television special",
+    "sitelinks": 26,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "friends-the-reunion",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "HBO Max",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Friends%20The%20Reunion%20Logo.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Friends:_The_Reunion"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q106639064",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Friends: The Reunion",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q135411818",
+    "label": "The Punisher: One Last Kill",
+    "description": "2026 American television special",
+    "sitelinks": 22,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-punisher-one-last-kill",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.marvel.com/tv-shows/the-punisher-one-last-kill/1",
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Punisher:_One_Last_Kill"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q135411818",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Punisher: One Last Kill",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1065767",
+    "label": "Scream Awards",
+    "description": "award show dedicated to the horror, sci-fi, and fantasy genres",
+    "sitelinks": 20,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "scream-awards",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2006",
+      "broadcaster": "Spike TV",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Scream_Awards"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1065767",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Scream Awards",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q261810",
+    "label": "ovatio",
+    "description": "Form of the Roman Triumph",
+    "sitelinks": 20,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "ovatio",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Ovation"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q261810",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "ovatio",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1393337",
+    "label": "A Charlie Brown Christmas",
+    "description": "1965 musical television special directed by Bill Melendez",
+    "sitelinks": 20,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "a-charlie-brown-christmas",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "CBS",
+      "enWikipedia": "https://en.wikipedia.org/wiki/A_Charlie_Brown_Christmas"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1393337",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "A Charlie Brown Christmas",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1418035",
+    "label": "The Simpsons’ Treehouse of Horror",
+    "description": "series of Halloween specials inspired by the animated series The Simpsons",
+    "sitelinks": 20,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-simpsons-treehouse-of-horror",
+    "alreadyInDb": false,
+    "claims": {
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Simpsons%20Treehouse%20of%20Horror%20logo.png?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Treehouse_of_Horror"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1418035",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Simpsons’ Treehouse of Horror",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1254956",
+    "label": "Dragon Ball Z: The History of Trunks",
+    "description": "1993 anime television special directed by Yoshihiro Ueda",
+    "sitelinks": 19,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "dragon-ball-z-the-history-of-trunks",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Dragon_Ball_Z:_The_History_of_Trunks"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1254956",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Dragon Ball Z: The History of Trunks",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q50317608",
+    "label": "March for Our Lives",
+    "description": "2018 and 2022 student-led demonstration in Washington, DC",
+    "sitelinks": 19,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "march-for-our-lives",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://marchforourlives.org/",
+      "venue": "Washington, D.C.",
+      "city": "District of Columbia",
+      "country": "United States",
+      "coords": {
+        "lat": 38.895,
+        "lng": -77.036667
+      },
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/March%20For%20Our%20Lives.svg?width=512",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/March%20for%20Our%20Lives%2024%20March%202018%20in%20NYC%2C%20Central%20Park%20West%2C%20AMNH%2C%20The%20Beresford%2C%20Manhattan.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/March_for_Our_Lives",
+      "pastDate": "2018-03-24"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q50317608",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "March for Our Lives",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q251801",
+    "label": "Dr. Seuss' How the Grinch Stole Christmas!",
+    "description": "1966 American animated television special based on the book by Dr. Seuss directed by Chuck Jones and Ben Washam",
+    "sitelinks": 18,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "dr-seuss-how-the-grinch-stole-christmas",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "CBS",
+      "enWikipedia": "https://en.wikipedia.org/wiki/How_the_Grinch_Stole_Christmas!_(TV_special)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q251801",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Dr. Seuss' How the Grinch Stole Christmas!",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q19553",
+    "label": "zombie walk",
+    "description": "organized public gathering of people who dress up in zombie costumes",
+    "sitelinks": 18,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "zombie-walk",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20ballafre%20-%20Paris%20Zombie%20Walk%202016.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Zombie_walk"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q19553",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "zombie walk",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q28971205",
+    "label": "March for Science",
+    "description": "series of rallies and marches held in Washington, D.C. and over 500 cities across the world on April 22, 2017",
+    "sitelinks": 18,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "march-for-science",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.marchforscience.com/",
+      "country": "United States",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/March%20for%20Science%2C%20Washington%2C%20DC%20%2834052398582%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/March_for_Science",
+      "pastDate": "2017-04-22"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q28971205",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "March for Science",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q631899",
+    "label": "Motown 25: Yesterday, Today, Forever",
+    "description": "1983 television special, produced by Suzanne de Passe for Motown Records",
+    "sitelinks": 16,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "motown-25-yesterday-today-forever",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Motown_25:_Yesterday,_Today,_Forever"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q631899",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Motown 25: Yesterday, Today, Forever",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q74229",
+    "label": "The Hobbit",
+    "description": "1977 animated film directed by Jules Bass and Arthur Rankin, Jr.",
+    "sitelinks": 16,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-hobbit",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "NBC",
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Hobbit_(1977_film)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q74229",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Hobbit",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q513681",
+    "label": "Day of Potsdam",
+    "description": null,
+    "sitelinks": 16,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "day-of-potsdam",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20183-S38324%2C%20Tag%20von%20Potsdam%2C%20Adolf%20Hitler%2C%20Paul%20v.%20Hindenburg.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Potsdam_Day",
+      "pastDate": "1933-03-21"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q513681",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Day of Potsdam",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q5840086",
+    "label": "The Day of the Doctor",
+    "description": "2013 special episode of Doctor Who",
+    "sitelinks": 16,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-day-of-the-doctor",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Day_of_the_Doctor"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q5840086",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Day of the Doctor",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1133638",
+    "label": "Tournament of Roses Parade",
+    "description": "annual parade in Pasadena, California",
+    "sitelinks": 15,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "tournament-of-roses-parade",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1890",
+      "officialWebsite": "https://tournamentofroses.com",
+      "country": "United States",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rose%20Parade%202017%20%2832465317371%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Rose_Parade"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1133638",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Tournament of Roses Parade",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1518550",
+    "label": "Aloha from Hawaii Via Satellite",
+    "description": "1973 film by Marty Pasetta",
+    "sitelinks": 15,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "aloha-from-hawaii-via-satellite",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Aloha_from_Hawaii_via_Satellite"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1518550",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Aloha from Hawaii Via Satellite",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2910386",
+    "label": "Bonus Army",
+    "description": "1930s US veterans protest movement",
+    "sitelinks": 14,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "bonus-army",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "Anacostia",
+      "city": "Washington, D.C.",
+      "coords": {
+        "lat": 38.865442,
+        "lng": -76.984253
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bonus%20marchers%2005510%202004%20001%20a.gif?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Bonus_Army",
+      "pastDate": "1932-07-28"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2910386",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Bonus Army",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q4154060",
+    "label": "Dyke March",
+    "description": "lesbian-led gathering and protest march",
+    "sitelinks": 14,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "dyke-march",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/NYC%20Dyke%20March%202011.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Dyke_march"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q4154060",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Dyke March",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1364951",
+    "label": "Lupin the 3rd vs Detective Conan",
+    "description": "Japanese anime television special",
+    "sitelinks": 13,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "lupin-the-3rd-vs-detective-conan",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "http://www.ntv.co.jp/lupin-conan/",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Lupin_the_3rd_vs._Detective_Conan"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1364951",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Lupin the 3rd vs Detective Conan",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2005290",
+    "label": "San Francisco Pride",
+    "description": "annual LGBT event in San Francisco, California, USA",
+    "sitelinks": 13,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "san-francisco-pride",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1970",
+      "officialWebsite": "https://sfpride.org/",
+      "venue": "Civic Center Plaza",
+      "city": "San Francisco",
+      "country": "United States",
+      "coords": {
+        "lat": 37.779444,
+        "lng": -122.4175
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/San%20Francisco%20Pride%20Parade%202012-4.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/San_Francisco_Pride"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2005290",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "San Francisco Pride",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2082426",
+    "label": "The Runaway Bride",
+    "description": "special episode of Doctor Who",
+    "sitelinks": 13,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-runaway-bride",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Racnoss%20%282659810200%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Runaway_Bride_(Doctor_Who)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2082426",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Runaway Bride",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2511224",
+    "label": "The End of Time",
+    "description": "two-part special of Doctor Who",
+    "sitelinks": 13,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-end-of-time",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_End_of_Time_(Doctor_Who)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2511224",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The End of Time",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q19650558",
+    "label": "White Christmas",
+    "description": "2014 Christmas special episode of Black Mirror",
+    "sitelinks": 13,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "white-christmas",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "Channel 4",
+      "enWikipedia": "https://en.wikipedia.org/wiki/White_Christmas_(Black_Mirror)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q19650558",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "White Christmas",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q909574",
+    "label": "Dragon Ball GT: A Hero's Legacy",
+    "description": "1997 Japanese anime television special, part of the Dragon Ball franchise",
+    "sitelinks": 12,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "dragon-ball-gt-a-heros-legacy",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "Fuji Television",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Dragon_Ball_GT:_A_Hero%27s_Legacy"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q909574",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Dragon Ball GT: A Hero's Legacy",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1581794",
+    "label": "Million Man March",
+    "description": "large gathering of African-American men in Washington, D.C. during 1995",
+    "sitelinks": 12,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "million-man-march",
+    "alreadyInDb": false,
+    "claims": {
+      "country": "United States",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20glimpse%20of%20the%201995%20Million%20Man%20March%20-%20from%20the%20recently%20cataloged%20Roll%20Call%20Photograph%20Collection%20%2829984043675%29%20%28cropped%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Million_Man_March",
+      "pastDate": "1995-10-16"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1581794",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Million Man March",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3024843",
+    "label": "Planet of the Dead",
+    "description": "episode of Doctor Who (S4 E15)",
+    "sitelinks": 12,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "planet-of-the-dead",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Tennant%20and%20Michelle%20Ryan.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Planet_of_the_Dead"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3024843",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Planet of the Dead",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q114674737",
+    "label": "Marvel Studios Special Presentations",
+    "description": "Marvel Cinematic Universe television specials",
+    "sitelinks": 12,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "marvel-studios-special-presentations",
+    "alreadyInDb": false,
+    "claims": {
+      "country": "United States",
+      "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Marvel%20Studios%20Special%20Presentations%20logo.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Marvel%27s_Special_Presentations"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q114674737",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Marvel Studios Special Presentations",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q383694",
+    "label": "Scooby Goes Hollywood",
+    "description": "1979 television special directed by Ray Patterson",
+    "sitelinks": 11,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "scooby-goes-hollywood",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "American Broadcasting Company",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Scooby_Goes_Hollywood"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q383694",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Scooby Goes Hollywood",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1341976",
+    "label": "World Idol",
+    "description": "television program",
+    "sitelinks": 11,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "world-idol",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/World_Idol"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1341976",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "World Idol",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2087589",
+    "label": "Voyage of the Damned",
+    "description": "special episode of Doctor Who",
+    "sitelinks": 11,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "voyage-of-the-damned",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Voyage_of_the_Damned_(Doctor_Who)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2087589",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Voyage of the Damned",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2559908",
+    "label": "The Christmas Invasion",
+    "description": "special episode of Doctor Who",
+    "sitelinks": 11,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-christmas-invasion",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Christmas_Invasion"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2559908",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Christmas Invasion",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q5287435",
+    "label": "Doctor Who specials (2008–2010)",
+    "description": "specials of a television series",
+    "sitelinks": 11,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "doctor-who-specials-2008-2010",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Doctor_Who_specials_(2008%E2%80%932010)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q5287435",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Doctor Who specials (2008–2010)",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q8030700",
+    "label": "Woman Suffrage Procession",
+    "description": "1913 suffragist parade in Washington, D.C., United States",
+    "sitelinks": 11,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "woman-suffrage-procession",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "Pennsylvania Avenue",
+      "city": "Prince George's County",
+      "country": "United States",
+      "coords": {
+        "lat": 38.893738,
+        "lng": -77.023901
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Official%20Program%20Woman%20Suffrage%20Procession%20-%20March%203%2C%201913.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Woman_Suffrage_Procession",
+      "pastDate": "1913-03-03"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q8030700",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Woman Suffrage Procession",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q23013643",
+    "label": "Ice Age: The Great Egg-Scapade",
+    "description": "2016 film directed by Ricardo Curtis",
+    "sitelinks": 11,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "ice-age-the-great-egg-scapade",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "Cartoon Network",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ice%20Age%20logo.svg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Ice_Age:_The_Great_Egg-Scapade"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q23013643",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Ice Age: The Great Egg-Scapade",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q109524352",
+    "label": "Entergalactic",
+    "description": "Animated music television special",
+    "sitelinks": 11,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "entergalactic",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "Netflix",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Entergalactic_(TV_special)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q109524352",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Entergalactic",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q110407639",
+    "label": "The House",
+    "description": "2022 stop-motion anthology",
+    "sitelinks": 11,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-house",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_House_(TV_special)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q110407639",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The House",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3008132",
+    "label": "The Next Doctor",
+    "description": "special episode of Doctor Who",
+    "sitelinks": 10,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-next-doctor",
+    "alreadyInDb": false,
+    "claims": {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cardiff%20April%202010%20113%20%284530732108%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Next_Doctor"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3008132",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Next Doctor",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3062468",
+    "label": "A Christmas Carol",
+    "description": "special episode of Doctor Who",
+    "sitelinks": 10,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "a-christmas-carol",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/A_Christmas_Carol_(Doctor_Who)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3062468",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "A Christmas Carol",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q4384193",
+    "label": "golden spike",
+    "description": "ceremony for the completion of the first US railroad line from Sacramento to Omaha",
+    "sitelinks": 10,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "golden-spike",
+    "alreadyInDb": false,
+    "claims": {
+      "country": "United States",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Golden_spike"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q4384193",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "golden spike",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q29837736",
+    "label": "My Little Pony: Equestria Girls",
+    "description": "Canadian-American animated series of television specials",
+    "sitelinks": 10,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "my-little-pony-equestria-girls",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "Discovery Family",
+      "enWikipedia": "https://en.wikipedia.org/wiki/My_Little_Pony:_Equestria_Girls_(2017_television_specials)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q29837736",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "My Little Pony: Equestria Girls",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q30133242",
+    "label": "Twice Upon a Time",
+    "description": "special episode of Doctor Who",
+    "sitelinks": 10,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "twice-upon-a-time",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Twice_Upon_a_Time_(Doctor_Who)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q30133242",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Twice Upon a Time",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q105037354",
+    "label": "WWE Superstar Spectacle",
+    "description": "professional wrestling television special",
+    "sitelinks": 10,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "wwe-superstar-spectacle",
+    "alreadyInDb": false,
+    "claims": {
+      "country": "United States",
+      "enWikipedia": "https://en.wikipedia.org/wiki/WWE_Superstar_Spectacle"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q105037354",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "WWE Superstar Spectacle",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q6457810",
+    "label": "NYC Pride March",
+    "description": "annual LGBTQ parade in New York City, among the largest in the world",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "nyc-pride-march",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1970",
+      "venue": "New York City",
+      "city": "New York",
+      "country": "United States",
+      "coords": {
+        "lat": 40.712778,
+        "lng": -74.006111
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20York%20%286988916446%29.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/NYC_Pride_March"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q6457810",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "NYC Pride March",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q116746054",
+    "label": "Mighty Morphin Power Rangers Once and Always",
+    "description": "2023 American film",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "mighty-morphin-power-rangers-once-and-always",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Mighty_Morphin_Power_Rangers:_Once_%26_Always"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q116746054",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Mighty Morphin Power Rangers Once and Always",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q121354029",
+    "label": "Kaguya-sama: Love Is War – The First Kiss That Never Ends",
+    "description": "2022 Japanese film",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "kaguya-sama-love-is-war-the-first-kiss-that-never-ends",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Kaguya-sama:_Love_Is_War_%E2%80%93_The_First_Kiss_That_Never_Ends"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q121354029",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Kaguya-sama: Love Is War – The First Kiss That Never Ends",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q81610",
+    "label": "Mr Gay World",
+    "description": "male beauty contest",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "mr-gay-world",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2009",
+      "officialWebsite": "http://www.mrgayworld.com/",
+      "country": "Canada",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Mr_Gay_World"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q81610",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Mr Gay World",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2121677",
+    "label": "To Catch a Predator",
+    "description": "American reality television series focusing on exposing pedophiles through sting operations",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "to-catch-a-predator",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "NBC",
+      "enWikipedia": "https://en.wikipedia.org/wiki/To_Catch_a_Predator"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2121677",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "To Catch a Predator",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3289676",
+    "label": "March for Women's Lives",
+    "description": "demonstration in Washington, DC, US, in 2004",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "march-for-womens-lives",
+    "alreadyInDb": false,
+    "claims": {
+      "venue": "Northwest",
+      "city": "Washington, D.C.",
+      "country": "United States",
+      "coords": {
+        "lat": 38.9364,
+        "lng": -77.0521
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/March%20for%20Women%27s%20Lives%20detail.jpg?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/March_for_Women%27s_Lives_(2004)",
+      "pastDate": "2004-04-24"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3289676",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "March for Women's Lives",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3988576",
+    "label": "The Original Kings of Comedy",
+    "description": "2000 film by Spike Lee",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-original-kings-of-comedy",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Original_Kings_of_Comedy"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3988576",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Original Kings of Comedy",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q13432769",
+    "label": "The Time of the Doctor",
+    "description": "special episode of Doctor Who",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-time-of-the-doctor",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Time_of_the_Doctor"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q13432769",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Time of the Doctor",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q15156860",
+    "label": "The Night of the Doctor",
+    "description": "Doctor Who mini-sode",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-night-of-the-doctor",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Night_of_the_Doctor"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q15156860",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Night of the Doctor",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q18159602",
+    "label": "Last Christmas",
+    "description": "2014 Christmas special episode of Doctor Who",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "last-christmas",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Last_Christmas_(Doctor_Who)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q18159602",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Last Christmas",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q48894048",
+    "label": "My Little Pony: Equestria Girls – Forgotten Friendship",
+    "description": "2018 Canadian-American television special animated",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "my-little-pony-equestria-girls-forgotten-friendship",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "2018",
+      "broadcaster": "Discovery Family",
+      "enWikipedia": "https://en.wikipedia.org/wiki/My_Little_Pony:_Equestria_Girls_%E2%80%93_Forgotten_Friendship"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q48894048",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "My Little Pony: Equestria Girls – Forgotten Friendship",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q109255839",
+    "label": "Robin Robin",
+    "description": "2021 animated movie by Aardman",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "robin-robin",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Robin_Robin"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q109255839",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Robin Robin",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q113835208",
+    "label": "Doctor Who 60th anniversary",
+    "description": "season of television series",
+    "sitelinks": 9,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "doctor-who-60th-anniversary",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Doctor_Who_specials_(2023)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q113835208",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Doctor Who 60th anniversary",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q126041429",
+    "label": "South Park: The End of Obesity",
+    "description": "2024 American television special",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "south-park-the-end-of-obesity",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/South_Park:_The_End_of_Obesity"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q126041429",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "South Park: The End of Obesity",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q454858",
+    "label": "Nelson Mandela 70th Birthday Tribute",
+    "description": "1988 popular-music concert in London",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "nelson-mandela-70th-birthday-tribute",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Nelson_Mandela_70th_Birthday_Tribute",
+      "pastDate": "1988-06-11"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q454858",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Nelson Mandela 70th Birthday Tribute",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q564643",
+    "label": "Village Halloween Parade",
+    "description": "parade held every Halloween in the Greenwich Village neighborhood of Lower Manhattan, U.S.",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "village-halloween-parade",
+    "alreadyInDb": false,
+    "claims": {
+      "inception": "1973",
+      "officialWebsite": "http://www.halloween-nyc.com/",
+      "venue": "Greenwich Village",
+      "city": "Manhattan",
+      "country": "United States",
+      "coords": {
+        "lat": 40.733611,
+        "lng": -74.002778
+      },
+      "enWikipedia": "https://en.wikipedia.org/wiki/New_York%27s_Village_Halloween_Parade"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q564643",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Village Halloween Parade",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q568252",
+    "label": "WWE Raw 1000",
+    "description": "professional wrestling television special",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "wwe-raw-1000",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "http://www.wwe.com/inside/raw1000",
+      "enWikipedia": "https://en.wikipedia.org/wiki/WWE_Raw_1000",
+      "pastDate": "2012-07-23"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q568252",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "WWE Raw 1000",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q596994",
+    "label": "It's the Great Pumpkin, Charlie Brown",
+    "description": "1966 Halloween TV special directed by Bill Melendez",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "its-the-great-pumpkin-charlie-brown",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "CBS",
+      "enWikipedia": "https://en.wikipedia.org/wiki/It%27s_the_Great_Pumpkin,_Charlie_Brown"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q596994",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "It's the Great Pumpkin, Charlie Brown",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1700404",
+    "label": "Pedigree Dogs Exposed",
+    "description": "2008 film",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "pedigree-dogs-exposed",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.bbc.co.uk/programmes/b00d4ljk",
+      "broadcaster": "BBC One",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Pedigree_Dogs_Exposed"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1700404",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Pedigree Dogs Exposed",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q2406406",
+    "label": "Something, Something, Something, Dark Side",
+    "description": "episode of Family Guy (S8 E20)",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "something-something-something-dark-side",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "Fox Broadcasting Company",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Something,_Something,_Something,_Dark_Side"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q2406406",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Something, Something, Something, Dark Side",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q3033553",
+    "label": "Doctor Who and the Curse of Fatal Death",
+    "description": "1999 Doctor Who charity special",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "doctor-who-and-the-curse-of-fatal-death",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Curse_of_Fatal_Death"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q3033553",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Doctor Who and the Curse of Fatal Death",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q5159603",
+    "label": "Coney Island Mermaid Parade",
+    "description": "annual art parade in Coney Island",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "coney-island-mermaid-parade",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "http://www.coneyisland.com/mermaid.shtml",
+      "venue": "Coney Island",
+      "city": "Brooklyn",
+      "country": "United States",
+      "coords": {
+        "lat": 40.575,
+        "lng": -73.9825
+      },
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mermaid%20Parade%202013%2006.JPG?width=512",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Coney_Island_Mermaid_Parade"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q5159603",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Coney Island Mermaid Parade",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q18702192",
+    "label": "Grease: Live",
+    "description": "2016 live production of the 1971 musical of the same name",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "grease-live",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "http://www.fox.com/grease-live",
+      "broadcaster": "Fox Broadcasting Company",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Grease_Live!"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q18702192",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Grease: Live",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q21707008",
+    "label": "LEGO Scooby-Doo: Knight Time Terror",
+    "description": "2015 television special",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "lego-scooby-doo-knight-time-terror",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "Cartoon Network",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Lego_Scooby-Doo!_Knight_Time_Terror"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q21707008",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "LEGO Scooby-Doo: Knight Time Terror",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q30325574",
+    "label": "Katy Perry Live: Witness World Wide",
+    "description": "television special",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "katy-perry-live-witness-world-wide",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Katy_Perry_Live:_Witness_World_Wide"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q30325574",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Katy Perry Live: Witness World Wide",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q60065815",
+    "label": "Resolution",
+    "description": "special episode of Doctor Who",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "resolution",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/Resolution_(Doctor_Who)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q60065815",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Resolution",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q109058088",
+    "label": "Adele One Night Only",
+    "description": "television special",
+    "sitelinks": 8,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "adele-one-night-only",
+    "alreadyInDb": false,
+    "claims": {
+      "officialWebsite": "https://www.cbs.com/shows/adele-one-night-only/",
+      "broadcaster": "CBS",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Adele_One_Night_Only"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q109058088",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Adele One Night Only",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q114836201",
+    "label": "The Power of the Doctor",
+    "description": "Special episode of Doctor Who",
+    "sitelinks": 7,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-power-of-the-doctor",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Power_of_the_Doctor"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q114836201",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Power of the Doctor",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q123024716",
+    "label": "South Park: Joining the Panderverse",
+    "description": "2023 American television special",
+    "sitelinks": 7,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "south-park-joining-the-panderverse",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/South_Park:_Joining_the_Panderverse"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q123024716",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "South Park: Joining the Panderverse",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q123624443",
+    "label": "Wild Blue Yonder",
+    "description": "2023 Doctor Who special episode",
+    "sitelinks": 7,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "wild-blue-yonder",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "BBC One",
+      "enWikipedia": "https://en.wikipedia.org/wiki/Wild_Blue_Yonder_(Doctor_Who)"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q123624443",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "Wild Blue Yonder",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q1758792",
+    "label": "The Flintstones Meet Rockula and Frankenstone",
+    "description": "1979 animated television special directed by Ray Patterson",
+    "sitelinks": 7,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-flintstones-meet-rockula-and-frankenstone",
+    "alreadyInDb": false,
+    "claims": {
+      "broadcaster": "NBC",
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Flintstones_Meet_Rockula_and_Frankenstone"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q1758792",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Flintstones Meet Rockula and Frankenstone",
+      "retrieved_on": "2026-08-26"
+    }
+  },
+  {
+    "qid": "Q21154355",
+    "label": "The Husbands of River Song",
+    "description": "special episode of Doctor Who",
+    "sitelinks": 7,
+    "suggestedCategory": "holiday",
+    "suggestedSlug": "the-husbands-of-river-song",
+    "alreadyInDb": false,
+    "claims": {
+      "enWikipedia": "https://en.wikipedia.org/wiki/The_Husbands_of_River_Song"
+    },
+    "source": {
+      "url": "https://www.wikidata.org/wiki/Q21154355",
+      "publisher": "Wikidata",
+      "tier": "reference",
+      "title": "The Husbands of River Song",
+      "retrieved_on": "2026-08-26"
+    }
+  }
+]

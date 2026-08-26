@@ -16,7 +16,8 @@
     "seeds:links": "tsx --env-file-if-exists=.env.local scripts/check-links.ts",
     "seeds:prune": "tsx --env-file-if-exists=.env.local scripts/prune-sources.ts",
     "seeds:import": "tsx --env-file-if-exists=.env.local scripts/import-seeds.ts",
-    "seeds:rederive": "tsx --env-file-if-exists=.env.local scripts/rederive-confidence.ts"
+    "seeds:rederive": "tsx --env-file-if-exists=.env.local scripts/rederive-confidence.ts",
+    "discover": "tsx --env-file-if-exists=.env.local scripts/discover/wikidata.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.120.0",
