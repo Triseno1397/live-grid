@@ -4,9 +4,12 @@ Durable state for the 600–800 production sweep. The sweep is far longer than o
 session, so this file — not anyone's memory — is what says where it got to.
 
 **Target:** 800 productions / ~1600 editions across all 13 categories.
-**At last update:** 120 productions / 191 editions across 9 categories, 221 sources / 345
-citations. `streaming` and `political` off zero; `reality`, `holiday`, `gaming` and
-`international` still at zero, `concerts` at 1.
+**At last update:** 195 productions / 283 editions across 12 of 13 categories, 480 sources /
+774 citations, 25 viewership rows. 119 productions derive `official` confidence, 21 remain
+`unverified`. 74 editions carry a date still ahead of today, up from 9.
+
+Only `reality` is still at zero. `streaming`, `political`, `holiday`, `international`, `gaming`
+and `concerts` all came off it.
 
 ## Two things the sweep keeps running into
 
@@ -114,12 +117,24 @@ against the shows' own audience-ticketing pages and the Georgia Film Office.
 | 008 | `008-major-leagues.json` | sports · NBA/MLB/NHL | 7 | 4 | yes | 19 sources / 32 citations. All 14 records official. |
 | 009 | `009-annual-classics.json` | sports · motorsport, racing, golf | 5 | 4 | yes | 14 sources / 22 citations. Masters is single-source — see below. |
 | 011 | `011-streaming-live.json` | streaming | 23 | 4 | yes | 88 sources / 123 citations, 46 of 48 subjects `official`. 0 dead links. |
+| 012 | `012-holiday.json` | holiday | 13 | 4 | yes | Westminster moves to Netflix; A Capitol Fourth moved off the Fourth for the 250th. |
+| 014 | `014-gaming-esports.json` | gaming | 23 | 4 | yes | 39 of 56 subjects official. EWC 2026 moved Riyadh → Paris, which the candidate file did not know. |
 | 015 | `015-political.json` | political | 20 | 4 | yes | 66 sources / 109 citations. 2028 conventions and debates left undated — nothing announced. |
-| 019 | `019-source-backfill.json` | backfill | 1 of 57 | 4 | yes | Academy Awards done. 56 productions still uncited. |
+| 016 | `016-international.json` | international | 9 | 4 | yes | Eurovision → Burgas, Sundance → Boulder, Berlinale restructures its run of show. |
+| 018 | `018-concerts-festivals.json` | concerts | 23 | 4 | yes | 51 URLs, 0 warnings — the cleanest link check in the corpus. Coachella skipped as a duplicate of the streaming record. |
+| 020 | `020-sports-depth.json` | sports | 6 | 4 | yes | CFP, Final Four, WrestleMania, Royal Rumble, Army–Navy, F1 Vegas. |
+| 021 | `021-awards-2027.json` | awards | 4 | 4 | yes | PGA new; Golden Globes / Critics Choice / Actor Awards 2027 dates filled in. |
+| 019 | `019-source-backfill.json` | backfill | 33 | 4 | yes | tech, variety, upfronts and the six upcoming award shows. 21 productions still uncited — awards (18 old ones) and the three Atlanta game shows above. |
 
 Batches 000–006 predate the provenance schema. They are listed in `LEGACY_UNSOURCED` in
 `scripts/check-seeds.ts`, which downgrades their missing-source errors to warnings. **Batch
 019 backfills their citations and empties that list.** Nothing else may be added to it.
+
+Three files have already left it — `003-upfronts.json`, `004-tech-keynotes.json` and
+`005-variety.json`. That became possible when `seeds:check` learned to union sources across
+files by slug: the citations land in 019 and the bare record stays in its original file, so a
+per-file check would have called those files unsourced forever no matter how complete the
+backfill was.
 
 ## Coverage plan
 
