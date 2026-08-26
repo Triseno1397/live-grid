@@ -311,5 +311,159 @@
         "retrieved_on": "2026-08-26"
       }
     ]
+  },
+  {
+    "name": "Saturday Night Live",
+    "slug": "saturday-night-live",
+    "category": "variety",
+    "sources": [
+      {
+        "url": "https://www.nbc.com/saturday-night-live",
+        "publisher": "NBC",
+        "tier": "official",
+        "title": "Saturday Night Live",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nbcuniversal.com/article/everything-you-need-know-about-saturday-night-lives-50th-anniversary",
+        "publisher": "NBCUniversal",
+        "tier": "official",
+        "title": "Everything You Need to Know About Saturday Night Live's 50th Anniversary",
+        "retrieved_on": "2026-08-26"
+      }
+    ]
+  },
+  {
+    "name": "The Tonight Show Starring Jimmy Fallon",
+    "slug": "tonight-show-jimmy-fallon",
+    "category": "variety",
+    "sources": [
+      {
+        "url": "https://www.nbc.com/the-tonight-show",
+        "publisher": "NBC",
+        "tier": "official",
+        "title": "The Tonight Show Starring Jimmy Fallon",
+        "retrieved_on": "2026-08-26"
+      }
+    ]
+  },
+  {
+    "name": "Late Night with Seth Meyers",
+    "slug": "late-night-seth-meyers",
+    "category": "variety",
+    "sources": [
+      {
+        "url": "https://www.nbc.com/late-night-with-seth-meyers",
+        "publisher": "NBC",
+        "tier": "official",
+        "title": "Late Night with Seth Meyers",
+        "retrieved_on": "2026-08-26"
+      }
+    ]
+  },
+  {
+    "name": "The Late Show with Stephen Colbert",
+    "slug": "late-show-stephen-colbert",
+    "category": "variety",
+    "sources": [
+      {
+        "url": "https://www.cbsnews.com/news/the-late-show-stephen-colbert-end-may-2026/",
+        "publisher": "CBS News",
+        "tier": "trade",
+        "title": "\"The Late Show with Stephen Colbert\" to end in May 2026",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.hollywoodreporter.com/tv/tv-news/cbs-ending-late-show-stephen-colbert-2026-1236319194/",
+        "publisher": "The Hollywood Reporter",
+        "tier": "trade",
+        "title": "'Late Show' Shocker: CBS Ending Late-Night Franchise in 2026",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://www.cbsnews.com/news/the-late-show-stephen-colbert-end-may-2026/",
+            "publisher": "CBS News",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jimmy Kimmel Live!",
+    "slug": "jimmy-kimmel-live",
+    "category": "variety",
+    "sources": [
+      {
+        "url": "https://abc.com/show/9bfe2f4f-41ad-4492-a6dd-0b67db180543",
+        "publisher": "ABC",
+        "tier": "official",
+        "title": "Jimmy Kimmel Live!",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.hollywoodreporter.com/tv/tv-news/jimmy-kimmel-extends-abc-deal-2026-27-1236445167/",
+        "publisher": "The Hollywood Reporter",
+        "tier": "trade",
+        "title": "Jimmy Kimmel Inks ABC Contract Extension",
+        "retrieved_on": "2026-08-26"
+      }
+    ]
+  },
+  {
+    "name": "The Kelly Clarkson Show",
+    "slug": "kelly-clarkson-show",
+    "category": "variety",
+    "sources": [
+      {
+        "url": "https://www.nbc.com/the-kelly-clarkson-show",
+        "publisher": "NBC",
+        "tier": "official",
+        "title": "The Kelly Clarkson Show",
+        "retrieved_on": "2026-08-26"
+      }
+    ]
+  },
+  {
+    "name": "The Daily Show",
+    "slug": "the-daily-show",
+    "category": "variety",
+    "sources": [
+      {
+        "url": "https://www.cc.com/shows/the-daily-show",
+        "publisher": "Comedy Central",
+        "tier": "official",
+        "title": "The Daily Show",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nbcnews.com/business/media/jon-stewart-host-daily-show-december-2026-rcna241662",
+        "publisher": "NBC News",
+        "tier": "trade",
+        "title": "Jon Stewart to stay on as a host of 'The Daily Show' through December 2026",
+        "retrieved_on": "2026-08-26"
+      }
+    ]
+  },
+  {
+    "name": "The View",
+    "slug": "the-view",
+    "category": "variety",
+    "sources": [
+      {
+        "url": "https://abc.com/show/70207ea9-cb32-454b-a519-b40106227e32",
+        "publisher": "ABC",
+        "tier": "official",
+        "title": "The View",
+        "retrieved_on": "2026-08-26"
+      }
+    ]
   }
 ]

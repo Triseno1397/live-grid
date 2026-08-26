@@ -61,17 +61,16 @@ const STRICT = process.argv.slice(2).includes("--strict");
  * gate stays live for everything new. Batch 019 backfills these and empties this array; a
  * file only earns a place here by predating the schema, never by being in a hurry.
  *
- * `004-tech-keynotes.json` has left: all six of its records now carry citations through the
- * 019 overlay, which `sourcesBySlug` sees. Removing a file from here is the only thing that
- * proves the backfill actually finished — the warning it emits otherwise never stops being
- * true on its own.
+ * `004-tech-keynotes.json` and `005-variety.json` have left: every record in both now carries
+ * citations through the 019 overlay, which `sourcesBySlug` sees. Removing a file from here is
+ * the only thing that proves the backfill actually finished — the warning it emits otherwise
+ * never stops being true on its own.
  */
 const LEGACY_UNSOURCED = new Set([
   "000-session1-smoke.json",
   "001-award-shows.json",
   "002-game-shows.json",
   "003-upfronts.json",
-  "005-variety.json",
   "006-production-team.json",
 ]);
 
