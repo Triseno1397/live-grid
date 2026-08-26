@@ -669,19 +669,50 @@ function main() {
   checkSubcategories(loaded);
 
   const files = new Set(loaded.map((l) => l.file)).size;
-  console.log(`Checked ${loaded.length} records across ${files} files.\n`);
+  // Records and productions are different numbers once overlay batches exist, and the gap is
+  // the backfill's size. Printing both stops the larger one being read as progress.
+  const distinct = new Set(
+    loaded
+      .map(({ record }) => {
+        const name = typeof record.name === "string" ? record.name : null;
+        if (!name) return null;
+        return typeof record.slug === "string" ? record.slug : slugify(name);
+      })
+      .filter((s): s is string => s !== null),
+  ).size;
 
-  const categoryTally = new Map<string, number>(CATEGORIES.map((c) => [c, 0]));
+  console.log(
+    `Checked ${loaded.length} records across ${files} files — ` +
+      `${distinct} distinct productions after overlays.\n`,
+  );
+
+  /**
+   * Counted by distinct slug, not by record.
+   *
+   * An overlay batch re-states a production to add citations to it, so counting records
+   * double-counts every backfilled row: `variety` read 16 against a target of 40 the moment
+   * batch 019 cited its eight shows, and eight of those sixteen were the same eight shows.
+   * The number that matters is what the database will hold, and the database holds one row
+   * per slug — this table is read as progress against a target, so it has to agree with it.
+   */
+  const categoryBySlug = new Map<string, string>();
   const statusTally = new Map<string, number>(STATUSES.map((s) => [s, 0]));
   for (const { record } of loaded) {
+    const name = typeof record.name === "string" ? record.name : null;
     const category = record.category;
-    if (typeof category === "string") {
-      categoryTally.set(category, (categoryTally.get(category) ?? 0) + 1);
+    if (name && typeof category === "string") {
+      const slug = typeof record.slug === "string" ? record.slug : slugify(name);
+      categoryBySlug.set(slug, category);
     }
     for (const e of editionsOf(record)) {
       const status = typeof e.status === "string" ? e.status : "rumored";
       statusTally.set(status, (statusTally.get(status) ?? 0) + 1);
     }
+  }
+
+  const categoryTally = new Map<string, number>(CATEGORIES.map((c) => [c, 0]));
+  for (const category of categoryBySlug.values()) {
+    categoryTally.set(category, (categoryTally.get(category) ?? 0) + 1);
   }
 
   // The plan's per-category targets have to keep adding up to the headline number, or a
