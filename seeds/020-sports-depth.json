@@ -1,0 +1,319 @@
+[
+  {
+    "name": "College Football Playoff National Championship",
+    "slug": "cfp-national-championship",
+    "category": "sports",
+    "subcategory": "championship",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The title game of the expanded College Football Playoff, rotating between neutral-site stadiums. The 2027 game is the first to be simulcast on ABC alongside ESPN — the network that has carried the CFP since it replaced the BCS.",
+    "network": { "name": "ESPN", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://collegefootballplayoff.com/sports/2025/2/20/2027vegas.aspx",
+        "publisher": "College Football Playoff",
+        "title": "2027 CFP National Championship",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://collegefootballplayoff.com/news/2026/2/3/2627-2728-bowls",
+        "publisher": "College Football Playoff",
+        "title": "College Football Playoff Announces Quarterfinal and Semifinal Dates and Bowl Sites for the 2026 and 2027 Seasons",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-01-25",
+        "show_date": "2027-01-25",
+        "city": "Las Vegas",
+        "venue": { "name": "Allegiant Stadium" },
+        "sources": [
+          {
+            "url": "https://collegefootballplayoff.com/sports/2025/2/20/2027vegas.aspx",
+            "publisher": "College Football Playoff",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.allegiantstadium.com/events/detail/2027-college-football-playoff-national-championship",
+            "publisher": "Allegiant Stadium",
+            "title": "2027 College Football Playoff National Championship",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NCAA Men's Final Four",
+    "slug": "ncaa-mens-final-four",
+    "category": "sports",
+    "subcategory": "championship",
+    "typical_month": 4,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The semi-finals and national championship game of the NCAA Division I men's basketball tournament, staged in a domed stadium on a rotating host-city cycle with a full week of surrounding events. Detroit's 2027 turn at Ford Field is the city's first since 2009.",
+    "network": { "name": "CBS", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://finalfourdetroit.com/",
+        "publisher": "Detroit Local Organizing Committee",
+        "title": "Detroit 2027 — Men's Final Four Host City",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.ncaa.org/news/2022/11/22/media-center-division-i-mens-basketball-committee-selects-future-final-four-sites.aspx",
+        "publisher": "NCAA",
+        "title": "Division I Men's Basketball Committee selects future Final Four sites",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-04-03",
+        "end_date": "2027-04-05",
+        "city": {
+          "name": "Detroit",
+          "state": "MI",
+          "country": "USA",
+          "timezone": "America/Detroit"
+        },
+        "venue": { "name": "Ford Field" },
+        "sources": [
+          {
+            "url": "https://finalfourdetroit.com/",
+            "publisher": "Detroit Local Organizing Committee",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.detroitnews.com/story/sports/college/2026/04/07/detroit-on-clock-for-2027-final-four-when-where-how-to-get-tickets/89496795007/",
+            "publisher": "The Detroit News",
+            "title": "Detroit now on the clock for 2027 Final Four",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WrestleMania",
+    "slug": "wrestlemania",
+    "category": "sports",
+    "subcategory": "professional wrestling",
+    "typical_month": 4,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "WWE's flagship two-night stadium event. WrestleMania 43 goes to Riyadh in 2027 — the first time the show has been staged outside North America in its forty-plus-year run. No date has been announced, and none is recorded here.",
+    "network": { "name": "Netflix", "is_streaming": true },
+    "sources": [
+      {
+        "url": "https://www.espn.com/wwe/story/_/id/46236094/wwe-announces-wrestlemania-43-held-riyadh-2027",
+        "publisher": "ESPN",
+        "title": "WWE taking WrestleMania 43 to Saudi Arabia in 2027",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cbssports.com/wwe/news/wwe-wrestlemania-43-location-landmark-event-set-to-take-place-in-saudi-arabia-in-2027",
+        "publisher": "CBS Sports",
+        "title": "WWE WrestleMania 43 location: Landmark event set to take place in Saudi Arabia in 2027",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "city": "Riyadh",
+        "sources": [
+          {
+            "url": "https://www.espn.com/wwe/story/_/id/46236094/wwe-announces-wrestlemania-43-held-riyadh-2027",
+            "publisher": "ESPN",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WWE Royal Rumble",
+    "slug": "wwe-royal-rumble",
+    "category": "sports",
+    "subcategory": "professional wrestling",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The stadium event that sets WrestleMania's main card, built around the two thirty-entrant Rumble matches whose winners choose a title match. The 40th edition is at State Farm Stadium in Glendale, Arizona; WWE has named the month but not the day.",
+    "network": { "name": "Netflix", "is_streaming": true },
+    "sources": [
+      {
+        "url": "https://www.si.com/fannation/wrestling/wwe/wwe-royal-rumble-2027-location-announced",
+        "publisher": "Sports Illustrated",
+        "title": "WWE Royal Rumble 2027 Location Announced",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://bleacherreport.com/articles/25461765-2027-wwe-royal-rumble-location-venue-and-schedule-revealed-road-wrestlemania-43",
+        "publisher": "Bleacher Report",
+        "title": "2027 WWE Royal Rumble Location, Venue and Schedule Revealed",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "city": {
+          "name": "Glendale",
+          "slug": "glendale-az",
+          "state": "AZ",
+          "country": "USA",
+          "timezone": "America/Phoenix"
+        },
+        "venue": { "name": "State Farm Stadium" },
+        "sources": [
+          {
+            "url": "https://www.si.com/fannation/wrestling/wwe/wwe-royal-rumble-2027-location-announced",
+            "publisher": "Sports Illustrated",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Army–Navy Game",
+    "slug": "army-navy-game",
+    "category": "sports",
+    "subcategory": "college football",
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The last regular-season college football game of the year, played on a neutral field on a rotating city cycle and carried by CBS since 1996. The 127th meeting returns to MetLife Stadium for the first time since 2021.",
+    "network": { "name": "CBS", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://armynavygame.com/news/2022/06/15/future-sites-of-americas-game-announced",
+        "publisher": "Army-Navy Game",
+        "title": "Future Sites of America's Game Announced",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cbssports.com/college-football/news/army-vs-navy-game-five-locations-dates-announced-for-upcoming-editions-of-annual-football-rivalry",
+        "publisher": "CBS Sports",
+        "title": "Army vs. Navy Game: Five locations, dates announced for upcoming editions",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-12-12",
+        "show_date": "2026-12-12",
+        "city": {
+          "name": "East Rutherford",
+          "state": "NJ",
+          "country": "USA",
+          "timezone": "America/New_York"
+        },
+        "venue": { "name": "MetLife Stadium" },
+        "sources": [
+          {
+            "url": "https://www.metlifestadium.com/events/detail/army-navy",
+            "publisher": "MetLife Stadium",
+            "title": "Army-Navy",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://armynavygame.com/news/2022/06/15/future-sites-of-americas-game-announced",
+            "publisher": "Army-Navy Game",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Formula 1 Las Vegas Grand Prix",
+    "slug": "f1-las-vegas-grand-prix",
+    "category": "sports",
+    "subcategory": "motorsport",
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "A night race run on a street circuit down the Las Vegas Strip, promoted by Formula 1 itself rather than by a local organiser — the only race on the calendar where that is true. Three days of track running with the grand prix on the Saturday night, which is Sunday morning in Europe.",
+    "sources": [
+      {
+        "url": "https://www.formula1.com/en/racing/2026/las-vegas",
+        "publisher": "Formula 1",
+        "title": "Las Vegas Grand Prix 2026",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.f1lasvegasgp.com/",
+        "publisher": "Las Vegas Grand Prix",
+        "title": "Official site of the Formula 1 Las Vegas Grand Prix",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-11-19",
+        "end_date": "2026-11-21",
+        "city": "Las Vegas",
+        "sources": [
+          {
+            "url": "https://www.formula1.com/en/racing/2026/las-vegas",
+            "publisher": "Formula 1",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.visitlasvegas.com/event/formula-1-heineken-las-vegas-grand-prix-2026/52499/",
+            "publisher": "Las Vegas Convention and Visitors Authority",
+            "title": "Formula 1 Heineken Las Vegas Grand Prix 2026",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  }
+]
