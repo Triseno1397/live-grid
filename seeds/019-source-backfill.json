@@ -465,5 +465,493 @@
         "retrieved_on": "2026-08-26"
       }
     ]
+  },
+  {
+    "name": "NBCUniversal Upfront",
+    "slug": "nbcuniversal-upfront",
+    "category": "corporate",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+        "publisher": "Deadline",
+        "tier": "trade",
+        "title": "TV Upfronts 2026 Schedule And What To Expect",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/tv/news/upfronts-recap-nbcu-fox-amazon-disney-wbd-netflix-youtube-1236749306/",
+        "publisher": "Variety",
+        "tier": "trade",
+        "title": "Upfronts Recap: NBCU, Fox, Amazon, Disney, WBD, Netflix, YouTube",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+        "publisher": "Video Advertising Bureau",
+        "tier": "trade",
+        "title": "2026 TV Upfronts Week Calendar",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://deadline.com/2025/10/nbcuniversal-confirms-radio-city-may-2026-upfront-advertisers-1236573586/",
+        "publisher": "Deadline",
+        "tier": "trade",
+        "title": "NBCUniversal Confirms Return To Radio City For May 2026 Upfront",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "title": "TV Upfronts 2026 Schedule And What To Expect",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+            "publisher": "Video Advertising Bureau",
+            "tier": "trade",
+            "title": "2026 TV Upfronts Week Calendar",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://adage.com/events-awards/tv-upfront/aa-nbcuniversal-fox-amazon-day-1-monday-takeaways-2026/",
+            "publisher": "Ad Age",
+            "tier": "trade",
+            "title": "TV upfronts: May 11, 2026 — NBCU, Amazon and Fox takeaways",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fox Upfront",
+    "slug": "fox-upfront",
+    "category": "corporate",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+        "publisher": "Deadline",
+        "tier": "trade",
+        "title": "TV Upfronts 2026 Schedule And What To Expect",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/tv/news/upfronts-recap-nbcu-fox-amazon-disney-wbd-netflix-youtube-1236749306/",
+        "publisher": "Variety",
+        "tier": "trade",
+        "title": "Upfronts Recap: NBCU, Fox, Amazon, Disney, WBD, Netflix, YouTube",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+        "publisher": "Video Advertising Bureau",
+        "tier": "trade",
+        "title": "2026 TV Upfronts Week Calendar",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "title": "TV Upfronts 2026 Schedule And What To Expect",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+            "publisher": "Video Advertising Bureau",
+            "tier": "trade",
+            "title": "2026 TV Upfronts Week Calendar",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://adage.com/events-awards/tv-upfront/aa-nbcuniversal-fox-amazon-day-1-monday-takeaways-2026/",
+            "publisher": "Ad Age",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Amazon Upfront",
+    "slug": "amazon-upfront",
+    "category": "corporate",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+        "publisher": "Deadline",
+        "tier": "trade",
+        "title": "TV Upfronts 2026 Schedule And What To Expect",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/tv/news/upfronts-recap-nbcu-fox-amazon-disney-wbd-netflix-youtube-1236749306/",
+        "publisher": "Variety",
+        "tier": "trade",
+        "title": "Upfronts Recap: NBCU, Fox, Amazon, Disney, WBD, Netflix, YouTube",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+        "publisher": "Video Advertising Bureau",
+        "tier": "trade",
+        "title": "2026 TV Upfronts Week Calendar",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "title": "TV Upfronts 2026 Schedule And What To Expect",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+            "publisher": "Video Advertising Bureau",
+            "tier": "trade",
+            "title": "2026 TV Upfronts Week Calendar",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://adage.com/events-awards/tv-upfront/aa-nbcuniversal-fox-amazon-day-1-monday-takeaways-2026/",
+            "publisher": "Ad Age",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Telemundo Upfront",
+    "slug": "telemundo-upfront",
+    "category": "corporate",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+        "publisher": "Deadline",
+        "tier": "trade",
+        "title": "TV Upfronts 2026 Schedule And What To Expect",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/tv/news/upfronts-recap-nbcu-fox-amazon-disney-wbd-netflix-youtube-1236749306/",
+        "publisher": "Variety",
+        "tier": "trade",
+        "title": "Upfronts Recap: NBCU, Fox, Amazon, Disney, WBD, Netflix, YouTube",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+        "publisher": "Video Advertising Bureau",
+        "tier": "trade",
+        "title": "2026 TV Upfronts Week Calendar",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "title": "TV Upfronts 2026 Schedule And What To Expect",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+            "publisher": "Video Advertising Bureau",
+            "tier": "trade",
+            "title": "2026 TV Upfronts Week Calendar",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TelevisaUnivision Upfront",
+    "slug": "televisaunivision-upfront",
+    "category": "corporate",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+        "publisher": "Deadline",
+        "tier": "trade",
+        "title": "TV Upfronts 2026 Schedule And What To Expect",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/tv/news/upfronts-recap-nbcu-fox-amazon-disney-wbd-netflix-youtube-1236749306/",
+        "publisher": "Variety",
+        "tier": "trade",
+        "title": "Upfronts Recap: NBCU, Fox, Amazon, Disney, WBD, Netflix, YouTube",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+        "publisher": "Video Advertising Bureau",
+        "tier": "trade",
+        "title": "2026 TV Upfronts Week Calendar",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "title": "TV Upfronts 2026 Schedule And What To Expect",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+            "publisher": "Video Advertising Bureau",
+            "tier": "trade",
+            "title": "2026 TV Upfronts Week Calendar",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Disney Upfront",
+    "slug": "disney-upfront",
+    "category": "corporate",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+        "publisher": "Deadline",
+        "tier": "trade",
+        "title": "TV Upfronts 2026 Schedule And What To Expect",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/tv/news/upfronts-recap-nbcu-fox-amazon-disney-wbd-netflix-youtube-1236749306/",
+        "publisher": "Variety",
+        "tier": "trade",
+        "title": "Upfronts Recap: NBCU, Fox, Amazon, Disney, WBD, Netflix, YouTube",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+        "publisher": "Video Advertising Bureau",
+        "tier": "trade",
+        "title": "2026 TV Upfronts Week Calendar",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "title": "TV Upfronts 2026 Schedule And What To Expect",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+            "publisher": "Video Advertising Bureau",
+            "tier": "trade",
+            "title": "2026 TV Upfronts Week Calendar",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Warner Bros. Discovery Upfront",
+    "slug": "warner-bros-discovery-upfront",
+    "category": "corporate",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+        "publisher": "Deadline",
+        "tier": "trade",
+        "title": "TV Upfronts 2026 Schedule And What To Expect",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/tv/news/upfronts-recap-nbcu-fox-amazon-disney-wbd-netflix-youtube-1236749306/",
+        "publisher": "Variety",
+        "tier": "trade",
+        "title": "Upfronts Recap: NBCU, Fox, Amazon, Disney, WBD, Netflix, YouTube",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+        "publisher": "Video Advertising Bureau",
+        "tier": "trade",
+        "title": "2026 TV Upfronts Week Calendar",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "title": "TV Upfronts 2026 Schedule And What To Expect",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+            "publisher": "Video Advertising Bureau",
+            "tier": "trade",
+            "title": "2026 TV Upfronts Week Calendar",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Netflix Upfront",
+    "slug": "netflix-upfront",
+    "category": "corporate",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+        "publisher": "Deadline",
+        "tier": "trade",
+        "title": "TV Upfronts 2026 Schedule And What To Expect",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/tv/news/upfronts-recap-nbcu-fox-amazon-disney-wbd-netflix-youtube-1236749306/",
+        "publisher": "Variety",
+        "tier": "trade",
+        "title": "Upfronts Recap: NBCU, Fox, Amazon, Disney, WBD, Netflix, YouTube",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+        "publisher": "Video Advertising Bureau",
+        "tier": "trade",
+        "title": "2026 TV Upfronts Week Calendar",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "title": "TV Upfronts 2026 Schedule And What To Expect",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+            "publisher": "Video Advertising Bureau",
+            "tier": "trade",
+            "title": "2026 TV Upfronts Week Calendar",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "YouTube Brandcast",
+    "slug": "youtube-brandcast",
+    "category": "corporate",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+        "publisher": "Deadline",
+        "tier": "trade",
+        "title": "TV Upfronts 2026 Schedule And What To Expect",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/tv/news/upfronts-recap-nbcu-fox-amazon-disney-wbd-netflix-youtube-1236749306/",
+        "publisher": "Variety",
+        "tier": "trade",
+        "title": "Upfronts Recap: NBCU, Fox, Amazon, Disney, WBD, Netflix, YouTube",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+        "publisher": "Video Advertising Bureau",
+        "tier": "trade",
+        "title": "2026 TV Upfronts Week Calendar",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/05/tv-upfronts-2026-schedule-what-to-expect-1236882246/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "title": "TV Upfronts 2026 Schedule And What To Expect",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          },
+          {
+            "url": "https://thevab.com/insight/2026-tv-upfronts-week-calendar",
+            "publisher": "Video Advertising Bureau",
+            "tier": "trade",
+            "title": "2026 TV Upfronts Week Calendar",
+            "retrieved_on": "2026-08-26",
+            "field": "show_date"
+          }
+        ]
+      }
+    ]
   }
 ]
