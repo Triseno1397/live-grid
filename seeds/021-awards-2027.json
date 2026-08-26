@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Producers Guild Awards",
+    "slug": "producers-guild-awards",
+    "category": "awards",
+    "subcategory": "guild",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "The Producers Guild of America's annual ceremony, whose Darryl F. Zanuck Award for theatrical motion pictures is one of the strongest single predictors of the Best Picture Oscar. Not broadcast live on a network — a ballroom show with a same-night press cycle rather than a television production in the sense the rest of this category is.",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/04/producers-guild-announces-show-dates-2027-2028-awards-1236784093/",
+        "publisher": "Deadline",
+        "title": "Producers Guild Awards Sets Show Dates For 2027 and 2028",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.screendaily.com/news/pga-sag-aftra-date-2026-2027-ceremonies/5215450.article",
+        "publisher": "Screen Daily",
+        "title": "PGA, SAG-AFTRA date 2026, 2027 ceremonies",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "start_date": "2027-02-27",
+        "show_date": "2027-02-27",
+        "city": "Los Angeles",
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/04/producers-guild-announces-show-dates-2027-2028-awards-1236784093/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.screendaily.com/news/pga-sag-aftra-date-2026-2027-ceremonies/5215450.article",
+            "publisher": "Screen Daily",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Actor Awards",
+    "slug": "actor-awards",
+    "category": "awards",
+    "sources": [
+      {
+        "url": "https://www.netflix.com/tudum/articles/actor-awards-sag-aftra-2027-2028-date-time",
+        "publisher": "Netflix",
+        "title": "The Actor Awards, Formerly the SAG Awards, Will Stream on Netflix Feb. 28, 2027 and Feb. 20, 2028",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/film/awards/sag-actor-awards-2027-2028-dates-netflix-1236710962/",
+        "publisher": "Variety",
+        "title": "SAG Actor Awards 2027 and 2028 Dates on Netflix",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-02-28",
+        "show_date": "2027-02-28",
+        "sources": [
+          {
+            "url": "https://www.netflix.com/tudum/articles/actor-awards-sag-aftra-2027-2028-date-time",
+            "publisher": "Netflix",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.thewrap.com/creative-content/movies/actor-awards-set-2027-2028-dates-at-netflix/",
+            "publisher": "TheWrap",
+            "title": "Actor Awards Set 2027, 2028 Dates at Netflix",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Golden Globe Awards",
+    "slug": "golden-globe-awards",
+    "category": "awards",
+    "sources": [
+      {
+        "url": "https://www.billboard.com/music/awards/2027-golden-globes-key-dates-1236241818/",
+        "publisher": "Billboard",
+        "title": "Here Are All the Key Dates for the 2027 Golden Globes",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "start_date": "2027-01-10",
+        "show_date": "2027-01-10",
+        "city": "Beverly Hills",
+        "venue": { "name": "The Beverly Hilton" },
+        "sources": [
+          {
+            "url": "https://www.billboard.com/music/awards/2027-golden-globes-key-dates-1236241818/",
+            "publisher": "Billboard",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Critics Choice Awards",
+    "slug": "critics-choice-awards",
+    "category": "awards",
+    "sources": [
+      {
+        "url": "https://deadline.com/2026/04/critics-choice-awards-sets-date-for-2027-ceremony-renewed-e-1236865814/",
+        "publisher": "Deadline",
+        "title": "Critics Choice Awards Sets 2027 Date; Show Renewed For Two Years By E!",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.thewrap.com/industry-news/awards/critics-choice-awards-set-2027-date/",
+        "publisher": "TheWrap",
+        "title": "Critics Choice Awards Set Date for 2027 Ceremony",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "start_date": "2027-01-03",
+        "show_date": "2027-01-03",
+        "sources": [
+          {
+            "url": "https://deadline.com/2026/04/critics-choice-awards-sets-date-for-2027-ceremony-renewed-e-1236865814/",
+            "publisher": "Deadline",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.goldderby.com/film/2026/2027-critics-choice-association-awards-nominations-dates/",
+            "publisher": "Gold Derby",
+            "title": "Critics Choice Association sets date for 2027 awards",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  }
+]
