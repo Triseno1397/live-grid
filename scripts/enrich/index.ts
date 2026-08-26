@@ -107,23 +107,45 @@ async function recordExternalId(
 /**
  * Candidate items for a batch of city names, with everything needed to tell them apart.
  *
- * `wdt:P31` against an explicit class list rather than `P31/P279*`: the subclass walk is what
- * times WDQS out (see `discover/queries.ts`), and three classes cover what a broadcast
- * database's city column actually contains.
+ * **No class constraint** — the same lesson `venueQuery` records, and it bit here for the
+ * same reason. Filtering on `P31` against city-ish classes dropped Berlin, Manchester and San
+ * Juan, because Wikidata types those as "state of Germany", "metropolitan borough" and
+ * "capital city" while it types *Berlin, New Hampshire* as "city in the United States". The
+ * narrow class list kept the wrong Berlin and discarded the right one, and the country filter
+ * then rejected what was left — so the row was skipped with a message that pointed at the
+ * wrong cause.
+ *
+ * Requiring a coordinate and a country is what actually separates a settlement from a band
+ * with the same name. Disambiguation happens against the `state` and `country` the row
+ * already stores, which is stronger evidence than a class ever was.
  */
 function cityQuery(names: string[]): string {
-  return `SELECT ?item ?label ?coord ?countryLabel ?adminLabel ?tzLabel WHERE {
+  return `SELECT ?item ?label ?coord ?countryLabel ?adminLabel ?tzLabel ?sitelinks WHERE {
   VALUES ?label { ${names.map(literal).join(" ")} }
   ?item rdfs:label ?label .
-  VALUES ?class { wd:Q515 wd:Q1093829 wd:Q486972 }
-  ?item wdt:P31 ?class .
   ?item wdt:P625 ?coord .
-  OPTIONAL { ?item wdt:P17 ?country . }
+  ?item wdt:P17 ?country .
+  ?item wikibase:sitelinks ?sitelinks .
   OPTIONAL { ?item wdt:P131 ?admin . }
   OPTIONAL { ?item wdt:P421 ?tz . }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 }`;
 }
+
+/**
+ * How far ahead the leading candidate must be before a name match counts as decided.
+ *
+ * Dropping the class filter fixed recall and created a new problem: "Berlin" matches the
+ * city, two of its own boroughs, and a hamlet in Seedorf, and all four are in Germany, so a
+ * country hint separates none of them. Wikipedia sitelinks do — Berlin has hundreds and the
+ * hamlet has two.
+ *
+ * This is a genuine judgement encoded as a number, so it is set where the judgement is easy.
+ * Toronto, Ontario outranks Toronto, Prince Edward Island by more than twentyfold and gets
+ * picked; two cities that are actually comparable stay ambiguous and get skipped. A wrong
+ * coordinate looks exactly as confident as a right one, so the bar is high on purpose.
+ */
+const SITELINK_MARGIN = 5;
 
 /** IANA zone names as Wikidata labels them, mapped to what the schema stores. */
 const TZ_LABELS: Record<string, string> = {
@@ -190,23 +212,41 @@ async function enrichCities(db: Db, opts: Options): Promise<Report> {
       return true;
     });
 
-    const distinct = new Map(matches.map((m) => [m.item?.value ?? "", m]));
-    if (distinct.size === 0) {
-      report.skipped.push({ name: row.name, reason: `no candidate agreed with state "${row.state ?? "—"}"` });
+    /**
+     * The hint narrows only when it helps.
+     *
+     * San Juan is the case that forced this: the row says Puerto Rico, Wikidata's `P17` says
+     * United States, and a hard country filter therefore eliminated the correct item. A hint
+     * that rejects everything is a hint that does not apply, not proof of a mismatch — so it
+     * is discarded and the sitelink margin below decides instead.
+     */
+    const distinct = new Map(
+      (matches.length > 0 ? matches : candidates).map((m) => [m.item?.value ?? "", m]),
+    );
+
+    const ranked = [...distinct.values()].sort(
+      (a, b) => Number(b.sitelinks?.value ?? 0) - Number(a.sitelinks?.value ?? 0),
+    );
+    const lead = Number(ranked[0]?.sitelinks?.value ?? 0);
+    const runnerUp = Number(ranked[1]?.sitelinks?.value ?? 0);
+
+    if (ranked.length === 0) {
+      report.skipped.push({ name: row.name, reason: "no candidate with coordinates" });
       continue;
     }
-    if (distinct.size > 1) {
-      const labels = [...distinct.values()]
-        .map((m) => firstLabel([m], "adminLabel") ?? firstLabel([m], "countryLabel") ?? "?")
+    if (ranked.length > 1 && lead < runnerUp * SITELINK_MARGIN) {
+      const where = ranked
+        .slice(0, 3)
+        .map((m) => `${firstLabel([m], "adminLabel") ?? firstLabel([m], "countryLabel") ?? "?"} (${m.sitelinks?.value ?? 0})`)
         .join(", ");
       report.skipped.push({
         name: row.name,
-        reason: `${distinct.size} plausible items (${labels}) — ambiguous, left alone`,
+        reason: `${ranked.length} plausible items, none dominant — ${where}`,
       });
       continue;
     }
 
-    const match = [...distinct.values()][0];
+    const match = ranked[0];
     const coords = parsePoint(match.coord?.value);
     if (!coords) {
       report.skipped.push({ name: row.name, reason: "coordinate did not parse" });

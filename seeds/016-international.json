@@ -1,0 +1,471 @@
+[
+  {
+    "name": "Eurovision Song Contest",
+    "slug": "eurovision-song-contest",
+    "category": "international",
+    "subcategory": "music competition",
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The largest live music television production in the world, run by the European Broadcasting Union and staged each May by the previous year's winning broadcaster. Two semi-finals and a grand final across one week. The 2027 contest goes to Burgas after Bulgaria's first win, in Vienna in 2026 — a first for the country and the reason the production moves to a venue that opened only in 2023.",
+    "sources": [
+      {
+        "url": "https://www.ebu.ch/news/2026/08/burgas-to-host-eurovision-song-contest-2027",
+        "publisher": "European Broadcasting Union",
+        "title": "Burgas to host Eurovision Song Contest 2027",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-05-11",
+        "end_date": "2027-05-15",
+        "show_date": "2027-05-15",
+        "city": {
+          "name": "Burgas",
+          "country": "Bulgaria",
+          "timezone": "Europe/Sofia"
+        },
+        "venue": { "name": "Arena Burgas" },
+        "sources": [
+          {
+            "url": "https://www.ebu.ch/news/2026/08/burgas-to-host-eurovision-song-contest-2027",
+            "publisher": "European Broadcasting Union",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.thepinknews.com/2026/08/13/eurovision-song-contest-2027-host-city-bulgaria-burgas/",
+            "publisher": "PinkNews",
+            "title": "Eurovision 2027 host city announced after Bulgaria's historic win",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cannes Film Festival",
+    "slug": "cannes-film-festival",
+    "category": "international",
+    "subcategory": "film festival",
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Twelve days at the Palais des Festivals on the Croisette, with the Marché du Film running alongside the first nine. The opening and closing ceremonies are the televised productions; the rest is a market and a screening programme. The 80th edition falls in 2027.",
+    "sources": [
+      {
+        "url": "https://www.festival-cannes.com/en/",
+        "publisher": "Festival de Cannes",
+        "title": "Festival de Cannes",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.screendaily.com/news/cannes-film-festival-confirms-2027-dates-for-80th-edition/5217448.article",
+        "publisher": "Screen Daily",
+        "title": "Cannes Film Festival confirms 2027 dates for 80th edition",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "announced",
+        "start_date": "2027-05-11",
+        "end_date": "2027-05-22",
+        "city": {
+          "name": "Cannes",
+          "country": "France",
+          "timezone": "Europe/Paris"
+        },
+        "venue": { "name": "Palais des Festivals et des Congrès" },
+        "sources": [
+          {
+            "url": "https://www.screendaily.com/news/cannes-film-festival-confirms-2027-dates-for-80th-edition/5217448.article",
+            "publisher": "Screen Daily",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Berlin International Film Festival",
+    "slug": "berlin-international-film-festival",
+    "category": "international",
+    "subcategory": "film festival",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The Berlinale, with the European Film Market running alongside it. The 77th edition starts a day earlier than its predecessors and moves the awards ceremony to the second Friday, which opens up the festival's first two Audience Days at the end — a structural change to the run of show, not just a date shift.",
+    "sources": [
+      {
+        "url": "https://www.berlinale.de/en/2027/news-press-releases/278428.html",
+        "publisher": "Berlinale",
+        "title": "Berlinale 2026 Saw Record Audience Admissions and Growth in Industry Attendance / New Festival Dates for 2027",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.screendaily.com/news/berlinale-sets-2027-dates-adding-extra-day-to-festival/5215124.article",
+        "publisher": "Screen Daily",
+        "title": "Berlin Film Festival sets 2027 dates, adds extra day to festival and moves closing ceremony",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-02-10",
+        "end_date": "2027-02-21",
+        "city": {
+          "name": "Berlin",
+          "country": "Germany",
+          "timezone": "Europe/Berlin"
+        },
+        "sources": [
+          {
+            "url": "https://www.berlinale.de/en/2027/news-press-releases/278428.html",
+            "publisher": "Berlinale",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.screendaily.com/news/berlinale-sets-2027-dates-adding-extra-day-to-festival/5215124.article",
+            "publisher": "Screen Daily",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Venice Film Festival",
+    "slug": "venice-film-festival",
+    "category": "international",
+    "subcategory": "film festival",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The oldest film festival in the world, run by La Biennale di Venezia on the Lido di Venezia and directed by Alberto Barbera. Eleven days at the start of September, opening the autumn awards run.",
+    "sources": [
+      {
+        "url": "https://www.labiennale.org/en/cinema/2026",
+        "publisher": "La Biennale di Venezia",
+        "title": "Biennale Cinema 2026",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-02",
+        "end_date": "2026-09-12",
+        "city": {
+          "name": "Venice",
+          "country": "Italy",
+          "timezone": "Europe/Rome"
+        },
+        "sources": [
+          {
+            "url": "https://www.labiennale.org/en/cinema/2026/festival-2026",
+            "publisher": "La Biennale di Venezia",
+            "title": "Biennale Cinema 2026 — Festival",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Toronto International Film Festival",
+    "slug": "toronto-international-film-festival",
+    "category": "international",
+    "subcategory": "film festival",
+    "typical_month": 9,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Eleven days across the TIFF Lightbox and the Scotiabank Theatre, with the People's Choice Award historically a strong Oscar signal. The 51st edition adds a formal film market at the Metro Toronto Convention Centre — a second venue footprint the festival has not previously carried.",
+    "sources": [
+      {
+        "url": "https://tiff.net/about-the-festival",
+        "publisher": "TIFF",
+        "title": "About TIFF '26",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "confirmed",
+        "start_date": "2026-09-10",
+        "end_date": "2026-09-20",
+        "city": {
+          "name": "Toronto",
+          "country": "Canada",
+          "timezone": "America/Toronto"
+        },
+        "sources": [
+          {
+            "url": "https://tiff.net/about-the-festival",
+            "publisher": "TIFF",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sundance Film Festival",
+    "slug": "sundance-film-festival",
+    "category": "international",
+    "subcategory": "film festival",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The 2027 festival is the first held in Boulder, Colorado, ending a run in Park City, Utah that goes back to 1981. Eleven days in late January. Filed under the international festival circuit rather than by geography — it sits in the same programming calendar as Berlin, Cannes and Venice.",
+    "sources": [
+      {
+        "url": "https://www.sundance.org/blogs/2027-sundance-film-festival-to-take-place-january-21-31-in-boulder-colorado/",
+        "publisher": "Sundance Institute",
+        "title": "2027 Sundance Film Festival To Take Place January 21–31 in Boulder, Colorado",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/film/news/sundance-film-festival-2027-dates-boulder-colorado-1236671513/",
+        "publisher": "Variety",
+        "title": "Sundance Film Festival Sets 2027 Dates for First Boulder Edition",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-01-21",
+        "end_date": "2027-01-31",
+        "city": {
+          "name": "Boulder",
+          "state": "CO",
+          "country": "USA",
+          "timezone": "America/Denver"
+        },
+        "sources": [
+          {
+            "url": "https://www.sundance.org/blogs/2027-sundance-film-festival-to-take-place-january-21-31-in-boulder-colorado/",
+            "publisher": "Sundance Institute",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.colorado.edu/today/2026/02/24/sundance-film-festival-announces-dates-2027",
+            "publisher": "University of Colorado Boulder",
+            "title": "Sundance Film Festival announces dates for 2027",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BRIT Awards",
+    "slug": "brit-awards",
+    "category": "international",
+    "subcategory": "music",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The British record industry's awards show, broadcast live on ITV1 and ITVX. The ceremony left London for Manchester's Co-op Live in 2026 and returns there in 2027 for a second year — the 2027 show also marks fifty years since the first televised BRITs.",
+    "network": { "name": "ITV1", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.brits.co.uk/news/2026/the-brit-awards-reveals-2027-date/",
+        "publisher": "BRIT Awards",
+        "title": "The BRIT Awards reveals 2027 date",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.bpi.co.uk/news/13280031",
+        "publisher": "BPI",
+        "title": "The BRIT Awards reveals 2027 date and return to Manchester",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-02-27",
+        "show_date": "2027-02-27",
+        "city": {
+          "name": "Manchester",
+          "country": "United Kingdom",
+          "timezone": "Europe/London"
+        },
+        "venue": { "name": "Co-op Live" },
+        "sources": [
+          {
+            "url": "https://www.brits.co.uk/news/2026/the-brit-awards-reveals-2027-date/",
+            "publisher": "BRIT Awards",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.cooplive.com/events/the-brit-awards-2027-hmvz",
+            "publisher": "Co-op Live",
+            "title": "The BRIT Awards 2027 — Celebrating 50 years of The BRITs",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.musicweek.com/media/read/brit-awards-confirms-2027-date-for-ceremony-s-second-year-in-manchester/094267",
+            "publisher": "Music Week",
+            "title": "BRIT Awards confirms 2027 date for ceremony's second year in Manchester",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nobel Prize Award Ceremony",
+    "slug": "nobel-prize-award-ceremony",
+    "category": "international",
+    "subcategory": "ceremony",
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Held at the Stockholm Concert Hall every 10 December — the anniversary of Alfred Nobel's death — and at Konserthuset every year since 1926 apart from two wartime cancellations. The physics, chemistry, medicine, literature and economic sciences prizes are presented here; the peace prize is awarded separately in Oslo. Streamed by SVT and picked up by broadcasters worldwide.",
+    "sources": [
+      {
+        "url": "https://www.nobelprize.org/ceremonies/nobel-prize-award-ceremony-2025/",
+        "publisher": "The Nobel Prize",
+        "title": "Nobel Prize award ceremony 2025",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.konserthuset.se/en/about-us/our-operation/a-venue-for-award-ceremonies/the-nobel-prize-award-ceremony/",
+        "publisher": "Konserthuset Stockholm",
+        "title": "The Nobel Prize Award Ceremony",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-12-10",
+        "show_date": "2025-12-10",
+        "city": {
+          "name": "Stockholm",
+          "country": "Sweden",
+          "timezone": "Europe/Stockholm"
+        },
+        "venue": { "name": "Stockholm Concert Hall" },
+        "sources": [
+          {
+            "url": "https://www.nobelprize.org/ceremonies/nobel-prize-award-ceremony-2025/",
+            "publisher": "The Nobel Prize",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.konserthuset.se/en/programme/calendar/concert/2025/nobel-prize-award-ceremony/",
+            "publisher": "Konserthuset Stockholm",
+            "title": "Nobel Prize Award Ceremony",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Miss Universe",
+    "slug": "miss-universe",
+    "category": "international",
+    "subcategory": "pageant",
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "The 75th edition goes to the José Miguel Agrelot Coliseum in San Juan, Puerto Rico — the territory's fourth time hosting, after 1972, 2001 and 2002. A live multi-hour production with a global simulcast whose broadcast partners vary by territory.",
+    "sources": [
+      {
+        "url": "https://www.missuniverse.com/press-releases/miss-universe-press-release-11/",
+        "publisher": "Miss Universe Organization",
+        "title": "Miss Universe Press Release",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "announced",
+        "start_date": "2026-11-24",
+        "show_date": "2026-11-24",
+        "city": {
+          "name": "San Juan",
+          "country": "Puerto Rico",
+          "timezone": "America/Puerto_Rico"
+        },
+        "venue": { "name": "José Miguel Agrelot Coliseum" },
+        "sources": [
+          {
+            "url": "https://www.philstar.com/lifestyle/fashion-and-beauty/2026/07/24/2544380/miss-universe-2026-announces-coronation-date-venue",
+            "publisher": "The Philippine Star",
+            "title": "Miss Universe 2026 announces coronation date, venue",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.gmanetwork.com/news/lifestyle/content/985316/miss-universe-officially-announces-puerto-rico-as-2026-pageant-host/story/",
+            "publisher": "GMA News",
+            "title": "Miss Universe officially announces Puerto Rico as 2026 pageant host",
+            "tier": "trade",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  }
+]
