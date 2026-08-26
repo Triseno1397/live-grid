@@ -11,7 +11,8 @@
     "db:push": "supabase db push",
     "db:types": "supabase gen types typescript --project-id $SUPABASE_PROJECT_REF > src/lib/supabase/database.types.ts",
     "db:diff": "supabase db diff --linked",
-    "seeds:check": "tsx scripts/check-seeds.ts"
+    "seeds:check": "tsx scripts/check-seeds.ts",
+    "seeds:import": "tsx --env-file-if-exists=.env.local scripts/import-seeds.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.120.0",

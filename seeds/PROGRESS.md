@@ -32,8 +32,15 @@ applies only to editions dated today or later — the ones someone would actuall
 | 3 · Corroborate | Re-check every date, venue and network fact against a **different publisher**. | Second citation, or a downgrade: conflicting facts take the more authoritative value, keep one citation, and drop to `status: rumored` with the conflict noted. |
 | 4 · Confirm | For upcoming editions only, check the primary source — network press site, venue calendar, league schedule, the event's own site. | An `official`-tier citation and `status: confirmed`, or it stays `announced`. |
 
-Then `npm run seeds:check` before anything is pasted, then `/admin/import`, then re-import the
-same batch to prove idempotency (0 created / N updated, empty `createdLookups`).
+Then `npm run seeds:check`, then `npm run seeds:import -- seeds/NNN-slice.json --verify`.
+
+`--verify` is the idempotency proof, and it is now the machine's job rather than the reader's:
+the CLI imports the batch, imports it again, and fails the run unless the second pass created
+nothing, left `createdLookups` empty, and derived exactly the same confidence tally. A second
+run should report almost entirely `unchanged` — that counter distinguishes "already correct"
+from "rewritten with the same values", which is the difference between a proof and a shrug.
+
+`/admin/import` still works and is the browser fallback; both call the same `runImport`.
 
 `confidence` is never written by hand — the importer derives it from the citations that
 actually landed. A `reference`-tier source alone (Wikipedia, aggregators, fan wikis) can never
@@ -61,15 +68,21 @@ Batches 000–006 predate the provenance schema. They are listed in `LEGACY_UNSO
 
 ## Coverage plan
 
-Keep every batch **≤25 records**. Not style — the importer makes a separate PostgREST round
-trip per write at ~150ms each, and Vercel's ceiling is 300s (`maxDuration` on the import
-route).
+Keep every batch **≤60 records**, and the reason is editorial rather than technical: one batch
+should be one reviewable diff and one commit.
 
-Measured on batch 007: **8 records with 26 sources and 47 citations took 55 seconds**, about
-7s per record. Citations dominate, and they are the one thing a per-run cache cannot amortise
-— lookups repeat across records, a citation is unique to its subject. A record with deep
-edition history and a source per fact costs closer to 10s, so 25 is the honest ceiling, not
-the 35 the original plan assumed.
+It used to be technical. Every write was a separate PostgREST round trip at ~150ms, batch 007
+took 55 seconds for 8 records, and 25 was the honest ceiling against Vercel's 300s. The bulk
+prefetch changed the arithmetic — one `.in()` read per table up front instead of a SELECT
+before every write, one confidence pass instead of one per record, and a no-op patch skipped
+rather than rewritten. Re-measured on the same batch 007: **1.2 seconds**, 0.15s per record.
+The whole 84-record corpus imports in 1.6s. Running through `npm run seeds:import` removes the
+300s ceiling entirely.
+
+**Imports are serialised.** Research a wave of batches concurrently if you like — every write
+key is stable, so batches converge rather than collide. But two `seeds:import` processes
+running at once will both miss on a shared lookup like `netflix`, both insert, and one takes a
+`23505`. At ~2s a batch there is nothing to gain by overlapping them.
 
 ### Wave 1 — the empty categories (batches 007–019)
 

@@ -9,9 +9,14 @@ import { createAdminClient } from "@/lib/supabase/admin";
 export const runtime = "nodejs";
 
 /**
- * Seed batches are dozens of records deep and every write is a separate PostgREST round trip
- * (~150ms each), so a full batch runs in minutes, not seconds. 300s is Vercel's ceiling.
- * Keep batches at or under ~35 records — see seeds/PROGRESS.md.
+ * 300s is Vercel's ceiling, and it is the reason `npm run seeds:import` — which calls the
+ * same `runImport` from a local process with no clock on it — is now the default path for
+ * seeding. This route is the browser fallback and the future admin panel's write path.
+ *
+ * The bulk prefetch in importer.ts cut a warm batch from ~7s to under 0.2s per record, so
+ * 300s is no longer a real constraint at any batch size the sweep produces. It still binds
+ * on a cold batch that creates every lookup row it names, so keep pasted batches modest and
+ * use the CLI for anything large — see seeds/PROGRESS.md.
  */
 export const maxDuration = 300;
 

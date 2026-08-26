@@ -16,8 +16,19 @@ import type {
 } from "./schema";
 
 type Db = SupabaseClient<Database>;
+type Tables = Database["public"]["Tables"];
+type Row<T extends keyof Tables> = Tables[T]["Row"];
 
-export type Counts = { created: number; updated: number };
+/**
+ * `unchanged` separates "written again with the same values" from "already correct".
+ *
+ * It exists for `--verify`: a clean re-import used to report dozens of updates, because
+ * every resolver wrote its patch unconditionally, and "N updated" is indistinguishable from
+ * "N silently rewritten with the wrong thing". With the prefetch carrying stored rows, a
+ * no-op patch is skipped and a second run reports almost entirely `unchanged` — which is a
+ * real idempotency signal rather than an absence of one.
+ */
+export type Counts = { created: number; updated: number; unchanged: number };
 
 /**
  * Confidence tiers, in ascending order. Mirrored from CONFIDENCE_LEVELS; the order matters
@@ -56,23 +67,31 @@ export type ImportReport = {
   errors: { index: number; name: string | null; message: string }[];
 };
 
+function emptyCounts(): Counts {
+  return { created: 0, updated: 0, unchanged: 0 };
+}
+
 function emptyReport(received: number): ImportReport {
   return {
     ok: true,
     received,
     summary: {
-      productions: { created: 0, updated: 0 },
-      editions: { created: 0, updated: 0 },
-      viewership: { created: 0, updated: 0 },
-      team: { created: 0, updated: 0 },
-      sources: { created: 0, updated: 0 },
-      citations: { created: 0, updated: 0 },
+      productions: emptyCounts(),
+      editions: emptyCounts(),
+      viewership: emptyCounts(),
+      team: emptyCounts(),
+      sources: emptyCounts(),
+      citations: emptyCounts(),
     },
     createdLookups: { cities: [], networks: [], companies: [], venues: [] },
     confidence: { unverified: 0, single_source: 0, corroborated: 0, official: 0 },
     errors: [],
   };
 }
+
+// ---------------------------------------------------------------------------
+// Caches
+// ---------------------------------------------------------------------------
 
 /**
  * Per-run memo of resolved lookup ids, keyed by slug.
@@ -85,6 +104,12 @@ function emptyReport(received: number): ImportReport {
  * Correct because the run is the only writer: nothing else can change a lookup row mid-batch,
  * and the resolvers write field updates on the FIRST encounter, which is when a record's
  * richer lookup object (an address, a capacity) actually arrives.
+ *
+ * **These maps mean "resolved AND patched", not merely "id known".** That distinction is the
+ * whole reason `Existing` below is a separate structure: filling these from the prefetch
+ * would make every resolver short-circuit before its first-encounter UPDATE, and venue
+ * addresses, city coordinates and network websites would stop being written with no counter
+ * in `ImportReport` going anywhere near zero.
  */
 type LookupCache = {
   cities: Map<string, string>;
@@ -93,6 +118,31 @@ type LookupCache = {
   /** Venues carry a city too, so the memo has to hold both halves of the return. */
   venues: Map<string, { venueId: string; cityId: string | null }>;
   sources: Map<string, string>;
+};
+
+/**
+ * Rows already in the database when the run started, from one bulk read per table.
+ *
+ * A hit here means "this exists and here is what it currently holds" — it does NOT mean the
+ * run has reconciled it. The resolvers consult this to skip the per-row SELECT, then still
+ * do their patch (or skip it, when the stored values already match).
+ *
+ * Keys: lookups by slug, sources by url, editions and viewership by `${productionId}:${year}`,
+ * team by its UNIQUE-constraint tuple, citations by subject column + subject id + source +
+ * field. Every key is the table's real write key, so a miss here and a miss in the database
+ * are the same thing.
+ */
+type Existing = {
+  cities: Map<string, Row<"cities">>;
+  networks: Map<string, Row<"networks">>;
+  companies: Map<string, Row<"companies">>;
+  venues: Map<string, Row<"venues">>;
+  productions: Map<string, Row<"productions">>;
+  sources: Map<string, Row<"sources">>;
+  editions: Map<string, Row<"editions">>;
+  viewership: Map<string, Row<"viewership">>;
+  team: Map<string, Row<"production_team">>;
+  citations: Map<string, Row<"citations">>;
 };
 
 function emptyCache(): LookupCache {
@@ -105,8 +155,36 @@ function emptyCache(): LookupCache {
   };
 }
 
+function emptyExisting(): Existing {
+  return {
+    cities: new Map(),
+    networks: new Map(),
+    companies: new Map(),
+    venues: new Map(),
+    productions: new Map(),
+    sources: new Map(),
+    editions: new Map(),
+    viewership: new Map(),
+    team: new Map(),
+    citations: new Map(),
+  };
+}
+
 /** Everything the per-record helpers need that is not the record itself. */
-type Run = { db: Db; report: ImportReport; cache: LookupCache };
+type Run = {
+  db: Db;
+  report: ImportReport;
+  cache: LookupCache;
+  existing: Existing;
+  /**
+   * Citations for subjects this run created, flushed in one insert at the end. A subject
+   * that did not exist when the run started cannot have a citation, so these can never
+   * conflict — which is what makes batching them safe without upsert semantics.
+   */
+  pendingCitations: Tables["citations"]["Insert"][];
+  /** Every (production, editions) pair the run touched, for the one bulk confidence pass. */
+  subjects: { productionId: string; editionIds: string[] }[];
+};
 
 /**
  * Drops `undefined` keys but keeps explicit `null`s.
@@ -122,8 +200,256 @@ function definedOnly<T extends object>(obj: T): T {
   return Object.fromEntries(Object.entries(obj).filter(([, v]) => v !== undefined)) as T;
 }
 
+/**
+ * True when every key in `patch` already holds that value in `stored`.
+ *
+ * Numbers are compared through `Number()` deliberately: `cities.lat/lng` are `numeric(9,6)`
+ * and `viewership.average_viewers` is `numeric`, and PostgREST can hand either back as a
+ * string or a number depending on magnitude. A `===` here would report every coordinate as
+ * changed forever and quietly undo the point of the check.
+ */
+function isNoOp(patch: object, stored: object | undefined): boolean {
+  if (!stored) return false;
+  const current_ = stored as Record<string, unknown>;
+  return Object.entries(patch as Record<string, unknown>).every(([key, value]) => {
+    const current = current_[key];
+    if (value === null || current === null) return value === current;
+    if (typeof value === "number" || typeof current === "number") {
+      return Number(value) === Number(current);
+    }
+    return value === current;
+  });
+}
+
+/** The slug a lookup row is written under. Shared so key collection cannot drift from resolution. */
+function lookupSlug(input: { name: string; slug?: string | undefined }): string {
+  return input.slug ?? slugify(input.name);
+}
+
 function fail(context: string, message: string): never {
   throw new Error(`${context}: ${message}`);
+}
+
+/**
+ * Runs an `.in(...)` filter in chunks.
+ *
+ * PostgREST puts the filter in the query string and the Supabase proxy caps URL length at
+ * roughly 8–16KB. Source URLs average ~110 characters, so a 60-record batch with six sources
+ * each is well past that in one request — it fails as an opaque 414 rather than as anything
+ * that names the cause. 50 for URLs, 200 for slugs and uuids.
+ */
+async function inChunks<T>(
+  values: string[],
+  size: number,
+  fetchChunk: (chunk: string[]) => Promise<T[]>,
+): Promise<T[]> {
+  const out: T[] = [];
+  for (let i = 0; i < values.length; i += size) {
+    out.push(...(await fetchChunk(values.slice(i, i + size))));
+  }
+  return out;
+}
+
+const SLUG_CHUNK = 200;
+const URL_CHUNK = 50;
+
+// ---------------------------------------------------------------------------
+// Prefetch
+// ---------------------------------------------------------------------------
+
+type BatchKeys = {
+  productions: Set<string>;
+  cities: Set<string>;
+  venues: Set<string>;
+  networks: Set<string>;
+  companies: Set<string>;
+  sourceUrls: Set<string>;
+};
+
+/**
+ * Every write key the batch will touch, collected before a single query runs.
+ *
+ * Pure and database-free on purpose: a key this misses does not fail, it silently falls back
+ * to the old per-row SELECT, so this is the function that has to be right by inspection.
+ * Note the places a lookup hides — nested inside a venue, on an edition rather than the
+ * production, on a team credit's company, and inside all four `sources` arrays.
+ */
+function collectKeys(records: ProductionInputT[]): BatchKeys {
+  const keys: BatchKeys = {
+    productions: new Set(),
+    cities: new Set(),
+    venues: new Set(),
+    networks: new Set(),
+    companies: new Set(),
+    sourceUrls: new Set(),
+  };
+
+  const addCity = (city: CityInputT | null | undefined) => {
+    if (city) keys.cities.add(lookupSlug(city));
+  };
+  const addVenue = (venue: VenueInputT | null | undefined) => {
+    if (!venue) return;
+    keys.venues.add(lookupSlug(venue));
+    addCity(venue.city);
+  };
+  const addSources = (sources: SourceInputT[] | undefined) => {
+    for (const source of sources ?? []) keys.sourceUrls.add(source.url);
+  };
+
+  for (const record of records) {
+    keys.productions.add(lookupSlug(record));
+    if (record.network) keys.networks.add(lookupSlug(record.network));
+    if (record.production_company) keys.companies.add(lookupSlug(record.production_company));
+    addCity(record.city);
+    addVenue(record.venue);
+    addSources(record.sources);
+
+    for (const edition of record.editions ?? []) {
+      addCity(edition.city);
+      addVenue(edition.venue);
+      if (edition.network) keys.networks.add(lookupSlug(edition.network));
+      addSources(edition.sources);
+    }
+    for (const row of record.viewership ?? []) addSources(row.sources);
+    for (const member of record.team ?? []) {
+      if (member.company) keys.companies.add(lookupSlug(member.company));
+      addSources(member.sources);
+    }
+  }
+
+  return keys;
+}
+
+/** The citation key: subject column, subject id, source, and which fact it backs. */
+function citationKey(
+  column: "production_id" | "edition_id" | "viewership_id" | "team_id",
+  subjectId: string,
+  sourceId: string,
+  field: string | null,
+): string {
+  return `${column}:${subjectId}|${sourceId}|${field ?? ""}`;
+}
+
+/** The `production_team` UNIQUE NULLS NOT DISTINCT tuple, as a string. */
+function teamKey(
+  productionId: string,
+  editionId: string | null,
+  role: string,
+  companyId: string | null,
+  personName: string | null,
+): string {
+  return [productionId, editionId ?? "", role, companyId ?? "", personName ?? ""].join("|");
+}
+
+/**
+ * One bulk read per table, replacing the per-row SELECT that used to precede every write.
+ *
+ * Two waves: the first is keyed on slugs and urls taken straight from the payload, the
+ * second on the production ids the first wave returned. Nothing here writes, so a prefetch
+ * that comes back empty is simply a batch of entirely new records — the resolvers then take
+ * their insert path without ever issuing the SELECT that would have confirmed the miss.
+ */
+async function prefetch(run: Run, records: ProductionInputT[]): Promise<void> {
+  const { db, existing } = run;
+  const keys = collectKeys(records);
+  const ctx = "prefetch";
+
+  /**
+   * The five slug-keyed tables share one read shape, but not one row type. The client
+   * resolves `.select("*")` per table name, so a union of five row types comes back and the
+   * caller — which knows which table it asked for — narrows it. Hence one cast here rather
+   * than five copies of the same six lines.
+   */
+  const bySlug = async (
+    table: "cities" | "networks" | "companies" | "venues" | "productions",
+    slugs: Set<string>,
+    into: Map<string, never>,
+  ) => {
+    if (slugs.size === 0) return;
+    const rows = await inChunks([...slugs], SLUG_CHUNK, async (chunk) => {
+      const { data, error } = await db.from(table).select("*").in("slug", chunk);
+      if (error) fail(ctx, `${table}: ${error.message}`);
+      return (data ?? []) as unknown as { slug: string }[];
+    });
+    for (const row of rows) into.set(row.slug, row as never);
+  };
+
+  await Promise.all([
+    bySlug("cities", keys.cities, existing.cities as unknown as Map<string, never>),
+    bySlug("networks", keys.networks, existing.networks as unknown as Map<string, never>),
+    bySlug("companies", keys.companies, existing.companies as unknown as Map<string, never>),
+    bySlug("venues", keys.venues, existing.venues as unknown as Map<string, never>),
+    bySlug("productions", keys.productions, existing.productions as unknown as Map<string, never>),
+    (async () => {
+      if (keys.sourceUrls.size === 0) return;
+      const rows = await inChunks([...keys.sourceUrls], URL_CHUNK, async (chunk) => {
+        const { data, error } = await db.from("sources").select("*").in("url", chunk);
+        if (error) fail(ctx, `sources: ${error.message}`);
+        return data ?? [];
+      });
+      for (const row of rows) existing.sources.set(row.url, row);
+    })(),
+  ]);
+
+  // Wave 2 — everything hanging off a production that already exists. A brand-new production
+  // has no editions, no viewership, no team and no citations by definition, so this is
+  // correctly empty for a fresh batch.
+  const productionIds = [...existing.productions.values()].map((p) => p.id);
+  if (productionIds.length === 0) return;
+
+  const [editions, viewership, team] = await Promise.all([
+    inChunks(productionIds, SLUG_CHUNK, async (chunk) => {
+      const { data, error } = await db.from("editions").select("*").in("production_id", chunk);
+      if (error) fail(ctx, `editions: ${error.message}`);
+      return data ?? [];
+    }),
+    inChunks(productionIds, SLUG_CHUNK, async (chunk) => {
+      const { data, error } = await db.from("viewership").select("*").in("production_id", chunk);
+      if (error) fail(ctx, `viewership: ${error.message}`);
+      return data ?? [];
+    }),
+    inChunks(productionIds, SLUG_CHUNK, async (chunk) => {
+      const { data, error } = await db.from("production_team").select("*").in("production_id", chunk);
+      if (error) fail(ctx, `production_team: ${error.message}`);
+      return data ?? [];
+    }),
+  ]);
+
+  for (const row of editions) existing.editions.set(`${row.production_id}:${row.year}`, row);
+  for (const row of viewership) existing.viewership.set(`${row.production_id}:${row.year}`, row);
+  for (const row of team) {
+    existing.team.set(
+      teamKey(row.production_id, row.edition_id, row.role, row.company_id, row.person_name),
+      row,
+    );
+  }
+
+  // Citations, one read per subject column. `.or()` across four nullable columns would be one
+  // request but produces a filter string that is harder to read than four obvious queries,
+  // and the ids are already in hand.
+  const subjectIds = {
+    production_id: productionIds,
+    edition_id: editions.map((e) => e.id),
+    viewership_id: viewership.map((v) => v.id),
+    team_id: team.map((t) => t.id),
+  } as const;
+
+  await Promise.all(
+    (Object.keys(subjectIds) as (keyof typeof subjectIds)[]).map(async (column) => {
+      const ids = subjectIds[column];
+      if (ids.length === 0) return;
+      const rows = await inChunks(ids, SLUG_CHUNK, async (chunk) => {
+        const { data, error } = await db.from("citations").select("*").in(column, chunk);
+        if (error) fail(ctx, `citations.${column}: ${error.message}`);
+        return data ?? [];
+      });
+      for (const row of rows) {
+        const subjectId = row[column];
+        if (!subjectId) continue;
+        existing.citations.set(citationKey(column, subjectId, row.source_id, row.field), row);
+      }
+    }),
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -131,20 +457,23 @@ function fail(context: string, message: string): never {
 // always win over what is already stored.
 // ---------------------------------------------------------------------------
 
+/**
+ * All four resolvers below share one shape, deliberately written out rather than factored
+ * into a generic: the Supabase client resolves `.update()` and `.insert()` payload types per
+ * table name, and a helper generic over the table erases exactly the checking that catches a
+ * column typo. Four near-copies that typecheck beat one abstraction that needs a cast.
+ *
+ * Three paths, in cost order: already resolved this run (free), known from the prefetch
+ * (one UPDATE, or nothing at all when the patch is a no-op), or new (one INSERT). The
+ * per-row SELECT that used to open every one of these is gone — `existing` answered it.
+ */
 async function resolveCity(run: Run, input: CityInputT): Promise<string> {
-  const slug = input.slug ?? slugify(input.name);
+  const slug = lookupSlug(input);
   const cached = run.cache.cities.get(slug);
   if (cached) return cached;
 
   const { db, report } = run;
   const ctx = `city "${input.name}"`;
-
-  const { data: existing, error } = await db
-    .from("cities")
-    .select("id")
-    .eq("slug", slug)
-    .maybeSingle();
-  if (error) fail(ctx, error.message);
 
   const patch = definedOnly({
     name: input.name,
@@ -155,39 +484,36 @@ async function resolveCity(run: Run, input: CityInputT): Promise<string> {
     lng: input.lng,
   });
 
-  if (existing) {
-    const { error: updateError } = await db.from("cities").update(patch).eq("id", existing.id);
-    if (updateError) fail(ctx, updateError.message);
-    run.cache.cities.set(slug, existing.id);
-    return existing.id;
+  const stored = run.existing.cities.get(slug);
+  if (stored) {
+    if (!isNoOp(patch, stored)) {
+      const { error } = await db.from("cities").update(patch).eq("id", stored.id);
+      if (error) fail(ctx, error.message);
+    }
+    run.cache.cities.set(slug, stored.id);
+    return stored.id;
   }
 
   const { data: inserted, error: insertError } = await db
     .from("cities")
     .insert({ ...patch, name: input.name, slug })
-    .select("id")
+    .select("*")
     .single();
   if (insertError) fail(ctx, insertError.message);
 
   report.createdLookups.cities.push(`${input.name} (${slug})`);
+  run.existing.cities.set(slug, inserted);
   run.cache.cities.set(slug, inserted.id);
   return inserted.id;
 }
 
 async function resolveNetwork(run: Run, input: NetworkInputT): Promise<string> {
-  const slug = input.slug ?? slugify(input.name);
+  const slug = lookupSlug(input);
   const cached = run.cache.networks.get(slug);
   if (cached) return cached;
 
   const { db, report } = run;
   const ctx = `network "${input.name}"`;
-
-  const { data: existing, error } = await db
-    .from("networks")
-    .select("id")
-    .eq("slug", slug)
-    .maybeSingle();
-  if (error) fail(ctx, error.message);
 
   const patch = definedOnly({
     name: input.name,
@@ -196,39 +522,36 @@ async function resolveNetwork(run: Run, input: NetworkInputT): Promise<string> {
     website: input.website,
   });
 
-  if (existing) {
-    const { error: updateError } = await db.from("networks").update(patch).eq("id", existing.id);
-    if (updateError) fail(ctx, updateError.message);
-    run.cache.networks.set(slug, existing.id);
-    return existing.id;
+  const stored = run.existing.networks.get(slug);
+  if (stored) {
+    if (!isNoOp(patch, stored)) {
+      const { error } = await db.from("networks").update(patch).eq("id", stored.id);
+      if (error) fail(ctx, error.message);
+    }
+    run.cache.networks.set(slug, stored.id);
+    return stored.id;
   }
 
   const { data: inserted, error: insertError } = await db
     .from("networks")
     .insert({ ...patch, name: input.name, slug })
-    .select("id")
+    .select("*")
     .single();
   if (insertError) fail(ctx, insertError.message);
 
   report.createdLookups.networks.push(`${input.name} (${slug})`);
+  run.existing.networks.set(slug, inserted);
   run.cache.networks.set(slug, inserted.id);
   return inserted.id;
 }
 
 async function resolveCompany(run: Run, input: CompanyInputT): Promise<string> {
-  const slug = input.slug ?? slugify(input.name);
+  const slug = lookupSlug(input);
   const cached = run.cache.companies.get(slug);
   if (cached) return cached;
 
   const { db, report } = run;
   const ctx = `company "${input.name}"`;
-
-  const { data: existing, error } = await db
-    .from("companies")
-    .select("id")
-    .eq("slug", slug)
-    .maybeSingle();
-  if (error) fail(ctx, error.message);
 
   const patch = definedOnly({
     name: input.name,
@@ -237,21 +560,25 @@ async function resolveCompany(run: Run, input: CompanyInputT): Promise<string> {
     website: input.website,
   });
 
-  if (existing) {
-    const { error: updateError } = await db.from("companies").update(patch).eq("id", existing.id);
-    if (updateError) fail(ctx, updateError.message);
-    run.cache.companies.set(slug, existing.id);
-    return existing.id;
+  const stored = run.existing.companies.get(slug);
+  if (stored) {
+    if (!isNoOp(patch, stored)) {
+      const { error } = await db.from("companies").update(patch).eq("id", stored.id);
+      if (error) fail(ctx, error.message);
+    }
+    run.cache.companies.set(slug, stored.id);
+    return stored.id;
   }
 
   const { data: inserted, error: insertError } = await db
     .from("companies")
     .insert({ ...patch, name: input.name, slug })
-    .select("id")
+    .select("*")
     .single();
   if (insertError) fail(ctx, insertError.message);
 
   report.createdLookups.companies.push(`${input.name} (${slug})`);
+  run.existing.companies.set(slug, inserted);
   run.cache.companies.set(slug, inserted.id);
   return inserted.id;
 }
@@ -267,7 +594,7 @@ async function resolveVenue(
    */
   fallbackCityId: string | null = null,
 ): Promise<{ venueId: string; cityId: string | null }> {
-  const slug = input.slug ?? slugify(input.name);
+  const slug = lookupSlug(input);
   const { db, report } = run;
   const ctx = `venue "${input.name}"`;
 
@@ -279,13 +606,6 @@ async function resolveVenue(
   const cached = run.cache.venues.get(slug);
   if (cached && (cityId === null || cached.cityId === cityId)) return cached;
 
-  const { data: existing, error } = await db
-    .from("venues")
-    .select("id, city_id")
-    .eq("slug", slug)
-    .maybeSingle();
-  if (error) fail(ctx, error.message);
-
   const patch = definedOnly({
     name: input.name,
     address: input.address,
@@ -294,10 +614,14 @@ async function resolveVenue(
     city_id: cityId ?? undefined,
   });
 
-  if (existing) {
-    const { error: updateError } = await db.from("venues").update(patch).eq("id", existing.id);
-    if (updateError) fail(ctx, updateError.message);
-    const resolved = { venueId: existing.id, cityId: cityId ?? existing.city_id };
+  const stored = run.existing.venues.get(slug);
+
+  if (stored) {
+    if (!isNoOp(patch, stored)) {
+      const { error: updateError } = await db.from("venues").update(patch).eq("id", stored.id);
+      if (updateError) fail(ctx, updateError.message);
+    }
+    const resolved = { venueId: stored.id, cityId: cityId ?? stored.city_id };
     run.cache.venues.set(slug, resolved);
     return resolved;
   }
@@ -305,11 +629,12 @@ async function resolveVenue(
   const { data: inserted, error: insertError } = await db
     .from("venues")
     .insert({ ...patch, name: input.name, slug })
-    .select("id")
+    .select("*")
     .single();
   if (insertError) fail(ctx, insertError.message);
 
   report.createdLookups.venues.push(`${input.name} (${slug})`);
+  run.existing.venues.set(slug, inserted);
   const resolved = { venueId: inserted.id, cityId };
   run.cache.venues.set(slug, resolved);
   return resolved;
@@ -327,105 +652,181 @@ type CitationSubject =
   | { team_id: string };
 
 /**
+ * Every source in the batch, resolved to an id in at most three round trips.
+ *
  * Sources dedupe on `url`, which is the natural key and is UNIQUE in the schema. One
  * Deadline story backing eight records is one row cited eight times, so the
  * distinct-publisher count that drives confidence counts publishers rather than mentions.
+ *
+ * Three cases, kept apart deliberately:
+ *
+ *  - **New urls** — one insert with `ignoreDuplicates`, which compiles to `ON CONFLICT DO
+ *    NOTHING`. It cannot clobber a row a concurrent run just created, and the re-select that
+ *    follows picks up ids for anything the conflict skipped.
+ *  - **Known urls whose payload actually differs** — one update each, with keys that already
+ *    match the stored value dropped first. This is what preserves `definedOnly` semantics: a
+ *    plain bulk `.upsert()` would write `null` over a stored title that this batch simply
+ *    did not mention.
+ *  - **Known urls with nothing new to say** — nothing at all, counted as `unchanged`.
+ *
+ * Where one url appears twice in a batch with different fields, first-defined wins. That is
+ * exactly what the old per-record resolver did, since it memoised after the first encounter
+ * and never revisited.
  */
-async function resolveSource(run: Run, input: SourceInputT): Promise<string> {
-  const cached = run.cache.sources.get(input.url);
-  if (cached) return cached;
+async function prefetchSources(run: Run, records: ProductionInputT[]): Promise<void> {
+  const { db, report, existing } = run;
+  const ctx = "sources";
 
-  const { db, report } = run;
-  const ctx = `source "${input.url}"`;
+  const first = new Map<string, SourceInputT>();
+  const collect = (sources: SourceInputT[] | undefined) => {
+    for (const source of sources ?? []) if (!first.has(source.url)) first.set(source.url, source);
+  };
+  for (const record of records) {
+    collect(record.sources);
+    for (const edition of record.editions ?? []) collect(edition.sources);
+    for (const row of record.viewership ?? []) collect(row.sources);
+    for (const member of record.team ?? []) collect(member.sources);
+  }
+  if (first.size === 0) return;
 
-  const { data: existing, error } = await db
-    .from("sources")
-    .select("id")
-    .eq("url", input.url)
-    .maybeSingle();
-  if (error) fail(ctx, error.message);
+  const fresh: Tables["sources"]["Insert"][] = [];
+  const updates: { id: string; patch: Tables["sources"]["Update"] }[] = [];
 
-  const patch = definedOnly({
-    publisher: input.publisher,
-    title: input.title,
-    tier: input.tier,
-    published_on: input.published_on,
-  });
+  for (const [url, input] of first) {
+    const patch = definedOnly({
+      publisher: input.publisher,
+      title: input.title,
+      tier: input.tier,
+      published_on: input.published_on,
+    });
+    const stored = existing.sources.get(url);
 
-  if (existing) {
-    const { error: updateError } = await db.from("sources").update(patch).eq("id", existing.id);
-    if (updateError) fail(ctx, updateError.message);
-    report.summary.sources.updated += 1;
-    run.cache.sources.set(input.url, existing.id);
-    return existing.id;
+    if (!stored) {
+      fresh.push({ ...patch, url, publisher: input.publisher, tier: input.tier });
+    } else if (isNoOp(patch, stored)) {
+      run.cache.sources.set(url, stored.id);
+      report.summary.sources.unchanged += 1;
+    } else {
+      updates.push({ id: stored.id, patch });
+      run.cache.sources.set(url, stored.id);
+      report.summary.sources.updated += 1;
+    }
   }
 
-  const { data: inserted, error: insertError } = await db
-    .from("sources")
-    .insert({ ...patch, url: input.url, publisher: input.publisher, tier: input.tier })
-    .select("id")
-    .single();
-  if (insertError) fail(ctx, insertError.message);
+  if (fresh.length > 0) {
+    const { error } = await db
+      .from("sources")
+      .upsert(fresh, { onConflict: "url", ignoreDuplicates: true });
+    if (error) fail(ctx, error.message);
 
-  report.summary.sources.created += 1;
-  run.cache.sources.set(input.url, inserted.id);
-  return inserted.id;
+    // Re-select rather than trusting the insert's returning clause: with
+    // `ignoreDuplicates` a row lost to a conflict comes back absent, not stale, and its id
+    // still has to be known.
+    const rows = await inChunks(
+      fresh.map((f) => f.url),
+      URL_CHUNK,
+      async (chunk) => {
+        const { data, error: selectError } = await db.from("sources").select("*").in("url", chunk);
+        if (selectError) fail(ctx, selectError.message);
+        return data ?? [];
+      },
+    );
+    for (const row of rows) {
+      run.cache.sources.set(row.url, row.id);
+      existing.sources.set(row.url, row);
+    }
+    report.summary.sources.created += fresh.length;
+  }
+
+  for (const { id, patch } of updates) {
+    const { error } = await db.from("sources").update(patch).eq("id", id);
+    if (error) fail(ctx, error.message);
+  }
 }
 
 /**
  * Attaches sources to one subject.
  *
- * Matched against the citations_unique tuple rather than upserted, and null columns are
- * matched with `.is` not `.eq` — the same trap `upsertTeam` documents below. Three of the
- * four subject columns are null on every row here, so getting that wrong would insert a
- * duplicate on every re-paste rather than matching.
+ * Two paths. For a subject this run created, no citation can exist yet — the row is queued
+ * for the batch insert at the end of the run, where a conflict is impossible by
+ * construction. For a subject that was already in the database, the prefetched citation map
+ * answers what the per-citation SELECT used to, and `retrieved_on` is refreshed only when it
+ * actually moved. (That SELECT is also where the `.is` vs `.eq` null-matching trap lived:
+ * three of four subject columns are null on every row, and `.eq(col, null)` is never true.)
  */
 async function writeCitations(
   run: Run,
   subject: CitationSubject,
+  subjectIsNew: boolean,
   inputs: SourceInputT[] | undefined,
 ): Promise<void> {
   if (!inputs?.length) return;
   const { db, report } = run;
 
-  const subjectColumns = ["production_id", "edition_id", "viewership_id", "team_id"] as const;
+  const [column, subjectId] = Object.entries(subject)[0] as [
+    "production_id" | "edition_id" | "viewership_id" | "team_id",
+    string,
+  ];
 
   for (const input of inputs) {
-    const sourceId = await resolveSource(run, input);
+    const sourceId = run.cache.sources.get(input.url);
+    if (!sourceId) fail(`citation "${input.url}"`, "source was not resolved during prefetch");
     const field = input.field ?? null;
-    const ctx = `citation "${input.url}"`;
 
-    let query = db.from("citations").select("id").eq("source_id", sourceId);
-    for (const column of subjectColumns) {
-      const value = (subject as Record<string, string | undefined>)[column];
-      query = value === undefined ? query.is(column, null) : query.eq(column, value);
-    }
-    query = field === null ? query.is("field", null) : query.eq("field", field);
-
-    const { data: existing, error } = await query.maybeSingle();
-    if (error) fail(ctx, error.message);
-
-    if (existing) {
-      // retrieved_on is the one mutable fact: re-checking a source in a later pass is
-      // exactly what the triple-check protocol does, and the new date is the useful one.
-      const { error: updateError } = await db
-        .from("citations")
-        .update({ retrieved_on: input.retrieved_on })
-        .eq("id", existing.id);
-      if (updateError) fail(ctx, updateError.message);
-      report.summary.citations.updated += 1;
+    if (subjectIsNew) {
+      run.pendingCitations.push({
+        ...subject,
+        source_id: sourceId,
+        field,
+        retrieved_on: input.retrieved_on,
+      });
+      report.summary.citations.created += 1;
       continue;
     }
 
-    const { error: insertError } = await db.from("citations").insert({
-      ...subject,
-      source_id: sourceId,
-      field,
-      retrieved_on: input.retrieved_on,
-    });
-    if (insertError) fail(ctx, insertError.message);
-    report.summary.citations.created += 1;
+    const stored = run.existing.citations.get(citationKey(column, subjectId, sourceId, field));
+    if (!stored) {
+      run.pendingCitations.push({
+        ...subject,
+        source_id: sourceId,
+        field,
+        retrieved_on: input.retrieved_on,
+      });
+      report.summary.citations.created += 1;
+      continue;
+    }
+
+    if (stored.retrieved_on === input.retrieved_on) {
+      report.summary.citations.unchanged += 1;
+      continue;
+    }
+
+    // retrieved_on is the one mutable fact: re-checking a source in a later pass is
+    // exactly what the triple-check protocol does, and the new date is the useful one.
+    const { error } = await db
+      .from("citations")
+      .update({ retrieved_on: input.retrieved_on })
+      .eq("id", stored.id);
+    if (error) fail(`citation "${input.url}"`, error.message);
+    report.summary.citations.updated += 1;
   }
+}
+
+/**
+ * Flushes the run's queued citations.
+ *
+ * Every row here attaches to a subject that either did not exist when the run started, or
+ * had no citation for this (source, field) pair — so a plain insert cannot conflict with the
+ * `citations_unique` index. Chunked because the payload, not the URL, is the size limit here.
+ */
+async function flushCitations(run: Run): Promise<void> {
+  if (run.pendingCitations.length === 0) return;
+  const { db } = run;
+  for (let i = 0; i < run.pendingCitations.length; i += 500) {
+    const { error } = await db.from("citations").insert(run.pendingCitations.slice(i, i + 500));
+    if (error) fail("citations", error.message);
+  }
+  run.pendingCitations = [];
 }
 
 /**
@@ -452,57 +853,104 @@ function rankConfidence(rows: { tier: string; publisher: string }[]): Confidence
   return "single_source";
 }
 
+type CitationRow = { retrieved_on: string; sources: { tier: string; publisher: string } | null };
+
 /**
- * Recomputes confidence for a production and each of its editions from what is actually
- * stored, then writes it. Runs after every other write for the record.
+ * Recomputes confidence for every production and edition the run touched, from what is
+ * actually stored, and writes it. Runs once, after every other write in the batch.
  *
  * Derived rather than accepted from the payload on purpose. A tier a research batch can set
  * is a tier a hurried research batch will over-set, and "official" needs to mean the network
  * said so — not that someone was confident.
+ *
+ * The batching is arithmetic, not a change of rule: two reads instead of two per record, and
+ * one UPDATE per distinct (confidence, verified_on) pair instead of one per row. A whole
+ * batch retrieved on the same day collapses to about four writes per table. Rows whose
+ * stored pair already matches are skipped entirely, so a second run writes nothing here.
  */
-async function deriveConfidence(
-  run: Run,
-  productionId: string,
-  editionIds: string[],
-): Promise<void> {
-  const { db, report } = run;
+async function deriveConfidenceBulk(run: Run): Promise<void> {
+  const { db, report, existing } = run;
   const ctx = "confidence";
+  if (run.subjects.length === 0) return;
 
-  const apply = async (
-    table: "productions" | "editions",
-    id: string,
-    rows: { retrieved_on: string; sources: { tier: string; publisher: string } | null }[],
-  ) => {
-    const cited = rows.flatMap((r) => (r.sources ? [r.sources] : []));
-    const confidence = rankConfidence(cited);
-    const verifiedOn =
-      rows.length === 0
-        ? null
-        : rows.reduce((latest, r) => (r.retrieved_on > latest ? r.retrieved_on : latest), rows[0].retrieved_on);
+  const productionIds = run.subjects.map((s) => s.productionId);
+  const editionIds = run.subjects.flatMap((s) => s.editionIds);
 
-    const { error } = await db
-      .from(table)
-      .update({ confidence, verified_on: verifiedOn })
-      .eq("id", id);
-    if (error) fail(ctx, error.message);
-    report.confidence[confidence] += 1;
+  const read = async (column: "production_id" | "edition_id", ids: string[]) => {
+    const grouped = new Map<string, CitationRow[]>();
+    if (ids.length === 0) return grouped;
+    const rows = await inChunks(ids, SLUG_CHUNK, async (chunk) => {
+      const { data, error } = await db
+        .from("citations")
+        // Must stay a single string literal — the Supabase client parses the select at the
+        // type level, and a concatenation widens to `string`.
+        .select("production_id, edition_id, retrieved_on, sources(tier, publisher)")
+        .in(column, chunk);
+      if (error) fail(ctx, error.message);
+      return data ?? [];
+    });
+    for (const row of rows) {
+      const id = row[column];
+      if (!id) continue;
+      grouped.set(id, [...(grouped.get(id) ?? []), row]);
+    }
+    return grouped;
   };
 
-  const { data: productionRows, error: productionError } = await db
-    .from("citations")
-    .select("retrieved_on, sources(tier, publisher)")
-    .eq("production_id", productionId);
-  if (productionError) fail(ctx, productionError.message);
-  await apply("productions", productionId, productionRows ?? []);
+  const [byProduction, byEdition] = await Promise.all([
+    read("production_id", productionIds),
+    read("edition_id", editionIds),
+  ]);
 
-  for (const editionId of editionIds) {
-    const { data: editionRows, error: editionError } = await db
-      .from("citations")
-      .select("retrieved_on, sources(tier, publisher)")
-      .eq("edition_id", editionId);
-    if (editionError) fail(ctx, editionError.message);
-    await apply("editions", editionId, editionRows ?? []);
-  }
+  /** id -> the pair to write, grouped so identical pairs share one UPDATE. */
+  const plan = (
+    ids: string[],
+    grouped: Map<string, CitationRow[]>,
+    stored: Map<string, { confidence: string; verified_on: string | null }>,
+  ) => {
+    const groups = new Map<string, string[]>();
+    for (const id of ids) {
+      const rows = grouped.get(id) ?? [];
+      const cited = rows.flatMap((r) => (r.sources ? [r.sources] : []));
+      const confidence = rankConfidence(cited);
+      const verifiedOn =
+        rows.length === 0
+          ? null
+          : rows.reduce(
+              (latest, r) => (r.retrieved_on > latest ? r.retrieved_on : latest),
+              rows[0].retrieved_on,
+            );
+
+      report.confidence[confidence] += 1;
+
+      const current = stored.get(id);
+      if (current && current.confidence === confidence && current.verified_on === verifiedOn) {
+        continue;
+      }
+      const key = `${confidence}|${verifiedOn ?? ""}`;
+      groups.set(key, [...(groups.get(key) ?? []), id]);
+    }
+    return groups;
+  };
+
+  const storedProductions = new Map(
+    [...existing.productions.values()].map((p) => [p.id, p] as const),
+  );
+  const storedEditions = new Map([...existing.editions.values()].map((e) => [e.id, e] as const));
+
+  const apply = async (table: "productions" | "editions", groups: Map<string, string[]>) => {
+    for (const [key, ids] of groups) {
+      const [confidence, verifiedOn] = key.split("|");
+      const { error } = await db
+        .from(table)
+        .update({ confidence, verified_on: verifiedOn === "" ? null : verifiedOn })
+        .in("id", ids);
+      if (error) fail(ctx, error.message);
+    }
+  };
+
+  await apply("productions", plan(productionIds, byProduction, storedProductions));
+  await apply("editions", plan(editionIds, byEdition, storedEditions));
 }
 
 // ---------------------------------------------------------------------------
@@ -564,30 +1012,31 @@ async function upsertEdition(
     strike: input.strike,
   });
 
-  const { data: existing, error } = await db
-    .from("editions")
-    .select("id")
-    .eq("production_id", productionId)
-    .eq("year", input.year)
-    .maybeSingle();
-  if (error) fail(ctx, error.message);
+  const key = `${productionId}:${input.year}`;
+  const stored = run.existing.editions.get(key);
 
-  if (existing) {
-    const { error: updateError } = await db.from("editions").update(patch).eq("id", existing.id);
-    if (updateError) fail(ctx, updateError.message);
-    report.summary.editions.updated += 1;
-    await writeCitations(run, { edition_id: existing.id }, input.sources);
-    return existing.id;
+  if (stored) {
+    if (isNoOp(patch, stored)) {
+      report.summary.editions.unchanged += 1;
+    } else {
+      const { error: updateError } = await db.from("editions").update(patch).eq("id", stored.id);
+      if (updateError) fail(ctx, updateError.message);
+      report.summary.editions.updated += 1;
+    }
+    await writeCitations(run, { edition_id: stored.id }, false, input.sources);
+    return stored.id;
   }
 
   const { data: inserted, error: insertError } = await db
     .from("editions")
     .insert({ ...patch, production_id: productionId, year: input.year })
-    .select("id")
+    .select("*")
     .single();
   if (insertError) fail(ctx, insertError.message);
   report.summary.editions.created += 1;
-  await writeCitations(run, { edition_id: inserted.id }, input.sources);
+  // Registered so a later record in the same batch, and deriveConfidenceBulk, both see it.
+  run.existing.editions.set(key, inserted);
+  await writeCitations(run, { edition_id: inserted.id }, true, input.sources);
   return inserted.id;
 }
 
@@ -611,24 +1060,17 @@ async function upsertTeam(
   /**
    * The year may belong to an edition already in the database rather than one sent in this
    * payload — adding team data to an existing production without re-listing all of its
-   * editions is the normal case, not the exception. The in-payload map is only a
-   * short-circuit so a batch that does carry its editions avoids a round trip per entry.
+   * editions is the normal case, not the exception. The prefetch has already read every
+   * edition of every production in the batch, so this no longer costs a round trip.
    */
   let editionId: string | null = null;
   if (input.year !== undefined) {
-    editionId = editionIdsByYear.get(input.year) ?? null;
-    if (editionId === null) {
-      const { data: found, error: lookupError } = await db
-        .from("editions")
-        .select("id")
-        .eq("production_id", productionId)
-        .eq("year", input.year)
-        .maybeSingle();
-      if (lookupError) fail(ctx, lookupError.message);
-      if (!found) fail(ctx, `no edition for year ${input.year} on this production`);
-      editionId = found.id;
-      editionIdsByYear.set(input.year, found.id);
-    }
+    editionId =
+      editionIdsByYear.get(input.year) ??
+      run.existing.editions.get(`${productionId}:${input.year}`)?.id ??
+      null;
+    if (editionId === null) fail(ctx, `no edition for year ${input.year} on this production`);
+    editionIdsByYear.set(input.year, editionId);
   }
 
   // Companies resolve through the shared helper so vendors land in createdLookups and get
@@ -636,33 +1078,22 @@ async function upsertTeam(
   const companyId = input.company ? await resolveCompany(run, input.company) : null;
   const personName = input.person ?? null;
 
-  // Matches the UNIQUE NULLS NOT DISTINCT constraint column for column. `.is` and `.eq` are
-  // not interchangeable here: `.eq(col, null)` compares with `=`, which is never true for a
-  // null, so a nullable key column has to be matched with `.is`.
-  let query = db
-    .from("production_team")
-    .select("id")
-    .eq("production_id", productionId)
-    .eq("role", input.role);
-  query = editionId === null ? query.is("edition_id", null) : query.eq("edition_id", editionId);
-  query = companyId === null ? query.is("company_id", null) : query.eq("company_id", companyId);
-  query = personName === null ? query.is("person_name", null) : query.eq("person_name", personName);
-
-  const { data: existing, error } = await query.maybeSingle();
-  if (error) fail(ctx, error.message);
-
+  const key = teamKey(productionId, editionId, input.role, companyId, personName);
+  const stored = run.existing.team.get(key);
   const patch = definedOnly({ note: input.note, sort_order: input.sort_order });
 
-  if (existing) {
-    if (Object.keys(patch).length > 0) {
+  if (stored) {
+    if (Object.keys(patch).length === 0 || isNoOp(patch, stored)) {
+      report.summary.team.unchanged += 1;
+    } else {
       const { error: updateError } = await db
         .from("production_team")
         .update(patch)
-        .eq("id", existing.id);
+        .eq("id", stored.id);
       if (updateError) fail(ctx, updateError.message);
+      report.summary.team.updated += 1;
     }
-    report.summary.team.updated += 1;
-    await writeCitations(run, { team_id: existing.id }, input.sources);
+    await writeCitations(run, { team_id: stored.id }, false, input.sources);
     return;
   }
 
@@ -676,11 +1107,12 @@ async function upsertTeam(
       company_id: companyId,
       person_name: personName,
     })
-    .select("id")
+    .select("*")
     .single();
   if (insertError) fail(ctx, insertError.message);
   report.summary.team.created += 1;
-  await writeCitations(run, { team_id: inserted.id }, input.sources);
+  run.existing.team.set(key, inserted);
+  await writeCitations(run, { team_id: inserted.id }, true, input.sources);
 }
 
 async function upsertViewership(
@@ -696,30 +1128,30 @@ async function upsertViewership(
     peak_viewers: input.peak_viewers,
   });
 
-  const { data: existing, error } = await db
-    .from("viewership")
-    .select("id")
-    .eq("production_id", productionId)
-    .eq("year", input.year)
-    .maybeSingle();
-  if (error) fail(ctx, error.message);
+  const key = `${productionId}:${input.year}`;
+  const stored = run.existing.viewership.get(key);
 
-  if (existing) {
-    const { error: updateError } = await db.from("viewership").update(patch).eq("id", existing.id);
-    if (updateError) fail(ctx, updateError.message);
-    report.summary.viewership.updated += 1;
-    await writeCitations(run, { viewership_id: existing.id }, input.sources);
+  if (stored) {
+    if (isNoOp(patch, stored)) {
+      report.summary.viewership.unchanged += 1;
+    } else {
+      const { error: updateError } = await db.from("viewership").update(patch).eq("id", stored.id);
+      if (updateError) fail(ctx, updateError.message);
+      report.summary.viewership.updated += 1;
+    }
+    await writeCitations(run, { viewership_id: stored.id }, false, input.sources);
     return;
   }
 
   const { data: inserted, error: insertError } = await db
     .from("viewership")
     .insert({ ...patch, production_id: productionId, year: input.year })
-    .select("id")
+    .select("*")
     .single();
   if (insertError) fail(ctx, insertError.message);
   report.summary.viewership.created += 1;
-  await writeCitations(run, { viewership_id: inserted.id }, input.sources);
+  run.existing.viewership.set(key, inserted);
+  await writeCitations(run, { viewership_id: inserted.id }, true, input.sources);
 }
 
 // ---------------------------------------------------------------------------
@@ -728,7 +1160,7 @@ async function upsertViewership(
 
 async function importRecord(run: Run, input: ProductionInputT): Promise<void> {
   const { db, report } = run;
-  const slug = input.slug ?? slugify(input.name);
+  const slug = lookupSlug(input);
   const ctx = `production "${input.name}"`;
 
   const networkId = input.network ? await resolveNetwork(run, input.network) : null;
@@ -750,32 +1182,36 @@ async function importRecord(run: Run, input: ProductionInputT): Promise<void> {
     hero_image_url: input.hero_image_url,
   });
 
-  const { data: existing, error } = await db
-    .from("productions")
-    .select("id")
-    .eq("slug", slug)
-    .maybeSingle();
-  if (error) fail(ctx, error.message);
+  const stored = run.existing.productions.get(slug);
 
   let productionId: string;
-  if (existing) {
-    const { error: updateError } = await db.from("productions").update(patch).eq("id", existing.id);
-    if (updateError) fail(ctx, updateError.message);
-    productionId = existing.id;
-    report.summary.productions.updated += 1;
+  let productionIsNew = false;
+  if (stored) {
+    if (isNoOp(patch, stored)) {
+      report.summary.productions.unchanged += 1;
+    } else {
+      const { error: updateError } = await db.from("productions").update(patch).eq("id", stored.id);
+      if (updateError) fail(ctx, updateError.message);
+      report.summary.productions.updated += 1;
+    }
+    productionId = stored.id;
   } else {
     const { data: inserted, error: insertError } = await db
       .from("productions")
       // `slug` is written on create only — renames must never regenerate it.
       .insert({ ...patch, name: input.name, slug, category: input.category })
-      .select("id")
+      .select("*")
       .single();
     if (insertError) fail(ctx, insertError.message);
     productionId = inserted.id;
+    productionIsNew = true;
+    // Registered so a second record with the same slug in one batch updates rather than
+    // colliding, and so deriveConfidenceBulk can skip a no-op write.
+    run.existing.productions.set(slug, inserted);
     report.summary.productions.created += 1;
   }
 
-  await writeCitations(run, { production_id: productionId }, input.sources);
+  await writeCitations(run, { production_id: productionId }, productionIsNew, input.sources);
 
   // Editions first: team entries carrying a `year` need that year's edition id to exist.
   const editionIdsByYear = new Map<number, string>();
@@ -789,10 +1225,10 @@ async function importRecord(run: Run, input: ProductionInputT): Promise<void> {
     await upsertTeam(run, productionId, member, editionIdsByYear);
   }
 
-  // Last, and over every edition the record touched — including ones already in the database
-  // that this payload only added team data to, since their citation set is unchanged but
-  // their tally still belongs in the report.
-  await deriveConfidence(run, productionId, [...editionIdsByYear.values()]);
+  // Queued for the single confidence pass at the end of the run — over every edition the
+  // record touched, including ones already in the database that this payload only added team
+  // data to, since their citation set is unchanged but their tally still belongs in the report.
+  run.subjects.push({ productionId, editionIds: [...editionIdsByYear.values()] });
 }
 
 /** Best-effort name for the error report, before the record is known to be valid. */
@@ -807,21 +1243,36 @@ function peekName(record: unknown): string | null {
 /**
  * Imports a batch.
  *
- * Validation is per-record, not per-batch, and deliberately so: in a 40-record research
- * batch, one bad field should not send the other 39 back for a re-paste. A record that
+ * Four phases: validate every record, read everything the batch will touch in one bulk pass,
+ * write record by record, then derive confidence once over the whole run.
+ *
+ * Validation is per-record, not per-batch, and deliberately so: in a 60-record research
+ * batch, one bad field should not send the other 59 back for a re-paste. A record that
  * fails validation is never written and is reported with the exact field path.
+ *
+ * Records are written sequentially, and that is not an oversight. Two records racing to
+ * create the network "Netflix" would both miss the cache and both insert; the prefetch, not
+ * concurrency, is where the time went.
  *
  * Note that Supabase's REST client has no multi-statement transaction, so a record that
  * fails partway through writing can leave its lookup rows behind. That is safe here
  * because every write is keyed on a stable slug or (production_id, year) — fix the record,
- * paste the batch again, and the result converges.
+ * run the batch again, and the result converges.
  */
 export async function runImport(db: Db, records: unknown[]): Promise<ImportReport> {
   const report = emptyReport(records.length);
   // One cache for the whole batch — see LookupCache. Scoped to the run rather than the
   // module so a long-lived serverless instance never serves a stale id after a manual edit.
-  const run: Run = { db, report, cache: emptyCache() };
+  const run: Run = {
+    db,
+    report,
+    cache: emptyCache(),
+    existing: emptyExisting(),
+    pendingCitations: [],
+    subjects: [],
+  };
 
+  const valid: { index: number; record: ProductionInputT }[] = [];
   for (const [index, raw] of records.entries()) {
     const parsed = ProductionInput.safeParse(raw);
     if (!parsed.success) {
@@ -838,18 +1289,32 @@ export async function runImport(db: Db, records: unknown[]): Promise<ImportRepor
       });
       continue;
     }
+    valid.push({ index, record: parsed.data });
+  }
 
+  if (valid.length === 0) return report;
+
+  const parsedRecords = valid.map((v) => v.record);
+  await prefetch(run, parsedRecords);
+  await prefetchSources(run, parsedRecords);
+
+  for (const { index, record } of valid) {
     try {
-      await importRecord(run, parsed.data);
+      await importRecord(run, record);
     } catch (cause) {
       report.ok = false;
       report.errors.push({
         index,
-        name: parsed.data.name,
+        name: record.name,
         message: cause instanceof Error ? cause.message : String(cause),
       });
     }
   }
+
+  // Both run even when a record failed: the citations already queued belong to records that
+  // succeeded, and leaving them unflushed would report created rows that were never written.
+  await flushCitations(run);
+  await deriveConfidenceBulk(run);
 
   return report;
 }
