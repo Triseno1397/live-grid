@@ -1,0 +1,682 @@
+[
+  {
+    "name": "Macy's Thanksgiving Day Parade",
+    "slug": "macys-thanksgiving-day-parade",
+    "category": "holiday",
+    "subcategory": "parade",
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "The largest annual live television production in the United States and, by NBCUniversal's own description, the most watched entertainment telecast of the year. Runs from 77th Street down to Macy's Herald Square, produced by Universal Television with Done + Dusted, with a Spanish-language simulcast on Telemundo. The 100th parade falls in 2026 — later than the 1924 founding implies, because the parade was suspended from 1942 to 1944 for the war.",
+    "network": { "name": "NBC", "is_streaming": false },
+    "production_company": { "name": "Done + Dusted" },
+    "sources": [
+      {
+        "url": "https://www.nbcuniversal.com/article/americas-most-watched-entertainment-telecast-year-macys-thanksgiving-day-parader-returns-live-nbc",
+        "publisher": "NBCUniversal",
+        "title": "America's Most Watched Entertainment Telecast of the Year — Macy's Thanksgiving Day Parade — Returns Live on NBC and Peacock",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.macys.com/s/parade/",
+        "publisher": "Macy's",
+        "title": "The 100th Macy's Thanksgiving Day Parade Is Coming Soon",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "announced",
+        "start_date": "2026-11-26",
+        "show_date": "2026-11-26",
+        "city": "New York",
+        "sources": [
+          {
+            "url": "https://www.amny.com/lifestyle/holidays/macys-unveils-countdown-100th-thanksgiving-day-parade/",
+            "publisher": "amNewYork",
+            "title": "Macy's unveils countdown to 100th Thanksgiving Day Parade",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.macys.com/s/parade/",
+            "publisher": "Macy's",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-11-27",
+        "show_date": "2025-11-27",
+        "city": "New York",
+        "sources": [
+          {
+            "url": "https://www.nbcuniversal.com/article/americas-most-watched-entertainment-telecast-year-macys-thanksgiving-day-parader-returns-live-nbc",
+            "publisher": "NBCUniversal",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ],
+    "team": [
+      {
+        "role": "production_company",
+        "company": { "name": "Done + Dusted" },
+        "note": "with Universal Television",
+        "sources": [
+          {
+            "url": "https://www.nbcuniversal.com/article/americas-most-watched-entertainment-telecast-year-macys-thanksgiving-day-parader-returns-live-nbc",
+            "publisher": "NBCUniversal",
+            "tier": "official",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tournament of Roses Parade",
+    "slug": "tournament-of-roses-parade",
+    "category": "holiday",
+    "subcategory": "parade",
+    "typical_month": 1,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "New Year's morning parade down a five-and-a-half-mile route on Colorado Boulevard in Pasadena, stepping off at 8 a.m. and feeding directly into the Rose Bowl Game. The 138th edition carries the theme \"Welcome\" and is followed by a College Football Playoff quarterfinal.",
+    "sources": [
+      {
+        "url": "https://tournamentofroses.com/event/rose-parade/",
+        "publisher": "Tournament of Roses",
+        "title": "138th Rose Parade presented by Honda",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://tournamentofroses.com/pasadena-tournament-of-roses-president-terry-madigan-announces-2027-theme/",
+        "publisher": "Tournament of Roses",
+        "title": "Tournament of Roses President Terry Madigan announces 2027 theme",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-01-01",
+        "show_date": "2027-01-01",
+        "city": "Pasadena",
+        "sources": [
+          {
+            "url": "https://tournamentofroses.com/event/rose-parade/",
+            "publisher": "Tournament of Roses",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://tournamentofroses.com/pasadena-tournament-of-roses-announces-the-bands-marching-in-the-2027-rose-parade/",
+            "publisher": "Tournament of Roses",
+            "title": "Tournament of Roses announces the bands marching in the 2027 Rose Parade",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Westminster Kennel Club Dog Show",
+    "slug": "westminster-kennel-club-dog-show",
+    "category": "holiday",
+    "subcategory": "dog show",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "America's second-longest continuously held sporting event. Daytime breed and agility judging runs at the Javits Center; group judging and Best in Show are staged at Madison Square Garden across two evenings. The 151st show moves to Netflix after nine years on FOX Sports — breed competitions stream on Tudum, the Garden evenings stream live.",
+    "network": { "name": "FOX", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/the-151st-westminster-kennel-club-dog-show-to-make-its-debut-on-netflix-live-from-nyc-in-february-2027-302771540.html",
+        "publisher": "Westminster Kennel Club",
+        "title": "The 151st Westminster Kennel Club Dog Show to Make Its Debut on Netflix Live From NYC in February 2027",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://variety.com/2026/tv/news/westminster-kennel-club-dog-show-netflix-starting-next-year-1236746973/",
+        "publisher": "Variety",
+        "title": "Westminster Kennel Club Dog Show Moves to Netflix Starting Next Year Under New Deal",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "status": "confirmed",
+        "start_date": "2027-01-30",
+        "end_date": "2027-02-02",
+        "city": "New York",
+        "venue": { "name": "Madison Square Garden" },
+        "network": { "name": "Netflix", "is_streaming": true },
+        "sources": [
+          {
+            "url": "https://www.msg.com/events-tickets/westminster-kennel-club-dog-show-madison-square-garden-february-2027/3B006459DB16686C",
+            "publisher": "Madison Square Garden",
+            "title": "2027 Westminster Kennel Club Dog Show",
+            "tier": "official",
+            "field": "venue",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.netflix.com/tudum/features/westminster-kennel-club-dog-show-live-on-netflix",
+            "publisher": "Netflix",
+            "title": "The Westminster Kennel Club Dog Show Is Coming to Netflix in 2027",
+            "tier": "official",
+            "field": "network",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://deadline.com/2026/05/the-westminster-dog-show-netflix-2027-1236900363/",
+            "publisher": "Deadline",
+            "title": "The Westminster Dog Show Moves To Netflix In 2027",
+            "tier": "trade",
+            "field": "network",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The National Dog Show",
+    "slug": "the-national-dog-show",
+    "category": "holiday",
+    "subcategory": "dog show",
+    "typical_month": 11,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Benched all-breed show taped at the Greater Philadelphia Expo Center in Oaks, Pennsylvania in mid-November and held for broadcast on Thanksgiving Day, immediately following the Macy's parade. The most widely viewed dog show in America — a rare case where the taping city and the broadcast date are two weeks apart.",
+    "network": { "name": "NBC", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://nds.nationaldogshow.com/tv-coverage/",
+        "publisher": "The National Dog Show",
+        "title": "TV Coverage",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.nbc.com/the-national-dog-show",
+        "publisher": "NBC",
+        "title": "The National Dog Show Presented by Purina",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "announced",
+        "start_date": "2026-11-14",
+        "end_date": "2026-11-15",
+        "show_date": "2026-11-26",
+        "city": {
+          "name": "Oaks",
+          "state": "PA",
+          "country": "USA",
+          "timezone": "America/New_York"
+        },
+        "venue": { "name": "Greater Philadelphia Expo Center" },
+        "sources": [
+          {
+            "url": "https://nds.nationaldogshow.com/event-info/show-information/",
+            "publisher": "The National Dog Show",
+            "title": "Show Information",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "A Capitol Fourth",
+    "slug": "a-capitol-fourth",
+    "category": "holiday",
+    "subcategory": "independence day",
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Live ninety-minute concert from the West Lawn of the U.S. Capitol with the National Symphony Orchestra, broadcast and streamed nationwide by PBS. The 2026 edition moved a day earlier, to July 3, to open the weekend marking the 250th anniversary of independence — the first time in the programme's run that the concert has not been held on the Fourth itself.",
+    "network": { "name": "PBS", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.pbs.org/video/a-capitol-fourth-2026/",
+        "publisher": "PBS",
+        "title": "A Capitol Fourth (2026)",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.broadwayworld.com/article/A-CAPITOL-FOURTH-Moves-to-July-3-for-250th-Independence-Day-Concert-20260514",
+        "publisher": "BroadwayWorld",
+        "title": "A Capitol Fourth Moves Annual Concert Event One Day Earlier",
+        "tier": "trade",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-07-03",
+        "show_date": "2026-07-03",
+        "city": "Washington",
+        "venue": { "name": "United States Capitol" },
+        "sources": [
+          {
+            "url": "https://www.broadwayworld.com/article/A-CAPITOL-FOURTH-Moves-to-July-3-for-250th-Independence-Day-Concert-20260514",
+            "publisher": "BroadwayWorld",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://news.va.gov/147660/a-capitol-fourth-250th-weekend-celebration/",
+            "publisher": "U.S. Department of Veterans Affairs",
+            "title": "A Capitol Fourth: 250th weekend celebration",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "National Memorial Day Concert",
+    "slug": "national-memorial-day-concert",
+    "category": "holiday",
+    "subcategory": "memorial day",
+    "typical_month": 5,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Live ninety-minute concert of remembrance from the West Lawn of the U.S. Capitol on the Sunday before Memorial Day, with the National Symphony Orchestra under Jack Everly. Broadcast on PBS and streamed on YouTube and PBS.org, with a two-week video-on-demand window afterwards. Mary McCormack joined Gary Sinise as co-host in 2026, succeeding Joe Mantegna.",
+    "network": { "name": "PBS", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.pbs.org/video/the-national-memorial-day-concert-2026/",
+        "publisher": "PBS",
+        "title": "The National Memorial Day Concert (2026)",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://news.va.gov/146806/2026-national-memorial-day-concert-pbs/",
+        "publisher": "U.S. Department of Veterans Affairs",
+        "title": "The 2026 National Memorial Day Concert on PBS",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-05-24",
+        "show_date": "2026-05-24",
+        "city": "Washington",
+        "venue": { "name": "United States Capitol" },
+        "sources": [
+          {
+            "url": "https://www.kpbs.org/news/2026/05/06/national-memorial-day-concert-2026",
+            "publisher": "KPBS",
+            "title": "National Memorial Day Concert 2026",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://news.va.gov/146806/2026-national-memorial-day-concert-pbs/",
+            "publisher": "U.S. Department of Veterans Affairs",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Macy's 4th of July Fireworks",
+    "slug": "macys-4th-of-july-fireworks",
+    "category": "holiday",
+    "subcategory": "independence day",
+    "typical_month": 7,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "Barge-launched fireworks display over New York Harbor, broadcast live on NBC and Peacock with a Telemundo simulcast under the same ten-year rights deal that covers the Thanksgiving parade. The 50th show, in 2026, expanded to three launch sites — the Brooklyn Bridge, the lower Hudson off Jersey City, and the lower East River by the Seaport — and added a laser element from the bridge itself.",
+    "network": { "name": "NBC", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.nbc.com/nbc-insider/macys-4th-of-july-fireworks-special-2026-everything-to-know",
+        "publisher": "NBC",
+        "title": "Everything to Know About the 2026 Macy's 4th of July Fireworks Special",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-07-04",
+        "show_date": "2026-07-04",
+        "city": "New York",
+        "sources": [
+          {
+            "url": "https://www.nbc.com/nbc-insider/macys-4th-of-july-fireworks-special-2026-everything-to-know",
+            "publisher": "NBC",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.westsiderag.com/2026/07/01/macys-july-4-fireworks-2026-show-to-ignite-over-hudson-river-and-east-river-what-to-know",
+            "publisher": "West Side Rag",
+            "title": "Macy's July 4 Fireworks 2026 Show To Ignite Over Hudson River and East River",
+            "tier": "trade",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Puppy Bowl",
+    "slug": "puppy-bowl",
+    "category": "holiday",
+    "subcategory": "super bowl counterprogramming",
+    "typical_month": 2,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Adoptable-puppy counterprogramming staged opposite the Super Bowl pre-game window, built around shelter and rescue partnerships. Puppy Bowl XXII simulcast across Animal Planet, Discovery, TBS, truTV, HBO Max and discovery+ — a spread that says more about Warner Bros. Discovery's channel portfolio than about the production, which is a single taped studio build.",
+    "network": { "name": "Animal Planet", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.discovery.com/shows/puppy-bowl",
+        "publisher": "Discovery",
+        "title": "Puppy Bowl 2026",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2026-02-08",
+        "show_date": "2026-02-08",
+        "sources": [
+          {
+            "url": "https://www.discovery.com/shows/puppy-bowl/see/get-ready-for-puppy-bowl-xxii",
+            "publisher": "Discovery",
+            "title": "Get Ready for Puppy Bowl XXII on Animal Planet!",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dick Clark's New Year's Rockin' Eve",
+    "slug": "dick-clarks-new-years-rockin-eve",
+    "category": "holiday",
+    "subcategory": "new year",
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 5,
+    "description": "ABC's Times Square New Year's broadcast, running from the early evening through the ball drop and past midnight, with satellite stages in Los Angeles and elsewhere. Ryan Seacrest hosted his twentieth edition in the 2026 show, alongside Rita Ora in Times Square.",
+    "network": { "name": "ABC", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://abc.com/show/91f771e2-8def-4aac-8aad-473575b2f5dc",
+        "publisher": "ABC",
+        "title": "Dick Clark's New Year's Rockin' Eve with Ryan Seacrest",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.televisionacademy.com/news/abc-dick-clark-rockin-new-years-eve-trivia",
+        "publisher": "Television Academy",
+        "title": "By the Numbers: Dick Clark's New Year's Rockin' Eve",
+        "tier": "reference",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "status": "completed",
+        "start_date": "2025-12-31",
+        "show_date": "2025-12-31",
+        "city": "New York",
+        "sources": [
+          {
+            "url": "https://abcnews.com/GMA/Culture/new-years-rockin-eve-2026-how-to-watch-who-is-performing/story?id=128803664",
+            "publisher": "ABC News",
+            "title": "'New Year's Rockin' Eve' 2026: How to watch and who's performing",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Christmas in Rockefeller Center",
+    "slug": "christmas-in-rockefeller-center",
+    "category": "holiday",
+    "subcategory": "tree lighting",
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "NBC's live special built around the lighting of the Rockefeller Center Christmas Tree, with the Radio City Rockettes and a performance lineup, broadcast on NBC and streamed on Peacock. Traditionally the first Wednesday after Thanksgiving, though the date is set by NBC each autumn rather than by a fixed rule.",
+    "network": { "name": "NBC", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.nbcuniversal.com/article/nbcs-annual-christmas-rockefeller-center-celebrates-holiday-season-star-studded-performances-dec-3",
+        "publisher": "NBCUniversal",
+        "title": "NBC's Annual 'Christmas in Rockefeller Center' Celebrates the Holiday Season with Star-Studded Performances on Dec. 3",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.rockefellercenter.com/holidays/rockefeller-center-christmas-tree",
+        "publisher": "Rockefeller Center",
+        "title": "Rockefeller Center Christmas Tree",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-12-03",
+        "show_date": "2025-12-03",
+        "city": "New York",
+        "sources": [
+          {
+            "url": "https://www.nbcuniversal.com/article/nbcs-annual-christmas-rockefeller-center-celebrates-holiday-season-star-studded-performances-dec-3",
+            "publisher": "NBCUniversal",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "National Christmas Tree Lighting",
+    "slug": "national-christmas-tree-lighting",
+    "category": "holiday",
+    "subcategory": "tree lighting",
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Ceremony on the Ellipse at President's Park, run by the National Park Service and the National Park Foundation, with a tree-lighting tradition running to the 1920s. The 2025 edition was carried exclusively by Great American Media on Great American Family the following evening, with streaming on Great American Pure Flix — a broadcaster change from the ceremony's long public-television history.",
+    "network": { "name": "Great American Family", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.thenationaltree.org/",
+        "publisher": "National Christmas Tree Lighting",
+        "title": "National Christmas Tree Lighting",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.gacmedia.com/2025/11/21/great-american-media-celebrate-christmas-as-its-meant-to-be-as-the-exclusive-broadcast-home-of-the-2025-national-christmas-tree-lighting/",
+        "publisher": "Great American Media",
+        "title": "Great American Media the Exclusive Broadcast Home of the 2025 National Christmas Tree Lighting",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-12-04",
+        "show_date": "2025-12-05",
+        "city": "Washington",
+        "sources": [
+          {
+            "url": "https://www.gacmedia.com/2025/11/21/great-american-media-celebrate-christmas-as-its-meant-to-be-as-the-exclusive-broadcast-home-of-the-2025-national-christmas-tree-lighting/",
+            "publisher": "Great American Media",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CMA Country Christmas",
+    "slug": "cma-country-christmas",
+    "category": "holiday",
+    "subcategory": "christmas special",
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 3,
+    "description": "Country music Christmas special taped in Nashville before a live audience and held for an early-December broadcast on ABC, with next-day streaming on Hulu and Disney+. Lauren Daigle and Jordan Davis hosted the 2025 edition.",
+    "network": { "name": "ABC", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://cmachristmas.com/",
+        "publisher": "Country Music Association",
+        "title": "CMA Country Christmas",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.cmaworld.com/cma-country-christmas-hosted-by-lauren-daigle-and-jordan-davis-returns-tuesday-december-2-at-9-8c-on-abc-and-next-day-on-hulu-and-disney/",
+        "publisher": "Country Music Association",
+        "title": "CMA Country Christmas, Hosted By Lauren Daigle And Jordan Davis, Returns Tuesday, December 2",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-12-02",
+        "show_date": "2025-12-02",
+        "city": "Nashville",
+        "sources": [
+          {
+            "url": "https://www.cmaworld.com/cma-country-christmas-hosted-by-lauren-daigle-and-jordan-davis-returns-tuesday-december-2-at-9-8c-on-abc-and-next-day-on-hulu-and-disney/",
+            "publisher": "Country Music Association",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kennedy Center Honors",
+    "slug": "kennedy-center-honors",
+    "category": "holiday",
+    "subcategory": "honors gala",
+    "typical_month": 12,
+    "recurring": true,
+    "production_scale": 4,
+    "description": "Annual gala in the Kennedy Center Opera House honouring lifetime contributions to American culture, taped in early December and held for a broadcast later that month on CBS with streaming on Paramount+. The 48th class was Sylvester Stallone, George Strait, KISS, Gloria Gaynor and Michael Crawford.",
+    "network": { "name": "CBS", "is_streaming": false },
+    "sources": [
+      {
+        "url": "https://www.kennedy-center.org/whats-on/honors/",
+        "publisher": "The Kennedy Center",
+        "title": "The Kennedy Center Honors",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      },
+      {
+        "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/the-48th-annual-kennedy-center-honors/about/",
+        "publisher": "Paramount Press Express",
+        "title": "The 48th Annual Kennedy Center Honors",
+        "tier": "official",
+        "retrieved_on": "2026-08-26"
+      }
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "status": "completed",
+        "start_date": "2025-12-07",
+        "show_date": "2025-12-23",
+        "city": "Washington",
+        "venue": { "name": "Kennedy Center Opera House" },
+        "sources": [
+          {
+            "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/the-48th-annual-kennedy-center-honors/about/",
+            "publisher": "Paramount Press Express",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          },
+          {
+            "url": "https://www.kennedy-center.org/news-room/press-release-landing-page/48th-kc-honors-medallion/",
+            "publisher": "The Kennedy Center",
+            "title": "48th Kennedy Center Honors Medallion Unveiling",
+            "tier": "official",
+            "field": "show_date",
+            "retrieved_on": "2026-08-26"
+          }
+        ]
+      }
+    ]
+  }
+]
