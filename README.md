@@ -7,8 +7,10 @@ network, producer, month, and scale.
 `LIVEGRID_PLAN.md` is the roadmap and source of truth for scope, schema, and phase order.
 `AGENTS.md` holds the rules every build session follows. Read both before changing anything.
 
-**Current state: Phase 0** — schema, RLS, and the internal seeding tool. The public product
-(dashboard, calendar, browse table, search) is Phase 1 and is not built yet.
+**Current state: Phase 1 is built, and the seed is the remaining work.** The public product
+is live — dashboard, calendar, browse table, production/city/network/company pages, and the
+⌘K search — and every page reads the real database. What gates the ship is data volume, not
+code. `seeds/PROGRESS.md` is the durable ledger for that sweep; `/admin` shows it live.
 
 ## Setup
 
@@ -44,9 +46,36 @@ npm run db:types                            # regenerate src/lib/supabase/databa
 
 ## Seeding
 
-`/admin/import` accepts a pasted JSON array of productions and upserts them. It posts to
-`POST /api/admin/import`, which is where all the logic lives — the page is only a textarea,
-so the Phase 2 admin panel and any scripted importer reuse the same endpoint.
+Research a batch into `seeds/NNN-slice.json`, then run the gates in order:
+
+```bash
+npm run seeds:lookups                     # BEFORE writing: the names already in the database
+npm run seeds:check                       # shape, dates, provenance, forks (--strict while authoring)
+npm run seeds:links -- --file 'NNN-*'     # do the cited pages actually exist?
+npm run seeds:import -- seeds/NNN-*.json --verify
+```
+
+`--verify` imports the batch twice and fails unless the second pass created nothing, left
+`createdLookups` empty and derived an identical confidence tally. `seeds:links` is the only
+gate that cannot be reasoned about from the file, and it is the one that catches a citation
+nobody ever read.
+
+Two more, for after a correction:
+
+```bash
+npm run seeds:prune      # sources cited by no seed file (dry; --apply deletes)
+npm run seeds:rederive   # recompute stored confidence from stored citations
+```
+
+And two that fetch rather than check:
+
+```bash
+npm run discover -- --category concerts   # Wikidata -> seeds/candidates/*.json (leads, not records)
+npm run enrich -- venues                  # fills nulls only: capacity, website
+```
+
+`/admin/import` still accepts a pasted JSON array and is the browser fallback. Both paths call
+the same `runImport`, so there is one write path and the route stays a thin wrapper.
 
 Every write is keyed on a stable slug (productions, cities, networks, companies, venues) or
 on `(production_id, year)` (editions, viewership). Re-pasting a batch therefore updates
@@ -67,6 +96,12 @@ Newly created lookup rows are listed back in `createdLookups`. Read that field o
 import: it is how `CBS` vs `CBS Sports` gets caught before it forks into two rows.
 
 Anything not confirmed gets `"status": "rumored"`. Never invent a date to fill a field.
+
+**`confidence` is derived, never written.** The importer recomputes it from the citations that
+actually landed, and the input schema has no `confidence` key — a batch that tries to assert
+one fails validation. Corroboration counts registrable domains rather than publisher labels,
+because "Deadline" and "Deadline Hollywood" are one outlet and two strings. A `reference`-tier
+source alone can never exceed `single_source`, however many of them there are.
 
 ## Stack
 

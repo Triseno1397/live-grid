@@ -129,6 +129,29 @@ old 250 predates `sports`, `concerts`, `holiday`, `reality`, `streaming`, `polit
 `gaming` and `international` having a single row between them, and sports alone is worth most
 of the old total. Batch state lives in `seeds/PROGRESS.md`.
 
+**Amendment (external ids):** `external_ids` added — the upstream identifier a Live Grid row
+was matched to, for the enrichment passes that fill what seeding cannot source. Nobody cites a
+trade story for a venue's seat count, so `venues.capacity` was null on 60 of 75 rows and
+`website` on all 75; `npm run enrich -- venues` matches against Wikidata and fills them.
+
+The first match is by name, because a name is all a fresh row has. The *second* one is where
+that goes wrong: there are Springfields in thirty-four states, arenas get renamed, and an
+enricher that re-matches from scratch every run will eventually pick a different answer and
+overwrite a good value with a plausible one. Recording what the first match resolved to turns
+every later run into a lookup. It is the same argument as `slug` — an identity that survives a
+rename.
+
+Shape follows `citations` exactly: nullable typed FKs over production/city/venue/network/
+company plus `check (num_nonnulls(...) = 1)`, and `UNIQUE NULLS NOT DISTINCT` on the subject
+tuple because four of five columns are null on every row. A second unique on
+`(source, external_id)` makes "two cities both claiming Q60" impossible, which is the fork the
+table exists to prevent.
+
+No `edition_id`: an edition is already keyed on `(production_id, year)` and a per-year
+identifier buys nothing until a recurring re-check job exists to use it. **It is not an import
+key** — `productions.slug` remains the only thing the importer matches on, and nothing under
+`src/lib/import/` reads this table. Migration: `20260826000000_external_ids.sql`.
+
 **Amendment (batch 6, production team):** `production_team` added — who makes each edition, per year. One table covering both people and companies, because a vendor is a company and an EP is a person but they answer the same question, and splitting them would duplicate the role/ordering/per-edition logic twice. `person_name` is free text with no foreign key: there are no person pages, so a name is the whole record. Roles are constrained to seven (`production_company`, `executive_producer`, `director`, `lighting`, `audio`, `video`, `staging`) — enough to answer "who's running it?", short enough to stay queryable.
 
 This is **not** the v2+ vendor/rental directory listed in Phase 3. It is per-edition metadata on existing content, not a searchable supplier marketplace, and it deliberately stops well short of a credits system: no person pages, no filmographies, no below-the-line department heads. Migration: `20260812000000_production_team.sql`, mirrored in `TEAM_ROLES` in `src/lib/import/schema.ts`.

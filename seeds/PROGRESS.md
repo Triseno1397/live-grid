@@ -4,7 +4,9 @@ Durable state for the 600–800 production sweep. The sweep is far longer than o
 session, so this file — not anyone's memory — is what says where it got to.
 
 **Target:** 800 productions / ~1600 editions across all 13 categories.
-**At last update:** 77 productions / 133 editions across 7 categories, 68 sources / 113 citations.
+**At last update:** 120 productions / 191 editions across 9 categories, 221 sources / 345
+citations. `streaming` and `political` off zero; `reality`, `holiday`, `gaming` and
+`international` still at zero, `concerts` at 1.
 
 ## Two things the sweep keeps running into
 
@@ -93,6 +95,8 @@ npm run seeds:rederive         # confidence is derived from citations that just 
 | 007 | `007-nfl-tentpoles.json` | sports · NFL | 8 | 4 | yes | 26 sources / 47 citations. 14 official, 3 corroborated, 3 single-source. |
 | 008 | `008-major-leagues.json` | sports · NBA/MLB/NHL | 7 | 4 | yes | 19 sources / 32 citations. All 14 records official. |
 | 009 | `009-annual-classics.json` | sports · motorsport, racing, golf | 5 | 4 | yes | 14 sources / 22 citations. Masters is single-source — see below. |
+| 011 | `011-streaming-live.json` | streaming | 23 | 4 | yes | 88 sources / 123 citations, 46 of 48 subjects `official`. 0 dead links. |
+| 015 | `015-political.json` | political | 20 | 4 | yes | 66 sources / 109 citations. 2028 conventions and debates left undated — nothing announced. |
 | 019 | `019-source-backfill.json` | backfill | 1 of 57 | 4 | yes | Academy Awards done. 56 productions still uncited. |
 
 Batches 000–006 predate the provenance schema. They are listed in `LEGACY_UNSOURCED` in
