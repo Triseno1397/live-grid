@@ -202,17 +202,39 @@ export function teamForEdition(team: TeamMember[], editionId: string | null): Te
 }
 
 /**
- * The edition that matters right now: the next one scheduled, or failing that the most
- * recent one that happened.
+ * The last day an edition occupies: its end date, or its start date for a one-day show.
+ *
+ * "Past" is decided on this, not on the start date, so a five-day festival stays on the
+ * dashboard while it is running instead of dropping off the morning after it opens.
+ *
+ * An edition with no start date is dateless everywhere else in the product, so a stray
+ * end date alone does not place it on the timeline here either.
+ */
+export function lastDay(edition: Edition): string | null {
+  if (edition.startDate === null) return null;
+  return edition.endDate ?? edition.startDate;
+}
+
+/** True once the edition's final day is behind `today`. Dateless editions are never past. */
+export function isPast(edition: Edition, today = todayISO()): boolean {
+  const end = lastDay(edition);
+  return end !== null && end < today;
+}
+
+/**
+ * The edition that matters right now: the next one scheduled (or the one running today),
+ * or failing that the most recent one that happened.
  *
  * Editions with no `start_date` cannot be placed on a timeline, so they never win the
  * "next" slot — but a production made up entirely of dateless editions still resolves to
  * its latest year rather than to null, so it keeps a row in browse.
+ *
+ * A running edition reads 0 days out rather than "2 days ago": it is on air, not over.
  */
 export function pickEdition(production: Production, today = todayISO()): ProductionEntry {
   const dated = production.editions.filter((e) => e.startDate !== null);
   const upcoming = dated
-    .filter((e) => e.startDate! >= today)
+    .filter((e) => !isPast(e, today))
     .sort((a, b) => a.startDate!.localeCompare(b.startDate!));
 
   if (upcoming.length > 0) {
@@ -220,7 +242,7 @@ export function pickEdition(production: Production, today = todayISO()): Product
     return {
       production,
       edition,
-      daysOut: daysBetween(today, edition.startDate!),
+      daysOut: Math.max(0, daysBetween(today, edition.startDate!)),
       isUpcoming: true,
     };
   }
@@ -240,17 +262,57 @@ export function pickEdition(production: Production, today = todayISO()): Product
   return { production, edition: latest, daysOut: null, isUpcoming: false };
 }
 
-/** Productions with a scheduled future edition, soonest first. */
+/**
+ * Productions whose next edition has not started yet, soonest first.
+ *
+ * A running edition (a season or festival already under way) is excluded: sorting by start
+ * date would park a February-to-December season above next week's premiere every day it
+ * runs. Those live in onAirEntries instead.
+ */
 export function upcomingEntries(productions: Production[], today = todayISO()): ProductionEntry[] {
   return productions
     .map((p) => pickEdition(p, today))
-    .filter((entry) => entry.isUpcoming)
+    .filter((entry) => entry.isUpcoming && entry.edition!.startDate! >= today)
     .sort((a, b) => a.edition!.startDate!.localeCompare(b.edition!.startDate!));
+}
+
+/** Editions under way today — started, not yet ended — ending soonest first. */
+export function onAirEntries(productions: Production[], today = todayISO()): ProductionEntry[] {
+  return productions
+    .map((p) => pickEdition(p, today))
+    .filter((entry) => entry.isUpcoming && entry.edition!.startDate! < today)
+    .sort((a, b) => lastDay(a.edition!)!.localeCompare(lastDay(b.edition!)!));
 }
 
 /** One entry per production, upcoming first then most-recent-past. The browse table's rows. */
 export function allEntries(productions: Production[], today = todayISO()): ProductionEntry[] {
   return productions.map((p) => pickEdition(p, today));
+}
+
+/**
+ * Every edition that has finished, one entry per edition, most recent first. The /past
+ * page's rows.
+ *
+ * Per edition rather than per production: a show that ran in March and again in June is
+ * two things that happened, and the archive should list both.
+ */
+export function pastEntries(productions: Production[], today = todayISO()): ProductionEntry[] {
+  return productions
+    .flatMap((production) =>
+      production.editions
+        .filter((edition) => isPast(edition, today))
+        .map((edition) => ({
+          production,
+          edition,
+          daysOut: daysBetween(today, edition.startDate!),
+          isUpcoming: false,
+        })),
+    )
+    .sort(
+      (a, b) =>
+        b.edition!.startDate!.localeCompare(a.edition!.startDate!) ||
+        a.production.name.localeCompare(b.production.name),
+    );
 }
 
 /**
@@ -309,7 +371,7 @@ export function summarize(productions: Production[], today = todayISO()): Summar
     productions: productions.length,
     editions: editions.length,
     cities: cities.size,
-    upcoming: editions.filter((e) => e.startDate !== null && e.startDate >= today).length,
+    upcoming: editions.filter((e) => e.startDate !== null && !isPast(e, today)).length,
     rumored: editions.filter((e) => e.status === "rumored").length,
   };
 }
@@ -324,7 +386,7 @@ export function busiestCities(
 
   for (const production of productions) {
     for (const edition of production.editions) {
-      if (!edition.city || edition.startDate === null || edition.startDate < today) continue;
+      if (!edition.city || edition.startDate === null || isPast(edition, today)) continue;
       const existing = tally.get(edition.city.slug);
       if (existing) existing.count += 1;
       else tally.set(edition.city.slug, { city: edition.city, count: 1 });
@@ -336,12 +398,20 @@ export function busiestCities(
     .slice(0, limit);
 }
 
-/** Rumored editions, soonest first. Dateless rumors sort last but are not dropped. */
-export function rumoredWatchlist(productions: Production[], limit = 8): CalendarEvent[] {
+/**
+ * Rumored editions still ahead of today, soonest first. Dateless rumors sort last but are
+ * not dropped. A rumor whose date has passed is history, not a watchlist item — it lives
+ * on /past with its rumored badge intact.
+ */
+export function rumoredWatchlist(
+  productions: Production[],
+  today = todayISO(),
+  limit = 8,
+): CalendarEvent[] {
   return productions
     .flatMap((production) =>
       production.editions
-        .filter((edition) => edition.status === "rumored")
+        .filter((edition) => edition.status === "rumored" && !isPast(edition, today))
         .map((edition) => ({
           editionId: edition.id,
           date: edition.startDate ?? "",
