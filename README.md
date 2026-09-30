@@ -68,6 +68,19 @@ import: it is how `CBS` vs `CBS Sports` gets caught before it forks into two row
 
 Anything not confirmed gets `"status": "rumored"`. Never invent a date to fill a field.
 
+## Scan and the daily close-out
+
+The dashboard's **Scan** button POSTs `/api/scan`, which moves every `confirmed` or
+`announced` edition whose last day (`end_date`, else `start_date`) is behind today to
+`completed`, then regenerates every page. `rumored` editions are never closed out — a rumor
+that reached its date was never confirmed — they simply move to `/past` with the badge intact.
+The scan reads no external source and writes no new fact, which is why it can be public.
+
+`vercel.json` runs the same scan daily at 09:00 UTC. That run also keeps the Supabase project
+active: a free-tier project pauses after a week without traffic, and a paused database leaves
+Vercel serving the last good render indefinitely. Set `CRON_SECRET` in the Vercel project to
+lock the cron's GET to Vercel alone.
+
 ## Stack
 
 Next.js 15 App Router · TypeScript strict · Tailwind CSS 4 · shadcn/ui · Supabase

@@ -1,14 +1,18 @@
 import Link from "next/link";
 
 import { PageHeader, PageShell, Panel } from "@/components/page-shell";
+import { ScanButton } from "@/components/scan-button";
 import { EmptyState } from "@/components/ui/data-table";
 import { ProductionCard } from "@/components/ui/production-card";
 import { StatBlock } from "@/components/ui/stat-block";
 import { StatusBadge } from "@/components/ui/status-badge";
-import { formatDateProse, MIDDOT, todayISO } from "@/lib/format";
+import { formatDateProse, formatDateShort, MIDDOT, todayISO } from "@/lib/format";
 import {
   busiestCities,
   getProductions,
+  lastDay,
+  onAirEntries,
+  pastEntries,
   rumoredWatchlist,
   summarize,
   upcomingEntries,
@@ -30,7 +34,9 @@ export default async function DashboardPage() {
   const upcoming = upcomingEntries(productions, today);
   const stats = summarize(productions, today);
   const cities = busiestCities(productions, today);
-  const rumored = rumoredWatchlist(productions);
+  const rumored = rumoredWatchlist(productions, today);
+  const pastCount = pastEntries(productions, today).length;
+  const onAir = onAirEntries(productions, today);
 
   return (
     <PageShell>
@@ -43,6 +49,7 @@ export default async function DashboardPage() {
             <span className="numeric">{today}</span>.
           </>
         }
+        action={<ScanButton />}
       />
 
       <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-5 border-y border-line-subtle py-4 sm:grid-cols-4">
@@ -74,6 +81,26 @@ export default async function DashboardPage() {
 
         {/* Sticky below the nav so the rail stays with a long card list. */}
         <aside className="flex flex-col gap-4 lg:sticky lg:top-[calc(var(--nav-h)+16px)] lg:self-start">
+          {onAir.length > 0 && (
+            <Panel title="On air">
+              <ul>
+                {onAir.map(({ production, edition }) => (
+                  <li key={edition!.id}>
+                    <Link
+                      href={`/p/${production.slug}`}
+                      className="flex h-9 items-center justify-between gap-3 border-b border-line-subtle px-3 text-base text-fg-secondary last:border-b-0 hover:bg-hover hover:text-fg"
+                    >
+                      <span className="truncate">{production.name}</span>
+                      <span className="numeric shrink-0 text-sm text-fg-tertiary">
+                        to {formatDateShort(lastDay(edition!))}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </Panel>
+          )}
+
           <Panel title="Busiest cities">
             {cities.length === 0 ? (
               <EmptyState message="No upcoming editions carry a city." />
@@ -119,6 +146,23 @@ export default async function DashboardPage() {
                 ))}
               </ul>
             )}
+          </Panel>
+
+          <Panel
+            title="Past"
+            action={
+              <Link href="/past" className="text-sm text-fg-tertiary hover:text-fg">
+                View all
+              </Link>
+            }
+          >
+            <Link
+              href="/past"
+              className="flex h-9 items-center justify-between gap-3 px-3 text-base text-fg-secondary hover:bg-hover hover:text-fg"
+            >
+              <span>Completed and past editions</span>
+              <span className="numeric tabular-nums text-fg-tertiary">{pastCount}</span>
+            </Link>
           </Panel>
 
           <Panel
